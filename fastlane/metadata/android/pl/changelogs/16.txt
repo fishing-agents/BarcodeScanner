@@ -1,0 +1,13 @@
+1.6.0
+
+- Początek tłumaczenia rosyjskiego (dzięki s s).
+- Zastąpienie zależności Glide i GlideToVectorYou przez Coil.
+- Naprawiono awarię w systemie Android 5.
+- Ulepszenia kodu.
+
+1.5.1
+
+- Naprawiono błąd „java.lang.NumberFormatException: pusty ciąg” podczas wyszukiwania w OpenFoodFacts.
+- Poprawiono nieprawidłowe wartości w tabeli wartości odżywczych dla „na porcję”.
+- Kilka ulepszeń.
+- Aktualizacja zależności.

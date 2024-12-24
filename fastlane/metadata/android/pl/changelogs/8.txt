@@ -1,0 +1,3 @@
+- Dodano „intent-filter”, który umożliwia skanowanie kodu kreskowego z zewnętrznej aplikacji.
+- Dodano przełącznik wyłączający automatyczne obracanie ekranu podczas skanowania.
+- Zaktualizowano zależności.

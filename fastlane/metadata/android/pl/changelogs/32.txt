@@ -1,0 +1,8 @@
+1.15.0
+
+- Zaktualizowano tłumaczenie polskie (dzięki phyrz91).
+- Zaktualizowano tłumaczenie chińskie tradycyjne (dzięki plum7x).
+- Dodano poziom korekcji błędów dla kodów QR.
+- Dodano opcję dodawania wygenerowanych kodów kreskowych do historii (musi być włączona w ustawieniach).
+- Modyfikacja zdalnego zarządzania API.
+- Dodano API MusicBrainz.

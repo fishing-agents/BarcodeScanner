@@ -1,0 +1,4 @@
+1.8.1
+
+- Naprawiono: Dodano implementację API cameraX podczas skanowania za pomocą Intent.
+- Zaktualizowano zależności.

@@ -1,0 +1,3 @@
+- Aktualizacja zależności.
+- Naprawiono otwieranie aplikacji ze skrótami, które nie działały dla „historii” i „generuj”.
+- Naprawiono skanowanie z obrazu podczas skanowania z zewnętrznej aplikacji (intent-filter).

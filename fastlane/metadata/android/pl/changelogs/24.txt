@@ -1,0 +1,6 @@
+1.10.1
+
+- Ulepszono implementację CameraX i naprawiono błędy.
+- Naprawiono błąd wyświetlania domyślnego motywu w systemie Android 6 do 11.
+- Naprawiono filtr intencji umożliwiający uzyskanie zdarzenia w formacie .ics.
+- Aktualizacja zależności.

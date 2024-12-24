@@ -1,0 +1,3 @@
+1.16.1
+
+Usunięcie uprawnienia QUERY_ALL_PACKAGES po odmowie aktualizacji aplikacji w Google Play.

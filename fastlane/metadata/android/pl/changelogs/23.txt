@@ -1,0 +1,7 @@
+1.10.0
+
+- Ulepszenie kodu.
+- Uproszczony dostęp do akcji po zeskanowaniu kodu kreskowego.
+- Ulepszona implementacja CameraX.
+- Aktualizacja zależności.
+- Kilka ulepszeń i poprawek błędów.

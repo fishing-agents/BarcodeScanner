@@ -1,0 +1,17 @@
+1.17.0
+
+Nowe funkcje:
+- Dodano domyślną wyszukiwarkę przeglądarki.
+- Dodano połączenie Wi-Fi z zabezpieczeniami WPA3 (dzięki Mateus J.).
+Tłumaczenie (za pomocą Weblate):
+- Dodano tłumaczenie na język portugalski (Brazylia) (dzięki joaooliva).
+- Dodano tłumaczenie na język japoński (niekompletne) (dzięki しいたけ).
+- Dodano tłumaczenie na język ukraiński (niekompletne) (dzięki MaSHiNiK).
+- Dodano tłumaczenie na język włoski (niekompletne) (dzięki Tua madre).
+- Dodano tłumaczenie na język indonezyjski (niekompletne) (dzięki Reza).
+- Zaktualizowano tłumaczenie na język niemiecki (dzięki Fabian Rennebeck).
+- Zaktualizowano tłumaczenie na język norweski (bokmål) (dzięki Allan Nordhøy).
+- Zaktualizowano tłumaczenie na język chiński (uproszczony) (dzięki 御坂13766号 i Red Star Over Earth).
+- Zaktualizowane tłumaczenie polskie (dzięki Eryk Michalak).
+- Zaktualizowane tłumaczenie tureckie (dzięki abfreeman).
+- Zaktualizowane tłumaczenie hiszpańskie (dzięki gallegonovato).

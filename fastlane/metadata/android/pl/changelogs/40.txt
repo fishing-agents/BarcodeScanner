@@ -1,0 +1,12 @@
+1.22.0
+
+Pełny rejestr zmian tutaj: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Zastąpienie statycznych skrótów dynamicznymi (możesz to skonfigurować w ustawieniach).
+- Dodano skrót do generowania kodu QR ze schowka (dzięki Austen).
+- Dodano możliwość tworzenia i używania niestandardowych adresów URL wyszukiwania.
+- Dodano opcję wyświetlania obrazu kodu kreskowego w widoku wyników.
+- Naprawiono błędy.
+- Ulepszono motywy, style i widoki.
+- Zaktualizowano tłumaczenia (Weblate).
+- Zaktualizowano zależności.

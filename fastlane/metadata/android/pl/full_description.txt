@@ -1,24 +1,26 @@
-Skaner kodów kreskowych to darmowa i otwarta aplikacja, która umożliwia odczytywanie i generowanie kodów kreskowych. Może gromadzić informacje o produktach spożywczych, kosmetykach i książkach.
+Barcode Scanner to darmowa i otwartoźródłowa aplikacja, która umożliwia odczytywanie i generowanie kodów kreskowych. Może zbierać informacje o produktach spożywczych, kosmetykach, książkach i muzyce (płyty CD, winyle…).
 
-Różne formaty kodów kreskowych są zarządzane przez aplikację: 
-• dwuwymiarowe kody kreskowych: QR Code, Data Matrix, PDF 417, AZTEC 
-• jednowymiarowe kody kreskowe: EAN 13, EAN 8, UPC A, UPC E, Code 128, Code 93, Code 39, Codabar, IT
+Aplikacja obsługuje różne formaty kodów kreskowych:
+• Kody kreskowe 2-wymiarowe: QR Code, Data Matrix, PDF 417, AZTEC
+• Kody kreskowe 1-wymiarowe: EAN 13, EAN 8, UPC A, UPC E, Code 128, Code 93, Code 39, Codabar, ITF
 
-Zbiera informacje o produkcie podczas skanowania: 
-• Produkty spożywcze z Open Food Facts 
+Zbieraj informacje o produkcie podczas skanowania:
+• Produkty spożywcze z Open Food Facts
 • Kosmetyki z Open Beauty Facts
-• Produkty spożywcze dla zwierząt domowych z Open Pet Food Facts 
+• Produkty spożywcze dla zwierząt z Open Pet Food Facts
 • Książki z Open Library
-• Music CDs, Vinyls… with MusicBrainz
+• Płyty CD z muzyką, winyle… z MusicBrainz
 
-Funkcje aplikacji : 
-• Wystarczy skierować aparat smartfona na kod kreskowy i natychmiast otrzymać o nim informację. Możesz także skanować kody kreskowe za pomocą obrazu w smartfonie. 
-• Za pomocą prostego skanowania czytaj wizytówki, dodawaj nowe kontakty, dodawaj nowe wydarzenia do swojego planu, otwieraj adresy URL, a nawet łącz się z Wi-Fi.
-• Skanuj kody kreskowe produktów spożywczych, aby otrzymywać informacje o ich składzie dzięki bazom danych Open Food Facts i Open Beauty Facts. 
-• Wyszukaj informacje o skanowanym produkcie, dzięki szybkiemu badaniu na różnych stronach internetowych, takich jak Amazon lub Fnac. 
-• Śledź wszystkie zeskanowane kody kreskowe za pomocą narzędzia historii. 
-• Generuj własne kody kreskowe 
-• Dostosuj interfejs za pomocą różnych kolorów, jasnego motywu lub ciemnego. Aplikacja integruje funkcje Androida 12, umożliwiając dostosowanie kolorów w zależności od tapety.
-• Teksty są w całości tłumaczone na język polski, angielski, hiszpański, francuski, niemiecki, rosyjski i chiński.
+Funkcje aplikacji:
+• Po prostu skieruj aparat smartfona na kod kreskowy, aby natychmiast otrzymać informacje o nim. Możesz również skanować kody kreskowe za pomocą zdjęcia w smartfonie.
+• Za pomocą prostego skanowania możesz czytać wizytówki, dodawać nowe kontakty, dodawać nowe wydarzenia do kalendarza, otwierać adresy URL, a nawet łączyć się z siecią Wi-Fi.
+• Skanuj kody kreskowe produktów spożywczych, aby otrzymywać informacje o ich składzie dzięki bazom danych Open Food Facts i Open Beauty Facts.
+• Wyszukaj informacje o skanowanym produkcie, wykonując szybkie wyszukiwanie na różnych stronach internetowych, takich jak Amazon lub Fnac.
+• Śledź wszystkie zeskanowane kody kreskowe za pomocą narzędzia historii.
+• Generuj własne kody kreskowe
+• Dostosuj interfejs za pomocą różnych kolorów, z jasnym lub ciemnym motywem. Interfejs został zbudowany w Material 3 i jest zgodny z Material You, co pozwala na dostosowanie kolorów na podstawie tapety dla urządzeń z systemem Android 12 lub nowszym.
+• Teksty są w całości tłumaczone na język angielski, arabski, hiszpański, francuski, portugalski, rosyjski, niemiecki, turecki, włoski, ukraiński, polski, holenderski, rumuński i chiński (uproszczony i tradycyjny).
 
 Ta aplikacja szanuje Twoją prywatność. Nie zawiera żadnych trackerów i nie zbiera żadnych danych.
+
+Kod źródłowy jest dostępny tutaj: https://gitlab.com/Atharok/BarcodeScanner

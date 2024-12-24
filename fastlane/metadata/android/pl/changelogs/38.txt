@@ -1,0 +1,11 @@
+1.20.0
+
+Pełny rejestr zmian tutaj: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Dodano tłumaczenie na język ukraiński (dzięki Сергій).
+- Zaktualizowano tłumaczenia (używając Weblate).
+- Zaktualizowano zależności.
+- Naprawiono kafelek, który nie działał na niektórych urządzeniach z Androidem 14.
+- Dodano możliwość modyfikacji zeskanowanego kodu kreskowego.
+- Kilka zmian graficznych.
+- Kilka ulepszeń i optymalizacji kodu.
