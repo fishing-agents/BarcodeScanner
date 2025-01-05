@@ -445,7 +445,7 @@
     <string name="permission_vibrate_description_label">Usato per vibrare al momento della scansione.</string>
     <string name="permission_query_all_packages_label">Invio di query per tutti i pacchetti</string>
     <string name="permission_query_all_packages_description_label">Utile per generare un Codice QR code da un applicazione installata.</string>
-    <string name="bdd_open_food_facts_description_label">Open Food Facts è un database libero riguardante il cibo ed elenca gli ingredienti, allergeni, valori nutrizionali, e tutte le informazioni presenti sulle etichette dei prodotti.</string>
+    <string name="bdd_open_food_facts_description_label">Open Food Facts è un database libero inerente il cibo ed elenca ingredienti, allergeni, valori nutrizionali e tutte le informazioni presenti sulle etichette dei prodotti.</string>
     <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts è un database libero riguardante alimenti per animali.</string>
     <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts è un database libero riguardate prodotti cosmetici.</string>
     <string name="bdd_music_brainz_description_label">MusicBrainz è un enciclopedia musicale libera che colleziona metadati di musica e li rende disponibili al pubblico.</string>
