@@ -1,0 +1,2 @@
+- Millora del codi.
+- Solucioneu un problema amb la càmera que de vegades no s'apaga quan s'escaneja des d'una imatge.

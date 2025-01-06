@@ -1,0 +1,15 @@
+1.16.0
+
+Traducció (mitjançant Weblate):
+- Afegida traducció al turc (gràcies a abfreeman).
+- Afegit el noruec bokmål (no complet) (gràcies a Allan Nordhøy).
+- Traducció espanyola actualitzada (gràcies a J. Lavoie i gallegonovato).
+- Traducció al xinès tradicional actualitzada (gràcies a plum7x).
+- Traducció alemanya actualitzada (gràcies a J. Lavoie).
+- Traducció francesa actualitzada (gràcies a J. Lavoie).
+
+Noves característiques:
+- Afegit un tema negre.
+- Afegit l'exportació JPG i SVG per a la imatge de codi de barres.
+- Algunes millores en el codi.
+- S'han corregit alguns errors.

@@ -1,0 +1,3 @@
+1.6.1
+
+- S'ha afegit una traducció completa al rus (gràcies a s s).

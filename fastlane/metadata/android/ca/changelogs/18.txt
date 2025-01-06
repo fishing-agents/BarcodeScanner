@@ -1,0 +1,5 @@
+1.7.0
+
+- S'ha afegit traducció alemanya (gràcies a konwin).
+- Petits canvis en la traducció russa (gràcies a s s).
+- Algunes millores gràfiques.

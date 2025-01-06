@@ -1,0 +1,7 @@
+- Actualitzar la versió de Kotlin (1.7.20).
+- Algunes millores en les cadenes (anglès).
+- S'ha afegit un botó de commutació a la configuració per copiar automàticament el contingut del codi de barres escanejat al porta-retalls.
+- Millora del codi.
+- S'ha afegit la possibilitat de consultar manualment les API remotes.
+- S'ha afegit suport per a la generació de codis QR EPC.
+- S'ha afegit un botó de cerca a la barra d'eines per als codis QR que contenen una URL.
