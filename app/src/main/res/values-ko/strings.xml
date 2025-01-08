@@ -3,7 +3,7 @@
     <string name="title_history">기록</string>
     <string name="close_dialog_label">닫기</string>
     <string name="no_label">아니요</string>
-    <string name="go_to_dialog_label">웹사이트 입력</string>
+    <string name="go_to_dialog_label">웹사이트로 이동</string>
     <string name="image_view_description_logo">로고</string>
     <string name="image_view_description_type_icon">종류</string>
     <string name="image_view_description_icon">아이콘</string>
@@ -11,7 +11,7 @@
     <string name="image_view_description_nova_group">NOVA GROUP</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
     <string name="image_view_description_background">배경</string>
-    <string name="title_generate">생성</string>
+    <string name="title_generate">만들기</string>
     <string name="title_settings">설정</string>
     <string name="title_qr_code_creator">QR 코드 만들기</string>
     <string name="title_bar_code_creator">바코드 만들기</string>
@@ -312,7 +312,7 @@
     <string name="qr_code_text_input_edit_text_hint_name">성</string>
     <string name="qr_code_text_input_edit_text_epc_name_error">\"이름\" 필드는 필수입니다</string>
     <string name="qr_code_text_input_edit_text_epc_iban_error">잘못된 IBAN</string>
-    <string name="list_bank_empty_message">항목 없음…\n아직 EPC QR 코드를 생성하지 않았습니다.</string>
+    <string name="list_bank_empty_message">항목 없음…\n아직 EPC QR 코드를 만들지 않았습니다.</string>
     <string name="qr_code_text_input_edit_text_hint_email">이메일</string>
     <string name="qr_code_text_input_edit_text_hint_email_subject">제목</string>
     <string name="qr_code_text_input_edit_text_hint_localisation_latitude">위도</string>
@@ -362,4 +362,64 @@
     <string name="qr_code_text_input_edit_text_hint_epc_purpose">목적</string>
     <string name="qr_code_text_input_edit_text_hint_epc_remittance_text">송금 (텍스트)</string>
     <string name="qr_code_text_input_edit_text_hint_epc_information">정보</string>
+    <string name="qr_code_text_input_edit_text_hint_wifi_ssid">SSID / 네트워크 이름</string>
+    <string name="qr_code_text_input_edit_text_hint_wifi_password">비밀번호</string>
+    <string name="qr_code_text_input_edit_text_hint_wifi_hide">숨겨짐</string>
+    <string name="spinner_wifi_encryption_wep">WEP</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_event_name">일정 이름</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_place">장소</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_description">설명</string>
+    <string name="check_box_event_all_of_day">하루 종일</string>
+    <string name="begin_label">시작일</string>
+    <string name="end_label">종료일</string>
+    <string name="custom_search_urls_add_url">URL 추가</string>
+    <string name="custom_search_urls_modify_url">URL 수정</string>
+    <string name="custom_search_urls_list">URL 리스트</string>
+    <string name="custom_url_deleted">사용자 지정 URL 삭제됨!</string>
+    <string name="custom_search_urls_list_is_empty_message">항목 없음…\n아직 사용자 지정 URL을 만들지 않았습니다.</string>
+    <string name="popup_message_confirmation_deleted_all_custom_urls">모든 사용자 지정 URL을 삭제하시겠습니까?</string>
+    <string name="custom_url_added">사용자 지정 URL 추가됨!</string>
+    <string name="custom_url_updated">사용자 지정 URL 수정됨!</string>
+    <string name="custom_search_urls_add_info">URL에 \"%1$s\"라는 용어를 사용하세요. 이 용어는 검색 중에 바코드의 내용으로 대체됩니다.</string>
+    <string name="examples">예시:</string>
+    <string name="custom_search_urls_error_url">URL에 \"%1$s\"라는 용어가 있어야 합니다.</string>
+    <string name="error_empty_fields">입력 필드는 비워둘 수 없습니다.</string>
+    <string name="base_api_open_food_facts_url">https://world.openfoodfacts.org/api/v0/product/</string>
+    <string name="base_api_open_pet_food_facts_url">https://world.openpetfoodfacts.org/api/v0/product/</string>
+    <string name="base_api_open_beauty_facts_url">https://world.openbeautyfacts.org/api/v0/product/</string>
+    <string name="search_engine_google_url">https://www.google.com/search?q=%1$s</string>
+    <string name="search_engine_bing_url">https://www.bing.com/search?q=%1$s</string>
+    <string name="search_engine_duck_duck_go_url">https://duckduckgo.com/?q=%1$s</string>
+    <string name="search_engine_startpage_url">https://www.startpage.com/do/metasearch.pl?query=%1$s</string>
+    <string name="open_pet_food_facts_source_description_label">제품에 대한 정보는 무료 데이터베이스인 Open Pet Food Facts에서 제공됩니다.</string>
+    <string name="open_library_source_description_label">책에 대한 정보는 무료 데이터베이스인 Open Library에서 제공됩니다.</string>
+    <string name="spinner_wifi_encryption_wpa">WPA/WPA2</string>
+    <string name="spinner_wifi_encryption_sae">WPA3</string>
+    <string name="spinner_wifi_encryption_none">비밀번호 없음</string>
+    <string name="custom_search_urls">사용자 지정 검색 URL</string>
+    <string name="custom_urls">사용자 지정 URL</string>
+    <string name="search_engine_ecosia_url">https://www.ecosia.org/search?q=%1$s</string>
+    <string name="search_engine_lilo_url">https://search.lilo.org/?q=%1$s</string>
+    <string name="search_engine_amazon_url">https://www.amazon.com/s?k=%1$s</string>
+    <string name="search_engine_ebay_url">https://www.ebay.com/sch/i.html?_nkw=%1$s</string>
+    <string name="search_engine_open_beauty_facts_product_url">https://world.openbeautyfacts.org/product/%1$s</string>
+    <string name="search_engine_musicbrainz_product_url">https://musicbrainz.org/search?query=%1$s&amp;type=release</string>
+    <string name="search_engine_open_food_facts_product_url">https://world.openfoodfacts.org/product/%1$s</string>
+    <string name="search_engine_open_pet_food_facts_product_url">https://world.openpetfoodfacts.org/product/%1$s</string>
+    <string name="search_engine_music_brainz_url">https://musicbrainz.org/</string>
+    <string name="open_food_facts_source_description_label">제품에 대한 정보는 무료 데이터베이스인 Open Food Facts에서 제공됩니다.</string>
+    <string name="search_engine_open_library_product_url">https://openlibrary.org/search?q=%1$s</string>
+    <string name="open_beauty_facts_source_description_label">제품에 대한 정보는 무료 데이터베이스인 Open Beauty Facts에서 제공됩니다.</string>
+    <string name="music_brainz_source_description_label">음악 제품에 대한 정보는 무료 데이터베이스인 MusicBrainz에서 제공됩니다.</string>
+    <string name="search_engine_open_library_url">https://openlibrary.org/</string>
+    <string name="base_api_cover_art_archive_url">https://coverartarchive.org/</string>
+    <string name="base_api_open_library_url">https://openlibrary.org</string>
+    <string name="search_engine_additive_url">https://world.openfoodfacts.org/additive/%1$s</string>
+    <string name="search_engine_qwant_url">https://www.qwant.com/?q=%1$s</string>
+    <string name="search_engine_open_pet_food_facts_url">https://world.openpetfoodfacts.org/</string>
+    <string name="search_engine_open_beauty_facts_url">https://world.openbeautyfacts.org/</string>
+    <string name="base_api_musicbrainz_url">https://musicbrainz.org/ws/2/</string>
+    <string name="search_engine_brave_search_url">https://search.brave.com/search?q=%1$s</string>
+    <string name="search_engine_fnac_url">https://www.fnac.com/SearchResult/ResultList.aspx?Search=%1$s</string>
+    <string name="search_engine_open_food_facts_url">https://world.openfoodfacts.org/</string>
 </resources>
