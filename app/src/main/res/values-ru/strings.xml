@@ -284,7 +284,7 @@
     <string name="barcode_codabar_description_label">Код Codabar - это штрих-код, предназначенный для считывания матричными принтерами. В настоящее время Codabar практически не используется по сравнению с другими типами штрих-кодов, но все еще применяется некоторыми организациями, например, библиотеками.</string>
     <string name="barcode_upc_a_description_label">Код UPC-A (Universal Product Code) - это штрих-код, широко используемый в США и Канаде для идентификации товаров, продаваемых в магазинах. Он состоит из 12 цифр.</string>
     <string name="barcode_upc_e_description_label">Код UPC-E (Universal Product Code) - это сокращенный штрих-код UPC-A, используемый в основном в США и Канаде для идентификации товаров, продаваемых в магазинах. Он используется на упаковках, слишком маленьких для кода UPC-A.</string>
-    <string name="barcode_ean_13_description_label">Код EAN-13 (European Article Numbering 13) - это штрих-код, широко используемый для идентификации товаров, продаваемых в магазинах в Европе и практически во всем мире. Он состоит из 13 цифр.</string>
+    <string name="barcode_ean_13_description_label">Код EAN-13 (European Article Numbering 13) - это штрих-код, широко используемый для идентификации товаров, продаваемых в магазинах Европы и практически во всем мире. Он состоит из 13 цифр.</string>
     <string name="barcode_ean_8_description_label">Код EAN-8 (European Article Numbering 8) - это сокращенный штрих-код EAN-13, используемый для идентификации товаров, продаваемых в магазинах Европы и практически во всем мире. Он используется на упаковках, слишком маленьких для кода EAN-13.</string>
     <!-- Snackbar Feddbacks -->
     <string name="snack_bar_message_permission_refused">Вы должны подтвердить разрешение на использование этой возможности.</string>
@@ -564,7 +564,7 @@
     <string name="country_kosovo">Косово</string>
     <string name="country_de">Германия</string>
     <string name="country_jp">Япония</string>
-    <string name="country_ru">россия</string>
+    <string name="country_ru">Россия</string>
     <string name="country_kg">Кыргызстан</string>
     <string name="country_tw">Тайвань</string>
     <string name="country_ee">Эстония</string>
@@ -697,7 +697,7 @@
     <string name="action_modify_barcode">Изменить штрих-код</string>
     <string name="barcode_search_error_no_compatible_application_found">Не найдено совместимое приложение</string>
     <string name="preferences_additional_options">Дополнительные параметры</string>
-    <string name="preferences_display_barcode_image_results_view">Показать изображение штрих-кода при просмотре результатов</string>
+    <string name="preferences_display_barcode_image_results_view">Показывать изображение штрих-кода при просмотре результатов</string>
     <string name="custom_search_urls">Пользовательские поисковые URL</string>
     <string name="custom_urls">Пользовательские URL</string>
     <string name="custom_search_urls_add_url">Добавить URL</string>
@@ -718,7 +718,7 @@
     <string name="create_qr_from_clipboard">Создать QR-код из буфера обмена</string>
     <string name="clipboard_empty">Буфер обмена пуст.</string>
     <string name="popup_message_confirmation_deleted_all_custom_urls">Вы хотите удалить все пользовательские URL?</string>
-    <string name="preferences_switch_history_save_duplicates_label">Сохранить дубликаты</string>
+    <string name="preferences_switch_history_save_duplicates_label">Сохранять дубликаты</string>
     <string name="preferences_switch_history_save_duplicates_summary_on">Дубликаты будут добавлены в историю</string>
     <string name="preferences_switch_history_save_duplicates_summary_off">Дубликаты не будут добавлены в историю</string>
     <string name="app_name">Сканер штрих-кодов</string>
