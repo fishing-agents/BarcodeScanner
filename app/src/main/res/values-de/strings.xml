@@ -731,4 +731,6 @@
     <string name="preferences_switch_history_save_duplicates_summary_off">Duplikate werden nicht in den Verlauf hinzugefügt</string>
     <string name="preferences_switch_history_save_duplicates_label">Duplikate speichern</string>
     <string name="preferences_switch_history_save_duplicates_summary_on">Duplikate werden dem Verlauf hinzugefügt</string>
+    <string name="action_assign_a_name">Einen Namen zuweisen</string>
+    <string name="apply">Anwenden</string>
 </resources>
