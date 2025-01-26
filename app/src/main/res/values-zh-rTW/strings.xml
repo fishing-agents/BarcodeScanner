@@ -729,4 +729,6 @@
     <string name="app_name">條碼掃描器</string>
     <string name="matrix_contact_job_title_label">職位名稱</string>
     <string name="snack_bar_message_items_deleted">已從歷史記錄中刪除項目。</string>
+    <string name="apply">應用</string>
+    <string name="action_assign_a_name">分配一個名稱</string>
 </resources>
