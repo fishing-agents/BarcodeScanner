@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="title_scan">Σκανάρισμα</string>
+    <string name="image_view_description_product_front">Φωτογραφία προϊόντος</string>
+    <string name="app_name">Αναλυτής Barcode</string>
+    <string name="close_dialog_label">Κλείσε</string>
+    <string name="yes_label">Ναι</string>
+    <string name="no_label">Όχι</string>
+    <string name="go_to_dialog_label">Μπές στη σελίδα</string>
+    <string name="error">Λάθος</string>
+    <string name="image_view_description_flag">Σημαία</string>
+    <string name="image_view_description_logo">Λογότυπο</string>
+    <string name="image_view_description_type_icon">Τύπος</string>
+    <string name="image_view_description_bar_code">Μπαρ κοουντ</string>
+    <string name="image_view_description_icon">Εικονίδιο</string>
+    <string name="image_view_description_image">Εικόνα</string>
+    <string name="slider_description_zoom">Μεγένθυση</string>
+    <string name="camera_permission_denied">Έχετε αρνηθεί την πρόσβαση στην κάμερα.\nΠρέπει να την εξουσιοδοτήσετε για να σαρώσετε ενα barcode.</string>
+</resources>
