@@ -707,7 +707,7 @@
     <string name="custom_search_urls">自訂搜尋網址</string>
     <string name="examples">例子：</string>
     <string name="error_empty_fields">輸入欄位不得為空白。</string>
-    <string name="preferences_display_barcode_image_results_view">在結果視圖中顯示條碼圖片</string>
+    <string name="preferences_display_barcode_image_results_view">在結果檢視中顯示條碼圖片</string>
     <string name="barcode_search_error_no_compatible_application_found">找不到相容的應用程式</string>
     <string name="action_share_vcf_file">分享為 VCF</string>
     <string name="custom_search_urls_add_url">新增網址</string>
