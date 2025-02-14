@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="action_assign_a_name">Dodijelite ime</string>
-    <string name="apply">Primjenite</string>
+    <string name="apply">Primijenite</string>
     <string name="action_wifi_connection_title_label">Wi-Fi veza</string>
     <string name="action_wifi_connection_from_wifi_settings">Kopirajte zaporku i otiđite na Wi-Fi postavke</string>
     <string name="action_wifi_connection_error_wifi_not_activated">Morate aktivirati Wi-Fi na vašem uređaju!</string>
