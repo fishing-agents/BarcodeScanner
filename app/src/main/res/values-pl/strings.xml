@@ -512,7 +512,7 @@
     <string name="preferences_scan_title">Skanowanie</string>
     <string name="preferences_switch_scan_use_camera_x_api_label">Użyj API CameraX</string>
     <string name="preferences_switch_scan_vibrate_label">Wibracja, gdy wykonasz skan</string>
-    <string name="preferences_switch_scan_bip_label">Dźwiek, gdy wykonasz skan</string>
+    <string name="preferences_switch_scan_bip_label">Dźwięk, gdy wykonasz skan</string>
     <string name="preferences_switch_scan_screen_rotation_label">Wyłącz automatyczne obracanie podczas skanowania</string>
     <string name="preferences_switch_scan_barcode_copied_label">Skopiuj zeskanowane kody do schowka</string>
     <string name="preferences_switch_scan_add_barcode_to_the_history_label">Dodaj zeskanowane kody do historii</string>
