@@ -1,0 +1,7 @@
+1.25.1
+
+Повний журнал змін тут: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+— Оновлені переклади (Weblate).
+— Оновлена версія та залежності Kotlin.
+— Деякі адаптації в коді.
