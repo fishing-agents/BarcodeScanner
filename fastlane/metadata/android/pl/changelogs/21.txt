@@ -1,0 +1,9 @@
+1.9.0
+
+- Nowa ikona + animowana ikona na ekranie powitalnym.
+- Dodano animacje przejścia między widokami w generowaniu kodów kreskowych.
+- Dodano animację ikon w BottomNavigationView.
+- Ulepszony kod i style. Zastąpiono komponenty Spinnera MaterialAutoCompleteTextView.
+- Usunięcie czcionek Roboto. Teraz aplikacja używa czcionki systemowej.
+- Dodanie funkcji systemowych.
+- Zaktualizowano tłumaczenie rosyjskie (dzięki s s).

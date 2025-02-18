@@ -1,0 +1,1 @@
+- Naprawiono skanowanie z obrazu podczas udostępniania obrazu.

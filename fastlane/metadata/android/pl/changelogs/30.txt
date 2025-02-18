@@ -1,0 +1,7 @@
+1.14.0
+
+- Dodano polskie tłumaczenie (dzięki phyrz91).
+- Naprawiono awarię w systemie Android 7.
+- Dodano parametr do ustawienia domyślnej wartości zoomu aparatu.
+- Dodano analizę kodu QR UPI.
+- Dodano historię tworzenia kodu QR EPC.

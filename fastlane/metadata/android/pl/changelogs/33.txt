@@ -1,0 +1,15 @@
+1.16.0
+
+Tłumaczenie (za pomocą Weblate):
+- Dodano tłumaczenie tureckie (dzięki abfreeman).
+- Dodano norweski bokmål (niekompletne) (dzięki Allan Nordhøy).
+- Zaktualizowano tłumaczenie hiszpańskie (dzięki J. Lavoie i gallegonovato).
+- Zaktualizowano tłumaczenie chińskie tradycyjne (dzięki plum7x).
+- Zaktualizowano tłumaczenie niemieckie (dzięki J. Lavoie).
+- Zaktualizowano tłumaczenie francuskie (dzięki J. Lavoie).
+
+Nowe funkcje:
+- Dodano czarny motyw.
+- Dodano eksport JPG i SVG dla obrazu kodu kreskowego.
+- Kilka ulepszeń kodu.
+- Naprawiono kilka błędów.

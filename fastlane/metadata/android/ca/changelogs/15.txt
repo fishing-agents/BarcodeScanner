@@ -1,0 +1,4 @@
+- Correcció de l'error "java.lang.NumberFormatException: String buit" quan cerqueu a OpenFoodFacts.
+- Correcció de valors incorrectes a la taula nutricional de "per ració".
+- Algunes millores.
+- Actualització de dependències.

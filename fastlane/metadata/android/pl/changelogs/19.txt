@@ -1,0 +1,5 @@
+1.8.0
+
+- Implementacja API CameraX.
+- Ulepszone widoki w trybie poziomym.
+- Kilka ulepszeń w tłumaczeniu rosyjskim (dzięki s s).

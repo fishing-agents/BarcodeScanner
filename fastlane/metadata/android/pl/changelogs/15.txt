@@ -1,0 +1,4 @@
+- Naprawiono błąd „java.lang.NumberFormatException: pusty ciąg” podczas wyszukiwania w OpenFoodFacts.
+- Poprawiono nieprawidłowe wartości w tabeli wartości odżywczych dla „na porcję”.
+- Kilka ulepszeń.
+- Aktualizacja zależności.

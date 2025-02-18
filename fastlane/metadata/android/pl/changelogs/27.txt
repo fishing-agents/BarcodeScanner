@@ -1,0 +1,10 @@
+1.13.0
+
+- Dodaj tekst na dole obrazu kodu kreskowego.
+- Dodano ustawienie wyłączające historię.
+- Dodano generowanie kodu QR z identyfikatora zainstalowanej aplikacji.
+- Ulepszono usuwanie elementów z historii w akcjach.
+- Dodano przycisk „dodaj do historii” w akcjach, jeśli element nie jest obecny w historii.
+- Naprawiono wykrywanie jasnego kodu kreskowego na ciemnym tle za pomocą obrazu.
+- Dodano generowanie kodu QR z lokalizacji.
+- Dodano długie naciśnięcie tekstów analizy kodu kreskowego.

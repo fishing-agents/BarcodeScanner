@@ -1,0 +1,2 @@
+- Ulepszenie kodu.
+- Naprawiono problem z kamerą, która czasami nie wyłączała się podczas skanowania z obrazu.

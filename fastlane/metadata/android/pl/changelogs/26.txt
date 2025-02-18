@@ -1,0 +1,9 @@
+1.12.0
+
+- Dodano tradycyjne chińskie tłumaczenie (przez plum7x).
+- Aktualizacja Kotlin (1.8.0). Aktualizacja zależności.
+- Dodano usuwanie obrazów generowanych przez widok przycinania podczas skanowania z obrazu.
+- Dodano wybór i usuwanie kilku elementów z historii.
+- Dodano usuwanie elementu z widoku wyników.
+- Ulepszono kolory i style.
+- Ulepszono kod.

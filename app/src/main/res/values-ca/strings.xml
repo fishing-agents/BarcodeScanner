@@ -418,7 +418,7 @@
     <string name="barcode_upc_e_description_label">El codi UPC-E (Universal Product Code) és un codi de barres condensat del codi UPC-As\'utilitza principalment als EUA i Canadà per identificar els productes venuts als comerços. S\'utilitza en envasos massa petits per posar-hi el codi UPC-A.</string>
     <string name="barcode_ean_13_description_label">El codi EAN-13 (Numeració d\'articles europeus 13) és un codi de barres moltutilitzat per identificar els productes venuts a les botigues a Europa i arreudel món. Està format per 13 dígits.</string>
     <string name="barcode_ean_8_description_label">El codi EAN-8 (numeració europea d\'articles 8) és un codi de barres EAN-13 condensat utilitzat per identificar els productes venuts a les botigues d\'Europai a tot arreu del món. S\'utilitza en embalatges massa petits per posar-hi elcodi EAN-13.</string>
-    <string name="snack_bar_message_save_bitmap_error">La imatge no s\'ha desat…\nPotser la memòria és insuficient?</string>
+    <string name="snack_bar_message_save_bitmap_error">La imatge no s\'ha desat…·\nPotser la memòria és insuficient?</string>
     <string name="snack_bar_message_share_bitmap_error">S\'ha produït un error al configurar la compartició.</string>
     <string name="barcode_search_error_no_compatible_application_found">No s\'ha trobat cap aplicació compatible</string>
     <string name="action_title_dialog_label">Què voleu fer?</string>
@@ -659,4 +659,10 @@
     <string name="country_cm">Camerun</string>
     <string name="matrix_contact_job_title_label">Títol del treball</string>
     <string name="app_name">Escàner de codis de barres</string>
+    <string name="action_assign_a_name">Assignar un nom</string>
+    <string name="preferences_switch_history_save_duplicates_summary_off">No s\'afegiran els duplicats a l\'historial</string>
+    <string name="preferences_switch_history_save_duplicates_label">Guardar duplicats</string>
+    <string name="preferences_switch_history_save_duplicates_summary_on">El duplicats s\'afegiran a l\'historial</string>
+    <string name="apply">Aplicar</string>
+    <string name="snack_bar_message_items_deleted">Elements suprimits de l\'historial.</string>
 </resources>

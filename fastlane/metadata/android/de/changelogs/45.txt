@@ -1,0 +1,10 @@
+1.25.0
+
+Vollständige Liste der Veränderungen hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Vollständige Tamil-Übersetzung hinzugefügt (Danke தமிழ்நேரம்).
+- Vollständige Litauisch-Übersetzung hinzugefügt (Danke Rokas Bo).
+- Übersetzungen (via Weblate) auf den neusten Stand gebracht .
+- Unterstützung für "com.google.zxing.client.android.ENCODE"-Intent hinzugefügt, um Barcodes von anderen Apps zu enkodieren und zu generieren.
+- Die Funktion hinzugefügt, mit der einem Barcode ein Name zugeordnet werden kann.
+- Dependencies auf den neusten Stand gebracht.

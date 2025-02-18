@@ -1,0 +1,7 @@
+- Aktualizacja wersji Kotlin (1.7.20).
+- Kilka ulepszeń w ciągach (angielski).
+- Dodano przycisk przełączający w ustawieniach, aby automatycznie kopiować zawartość zeskanowanego kodu kreskowego do schowka.
+- Ulepszenie kodu.
+- Dodano możliwość ręcznego przeszukiwania zdalnych interfejsów API.
+- Dodano obsługę generowania kodu QR EPC.
+- Dodano przycisk wyszukiwania na pasku narzędzi dla kodów QR, które zawierają adres URL.

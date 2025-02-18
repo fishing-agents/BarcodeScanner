@@ -1,0 +1,10 @@
+1.13.0
+
+- Afegiu text a la part inferior d'imatge codi de barres.
+- Afegida configuració per desactivar l'historial.
+- Afegida generació de codi QR a partir d'ID d'aplicació instal·lada.
+- Millorada la supressió d'elements de l'historial a les accions.
+- Afegit botó "afegir a l'historial" a les accions, si l'element no està present a l'historial.
+- Corregida detecció de codi de barres de color clar sobre fons fosc mitjançant imatge.
+- Afegida generació de codi Qr des de ubicació.
+- Afegir una pulsació llarga sobre els textos de l'anàlisi de codi de barres.

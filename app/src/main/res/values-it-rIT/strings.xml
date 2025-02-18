@@ -421,7 +421,7 @@
     <string name="preferences_switch_scan_screen_rotation_label">Disabilita la rotazione automatica durante la scansione</string>
     <string name="preferences_switch_scan_barcode_copied_label">Copia codici a barre scansionati negli appunti</string>
     <string name="preferences_switch_scan_add_barcode_to_the_history_label">Aggiungi codici a barre scansionati alla cronologia</string>
-    <string name="preferences_seek_bar_camera_default_zoom_value_label">Valore di zoom della fotocamera predefinito</string>
+    <string name="preferences_seek_bar_camera_default_zoom_value_label">Valore predefinito dello zoom della fotocamera</string>
     <string name="preferences_barcode_generation_title">Creazione codice a barre</string>
     <string name="preferences_switch_barcode_generation_add_barcode_to_the_history_label">Aggiungi codici a barre creati alla cronologia</string>
     <string name="preferences_search_title">Ricerca</string>
@@ -436,16 +436,16 @@
     <string name="permission_internet_label">Internet</string>
     <string name="permission_internet_description_label">Richiesto per recuperare informazioni tramite API.</string>
     <string name="permission_contact_label">Contatti</string>
-    <string name="permission_contact_description_label">Richiesto per importare un contatto per creare un Codice QR da questo.</string>
+    <string name="permission_contact_description_label">Richiesto per importare un contatto con cui creare un Codice QR.</string>
     <string name="permission_location_label">Posizione</string>
     <string name="permission_location_description_label">Richiesto per creare un Codice QR dalla posizione del dispositivo.</string>
     <string name="permission_wifi_label">Wi-Fi</string>
-    <string name="permission_wifi_description_label">Richiesto per connettersi al Wi-Fi quando si scansiona un Codice QR contenente l\'accesso Wi-Fi.</string>
+    <string name="permission_wifi_description_label">Richiesto per connettersi alla Wi-Fi scansionando un Codice QR contenente i dati di accesso.</string>
     <string name="permission_vibrate_label">Vibrazione</string>
     <string name="permission_vibrate_description_label">Usato per vibrare al momento della scansione.</string>
     <string name="permission_query_all_packages_label">Invio di query per tutti i pacchetti</string>
     <string name="permission_query_all_packages_description_label">Utile per generare un Codice QR code da un applicazione installata.</string>
-    <string name="bdd_open_food_facts_description_label">Open Food Facts è un database libero riguardante il cibo ed elenca gli ingredienti, allergeni, valori nutrizionali, e tutte le informazioni presenti sulle etichette dei prodotti.</string>
+    <string name="bdd_open_food_facts_description_label">Open Food Facts è un database libero inerente il cibo ed elenca ingredienti, allergeni, valori nutrizionali e tutte le informazioni presenti sulle etichette dei prodotti.</string>
     <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts è un database libero riguardante alimenti per animali.</string>
     <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts è un database libero riguardate prodotti cosmetici.</string>
     <string name="bdd_music_brainz_description_label">MusicBrainz è un enciclopedia musicale libera che colleziona metadati di musica e li rende disponibili al pubblico.</string>
@@ -662,4 +662,6 @@
     <string name="preferences_display_barcode_image_results_view">Visualizza l\'immagine del codice a barre nella vista dei risultati</string>
     <string name="shortcuts">Scorciatoie</string>
     <string name="shortcuts_info">Disponi le scorciatoie nell\'ordine che preferisci.</string>
+    <string name="action_assign_a_name">Assegna un nome</string>
+    <string name="apply">Applica</string>
 </resources>

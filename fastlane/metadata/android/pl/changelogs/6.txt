@@ -1,0 +1,2 @@
+- Dodano możliwość zmiany języka dla Androida 13.
+- Dodano dostęp do kodu źródłowego w ustawieniach.

@@ -1,0 +1,26 @@
+Barcode Scanner és una aplicació gratuïta i de codi obert que us permet llegir i generar codis de barres. Pot recollir informació sobre productes alimentaris, llibres de cosmètics i música (CD, vinils...).
+
+L'aplicació gestiona diferents formats de codis de barres:
+• Codis de barres de 2 dimensions: Codi QR, Data Matrix, PDF 417, AZTEC
+• Codis de barres d'1 dimensió: EAN 13, EAN 8, UPC A, UPC E, Codi 128, Codi 93, Codi 39, Codabar, ITF
+
+Recolliu informació sobre un producte durant una exploració:
+• Productes alimentaris amb Open Food Facts
+• Cosmètics amb Open Beauty Facts
+• Productes alimentaris per a mascotes amb Open Pet Food Facts
+• Llibres amb biblioteca oberta
+• CD de música, vinils... amb MusicBrainz
+
+Característiques de l'aplicació:
+• Simplement apunteu la càmera del vostre telèfon a un codi de barres i rebeu informació instantània al respecte. També podeu escanejar codis de barres a través d'una imatge al vostre telèfon.
+• Amb un simple escaneig, llegiu targetes de visita, afegiu nous contactes, afegiu nous esdeveniments a la vostra agenda, obriu l'URL o fins i tot connecteu-vos a la Wi-Fi.
+• Escaneja els codis de barres dels productes alimentaris per rebre informació sobre la seva composició gràcies a les bases de dades Open Food Facts i Open Beauty Facts.
+• Cerca informació sobre el producte que escaneges, amb una recerca ràpida en diferents webs com Amazon o Fnac.
+• Feu un seguiment de tots els vostres codis de barres escanejats amb l'eina d'historial.
+• Genera els teus propis codis de barres
+• Personalitza la interfície amb diferents colors, amb un tema clar o fosc. La interfície està construïda amb Material 3 i és compatible amb Material You, la qual cosa us permet ajustar els colors segons el vostre fons de pantalla per a dispositius amb Android 12 o posterior.
+• Els textos es tradueixen completament a l'anglès, àrab, espanyol, francès, portuguès, rus, alemany, turc, italià, ucraïnès, polonès, holandès, romanès i xinès (simplificat i tradicional).
+
+Aquesta aplicació respecta la teva privadesa. No conté cap rastrejador i no recull cap dada.
+
+El codi font està disponible aquí: https://gitlab.com/Atharok/BarcodeScanner

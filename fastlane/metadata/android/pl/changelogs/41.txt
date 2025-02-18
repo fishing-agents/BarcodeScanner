@@ -1,0 +1,12 @@
+1.23.0
+
+Pełny rejestr zmian tutaj: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Dodano tłumaczenie na język kataloński (dzięki Paco Rivière).
+- Nazwa aplikacji przetłumaczona na niektóre języki.
+- Dodano przycisk przełączania, aby ignorować duplikaty wpisów w historii.
+- Dodano przycisk cofania do paska przekąsek podczas usuwania elementu.
+- Usunięto zależność implementującą stare API aparatu, zachowując tylko implementację CameraX.
+- Naprawiono awarie, które mogą wystąpić podczas importowania VCard.
+- Zaktualizowano zależności.
+- Kilka drobnych ulepszeń.

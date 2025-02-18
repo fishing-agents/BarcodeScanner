@@ -1,0 +1,6 @@
+- S'ha afegit traducció al castellà (gràcies a zgll2022).
+- S'ha afegit Brave Search com a motor de cerca.
+- Canvia la icona Eco-Score.
+- S'ha canviat la icona de l'acció "Obrir amb un navegador".
+- Millora del tema lleuger.
+- Millores del codi.

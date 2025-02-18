@@ -1,0 +1,4 @@
+- Modyfikacja biblioteki umożliwiającej skanowanie kodów kreskowych.
+- Aktualizacje: wersji Kotlin (1.7.10), SDK (API 33) i zależności.
+- Poprawa kodu.
+- Dodanie monochromatycznej ikony dla Androida 13.
