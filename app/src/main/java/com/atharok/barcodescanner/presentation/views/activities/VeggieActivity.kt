@@ -24,6 +24,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.atharok.barcodescanner.R
 import com.atharok.barcodescanner.common.extensions.serializable
 import com.atharok.barcodescanner.common.utils.BARCODE_ANALYSIS_KEY
 import com.atharok.barcodescanner.databinding.ActivityVeggieBinding
@@ -58,7 +59,10 @@ class VeggieActivity : BaseActivity() {
 
     private fun configureToolbar() {
         setSupportActionBar(viewBinding.activityVeggieActivityLayout.toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)// On affiche l'icone "retour"
+        supportActionBar?.let {
+            it.setDisplayHomeAsUpEnabled(true)// On affiche l'icone "retour"
+            it.setTitle(R.string.ingredients_analysis_label)
+        }
     }
 
     private fun configureRecyclerView(veggieIngredientList: List<VeggieIngredientAnalysis>) {
