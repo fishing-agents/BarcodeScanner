@@ -1,0 +1,7 @@
+1.25.1
+
+Full changelog here: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Updated translations (Weblate).
+- Updated Kotlin version and dependencies.
+- Some adaptations in the code.
