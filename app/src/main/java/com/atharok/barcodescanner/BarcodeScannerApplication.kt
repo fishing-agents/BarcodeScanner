@@ -21,14 +21,16 @@
 package com.atharok.barcodescanner
 
 import android.app.Application
-import coil.ImageLoader
-import coil.ImageLoaderFactory
-import coil.decode.SvgDecoder
+import coil3.ImageLoader
+import coil3.PlatformContext
+import coil3.SingletonImageLoader
+import coil3.request.crossfade
+import coil3.svg.SvgDecoder
 import com.atharok.barcodescanner.common.injections.appModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
-class BarcodeScannerApplication: Application(), ImageLoaderFactory {
+class BarcodeScannerApplication: Application(), SingletonImageLoader.Factory {
 
     override fun onCreate() {
         super.onCreate()
@@ -39,8 +41,8 @@ class BarcodeScannerApplication: Application(), ImageLoaderFactory {
         }
     }
 
-    override fun newImageLoader(): ImageLoader {
-        return ImageLoader.Builder(this)
+    override fun newImageLoader(context: PlatformContext): ImageLoader {
+        return ImageLoader.Builder(context)
             .crossfade(true)
             .components {
                 add(SvgDecoder.Factory())

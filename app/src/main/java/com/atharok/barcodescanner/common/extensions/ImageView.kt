@@ -25,7 +25,7 @@ import android.view.View
 import android.widget.ImageView
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorInt
-import coil.load
+import coil3.load
 
 fun ImageView.setImageFromWeb(url: String?, layout: View? = null){
     if(url.isNullOrBlank()){

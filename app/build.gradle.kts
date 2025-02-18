@@ -70,6 +70,7 @@ dependencies {
     implementation(libs.squareup.retrofit.converter.gson)
     implementation(libs.gson)
     implementation(libs.coil)
+    implementation(libs.coil.network.okhttp)
     implementation(libs.coil.svg)
     implementation(libs.insert.koin.android)
     implementation(libs.zxing.core)
