@@ -2,6 +2,7 @@
 
 Liste complète des modifications ici: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
+- Ajout de la gestion des marges autour des images de codes-barres.
 - Mise à jour des traductions (Weblate).
 - Mise à jour de la version de Kotlin et des dépendances.
 - Quelques adaptations apportées au code.

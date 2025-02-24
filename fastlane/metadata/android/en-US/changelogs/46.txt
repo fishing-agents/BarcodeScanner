@@ -2,6 +2,7 @@
 
 Full changelog here: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
+- Added support for margins around barcode images.
 - Updated translations (Weblate).
 - Updated Kotlin version and dependencies.
 - Some adaptations in the code.
