@@ -76,9 +76,12 @@ class BarcodeBitmapGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImage
         matrix: BitMatrix,
         properties: BarcodeImageGeneratorProperties
     ) {
-        val unitW: Float = properties.widthF / matrix.width.toFloat()
-        val unitH: Float = (properties.heightF-properties.contentsHeight) / matrix.height.toFloat()
+        val margins = properties.marginsPx
+
+        val unitW: Float = (properties.widthF - 2 * margins) / matrix.width.toFloat()
+        val unitH: Float = (properties.heightF - properties.contentsHeight - 2 * margins) / matrix.height.toFloat()
         val cornerRadius = unitW / 2f * properties.cornerRadius
+
         paint.apply {
             this.color = properties.frontColor
             this.isAntiAlias = cornerRadius != 0f
@@ -86,9 +89,9 @@ class BarcodeBitmapGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImage
 
         for (x in 0 until matrix.width) {
             for (y in 0 until matrix.height) {
-                if(matrix[x, y]) {
-                    val left = x.toFloat() * unitW
-                    val top = y.toFloat() * unitH
+                if (matrix[x, y]) {
+                    val left = x.toFloat() * unitW + margins
+                    val top = y.toFloat() * unitH + margins
                     val right = left + unitW
                     val bottom = top + unitH
 
@@ -120,8 +123,8 @@ class BarcodeBitmapGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImage
 
         canvas.drawText(
             properties.contents,
-            properties.width/2f,
-            properties.height - (properties.contentsHeight/10f),
+            properties.width / 2f,
+            properties.height - properties.marginsPx,
             paint.apply { color = properties.frontColor }
         )
 

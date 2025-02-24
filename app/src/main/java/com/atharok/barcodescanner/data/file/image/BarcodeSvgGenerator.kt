@@ -62,8 +62,10 @@ class BarcodeSvgGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImageGen
         builder.append("<rect x=\"0\" y=\"0\" width=\"${properties.width}\" height=\"${properties.height}\" style=\"fill:$backgroundFillColor;fill-opacity:$backgroundAlpha\"/>\n")
 
         // ---- Foreground ----
-        val bitWidth: Float = properties.widthF / matrix.width.toFloat()
-        val bitHeight: Float = (properties.heightF-properties.contentsHeight) / matrix.height.toFloat()
+        val margins = properties.marginsPx
+
+        val bitWidth: Float = (properties.widthF - 2 * margins) / matrix.width.toFloat()
+        val bitHeight: Float = (properties.heightF - properties.contentsHeight - 2 * margins) / matrix.height.toFloat()
         val cornerRadius = bitWidth / 2f * properties.cornerRadius
         val foregroundFillColor = properties.frontColor.toColorHex()
         val foregroundAlpha: Float = properties.frontColor.toColorAlpha()
@@ -71,8 +73,8 @@ class BarcodeSvgGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImageGen
         for (y in 0 until matrix.height) {
             for (x in 0 until matrix.width) {
                 if (matrix.get(x, y)) {
-                    val posX = x * bitWidth
-                    val posY = y * bitHeight
+                    val posX = x * bitWidth + margins
+                    val posY = y * bitHeight + margins
                     builder.append("<rect x=\"$posX\" y=\"$posY\" width=\"$bitWidth\" height=\"$bitHeight\" rx=\"$cornerRadius\" ry=\"$cornerRadius\" style=\"fill:$foregroundFillColor;fill-opacity:$foregroundAlpha\"/>\n")
                 }
             }
@@ -83,7 +85,7 @@ class BarcodeSvgGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImageGen
         val content = properties.contents
         val textSize = properties.contentsHeight
         val posX = properties.width / 2f
-        val posY = properties.height - (properties.contentsHeight/10f)
+        val posY = properties.height - properties.marginsPx
         val fillColor = properties.frontColor.toColorHex()
         val fillAlpha: Float = properties.frontColor.toColorAlpha()
 

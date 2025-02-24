@@ -63,19 +63,20 @@ class BarcodeImageEditorFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val imageGeneratorSettings = arguments?.serializable(
+        val imageGeneratorProperties = arguments?.serializable(
             BARCODE_IMAGE_GENERATOR_PROPERTIES_KEY, BarcodeImageGeneratorProperties::class.java
         )
 
         configureEditorView(
-            contents = imageGeneratorSettings?.contents ?: "",
-            format = imageGeneratorSettings?.format ?: BarcodeFormat.QR_CODE,
-            qrCodeErrorCorrectionLevel = imageGeneratorSettings?.qrCodeErrorCorrectionLevel ?: QrCodeErrorCorrectionLevel.NONE,
-            width = imageGeneratorSettings?.width ?: BARCODE_IMAGE_DEFAULT_SIZE,
-            height = imageGeneratorSettings?.height ?: BARCODE_IMAGE_DEFAULT_SIZE,
-            frontColor = imageGeneratorSettings?.frontColor ?: Color.BLACK,
-            backgroundColor = imageGeneratorSettings?.backgroundColor ?: Color.WHITE,
-            cornerRadius = imageGeneratorSettings?.cornerRadius ?: 0.0f
+            contents = imageGeneratorProperties?.contents ?: "",
+            format = imageGeneratorProperties?.format ?: BarcodeFormat.QR_CODE,
+            qrCodeErrorCorrectionLevel = imageGeneratorProperties?.qrCodeErrorCorrectionLevel ?: QrCodeErrorCorrectionLevel.NONE,
+            marginsPercent = imageGeneratorProperties?.marginsPercent ?: 0f,
+            width = imageGeneratorProperties?.width ?: BARCODE_IMAGE_DEFAULT_SIZE,
+            height = imageGeneratorProperties?.height ?: BARCODE_IMAGE_DEFAULT_SIZE,
+            frontColor = imageGeneratorProperties?.frontColor ?: Color.BLACK,
+            backgroundColor = imageGeneratorProperties?.backgroundColor ?: Color.WHITE,
+            cornerRadius = imageGeneratorProperties?.cornerRadius ?: 0.0f
         )
     }
 
@@ -83,6 +84,7 @@ class BarcodeImageEditorFragment : BaseFragment() {
         contents: String,
         format: BarcodeFormat,
         qrCodeErrorCorrectionLevel: QrCodeErrorCorrectionLevel,
+        marginsPercent: Float,
         width: Int,
         height: Int,
         @ColorInt frontColor: Int = Color.BLACK,
@@ -92,7 +94,7 @@ class BarcodeImageEditorFragment : BaseFragment() {
         val infoFragment = BarcodeInfoFragment.newInstance(contents, format, qrCodeErrorCorrectionLevel)
         val colorsFragment = BarcodeImageEditorColorsFragment.newInstance(frontColor, backgroundColor)
         val shapesFragment = BarcodeImageEditorShapesFragment.newInstance(cornerRadius)
-        val dimensionsFragment = BarcodeImageEditorDimensionsFragment.newInstance(width, height)
+        val dimensionsFragment = BarcodeImageEditorDimensionsFragment.newInstance(width, height, marginsPercent)
         val adapter = FragmentPagerAdapter(childFragmentManager, lifecycle, infoFragment, colorsFragment, shapesFragment, dimensionsFragment)
 
         val info = TabIcon(requireContext(), R.drawable.outline_info_24, R.string.information_label)
@@ -108,7 +110,7 @@ class BarcodeImageEditorFragment : BaseFragment() {
         val viewPager = viewBinding.fragmentBarcodeImageEditorViewPager
         val tabLayout = viewBinding.fragmentBarcodeImageEditorTabLayout
 
-        viewPager.adapter=adapter
+        viewPager.adapter = adapter
         viewPager.offscreenPageLimit = tabIcon.size-1
         viewPager.registerOnPageChangeCallback(object : OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {

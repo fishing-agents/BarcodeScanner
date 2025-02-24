@@ -27,6 +27,7 @@ import android.view.ViewGroup
 import com.atharok.barcodescanner.common.extensions.fixAnimateLayoutChangesInNestedScroll
 import com.atharok.barcodescanner.common.utils.BARCODE_IMAGE_CORNER_RADIUS_KEY
 import com.atharok.barcodescanner.databinding.FragmentBarcodeImageEditorShapesBinding
+import kotlin.math.roundToInt
 
 class BarcodeImageEditorShapesFragment : AbstractBarcodeImageEditorFragment() {
 
@@ -50,6 +51,7 @@ class BarcodeImageEditorShapesFragment : AbstractBarcodeImageEditorFragment() {
 
         viewBinding.fragmentBarcodeImageEditorShapesCornerRadiusSlider.apply {
             value = arguments?.getFloat(BARCODE_IMAGE_CORNER_RADIUS_KEY, 0f) ?: 0f
+            setLabelFormatter { value -> "${(value * 100f).roundToInt()}%" }
             addOnChangeListener { _, value, _ ->
                 onBarcodeDetailsActivity { activity ->
                     activity.regenerateBitmap(cornerRadius = value)
