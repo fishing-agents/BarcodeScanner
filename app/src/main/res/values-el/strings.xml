@@ -119,4 +119,7 @@
     <string name="search_engine_open_library_url">https://openlibrary.org/</string>
     <string name="search_engine_music_brainz_url">https://musicbrainz.org/</string>
     <string name="matrix_body_label">Μήνυμα</string>
+    <string name="qr_code_error_correction_level_name_medium">Μεσαίο (~15%)</string>
+    <string name="qr_code_error_correction_level_name_quartile">Τεταρτημόριο (~25%)</string>
+    <string name="qr_code_error_correction_level_name_high">Υψηλό (~30%)</string>
 </resources>
