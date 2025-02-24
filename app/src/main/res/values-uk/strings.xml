@@ -668,4 +668,5 @@
     <string name="preferences_switch_history_save_duplicates_summary_on">Дублікати будуть потрапляти в історію</string>
     <string name="action_assign_a_name">Присвоїти назву</string>
     <string name="apply">Застосувати</string>
+    <string name="margins">Поля</string>
 </resources>
