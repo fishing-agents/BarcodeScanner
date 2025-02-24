@@ -727,4 +727,5 @@
     <string name="matrix_contact_job_title_label">Должность</string>
     <string name="apply">Применить</string>
     <string name="action_assign_a_name">Присвоить название</string>
+    <string name="margins">Поля</string>
 </resources>
