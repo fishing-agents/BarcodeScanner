@@ -668,4 +668,5 @@
     <string name="country_cz">Чешка Република</string>
     <string name="action_assign_a_name">Додели име</string>
     <string name="apply">Примени</string>
+    <string name="margins">Маргине</string>
 </resources>
