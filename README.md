@@ -46,14 +46,14 @@ Get information about a product during a scan:
 
 ## Screenshots
 
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/01_qr_light.png" width="192" />
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/02_food_product_light.png" width="192" />
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/03_history_light.png" width="192" />
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/04_create_light.png" width="192" />
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/05_qr_dark.png" width="192" />
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/06_food_product_dark.png" width="192" />
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/07_history_dark.png" width="192" />
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/08_create_dark.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/01.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/02.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/03.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/04.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/05.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/06.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/07.png" width="192" />
+<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/08.png" width="192" />
 
 ## Donate
 
