@@ -63,9 +63,9 @@ abstract class BaseActivity: AppCompatActivity() {
                 }
             )
         )
+
         ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
-                    or WindowInsetsCompat.Type.displayCutout())
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
 
             val appBarLayout: AppBarLayout? = findViewById(R.id.app_bar_layout)
             appBarLayout?.updatePadding(
@@ -78,9 +78,9 @@ abstract class BaseActivity: AppCompatActivity() {
             )
 
             v.updatePadding(
-                left = insets.left,
+                left = windowInsets.displayCutout?.safeInsetLeft ?: insets.left,
                 top = if(appBarLayout == null) insets.top else v.paddingTop,
-                right = insets.right,
+                right = windowInsets.displayCutout?.safeInsetRight ?: insets.right,
                 bottom = if(bottomNavigationView == null) insets.bottom else v.paddingBottom
             )
 
