@@ -727,4 +727,5 @@
     <string name="action_share_vcf_file">Udostępnij jako VCF</string>
     <string name="action_modify_barcode">Modyfikuj kod kreskowy</string>
     <string name="margins">Marginesy</string>
+    <string name="barcode_not_found">Nie znaleziono kodu</string>
 </resources>
