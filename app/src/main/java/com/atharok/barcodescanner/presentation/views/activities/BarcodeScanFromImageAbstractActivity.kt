@@ -26,6 +26,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import com.atharok.barcodescanner.R
 import com.atharok.barcodescanner.common.extensions.getColorStateListFromAttrRes
@@ -86,7 +87,7 @@ abstract class BarcodeScanFromImageAbstractActivity: BaseActivity() {
         return super.onPrepareOptionsMenu(menu)
     }
 
-    private fun setMenuVisibility(visible: Boolean){
+    private fun setMenuVisibility(visible: Boolean) {
         if(menuVisibility!=visible) {
             menuVisibility=visible
             invalidateOptionsMenu()
@@ -98,41 +99,54 @@ abstract class BarcodeScanFromImageAbstractActivity: BaseActivity() {
         mProgressBar.indeterminateTintList = getColorStateListFromAttrRes(R.attr.colorPrimary)
     }
 
-    // ---- Configure Crop ----
+    // ---- Configure CropImageView ----
 
     /**
-     * Configure tous les éléments utiles à la détection de code-barres dans l'image.
-     * Le composant CropImageView permet de rogner l'image. Il permet donc d'analyser une partie
-     * précise de l'image.
+     * Configures all the elements necessary for barcode detection in the image.
+     * The CropImageView component allows cropping the image, making it easier to analyze a specific area of it.
      */
-    protected fun configureCropManagement(uri: Uri){
+    protected fun configureCropManagement(uri: Uri) {
 
-        // Insère l'image dans l'ImageCropView
-        viewBinding.activityBarcodeScanFromImageCropImageView.setImageUriAsync(uri)
+        val cropImageView = viewBinding.activityBarcodeScanFromImageCropImageView
+        val mProgressBar = cropImageView.findViewById<ProgressBar>(R.id.CropProgressBar)
+
+        // Insert the image into the CropImageView.
+        cropImageView.setImageUriAsync(uri)
 
         var job: Job? = null
 
-        // S'active à chaque appel de la méthode "imageCropView.getCroppedImageAsync()"
-        viewBinding.activityBarcodeScanFromImageCropImageView.setOnCropImageCompleteListener { _, result ->
+        // Executed when the image cropping is finished.
+        cropImageView.setOnCropImageCompleteListener { _, result ->
             val bitmap = result.getBitmap(this)
 
             if(bitmap != null){
                 job?.cancel()
+                setMenuVisibility(false)
+                mProgressBar.visibility = View.VISIBLE
                 job = lifecycleScope.launch(Dispatchers.IO) {
                     zxingResult = barcodeBitmapAnalyser.detectBarcodeFromBitmap(bitmap)
-                    setMenuVisibility(zxingResult != null)
+                    runOnUiThread {
+                        if(zxingResult == null) {
+                            Toast.makeText(this@BarcodeScanFromImageAbstractActivity, R.string.barcode_not_found, Toast.LENGTH_SHORT).show()
+                        } else {
+                            setMenuVisibility(true)
+                        }
+                        mProgressBar.visibility = View.GONE
+                    }
                 }
             }
         }
 
-        // S'active lorsque l'image a fini de se charger
-        viewBinding.activityBarcodeScanFromImageCropImageView.setOnSetImageUriCompleteListener { _, _, _ ->
-            viewBinding.activityBarcodeScanFromImageCropImageView.croppedImageAsync()
+        // Executed when the image has finished loading.
+        cropImageView.setOnSetImageUriCompleteListener { _, _, _ ->
+            cropImageView.croppedImageAsync()
         }
 
-        // S'active lors du déplacement de l'overlay
-        viewBinding.activityBarcodeScanFromImageCropImageView.setOnSetCropOverlayMovedListener {
-            viewBinding.activityBarcodeScanFromImageCropImageView.croppedImageAsync()
+        // Executed when the overlay is moved.
+        cropImageView.setOnSetCropOverlayMovedListener {
+            cropImageView.croppedImageAsync()
+            job?.cancel()
+            setMenuVisibility(false)
         }
     }
 
@@ -144,10 +158,10 @@ abstract class BarcodeScanFromImageAbstractActivity: BaseActivity() {
     }
 
     /**
-     * La librairie android-image-cropper enregistre les crops d'image dans le répertoire de l'application.
-     * Cette method permet donc de supprimer ces fichiers devenus inutiles.
+     * The "android-image-cropper" library saves cropped images in the application's directory.
+     * This method allows deleting these unnecessary files.
      */
-    private fun removeTemporariesFiles(){
+    private fun removeTemporariesFiles() {
         val dir = File(getExternalFilesDir(null), "Pictures")
         deleteRecursive(dir)
         dir.delete()

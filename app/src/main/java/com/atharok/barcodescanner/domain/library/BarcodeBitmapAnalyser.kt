@@ -21,8 +21,8 @@
 package com.atharok.barcodescanner.domain.library
 
 import android.graphics.Bitmap
-import android.util.Log
 import com.google.zxing.BinaryBitmap
+import com.google.zxing.DecodeHintType
 import com.google.zxing.MultiFormatReader
 import com.google.zxing.NotFoundException
 import com.google.zxing.RGBLuminanceSource
@@ -32,28 +32,41 @@ import com.google.zxing.common.HybridBinarizer
 
 
 /**
- * Recherche un code-barres dans une image.
+ * Search for a barcode in an image (Bitmap).
  */
 class BarcodeBitmapAnalyser {
 
-    private val reader = MultiFormatReader()
+    private val reader = MultiFormatReader().apply {
+        setHints(mapOf(DecodeHintType.TRY_HARDER to true))
+    }
 
     fun detectBarcodeFromBitmap(bitmap: Bitmap): Result? {
 
+        var result: Result? = detect(bitmap)
+
+        // If the barcode is not detected, the image is reanalyzed with different scales.
+        // Adjusting the image scale can improve detection in some cases.
+        for(i in 1..3) {
+            if(result != null) {
+                break
+            }
+            val bitmapRescaled = rescaleBitmap(bitmap, i / 4f)
+            result = detect(bitmapRescaled)
+        }
+
+        return result
+    }
+
+    private fun detect(bitmap: Bitmap): Result? {
         val width = bitmap.width
         val height = bitmap.height
         val size = width * height
-
         val bitmapBuffer = IntArray(size)
 
         bitmap.getPixels(bitmapBuffer, 0, width, 0, 0, width, height)
 
         val source = RGBLuminanceSource(width, height, bitmapBuffer)
         val binaryBitmap = BinaryBitmap(HybridBinarizer(source))
-
-        //val hints = hashMapOf<DecodeHintType, Any>()
-        //hints[DecodeHintType.TRY_HARDER] = true
-        //hints[DecodeHintType.PURE_BARCODE] = true
 
         reader.reset()
 
@@ -66,9 +79,15 @@ class BarcodeBitmapAnalyser {
             try {
                 reader.decode(invertedBinaryBitmap)
             } catch (e: ReaderException) {
-                Log.e("BitmapBarcodeAnalyser", "Barcode not found in Bitmap")
                 null
             }
         }
+    }
+
+    private fun rescaleBitmap(bitmap: Bitmap, scale: Float): Bitmap {
+        val width = bitmap.width
+        val height = bitmap.height
+
+        return Bitmap.createScaledBitmap(bitmap, (width * scale).toInt(), (height * scale).toInt(), true)
     }
 }

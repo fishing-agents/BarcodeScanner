@@ -109,6 +109,7 @@
     <string name="scan_from_image_label">Image</string>
     <string name="intent_filter_scan_by_image">Scan image</string>
     <string name="scan_information_label">Aim at barcode to scan</string>
+    <string name="barcode_not_found">Barcode not found</string>
     <!-- BarcodeAnalysisActivity -->
     <string name="barcode_information_search_label">Searching…</string>
     <string name="scan_error_label">Error during scanning!</string>
