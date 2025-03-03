@@ -669,4 +669,5 @@
     <string name="action_assign_a_name">Присвоїти назву</string>
     <string name="apply">Застосувати</string>
     <string name="margins">Поля</string>
+    <string name="barcode_not_found">Штрих-код не знайдено</string>
 </resources>
