@@ -668,4 +668,5 @@
     <string name="apply">Toepassen</string>
     <string name="action_assign_a_name">Naam toewijzen</string>
     <string name="margins">Marges</string>
+    <string name="barcode_not_found">Barcode niet gevonden</string>
 </resources>
