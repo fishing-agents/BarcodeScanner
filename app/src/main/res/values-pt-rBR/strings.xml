@@ -667,4 +667,6 @@
     <string name="preferences_switch_history_save_duplicates_summary_on">As cópias serão adicionadas ao histórico</string>
     <string name="action_assign_a_name">Defina um nome</string>
     <string name="apply">Aplicar</string>
+    <string name="margins">Margens</string>
+    <string name="barcode_not_found">O código de barra não foi encontrado</string>
 </resources>
