@@ -664,4 +664,6 @@
     <string name="shortcuts_info">Disponi le scorciatoie nell\'ordine che preferisci.</string>
     <string name="action_assign_a_name">Assegna un nome</string>
     <string name="apply">Applica</string>
+    <string name="margins">Margini</string>
+    <string name="barcode_not_found">Codice a barre non trovato</string>
 </resources>
