@@ -1,0 +1,8 @@
+1.25.1
+
+Pełny dziennik zmian tutaj: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Dodano obsługę marginesów wokół obrazów kodów kreskowych.
+- Zaktualizowano tłumaczenia (Weblate).
+- Zaktualizowano wersję Kotlin i zależności.
+- Pewne dostosowania w kodzie.
