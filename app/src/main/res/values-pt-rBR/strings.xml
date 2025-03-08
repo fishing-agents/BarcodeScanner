@@ -14,7 +14,7 @@
     <string name="country_vn">Vietnã</string>
     <string name="permission_location_description_label">Necessário para gerar um código QR a partir da posição do dispositivo.</string>
     <string name="barcode_code_93_description_label">Código 93 é um código de barras usado nos setores do exército e automotivo, além de ser usado na Postes Canada para codificar informações de entregas especiais.</string>
-    <string name="permission_vibrate_label">Vibrar</string>
+    <string name="permission_vibrate_label">Vibração</string>
     <string name="bdd_open_food_facts_description_label">Open Food Facts é um banco de dados gratuito que lista ingredientes, alergênicos, composição nutricional e todas as informações presentes nos rótulos dos produtos.</string>
     <string name="country_de">Alemanha</string>
     <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts é um banco de dados gratuito sobre alimentos de animais de estimação.</string>
@@ -235,7 +235,7 @@
     <string name="action_open_link">Abrir link</string>
     <string name="action_wifi_connection_title_label">Conexão Wi-Fi</string>
     <string name="action_wifi_connection_from_app">Conectar ao Wi-Fi</string>
-    <string name="action_wifi_connection_from_wifi_settings">Copiar senha e ir aos ajustes do Wi-Fi</string>
+    <string name="action_wifi_connection_from_wifi_settings">Copiar senha e vá para as configurações do Wi-Fi</string>
     <string name="action_wifi_connection_error_wifi_not_activated">Você deve ativar o Wi-Fi em seu dispositivo!</string>
     <string name="action_wifi_password_copy_label">Senha copiada!</string>
     <string name="action_wifi_success_added_label">Conexão Wi-Fi adicionada!</string>
@@ -364,7 +364,7 @@
     <string name="permission_contact_description_label">Necessário para importar contato para gerar código QR deste.</string>
     <string name="permission_location_label">Localização</string>
     <string name="permission_wifi_description_label">Necessário para se conectar ao Wi-Fi por meio da digitalização de um código QR que contenha acesso ao Wi-Fi.</string>
-    <string name="permission_vibrate_description_label">Usado para vibrar durante a digitalização do código de barras.</string>
+    <string name="permission_vibrate_description_label">Usado para vibrar o telefone durante a digitalização do código de barras.</string>
     <string name="permission_query_all_packages_label">Consultar todos os pacotes</string>
     <string name="permission_query_all_packages_description_label">Útil para gerar um código QR de um aplicativo instalado.</string>
     <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts é um banco de dados gratuito sobre produtos cosméticos.</string>
@@ -526,7 +526,7 @@
     <string name="scan_error_information_label">Ocorreu um erro ao buscar informações na API remota... Verifique sua conexão com a Internet e as permissões do aplicativo! Se o problema persistir, deve ser um problema no servidor.</string>
     <string name="barcode_label">Código de barras</string>
     <string name="title_history">Histórico</string>
-    <string name="title_settings">Ajustes</string>
+    <string name="title_settings">Configurações</string>
     <string name="title_qr_code_creator">Gerar um Código QR</string>
     <string name="bar_code_type_music">Música</string>
     <string name="qr_code_error_correction_level_settings_label">Nível para correção de erro (Código QR)</string>
