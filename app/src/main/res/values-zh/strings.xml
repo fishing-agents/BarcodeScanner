@@ -731,4 +731,8 @@
     <string name="preferences_switch_history_save_duplicates_summary_on">重复项将添加到历史记录中</string>
     <string name="preferences_switch_history_save_duplicates_summary_off">重复项不会添加到历史记录中</string>
     <string name="snack_bar_message_items_deleted">从历史记录中删除的项目。</string>
+    <string name="margins">边缘</string>
+    <string name="apply">应用</string>
+    <string name="action_assign_a_name">分配一个名称</string>
+    <string name="barcode_not_found">未发现条形码</string>
 </resources>
