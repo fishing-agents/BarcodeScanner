@@ -25,6 +25,7 @@
             android:id="@+id/fragment_barcode_image_editor_shapes_corner_radius_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/normal_margin"
             android:layout_below="@id/fragment_barcode_image_editor_shapes_corner_radius_text_view"
             android:value="0.0"
             android:valueFrom="0.0"
