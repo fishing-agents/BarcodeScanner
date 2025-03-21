@@ -19,7 +19,7 @@ Características da aplicación :
 - Realiza un seguimento de todos os seus códigos de barras escaneados coa ferramenta de historial.
 - Xera os seus propios códigos de barras
 - Personaliza a interface con diferentes cores, cun tema claro ou un escuro. A interface está construída con Material 3 e é compatible con Material You, o que permite axustar as cores en función do fondo de pantalla para dispositivos con Android 12 ou posterior.
-- Os textos están totalmente traducidos ao inglés, árabe, español, francés, galego, portugués, ruso, alemán, turco, italiano, ucraíno, polaco, neerlandés, romanés e chinés (simplificado e tradicional).
+- Os textos están totalmente traducidos ao inglés, árabe, español, francés, portugués, ruso, alemán, turco, italiano, ucraíno, polaco, neerlandés, romanés e chinés (simplificado e tradicional).
 
 Esta aplicación respecta a túa privacidade. Non contén rastreadores nin recompila datos.
 
