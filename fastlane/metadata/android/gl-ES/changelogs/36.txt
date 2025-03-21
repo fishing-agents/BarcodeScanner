@@ -1,0 +1,10 @@
+1.18.0
+
+Lista de cambios completa aquí: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Actualizadas as traducións (usando Weblate).
+- Engadida tradución ao italiano (grazas a Kevin Concilio).
+- Engadido cambio de idioma para dispositivos con Android 7 ou superior (grazas a Hu Shenghao).
+- Engadida exportación de base de datos en CSV e JSON.
+- Engadida a importación de arquivos JSON á base de datos.
+- Actualización de dependencias.

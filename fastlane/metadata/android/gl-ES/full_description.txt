@@ -1,0 +1,26 @@
+Barcode Scanner é unha aplicación gratuíta e de código aberto que permite ler e xerar códigos de barras. Pode recoller información sobre produtos alimenticios, cosméticos, libros e música (CDs, Vinilos...).
+
+A aplicación xestiona diferentes formatos de códigos de barras:
+- Códigos de barras de 2 dimensións: Código QR, Data Matrix, PDF 417, AZTEC
+- Códigos de barras de 1 dimensión: EAN 13, EAN 8, UPC A, UPC E, Código 128, Código 93, Código 39, Codabar, ITF
+
+Recompila información sobre un produto durante un escaneado :
+- Produtos alimentarios con Open Food Facts
+- Cosméticos con Open Beauty Facts
+- Produtos alimenticios para mascotas con Open Pet Food Facts
+- Libros con Open Library
+- CDs de música, vinilos... con MusicBrainz
+
+Características da aplicación :
+- Basta con apuntar coa cámara do seu móbil a un código de barras para recibir ao instante información sobre el. Tamén pode escanear códigos de barras a través dunha imaxe do seu teléfono.
+- Cun simple escaneo, lea tarxetas de visita, engade novos contactos, engade novos eventos á súa axenda, abra URLs ou mesmo conéctese a unha rede Wi-Fi.
+- Escanee os códigos de barras dos produtos alimentarios para recibir información sobre a súa composición grazas ás bases de datos Open Food Facts e Open Beauty Facts.
+- Busca información sobre o produto que escanees, cunha rápida investigación en diferentes sitios web como Amazon ou Fnac.
+- Realiza un seguimento de todos os seus códigos de barras escaneados coa ferramenta de historial.
+- Xera os seus propios códigos de barras
+- Personaliza a interface con diferentes cores, cun tema claro ou un escuro. A interface está construída con Material 3 e é compatible con Material You, o que permite axustar as cores en función do fondo de pantalla para dispositivos con Android 12 ou posterior.
+- Os textos están totalmente traducidos ao inglés, árabe, español, francés, galego, portugués, ruso, alemán, turco, italiano, ucraíno, polaco, neerlandés, romanés e chinés (simplificado e tradicional).
+
+Esta aplicación respecta a túa privacidade. Non contén rastreadores nin recompila datos.
+
+O código fonte está dispoñible aquí: https://gitlab.com/Atharok/BarcodeScanner

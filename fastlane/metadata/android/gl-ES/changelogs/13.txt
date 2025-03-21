@@ -1,0 +1,7 @@
+- Actualización da versión de Kotlin (1.7.20).
+- Algunhas melloras nas cadeas (inglés).
+- Engadido un botón na configuración para copiar automaticamente o contido do código de barras escaneado ao portapapeis.
+- Mellora do código.
+- Engadida a posibilidade de consultar manualmente as APIs remotas.
+- Engadido soporte para a xeración de códigos QR EPC.
+- Engadido un botón de búsqueda na barra de ferramentas para os códigos QR que conteñen unha URL.

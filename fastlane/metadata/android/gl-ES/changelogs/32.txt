@@ -1,0 +1,8 @@
+1.15.0
+
+- Tradución ao polaco actualizada (grazas a phyrz91).
+- Tradución ao chinés tradicional actualizada (grazas a plum7x).
+- Engadido nivel de corrección de erros para Códigos QR.
+- Engadida a opción de engadir os códigos de barras xerados ao historial (debe estar activada nos axustes).
+- Modificación da xestión de APIs remotas.
+- Engadida API MusicBrainz.

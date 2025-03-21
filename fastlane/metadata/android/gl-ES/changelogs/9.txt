@@ -1,0 +1,3 @@
+- Actualizar dependencias.
+- Arranxar a apertura da aplicación cos accesos directos que non funcionaban para «historial» e «xerar».
+- Arranxar escaneo desde imaxe ao escanear desde unha app externa (intent-filter).

@@ -1,0 +1,9 @@
+1.12.0
+
+- Engadida tradución ao chinés tradicional (por plum7x).
+- Actualización de Kotlin (1.8.0). Actualización de dependencias.
+- Engadido borrado de imaxes xeradas pola vista de recorte ao escanear desde unha imaxe.
+- Engadida a selección e borrado de varios elementos do historial.
+- Engadida a eliminación dun elemento da vista de resultados.
+- Mellorados as cores e estilos.
+- Mellorado o código.
