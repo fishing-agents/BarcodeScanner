@@ -503,7 +503,7 @@
     <string name="preferences_information_about_remote_api_some_additional_information_title">Información complementaria</string>
     <string name="preferences_information_about_remote_api_some_additional_information_description_1">• Algunos productos pueden no estar incluidos en determinadas bases de datos.</string>
     <string name="preferences_information_about_remote_api_some_additional_information_description_2">• Puede haber algunos errores en la información proporcionada por las API.</string>
-    <string name="preferences_information_about_remote_api_how_it_works">¿Cómo funciona?</string>
+    <string name="preferences_information_about_remote_api_how_it_works">Cómo funciona</string>
     <string name="preferences_information_about_remote_api_automatic_search_title">Búsqueda automática</string>
     <string name="preferences_information_about_remote_api_automatic_search_description">Si la opción \"%1$s\" está activada, al escanear el código de barras de un producto, se realiza automáticamente una búsqueda en la API seleccionada en los ajustes. Si no se encuentra información en la API, siempre puede realizar una búsqueda manual en otra API después del escaneado.</string>
     <string name="preferences_information_about_remote_api_manual_search_title">Búsqueda manual</string>
@@ -729,4 +729,6 @@
     <string name="preferences_switch_history_save_duplicates_summary_off">Los duplicados no se agregarán al historial</string>
     <string name="apply">Aplicar</string>
     <string name="action_assign_a_name">Asignar un nombre</string>
+    <string name="barcode_not_found">Código de barras no encontrado</string>
+    <string name="margins">Márgenes</string>
 </resources>
