@@ -101,4 +101,20 @@
     <string name="export_label">Exportar</string>
     <string name="snack_bar_message_file_import_error">Produciuse un erro! Ficheiro non importado.</string>
     <string name="scan_cancel_label">Escaneo cancelado!</string>
+    <string name="scan_error_short_information_label">Produciuse un erro mentres se procuraba información!</string>
+    <string name="no_internet_permission">Non tes permiso para acceder a Internet.</string>
+    <string name="barcode_scanned_label">%1$s escaneado!</string>
+    <string name="barcode_found_on_label">Atopado en %1$s!</string>
+    <string name="barcode_not_found_on_api_label">Non se atopou información en %1$s.</string>
+    <string name="about_barcode_information_label">Información no código de barras</string>
+    <string name="about_barcode_label">Sobre o código de barras</string>
+    <string name="about_barcode_format_label">Formato: %1$s</string>
+    <string name="about_barcode_content_label">Código de barras: %1$s</string>
+    <string name="about_barcode_origin_label">Orixe:</string>
+    <string name="product_search_label">Busca de produto</string>
+    <string name="warning_label">Advertencia</string>
+    <string name="scan_error_message_label">Mensaxe de erro:</string>
+    <string name="no_product_found_label">Non se atopou ningún produto!</string>
+    <string name="scan_error_information_label">Produciuse un erro ao buscar información na API remota... Verifica a túa conexión a Internet e os permisos da aplicación! Se o problema persiste, debería ser un problema do servidor.</string>
+    <string name="scan_error_internet_information_label">Non se conseguiu información sobre o produto porque pareces non estar conectado a Internet!</string>
 </resources>
