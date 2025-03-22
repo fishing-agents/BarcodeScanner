@@ -169,4 +169,23 @@
     <string name="stores_label">Tendas</string>
     <string name="ingredients_analysis_label">Análise dos ingredientes</string>
     <string name="allergens_label">Alérxenos</string>
+    <string name="palm_oil_free_label">Sen aceite de palma</string>
+    <string name="contain_palm_oil_label">Contén aceite de palma</string>
+    <string name="may_contain_palm_oil_label">Pode conter aceite de palma</string>
+    <string name="palm_oil_content_unknown_label">Contido de aceite de palma descoñecido</string>
+    <string name="is_vegan_label">Vegano</string>
+    <string name="no_vegan_label">Non vegano</string>
+    <string name="maybe_vegan_label">Quizais vegano</string>
+    <string name="no_vegetarian_label">Non vexetariano</string>
+    <string name="maybe_vegetarian_label">Quizais vexetariano</string>
+    <string name="vegetarian_status_unknown_label">Non se coñece se é vexetariano ou non</string>
+    <string name="nutrition_facts_entitled_label">Información nutricional</string>
+    <string name="nutrition_facts_table_label">Composición nutricional</string>
+    <string name="off_per_100_label">Por 100%1$s</string>
+    <string name="off_per_serving_label">Por ración (%1$s%2$s)</string>
+    <string name="off_per_serving_no_quantity_label">Por ración</string>
+    <string name="off_energy_kj_label">Enerxía</string>
+    <string name="vegan_status_unknown_label">Non se coñece se é vegano ou non</string>
+    <string name="is_vegetarian_label">Vexetariano</string>
+    <string name="nutrition_facts_no_information_found_label">Non se atopou ningún valor nutricional para este produto…</string>
 </resources>
