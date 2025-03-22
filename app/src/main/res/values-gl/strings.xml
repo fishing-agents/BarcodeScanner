@@ -117,4 +117,10 @@
     <string name="no_product_found_label">Non se atopou ningún produto!</string>
     <string name="scan_error_information_label">Produciuse un erro ao buscar información na API remota... Verifica a túa conexión a Internet e os permisos da aplicación! Se o problema persiste, debería ser un problema do servidor.</string>
     <string name="scan_error_internet_information_label">Non se conseguiu información sobre o produto porque pareces non estar conectado a Internet!</string>
+    <string name="overview_tab_label">Vista xeral</string>
+    <string name="ingredients_label">Ingredientes</string>
+    <string name="nutrition_facts_tab_label">Nutrición</string>
+    <string name="quality_label">Calidade do produto</string>
+    <string name="nutriscore_entitled_label">Nutri-Score</string>
+    <string name="nutriscore_description">Nutri-Score é un logotipo que informa sobre a calidade nutricional dos alimentos con puntuacións do A ao E. A puntuación ten en conta os nutrientes, os alimentos &lt;b&gt;a fomentar&lt;b/&gt;&amp;lt;/b&amp;gt; (fibras, proteínas, froitas, verduras, legumes, oleaginosas) e &amp;lt;b&amp;gt;a restrinxir&amp;lt;/b&amp;gt; (enerxía, ácidos graxos saturados, azucres, sal).</string>
 </resources>
