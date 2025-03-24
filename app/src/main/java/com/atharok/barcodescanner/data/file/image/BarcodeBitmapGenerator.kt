@@ -23,6 +23,7 @@ package com.atharok.barcodescanner.data.file.image
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
+import androidx.core.graphics.createBitmap
 import com.atharok.barcodescanner.common.extensions.drawRectangle
 import com.atharok.barcodescanner.common.extensions.drawRoundRectangle
 import com.atharok.barcodescanner.domain.library.BarcodeImageGeneratorProperties
@@ -38,8 +39,7 @@ class BarcodeBitmapGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImage
         properties: BarcodeImageGeneratorProperties,
         matrix: BitMatrix
     ): Bitmap {
-        val bitmap: Bitmap =
-            Bitmap.createBitmap(properties.width, properties.height, Bitmap.Config.ARGB_8888)
+        val bitmap: Bitmap = createBitmap(properties.width, properties.height)
         val canvas = Canvas(bitmap)
         val paint = Paint()
 
@@ -79,7 +79,7 @@ class BarcodeBitmapGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImage
         val margins = properties.marginsPx
 
         val unitW: Float = (properties.widthF - 2 * margins) / matrix.width.toFloat()
-        val unitH: Float = (properties.heightF - properties.contentsHeight - 2 * margins) / matrix.height.toFloat()
+        val unitH: Float = ((properties.heightF - properties.contentsHeight - 2 * margins) / matrix.height.toFloat()).coerceAtLeast(0f)
         val cornerRadius = unitW / 2f * properties.cornerRadius
 
         paint.apply {
@@ -124,7 +124,7 @@ class BarcodeBitmapGenerator(multiFormatWriter: MultiFormatWriter): BarcodeImage
         canvas.drawText(
             properties.contents,
             properties.width / 2f,
-            properties.height - properties.marginsPx,
+            properties.height - properties.marginsPx.toFloat(),
             paint.apply { color = properties.frontColor }
         )
 

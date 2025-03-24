@@ -20,7 +20,14 @@
 
 package com.atharok.barcodescanner.domain.entity.product.foodProduct
 
-import com.atharok.barcodescanner.common.utils.*
+import com.atharok.barcodescanner.common.utils.FAT_VALUE_HIGH
+import com.atharok.barcodescanner.common.utils.FAT_VALUE_LOW
+import com.atharok.barcodescanner.common.utils.SALT_VALUE_HIGH
+import com.atharok.barcodescanner.common.utils.SALT_VALUE_LOW
+import com.atharok.barcodescanner.common.utils.SATURATED_FAT_VALUE_HIGH
+import com.atharok.barcodescanner.common.utils.SATURATED_FAT_VALUE_LOW
+import com.atharok.barcodescanner.common.utils.SUGAR_VALUE_HIGH
+import com.atharok.barcodescanner.common.utils.SUGAR_VALUE_LOW
 import com.atharok.barcodescanner.data.model.openFoodFactsResponse.FoodProductResponse
 import com.atharok.barcodescanner.data.model.openFoodFactsResponse.IngredientResponse
 import com.atharok.barcodescanner.data.model.openFoodFactsResponse.NutrimentsResponse

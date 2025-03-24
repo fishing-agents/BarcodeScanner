@@ -23,8 +23,8 @@ package com.atharok.barcodescanner.domain.library
 import android.graphics.Color
 import androidx.annotation.ColorInt
 import com.atharok.barcodescanner.common.extensions.is2DBarcode
-import com.atharok.barcodescanner.common.utils.BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
-import com.atharok.barcodescanner.common.utils.BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
+import com.atharok.barcodescanner.common.utils.BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
+import com.atharok.barcodescanner.common.utils.BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
 import com.atharok.barcodescanner.common.utils.BARCODE_IMAGE_DEFAULT_SIZE
 import com.atharok.barcodescanner.common.utils.ENCODING_ISO_8859_1
 import com.atharok.barcodescanner.common.utils.ENCODING_UTF_8
@@ -37,9 +37,9 @@ data class BarcodeImageGeneratorProperties(
     val contents: String,
     val format: BarcodeFormat,
     val qrCodeErrorCorrectionLevel: QrCodeErrorCorrectionLevel? = null,
-    var marginsPercent: Float = when {
-        format.is2DBarcode() -> BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
-        else -> BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
+    var marginsPx: Int = when {
+        format.is2DBarcode() -> BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
+        else -> BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
     },
     private val size: Int = BARCODE_IMAGE_DEFAULT_SIZE,
     @ColorInt var frontColor: Int = Color.BLACK,
@@ -52,13 +52,12 @@ data class BarcodeImageGeneratorProperties(
     var height: Int = if(is2DBarcode && format != BarcodeFormat.PDF_417) size else size / 2
     val widthF: Float get() = width.toFloat()
     val heightF: Float get() = height.toFloat()
-    val marginsPx: Float get() = minOf(widthF, heightF - contentsHeight) * marginsPercent / 2f
 
     val contentsHeight: Float get() = if(is2DBarcode) 0f else (width / (contents.length + 2f)) // ajuster la taille du texte en fonction de la largeur de l'image et du contenu
 
     var cornerRadius: Float = 0.0f
         set(value) {
-            field = if(value < 0f) 0f else if(value>1f) 1f else value
+            field = if(value < 0f) 0f else if(value > 1f) 1f else value
         }
 
     val hints: Map<EncodeHintType, Any>

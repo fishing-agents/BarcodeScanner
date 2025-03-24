@@ -382,6 +382,9 @@
     <string name="height_label">Height</string>
     <string name="keep_proportions">Keep proportions</string>
     <string name="margins">Margins</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">Increase</string>
+    <string name="decrease">Decrease</string>
     <string name="color_shades_issue">Some color shades may not be detected.</string>
     <!-- Form -->
     <string name="qr_code_text_generator_hint_text_input_edit_text">Enter text…</string>

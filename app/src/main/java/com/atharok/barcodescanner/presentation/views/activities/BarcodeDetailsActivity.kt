@@ -42,8 +42,8 @@ import com.atharok.barcodescanner.common.extensions.getDisplayName
 import com.atharok.barcodescanner.common.extensions.is2DBarcode
 import com.atharok.barcodescanner.common.extensions.parcelable
 import com.atharok.barcodescanner.common.extensions.read
-import com.atharok.barcodescanner.common.utils.BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
-import com.atharok.barcodescanner.common.utils.BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
+import com.atharok.barcodescanner.common.utils.BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
+import com.atharok.barcodescanner.common.utils.BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
 import com.atharok.barcodescanner.common.utils.BARCODE_CONTENTS_KEY
 import com.atharok.barcodescanner.common.utils.BARCODE_FORMAT_KEY
 import com.atharok.barcodescanner.common.utils.BARCODE_IMAGE_BACKGROUND_COLOR_KEY
@@ -109,9 +109,9 @@ class BarcodeDetailsActivity : BaseActivity() {
             contents = contents,
             format = format,
             qrCodeErrorCorrectionLevel = qrCodeErrorCorrectionLevel,
-            marginsPercent = when {
-                format.is2DBarcode() -> BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
-                else -> BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT
+            marginsPx = when {
+                format.is2DBarcode() -> BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
+                else -> BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
             },
             size = BARCODE_IMAGE_DEFAULT_SIZE,
             frontColor = Color.BLACK,
@@ -138,7 +138,7 @@ class BarcodeDetailsActivity : BaseActivity() {
                 frontColor = it.getInt(BARCODE_IMAGE_FRONT_COLOR_KEY, properties.frontColor)
                 backgroundColor = it.getInt(BARCODE_IMAGE_BACKGROUND_COLOR_KEY, properties.backgroundColor)
                 cornerRadius = it.getFloat(BARCODE_IMAGE_CORNER_RADIUS_KEY, properties.cornerRadius)
-                marginsPercent = it.getFloat(BARCODE_IMAGE_MARGINS_KEY, properties.marginsPercent)
+                marginsPx = it.getInt(BARCODE_IMAGE_MARGINS_KEY, properties.marginsPx)
                 width = it.getInt(BARCODE_IMAGE_WIDTH_KEY, properties.width)
                 height = it.getInt(BARCODE_IMAGE_HEIGHT_KEY, properties.height)
             }
@@ -181,7 +181,7 @@ class BarcodeDetailsActivity : BaseActivity() {
         outState.putInt(BARCODE_IMAGE_FRONT_COLOR_KEY, properties.frontColor)
         outState.putInt(BARCODE_IMAGE_BACKGROUND_COLOR_KEY, properties.backgroundColor)
         outState.putFloat(BARCODE_IMAGE_CORNER_RADIUS_KEY, properties.cornerRadius)
-        outState.putFloat(BARCODE_IMAGE_MARGINS_KEY, properties.marginsPercent)
+        outState.putInt(BARCODE_IMAGE_MARGINS_KEY, properties.marginsPx)
         outState.putInt(BARCODE_IMAGE_WIDTH_KEY, properties.width)
         outState.putInt(BARCODE_IMAGE_HEIGHT_KEY, properties.height)
         super.onSaveInstanceState(outState)
@@ -256,7 +256,7 @@ class BarcodeDetailsActivity : BaseActivity() {
 
     // Call by Fragments
     fun regenerateBitmap(
-        marginsPercent: Float = properties.marginsPercent,
+        marginsPx: Int = properties.marginsPx,
         width: Int = properties.width,
         height: Int = properties.height,
         @ColorInt frontColor: Int = properties.frontColor,
@@ -265,7 +265,7 @@ class BarcodeDetailsActivity : BaseActivity() {
     ) {
         barcodeImageFragment.generateNewBarcodeBitmap(
             properties.apply {
-                this.marginsPercent = marginsPercent
+                this.marginsPx = marginsPx
                 this.width = width
                 this.height = height
                 this.frontColor = frontColor

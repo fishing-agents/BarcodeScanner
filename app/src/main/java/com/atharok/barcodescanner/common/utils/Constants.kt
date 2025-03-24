@@ -90,8 +90,8 @@ const val DATABASE_NAME = "scan_history.db"
 const val ENCODING_UTF_8 = "UTF-8"
 const val ENCODING_ISO_8859_1 = "ISO-8859-1"
 const val BARCODE_IMAGE_DEFAULT_SIZE = 1024
-const val BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT = 0.25f
-const val BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PERCENT = 0.15f
+const val BARCODE_2_DIMENSION_IMAGE_DEFAULT_MARGINS_PX = 128
+const val BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PX = 32
 
 // ---- Valeures indicatives de la quantité des substances dans les produits alimentaires ----
 

@@ -71,7 +71,7 @@ class BarcodeImageEditorFragment : BaseFragment() {
             contents = imageGeneratorProperties?.contents ?: "",
             format = imageGeneratorProperties?.format ?: BarcodeFormat.QR_CODE,
             qrCodeErrorCorrectionLevel = imageGeneratorProperties?.qrCodeErrorCorrectionLevel ?: QrCodeErrorCorrectionLevel.NONE,
-            marginsPercent = imageGeneratorProperties?.marginsPercent ?: 0f,
+            marginsPx = imageGeneratorProperties?.marginsPx ?: 0,
             width = imageGeneratorProperties?.width ?: BARCODE_IMAGE_DEFAULT_SIZE,
             height = imageGeneratorProperties?.height ?: BARCODE_IMAGE_DEFAULT_SIZE,
             frontColor = imageGeneratorProperties?.frontColor ?: Color.BLACK,
@@ -84,7 +84,7 @@ class BarcodeImageEditorFragment : BaseFragment() {
         contents: String,
         format: BarcodeFormat,
         qrCodeErrorCorrectionLevel: QrCodeErrorCorrectionLevel,
-        marginsPercent: Float,
+        marginsPx: Int,
         width: Int,
         height: Int,
         @ColorInt frontColor: Int = Color.BLACK,
@@ -94,7 +94,7 @@ class BarcodeImageEditorFragment : BaseFragment() {
         val infoFragment = BarcodeInfoFragment.newInstance(contents, format, qrCodeErrorCorrectionLevel)
         val colorsFragment = BarcodeImageEditorColorsFragment.newInstance(frontColor, backgroundColor)
         val shapesFragment = BarcodeImageEditorShapesFragment.newInstance(cornerRadius)
-        val dimensionsFragment = BarcodeImageEditorDimensionsFragment.newInstance(width, height, marginsPercent)
+        val dimensionsFragment = BarcodeImageEditorDimensionsFragment.newInstance(width, height, marginsPx)
         val adapter = FragmentPagerAdapter(childFragmentManager, lifecycle, infoFragment, colorsFragment, shapesFragment, dimensionsFragment)
 
         val info = TabIcon(requireContext(), R.drawable.outline_info_24, R.string.information_label)
@@ -111,7 +111,7 @@ class BarcodeImageEditorFragment : BaseFragment() {
         val tabLayout = viewBinding.fragmentBarcodeImageEditorTabLayout
 
         viewPager.adapter = adapter
-        viewPager.offscreenPageLimit = tabIcon.size-1
+        viewPager.offscreenPageLimit = tabIcon.size - 1
         viewPager.registerOnPageChangeCallback(object : OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
