@@ -880,13 +880,18 @@
     <string name="locale_language_en" translatable="false">English</string>
     <string name="locale_language_de" translatable="false">Deutsch</string>
     <string name="locale_language_es" translatable="false">Español</string>
+    <string name="locale_language_el" translatable="false">Ελληνικά</string>
     <string name="locale_language_eo" translatable="false">Esperanto</string>
     <string name="locale_language_fa" translatable="false">فارسی</string>
     <string name="locale_language_fr" translatable="false">Français</string>
+    <string name="locale_language_gl" translatable="false">Galego</string>
+    <string name="locale_language_hr" translatable="false">Hrvatski</string>
+    <string name="locale_language_ia" translatable="false">Interlingua</string>
     <string name="locale_language_in" translatable="false">Indonesia</string>
     <string name="locale_language_it" translatable="false">Italiano</string>
     <string name="locale_language_ja" translatable="false">日本語</string>
     <string name="locale_language_ko" translatable="false">한국어</string>
+    <string name="locale_language_ml" translatable="false">മലയാളം</string>
     <string name="locale_language_lt" translatable="false">Lietuvių</string>
     <string name="locale_language_nb_NO" translatable="false">Norsk</string>
     <string name="locale_language_nl" translatable="false">Nederlands</string>

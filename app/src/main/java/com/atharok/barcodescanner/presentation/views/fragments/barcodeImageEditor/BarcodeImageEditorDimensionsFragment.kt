@@ -69,8 +69,8 @@ class BarcodeImageEditorDimensionsFragment : AbstractBarcodeImageEditorFragment(
 
         viewBinding.fragmentBarcodeImageEditorDimensionsOuterView.fixAnimateLayoutChangesInNestedScroll()
 
-        var defaultWidth: Int = arguments?.getInt(BARCODE_IMAGE_WIDTH_KEY, BARCODE_IMAGE_DEFAULT_SIZE) ?: BARCODE_IMAGE_DEFAULT_SIZE
-        var defaultHeight: Int = arguments?.getInt(BARCODE_IMAGE_HEIGHT_KEY, BARCODE_IMAGE_DEFAULT_SIZE) ?: BARCODE_IMAGE_DEFAULT_SIZE
+        val defaultWidth: Int = arguments?.getInt(BARCODE_IMAGE_WIDTH_KEY, BARCODE_IMAGE_DEFAULT_SIZE) ?: BARCODE_IMAGE_DEFAULT_SIZE
+        val defaultHeight: Int = arguments?.getInt(BARCODE_IMAGE_HEIGHT_KEY, BARCODE_IMAGE_DEFAULT_SIZE) ?: BARCODE_IMAGE_DEFAULT_SIZE
 
         val widthEditText = viewBinding.fragmentBarcodeImageEditorDimensionsWidthInputEditText
         val heightEditText = viewBinding.fragmentBarcodeImageEditorDimensionsHeightInputEditText
