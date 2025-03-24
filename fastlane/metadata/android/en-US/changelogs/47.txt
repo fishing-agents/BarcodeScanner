@@ -1,0 +1,7 @@
+1.25.2
+
+Full changelog here: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Updated translations (Weblate).
+- Changed the margin unit of the barcode image: it is now expressed in pixels instead of percentages.
+- Added buttons to set the margin value more precisely.
