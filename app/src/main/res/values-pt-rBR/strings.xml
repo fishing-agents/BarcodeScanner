@@ -669,4 +669,7 @@
     <string name="apply">Aplicar</string>
     <string name="margins">Margens</string>
     <string name="barcode_not_found">O código de barra não foi encontrado</string>
+    <string name="increase">Aumentar</string>
+    <string name="decrease">Diminuir</string>
+    <string name="value_px">%1$spx</string>
 </resources>
