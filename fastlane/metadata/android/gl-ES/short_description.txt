@@ -1,0 +1,1 @@
+Unha aplicación de código aberto que permite ler e xerar códigos de barras.

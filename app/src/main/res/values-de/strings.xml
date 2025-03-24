@@ -324,8 +324,8 @@
     <string name="action_wifi_success_added_label">WLAN-Verbindung hinzugefügt!</string>
     <string name="action_wifi_failure_added_label">Fehler beim Hinzufügen der WLAN-Verbindung</string>
     <string name="action_wifi_already_added_label">WLAN-Verbindung bereits vorhanden</string>
-    <string name="action_wifi_add_network_refused">Hinzufügen der WLAN-Verbidung abgelehnt.</string>
-    <string name="action_wifi_add_network_successful">WLAN-Verbidung hinzugefügt.</string>
+    <string name="action_wifi_add_network_refused">Hinzufügen der WLAN-Verbindung abgelehnt.</string>
+    <string name="action_wifi_add_network_successful">WLAN-Verbindung hinzugefügt.</string>
     <string name="action_wifi_add_network_failed">Fehler beim Hinzufügen der WLAN-Verbindung.</string>
     <string name="action_wifi_add_network_already_exists">WLAN-Verbindung bereits vorhanden.</string>
     <string name="action_wifi_add_network_unknown_error">Unbekannter Fehler beim Hinzufügen der WLAN-Verbindung.</string>

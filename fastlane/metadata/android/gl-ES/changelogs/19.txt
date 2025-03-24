@@ -1,0 +1,5 @@
+1.8.0
+
+- Implementación da API CameraX.
+- Vistas melloradas en modo horizontal.
+- Algunhas melloras na tradución ao ruso (Grazas a s s).

@@ -103,7 +103,7 @@
     <string name="scan_error_short_information_label">搜尋資訊時發生錯誤！</string>
     <string name="barcode_scanned_label">%1$s 已掃描！</string>
     <string name="barcode_found_on_label">發現 %1$s！</string>
-    <string name="barcode_not_found_on_api_label">沒有發現資訊 %1$s。</string>
+    <string name="barcode_not_found_on_api_label">在 %1$s 上找不到到資訊。</string>
     <string name="no_internet_permission">你沒有允許存取網路。</string>
     <string name="about_barcode_information_label">條碼資訊</string>
     <string name="about_barcode_label">關於條碼</string>
@@ -112,7 +112,7 @@
     <string name="about_barcode_origin_label">來源：</string>
     <!-- Product -->
     <string name="product_search_label">產品搜尋</string>
-    <string name="no_product_found_label">沒有發現產品！</string>
+    <string name="no_product_found_label">找不到產品！</string>
     <!-- Barcode Searching Error -->
     <string name="warning_label">警告</string>
     <string name="scan_error_information_label">在遠端 API 搜尋資訊時發生錯誤…請檢查你的網路連接和應用程式的權限！如果問題仍然存在，則應該是伺服器問題。</string>
@@ -506,7 +506,7 @@
     <string name="preferences_information_about_remote_api_some_additional_information_description_2">• 由 API 提供的資訊中或有些錯誤。</string>
     <string name="preferences_information_about_remote_api_how_it_works">它是如何工作的</string>
     <string name="preferences_information_about_remote_api_automatic_search_title">自動搜尋</string>
-    <string name="preferences_information_about_remote_api_automatic_search_description">假如 \"%1$s\" 選項已啟用，當你掃描產品條碼，搜尋是自動執行在設置中選擇的 API 上。如果在該 API 上沒有發現資訊，掃描之後你始終可以在另一個 API 執行手動搜尋。</string>
+    <string name="preferences_information_about_remote_api_automatic_search_description">假如 \"%1$s\" 選項已啟用，當你掃描產品條碼，搜尋是自動執行在設定中選擇的 API 上。如果在該 API 上找不到資訊，掃描之後你始終可以在另一個 API 執行手動搜尋。</string>
     <string name="preferences_information_about_remote_api_manual_search_title">手動搜尋</string>
     <string name="preferences_information_about_remote_api_manual_search_description">假如 \"%1$s\" 選項已啟用，當你掃描一個產品條碼，沒有從遠端伺服器檢索到任何資訊。但你始終可以手動搜尋掃描的產品的資訊。 為此，掃描產品後，點擊選單列中的圖示。之後你可以選擇一個 API 以執行搜尋。</string>
     <string name="preferences_information_about_remote_api_about_books_title">書籍</string>
@@ -731,4 +731,6 @@
     <string name="snack_bar_message_items_deleted">已從歷史記錄中刪除項目。</string>
     <string name="apply">應用</string>
     <string name="action_assign_a_name">分配一個名稱</string>
+    <string name="barcode_not_found">找不到條碼</string>
+    <string name="margins">邊緣</string>
 </resources>

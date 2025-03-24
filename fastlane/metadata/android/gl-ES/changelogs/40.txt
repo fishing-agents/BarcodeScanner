@@ -1,0 +1,12 @@
+1.22.0
+
+Lista de cambios completa aquí: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Substitución dos accesos directos estáticos por accesos directos dinámicos (pódese configurar nos axustes).
+- Engadido un acceso directo para xerar un código QR desde o portapapeis (grazas a Austen).
+- Engadida a posibilidade de crear e utilizar URLs de procura personalizadas.
+- Engadida unha opción para mostrar a imaxe do código de barras na vista de resultados.
+- Corrección de erros.
+- Mellora de temas, estilos e vistas.
+- Traducións actualizadas (Weblate).
+- Dependencias actualizadas.

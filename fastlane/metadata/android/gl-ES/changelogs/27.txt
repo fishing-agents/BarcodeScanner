@@ -1,0 +1,10 @@
+1.13.0
+
+- Engadir texto á parte inferior dunha imaxe de código de barras.
+- Engadido un axuste para desactivar o historial.
+- Engadida a xeración dun código QR a partir do ID dunha aplicación instalada.
+- Mellora da eliminación de elementos do historial nas accións.
+- Engadido un botón «engadir ao historial» nas accións, se o elemento non está presente no historial.
+- Corrección da detección dun código de barras de cor clara sobre un fondo escuro a través dunha imaxe.
+- Engadida a xeración dun código QR a partir da localización.
+- Adición dunha pulsación longa sobre os textos da análise do código de barras.

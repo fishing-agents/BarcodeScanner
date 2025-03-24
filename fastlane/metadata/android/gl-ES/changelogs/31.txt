@@ -1,0 +1,4 @@
+1.14.1
+
+- Corrixido un erro que bloqueaba a procura en APIs remotas.
+- Actualización da tradución ao polaco.
