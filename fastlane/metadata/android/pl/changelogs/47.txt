@@ -1,0 +1,7 @@
+1.25.2
+
+Pełny dziennik zmian tutaj: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Zaktualizowano tłumaczenia (Weblate).
+- Zmieniono jednostkę marginesu obrazu kodu kreskowego: teraz jest ona wyrażana w pikselach, a nie w procentach.
+- Dodano przyciski do dokładniejszego ustawiania wartości marginesu.
