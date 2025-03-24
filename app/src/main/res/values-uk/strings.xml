@@ -670,4 +670,7 @@
     <string name="apply">Застосувати</string>
     <string name="margins">Поля</string>
     <string name="barcode_not_found">Штрих-код не знайдено</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">Збільшення</string>
+    <string name="decrease">Зниження</string>
 </resources>
