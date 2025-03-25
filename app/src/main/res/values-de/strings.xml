@@ -735,4 +735,6 @@
     <string name="apply">Anwenden</string>
     <string name="margins">Ränder</string>
     <string name="barcode_not_found">Barcode nicht gefunden</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">Erhöhen</string>
 </resources>
