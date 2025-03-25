@@ -359,7 +359,7 @@
     <string name="qr_code_text_generator_hint_url_input_edit_text">Webadresse eingeben…</string>
     <string name="qr_code_text_input_edit_text_hint_message">Nachricht</string>
     <!-- Contact Creator -->
-    <string name="qr_code_type_name_generate_from_contact">Generiere aus Kontakt</string>
+    <string name="qr_code_type_name_generate_from_contact">Aus Kontakt generieren</string>
     <string name="qr_code_text_radio_button_label_m">Herr</string>
     <string name="qr_code_text_radio_button_label_mrs">Frau</string>
     <string name="qr_code_text_radio_button_label_miss">Frau</string>
@@ -737,4 +737,5 @@
     <string name="barcode_not_found">Barcode nicht gefunden</string>
     <string name="value_px">%1$spx</string>
     <string name="increase">Erhöhen</string>
+    <string name="decrease">Verringern</string>
 </resources>
