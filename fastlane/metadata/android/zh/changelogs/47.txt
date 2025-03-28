@@ -1,0 +1,7 @@
+1.25.2
+
+完整更新日志请查看：https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- 更新了翻译（Weblate）。
+- 更改了条码图像的边距单位：现在以像素表示，而不是百分比。
+- 添加了按钮以便更精确地设置边距值。
