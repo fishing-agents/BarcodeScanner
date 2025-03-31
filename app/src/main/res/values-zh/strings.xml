@@ -17,7 +17,6 @@
     <string name="image_view_description_nutriscore">NUTRI-SCORE</string>
     <string name="image_view_description_nova_group">NOVA GROUP</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
-    <string name="image_view_description_background">背景</string>
     <string name="image_view_description_image">图片</string>
     <string name="slider_description_zoom">缩放</string>
     <!-- Menu Item -->

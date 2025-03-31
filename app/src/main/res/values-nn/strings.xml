@@ -52,7 +52,6 @@
     <string name="no_label">Nei</string>
     <string name="image_view_description_flag">Flagg</string>
     <string name="image_view_description_logo">Logo</string>
-    <string name="image_view_description_background">Bakgrunn</string>
     <string name="menu_more">Meir</string>
     <string name="qr_code_type_name_contact">Kontakt</string>
     <string name="barcode_qr_code_label">QR-kode</string>

@@ -259,7 +259,6 @@
     <string name="image_view_description_type_icon">Tipus</string>
     <string name="image_view_description_bar_code">Codi de barres</string>
     <string name="image_view_description_icon">Icona</string>
-    <string name="image_view_description_background">Fons</string>
     <string name="image_view_description_image">Imatge</string>
     <string name="slider_description_zoom">Ampliació</string>
     <string name="title_scan">Escaneja</string>

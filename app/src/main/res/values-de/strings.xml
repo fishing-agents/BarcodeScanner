@@ -18,7 +18,6 @@
     <string name="image_view_description_nutriscore">Nutri-Score</string>
     <string name="image_view_description_nova_group">NOVA-Gruppe</string>
     <string name="image_view_description_eco_score">Eco-Score</string>
-    <string name="image_view_description_background">Hintergrund</string>
     <string name="image_view_description_image">Bild</string>
     <string name="slider_description_zoom">Zoom</string>
     <!-- Menu Item -->

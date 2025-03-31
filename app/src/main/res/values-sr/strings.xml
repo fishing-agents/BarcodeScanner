@@ -12,7 +12,6 @@
     <string name="image_view_description_nutriscore">NUTRI-SCORE</string>
     <string name="image_view_description_nova_group">NOVA GROUP</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
-    <string name="image_view_description_background">Позадина</string>
     <string name="image_view_description_image">Слика</string>
     <string name="slider_description_zoom">Зумирање</string>
     <string name="title_scan">Скенирај</string>

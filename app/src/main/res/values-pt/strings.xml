@@ -599,7 +599,6 @@
     <string name="error_barcode_itf_error_message">O tipo de código de barras ITF deve conter um número par de caracteres.</string>
     <string name="open_food_facts_source_description_label">As informações sobre produtos são do banco de dados livre Open Food Facts.</string>
     <string name="scan_error_message_label">Mensagem de erro:</string>
-    <string name="image_view_description_background">Plano de fundo</string>
     <string name="country_kh">Camboja</string>
     <string name="action_add_to_calendar">Adicionar ao calendário</string>
     <string name="country_nl">Países Baixos</string>

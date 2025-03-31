@@ -10,7 +10,6 @@
     <string name="image_view_description_nutriscore">NUTRI-SCORE</string>
     <string name="image_view_description_nova_group">NOVA GROUP</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
-    <string name="image_view_description_background">Фон</string>
     <string name="image_view_description_image">Зображення</string>
     <string name="slider_description_zoom">Наближення</string>
     <string name="title_scan">Сканування</string>

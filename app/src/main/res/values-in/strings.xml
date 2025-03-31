@@ -9,7 +9,6 @@
     <string name="image_view_description_icon">Ikon</string>
     <string name="image_view_description_nutriscore">NUTRI-SKOR</string>
     <string name="image_view_description_eco_score">SKOR ECO</string>
-    <string name="image_view_description_background">Latar Belakang</string>
     <string name="image_view_description_image">Gambar</string>
     <string name="slider_description_zoom">Perbesar</string>
     <string name="title_scan">Pindai</string>

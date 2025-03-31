@@ -105,7 +105,6 @@
     <string name="country_in">India</string>
     <string name="image_view_description_product_front">Poza produsului</string>
     <string name="image_view_description_image">Imagine</string>
-    <string name="image_view_description_background">Fundal</string>
     <string name="title_scan">Scanează</string>
     <string name="title_settings">Setări</string>
     <string name="title_bar_code_creator">Generați un cod de bare</string>

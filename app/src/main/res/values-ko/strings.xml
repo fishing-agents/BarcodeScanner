@@ -10,7 +10,6 @@
     <string name="image_view_description_nutriscore">NUTRI-SCORE</string>
     <string name="image_view_description_nova_group">NOVA GROUP</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
-    <string name="image_view_description_background">배경</string>
     <string name="title_generate">만들기</string>
     <string name="title_settings">설정</string>
     <string name="title_qr_code_creator">QR 코드 만들기</string>

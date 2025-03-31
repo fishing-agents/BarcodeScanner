@@ -572,7 +572,6 @@
     <string name="country_nz">Nova Zelândia</string>
     <string name="country_mo">Macau</string>
     <string name="country_kp">Coreia do Norte</string>
-    <string name="image_view_description_background">Plano de fundo</string>
     <string name="qr_code_type_name_epc">Código QR EPC</string>
     <string name="qr_code_type_name_sms">SMS</string>
     <string name="barcode_pdf_417_label">PDF 417</string>

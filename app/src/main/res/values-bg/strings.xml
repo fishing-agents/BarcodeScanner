@@ -13,7 +13,6 @@
     <string name="image_view_description_icon">Икона</string>
     <string name="image_view_description_nova_group">NOVA GROUP</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
-    <string name="image_view_description_background">Заден план</string>
     <string name="slider_description_zoom">Мащабиране</string>
     <string name="title_scan">Сканиране</string>
     <string name="title_history">История</string>

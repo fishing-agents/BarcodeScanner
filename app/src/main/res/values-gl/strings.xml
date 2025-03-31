@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="image_view_description_background">Fondo</string>
     <string name="image_view_description_logo">Logo</string>
     <string name="title_scan">Escanear</string>
     <string name="image_view_description_bar_code">Código de barras</string>
