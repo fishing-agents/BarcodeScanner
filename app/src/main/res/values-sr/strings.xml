@@ -670,4 +670,7 @@
     <string name="apply">Примени</string>
     <string name="margins">Маргине</string>
     <string name="barcode_not_found">Баркод није пронађен</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">Увећај</string>
+    <string name="decrease">Умањи</string>
 </resources>

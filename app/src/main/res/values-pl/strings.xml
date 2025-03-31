@@ -728,4 +728,7 @@
     <string name="action_modify_barcode">Modyfikuj kod kreskowy</string>
     <string name="margins">Marginesy</string>
     <string name="barcode_not_found">Nie znaleziono kodu</string>
+    <string name="increase">Zwiększ</string>
+    <string name="decrease">Zmniejsz</string>
+    <string name="value_px">%1$s px</string>
 </resources>

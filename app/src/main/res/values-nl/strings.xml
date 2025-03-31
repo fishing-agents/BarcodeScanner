@@ -669,4 +669,7 @@
     <string name="action_assign_a_name">Naam toewijzen</string>
     <string name="margins">Marges</string>
     <string name="barcode_not_found">Barcode niet gevonden</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">Groter</string>
+    <string name="decrease">Kleiner</string>
 </resources>

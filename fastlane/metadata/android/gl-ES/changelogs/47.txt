@@ -1,0 +1,7 @@
+1.25.2
+
+Lista de cambios completa aquí: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Traducións actualizadas (Weblate).
+- Cambiada a unidade de marxe da imaxe do código de barras: agora exprésase en píxeles en lugar de porcentaxes.
+- Engadidos botóns para establecer o valor da marxe con maior precisión.

@@ -731,4 +731,7 @@
     <string name="action_assign_a_name">Asignar un nombre</string>
     <string name="barcode_not_found">Código de barras no encontrado</string>
     <string name="margins">Márgenes</string>
+    <string name="value_px">%1$s px</string>
+    <string name="increase">Aumentar</string>
+    <string name="decrease">Disminuir</string>
 </resources>
