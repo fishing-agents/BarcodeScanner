@@ -8,7 +8,7 @@
     <string name="preferences_about_bdd_label">Banco de dados</string>
     <string name="permission_camera_label">Câmera</string>
     <string name="preferences_source_code_label">Código-fonte</string>
-    <string name="permission_camera_description_label">Necessário para digitalizar o código de barras.</string>
+    <string name="permission_camera_description_label">Necessário para ler o código de barras.</string>
     <string name="country_cz">República Checa</string>
     <string name="country_in">Índia</string>
     <string name="country_vn">Vietnã</string>
@@ -64,7 +64,7 @@
     <string name="information_label">Informações</string>
     <string name="download_from_api_label">Baixar das APIs</string>
     <string name="menu_more">Mais</string>
-    <string name="barcode_qr_code_label">Código QR</string>
+    <string name="barcode_qr_code_label">QR Code</string>
     <string name="barcode_data_matrix_label">Data Matrix</string>
     <string name="qr_code_type_name_text">Texto</string>
     <string name="qr_code_type_name_web_site">Site</string>
@@ -88,7 +88,7 @@
     <string name="record_label">Salvar</string>
     <string name="scan_cancel_label">Digitalização cancelada!</string>
     <string name="flash_label">Flash</string>
-    <string name="scan_information_label">Apontar para o código de barras para digitalizar</string>
+    <string name="scan_information_label">Apontar para o código de barras para iniciar a leitura</string>
     <string name="barcode_information_search_label">Buscando…</string>
     <string name="scan_error_label">Erro durante a digitalização!</string>
     <string name="barcode_scanned_label">%1$s digitalizado(s)!</string>
@@ -473,7 +473,7 @@
     <string name="country_at">Áustria</string>
     <string name="country_au">Austrália</string>
     <string name="go_to_dialog_label">Insira o site</string>
-    <string name="camera_permission_denied">Você negou acesso à câmera.\nVocê deve autorizá-lo para digitalizar um código de barras.</string>
+    <string name="camera_permission_denied">Você negou acesso à câmera.\nVocê deve autorizá-lo para ler um código de barras.</string>
     <string name="music_brainz_source_description_label">As informações sobre produtos musicais vêm do banco de dados gratuito oferecido por MusicBrainz.</string>
     <string name="preferences_theme_label">Tema</string>
     <string name="preferences_switch_system_theme_label">Padrão do Sistema</string>
@@ -491,7 +491,7 @@
     <string name="preferences_information_about_remote_api_some_additional_information_title">Algumas informações adicionais</string>
     <string name="preferences_information_about_remote_api_product_types_supported_music">• CDs, vinis, … (com a API MusicBrainz)</string>
     <string name="preferences_information_about_remote_api_automatic_search_title">Busca automática</string>
-    <string name="preferences_information_about_remote_api_automatic_search_description">Se a opção “%1$s” estiver ativada, quando você digitalizar o código de barras de um produto, uma pesquisa será executada automaticamente na API selecionada nas configurações. Se nenhuma informação for encontrada na API, você sempre poderá fazer uma pesquisa manual em outra API após a digitalização.</string>
+    <string name="preferences_information_about_remote_api_automatic_search_description">Se a opção “%1$s” estiver ativada, quando você ler o código de barras de um produto, uma pesquisa será executada automaticamente na API selecionada nas configurações. Se nenhuma informação for encontrada na API, você sempre poderá fazer uma pesquisa manual em outra API após a digitalização.</string>
     <string name="bar_code_type_unknown_matrix">Código Matrix</string>
     <string name="qr_code_error_correction_level_label">Nível para correção de erro</string>
     <string name="qr_code_error_correction_level_name_low">Baixo (~7%)</string>
@@ -527,9 +527,9 @@
     <string name="barcode_label">Código de barras</string>
     <string name="title_history">Histórico</string>
     <string name="title_settings">Configurações</string>
-    <string name="title_qr_code_creator">Gerar um Código QR</string>
+    <string name="title_qr_code_creator">Gerar um QR Code</string>
     <string name="bar_code_type_music">Música</string>
-    <string name="qr_code_error_correction_level_settings_label">Nível para correção de erro (Código QR)</string>
+    <string name="qr_code_error_correction_level_settings_label">Nível para correção de erro (QR Code)</string>
     <string name="about_barcode_content_label">Código de barras: %1$s</string>
     <string name="bar_code_type_unknown_book_title">Título do livro desconhecido</string>
     <string name="scan_error_internet_information_label">Nenhuma informação sobre o produto foi recuperada porque você não parece estar conectado à internet!</string>
@@ -544,7 +544,7 @@
     <string name="nutriscore_description">Nutri-Score é uma logomarca que informa a qualidade nutricional do alimento com avaliações de A a E. A pontuação leva em consideração nutrientes, comidas <b>a promover</b> (fibras, proteínas, frutas, vegetais, legumes, óleo de sementes) e <b>a restringir</b> (energia, ácidos graxos saturados, açúcares, sal).</string>
     <string name="nova_group_description_3">Alimento processado</string>
     <string name="nova_group_description_unknown">Sem grupo NOVA</string>
-    <string name="preferences_information_about_remote_api_manual_search_description">Se a opção “%1$s” estiver desativada, quando você digitalizar o código de barras de um produto, nenhuma informação será recuperada dos servidores remotos. Mas você sempre pode procurar manualmente informações sobre o produto digitalizado. Para fazer isso, depois de digitalizar o produto, clique no ícone na barra de menus. Em seguida, você pode selecionar uma API para pesquisar.</string>
+    <string name="preferences_information_about_remote_api_manual_search_description">Se a opção “%1$s” estiver desativada, quando você ler o código de barras de um produto, nenhuma informação será recuperada dos servidores remotos. Mas você sempre pode procurar manualmente informações sobre o produto digitalizado. Para fazer isso, depois de ler o produto, clique no ícone na barra de menus. Em seguida, você pode selecionar uma API para pesquisar.</string>
     <string name="country_ph">Filipinas</string>
     <string name="eco_score_description">Eco-Score é construído em um modelo similar ao Nutri-Score: é uma avaliação de A (impacto baixíssimo) a E (impacto altíssimo).</string>
     <string name="categories_label">Categorias</string>
@@ -572,7 +572,7 @@
     <string name="country_nz">Nova Zelândia</string>
     <string name="country_mo">Macau</string>
     <string name="country_kp">Coreia do Norte</string>
-    <string name="qr_code_type_name_epc">Código QR EPC</string>
+    <string name="qr_code_type_name_epc">QR Code EPC</string>
     <string name="qr_code_type_name_sms">SMS</string>
     <string name="barcode_pdf_417_label">PDF 417</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
