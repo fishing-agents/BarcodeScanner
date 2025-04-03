@@ -19,7 +19,7 @@
     <string name="slider_description_zoom">Zoom</string>
     <string name="title_history">Historial</string>
     <string name="title_generate">Xerar</string>
-    <string name="title_settings">Configuracións</string>
+    <string name="title_settings">Configuración</string>
     <string name="title_qr_code_creator">Xerar un código QR</string>
     <string name="title_bar_code_creator">Xerar un código de barras</string>
     <string name="create_qr_from_clipboard">Xerar un código QR dende o portapapeis</string>
@@ -302,7 +302,7 @@
     <string name="snack_bar_message_share_bitmap_error">Ocurreu un erro durante a configuración do recurso compartido.</string>
     <string name="snack_bar_message_permission_refused">Debes aceptar o permiso para empregar esta funcionalidade.</string>
     <string name="action_wifi_connection_error_wifi_not_activated">Debes activar o Wi-Fi no teu dispositivo!</string>
-    <string name="action_wifi_connection_from_wifi_settings">Copiar contrasinal e ir ás configuracións do Wi-Fi</string>
+    <string name="action_wifi_connection_from_wifi_settings">Copiar contrasinal e ir á configuración do Wi-Fi</string>
     <string name="error_barcode_itf_error_message">O tipo de código de barras ITF debe conter un número par de caracteres.</string>
     <string name="error_barcode_upc_e_not_start_with_0_error_message">O tipo de código de barras UPC-E debe comezar con 0.</string>
     <string name="error_barcode_qr_url_format_message">A dirección web debe comezar con http:// ou https://</string>
@@ -660,7 +660,7 @@
     <string name="bdd_open_library_description_label">Open Library é unha base de datos libre e gratuíta destinada a catalogar todos os libros publicados, sexa cal for o seu idioma.</string>
     <string name="preferences_information_about_remote_api_product_types_supported_book">• Libros (coa API Open Library)</string>
     <string name="preferences_information_about_remote_api_about_books_description">Se o produto que está a escanear é un libro, non necesita especificar a API na que buscar a información. O código de barras dun libro é identificable porque sempre empeza polos díxitos «978». A procura realizarase automaticamente en Open Library.</string>
-    <string name="preferences_information_about_remote_api_automatic_search_description">Se a opción «%1$s» está activada, ao escanear o código de barras dun produto, realízase automaticamente unha procura na API seleccionada nos axustes. Se non se atopa información na API, sempre pode realizar unha procura manual noutra API despois do escaneado.</string>
+    <string name="preferences_information_about_remote_api_automatic_search_description">Se a opción «%1$s» está activada, ao escanear o código de barras dun produto, realízase automaticamente unha procura na API seleccionada na configuración. Se non se atopa información na API, sempre pode realizar unha procura manual noutra API despois do escaneado.</string>
     <string name="shortcuts_info">Coloca os atallos na orde que prefiras.</string>
     <string name="preferences_information_about_remote_api_manual_search_description">Se a opción «%1$s» está desactivada, ao escanear o código de barras dun produto non se recupera información dos servidores remotos. Sempre podes buscar manualmente información sobre o produto escaneado. Para iso, tras escanear o produto, fai clic na icona da barra de menús. A continuación, podes seleccionar unha API para realizar a procura.</string>
 </resources>
