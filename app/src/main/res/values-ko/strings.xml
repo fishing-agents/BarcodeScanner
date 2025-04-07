@@ -663,4 +663,9 @@
     <string name="country_my">말레이시아</string>
     <string name="bdd_open_library_description_label">Open Library는 언어와 상관없이 출판된 모든 도서를 목록화하는 것을 목표로 한 무료 데이터베이스입니다.</string>
     <string name="country_se">스웨덴</string>
+    <string name="margins">여백</string>
+    <string name="barcode_not_found">바코드를 찾을 수 없습니다</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">증가</string>
+    <string name="decrease">감소</string>
 </resources>
