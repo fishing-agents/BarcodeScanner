@@ -670,4 +670,5 @@
     <string name="custom_search_urls_add_info">Use o termo \"%1$s\" na URL. Este termo será substituído pelo conteúdo do código de barras durante a pesquisa.</string>
     <string name="error">Erro</string>
     <string name="snack_bar_message_items_deleted">Elementos removidos do histórico.</string>
+    <string name="barcode_search_error_no_compatible_application_found">Nenhuma aplicação compatível encontrada</string>
 </resources>
