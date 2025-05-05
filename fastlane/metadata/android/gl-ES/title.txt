@@ -1,1 +1,1 @@
-Barcode Scanner
+Escáner de códigos QR / de barras
