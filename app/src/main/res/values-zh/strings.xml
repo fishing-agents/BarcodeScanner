@@ -24,14 +24,14 @@
     <string name="title_history">历史</string>
     <string name="title_generate">生成</string>
     <string name="title_settings">设置</string>
-    <string name="title_qr_code_creator">生成二维码</string>
+    <string name="title_qr_code_creator">生成 QR 码</string>
     <string name="title_bar_code_creator">生成条码</string>
     <string name="information_label">信息</string>
     <string name="barcode_label">条码</string>
     <string name="download_from_api_label">下载</string>
     <string name="menu_more">更多</string>
     <!-- Barcode Type -->
-    <string name="barcode_qr_code_label">二维码</string>
+    <string name="barcode_qr_code_label">QR 码</string>
     <string name="barcode_data_matrix_label">Data Matrix</string>
     <string name="barcode_pdf_417_label">PDF 417</string>
     <string name="barcode_aztec_label">AZTEC</string>
@@ -48,7 +48,7 @@
     <string name="qr_code_type_name_text">文字</string>
     <string name="qr_code_type_name_web_site">网址</string>
     <string name="qr_code_type_name_contact">联系人</string>
-    <string name="qr_code_type_name_epc">EPC 二维码</string>
+    <string name="qr_code_type_name_epc">EPC QR 码</string>
     <string name="qr_code_type_name_mail">邮件</string>
     <string name="qr_code_type_name_sms">短信</string>
     <string name="qr_code_type_name_phone">电话</string>
@@ -70,7 +70,7 @@
     <string name="bar_code_type_name_unknown">未知</string>
     <!-- Error Correction Level -->
     <string name="qr_code_error_correction_level_label">纠错级别</string>
-    <string name="qr_code_error_correction_level_settings_label">纠错级别（二维码）</string>
+    <string name="qr_code_error_correction_level_settings_label">纠错级别（QR 码）</string>
     <string name="qr_code_error_correction_level_name_low">低 (~7%)</string>
     <string name="qr_code_error_correction_level_name_medium">中等 (~15%)</string>
     <string name="qr_code_error_correction_level_name_quartile">四分之一 (~25%)</string>
@@ -304,7 +304,7 @@
     <string name="action_web_search_label">在网络上搜索</string>
     <string name="action_product_search_label">搜索 %1$s</string>
     <string name="action_send_mail_label">发送邮件</string>
-    <string name="action_send_sms_label">发送信息</string>
+    <string name="action_send_sms_label">发送短信</string>
     <string name="action_call_phone_label">拨打电话号码</string>
     <string name="action_add_to_calendar">添加到日历</string>
     <string name="action_add_to_contacts">添加到通讯录</string>
@@ -352,7 +352,7 @@
     <string name="qr_code_text_generator_hint_text_input_edit_text">输入内容…</string>
     <string name="qr_code_text_generator_hint_phone_input_edit_text">输入电话号码…</string>
     <string name="qr_code_text_generator_hint_url_input_edit_text">输入网站地址…</string>
-    <string name="qr_code_text_input_edit_text_hint_message">信息</string>
+    <string name="qr_code_text_input_edit_text_hint_message">消息</string>
     <!-- Contact Creator -->
     <string name="qr_code_type_name_generate_from_contact">从通讯录导入</string>
     <string name="qr_code_text_radio_button_label_m">先生</string>
@@ -537,20 +537,20 @@
     <string name="permission_internet_label">网络</string>
     <string name="permission_internet_description_label">用于从远程 API 查询信息。</string>
     <string name="permission_contact_label">通讯录</string>
-    <string name="permission_contact_description_label">用于导入通讯录信息并生成二维码。</string>
+    <string name="permission_contact_description_label">用于导入通讯录信息并生成 QR 码。</string>
     <string name="permission_location_label">定位</string>
-    <string name="permission_location_description_label">根据设备位置生成二维码所需要的。</string>
+    <string name="permission_location_description_label">根据设备位置生成 QR 码所需要的。</string>
     <string name="permission_wifi_label">Wi-Fi</string>
-    <string name="permission_wifi_description_label">需要扫描包含 Wi-Fi 访问的二维码以连接到 Wi-Fi。</string>
+    <string name="permission_wifi_description_label">需要扫描包含 Wi-Fi 访问的 QR 码以连接到 Wi-Fi。</string>
     <string name="permission_vibrate_label">振动</string>
     <string name="permission_vibrate_description_label">用于扫描成功时振动提醒。</string>
     <string name="permission_query_all_packages_label">查询所有软件包</string>
-    <string name="permission_query_all_packages_description_label">用于从已安装的应用程序生成二维码。</string>
+    <string name="permission_query_all_packages_description_label">用于从已安装的应用程序生成 QR 码。</string>
     <!-- About BDD -->
     <string name="bdd_open_food_facts_description_label">Open Food Facts 是一个免费的食品数据库，它列出了食品成分、过敏原、营养成分和产品标签上的所有信息。</string>
     <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts 是一个关于宠物食品的免费数据库。</string>
     <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts 是一个关于化妆品的免费数据库。</string>
-    <string name="bdd_music_brainz_description_label">MusicBrainz 是一本开发的音乐百科全书，它收集了音乐元数据并向大家开发。</string>
+    <string name="bdd_music_brainz_description_label">MusicBrainz 是一本开放的音乐百科全书，它收集了音乐元数据并向大家开放。</string>
     <string name="bdd_open_library_description_label">Open Library 是一个免费资料库，旨在对所有出版的书籍进行编目，无论什么语言。</string>
     <!-- About Library Third -->
     <string name="dependency_by" translatable="false">by %1$s</string>
@@ -568,7 +568,7 @@
     <string name="country_jp">日本</string>
     <string name="country_ru">俄罗斯</string>
     <string name="country_kg">吉尔吉斯斯坦</string>
-    <string name="country_tw">中国台湾</string>
+    <string name="country_tw">台湾</string>
     <string name="country_ee">爱沙尼亚</string>
     <string name="country_lv">拉脱维亚</string>
     <string name="country_az">阿塞拜疆</string>
@@ -584,7 +584,7 @@
     <string name="country_ge">格鲁吉亚</string>
     <string name="country_kz">哈萨克斯坦</string>
     <string name="country_tj">塔吉克斯坦</string>
-    <string name="country_hk">中国香港</string>
+    <string name="country_hk">香港</string>
     <string name="country_gb">英国</string>
     <string name="country_gr">希腊</string>
     <string name="country_lb">黎巴嫩</string>
@@ -626,7 +626,7 @@
     <string name="country_ae">阿联酋</string>
     <string name="country_qa">卡塔尔</string>
     <string name="country_fi">芬兰</string>
-    <string name="country_cn">中国</string>
+    <string name="country_cn">中国（大陆/内地）</string>
     <string name="country_no">挪威</string>
     <string name="country_il">以色列</string>
     <string name="country_se">瑞典</string>
