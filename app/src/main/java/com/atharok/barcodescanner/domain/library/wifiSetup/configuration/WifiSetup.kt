@@ -28,15 +28,19 @@ import java.util.Locale
 interface WifiSetup<CONFIGURATION> {
 
     fun configure(data: WifiSetupData): CONFIGURATION? {
-
-        return when (data.authType.uppercase(Locale.getDefault())){
-            "", "NOPASS" -> configureOpenNetwork(data.name, data.isHidden)
-            "WPA", "WPA2" -> configureWpa2Network(data.name, data.password, data.isHidden)
-            "WPA2-EAP" -> configureWpa2EapNetwork(data.name, data.password, data.isHidden, data.anonymousIdentity, data.identity, data.eapMethod.toEapMethod(), data.phase2Method.toPhase2Method())
-            "WPA3", "SAE" -> configureWpa3Network(data.name, data.password, data.isHidden)
-            "WPA3-EAP" -> configureWpa3EapNetwork(data.name, data.password, data.isHidden, data.anonymousIdentity, data.identity, data.eapMethod.toEapMethod(), data.phase2Method.toPhase2Method())
-            "WEP" -> configureWepNetwork(data.name, data.password, data.isHidden)
-            else -> null
+        try {
+            return when (data.authType.uppercase(Locale.getDefault())){
+                "", "NOPASS" -> configureOpenNetwork(data.name, data.isHidden)
+                "WPA", "WPA2" -> configureWpa2Network(data.name, data.password, data.isHidden)
+                "WPA2-EAP" -> configureWpa2EapNetwork(data.name, data.password, data.isHidden, data.anonymousIdentity, data.identity, data.eapMethod.toEapMethod(), data.phase2Method.toPhase2Method())
+                "WPA3", "SAE" -> configureWpa3Network(data.name, data.password, data.isHidden)
+                "WPA3-EAP" -> configureWpa3EapNetwork(data.name, data.password, data.isHidden, data.anonymousIdentity, data.identity, data.eapMethod.toEapMethod(), data.phase2Method.toPhase2Method())
+                "WEP" -> configureWepNetwork(data.name, data.password, data.isHidden)
+                else -> null
+            }
+        } catch (e: IllegalArgumentException) {
+            // Thrown when passphrase is not ASCII encodable.
+            return null
         }
     }
 
