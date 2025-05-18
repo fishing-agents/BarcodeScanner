@@ -261,7 +261,7 @@
     <string name="share_text_label">Compartilhar texto</string>
     <string name="popup_message_confirmation_save_image">Salvar imagem\?</string>
     <string name="qr_code_text_generator_hint_phone_input_edit_text">Insira o número de telefone…</string>
-    <string name="qr_code_text_generator_hint_url_input_edit_text">Digite o endereço da web…</string>
+    <string name="qr_code_text_generator_hint_url_input_edit_text">Digite o endereço da Web…</string>
     <string name="qr_code_text_input_edit_text_hint_message">Mensagem</string>
     <string name="qr_code_type_name_generate_from_contact">Gerar a partir de um contato</string>
     <string name="qr_code_text_radio_button_label_mrs">Sra.</string>
@@ -274,7 +274,7 @@
     <string name="qr_code_text_input_edit_text_hint_phone_3">Telefone 3</string>
     <string name="qr_code_text_input_edit_text_hint_street_address">Rua</string>
     <string name="qr_code_text_radio_button_label_m">M</string>
-    <string name="qr_code_text_input_edit_text_hint_postal_code">CEP</string>
+    <string name="qr_code_text_input_edit_text_hint_postal_code">Código postal</string>
     <string name="qr_code_text_input_edit_text_hint_city">Cidade</string>
     <string name="qr_code_text_input_edit_text_hint_region">Região</string>
     <string name="qr_code_text_input_edit_text_hint_notes">Observações</string>
@@ -654,7 +654,7 @@
     <string name="error_empty_fields">Os campos de entrada não podem estar vazios.</string>
     <string name="error">Erro</string>
     <string name="shortcuts">Atalhos</string>
-    <string name="create_qr_from_clipboard">Gerar um código QR a partir da área de transferência</string>
+    <string name="create_qr_from_clipboard">Gerar um QR Code a partir da área de transferência</string>
     <string name="clipboard_empty">A área de transferência está vazia.</string>
     <string name="shortcuts_info">Organize os atalhos na ordem de sua preferência.</string>
     <string name="action_share_vcf_file">Compartilhar como VCF</string>
