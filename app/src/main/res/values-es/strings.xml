@@ -720,7 +720,7 @@
     <string name="shortcuts">Atajos</string>
     <string name="shortcuts_info">Organice los atajos según sus preferencias.</string>
     <string name="action_share_vcf_file">Compartir como VCF</string>
-    <string name="app_name">Barcode Scanner</string>
+    <string name="app_name">Escáner</string>
     <string name="matrix_contact_job_title_label">Puesto</string>
     <string name="snack_bar_message_items_deleted">Elementos eliminados del historial.</string>
     <string name="preferences_switch_history_save_duplicates_label">Guardar duplicados</string>

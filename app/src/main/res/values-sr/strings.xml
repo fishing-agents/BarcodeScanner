@@ -350,7 +350,7 @@
     <string name="matrix_uri_upi_amount_label">Износ</string>
     <string name="matrix_uri_upi_currency_label">Валута</string>
     <string name="matrix_uri_upi_description_label">Опис</string>
-    <string name="matrix_localisation_altitude_label">Висина</string>
+    <string name="matrix_localisation_altitude_label">Надморска висина</string>
     <string name="matrix_localisation_query_label">Упит</string>
     <string name="matrix_localisation_latitude_label">Ширина</string>
     <string name="matrix_localisation_longitude_label">Дужина</string>

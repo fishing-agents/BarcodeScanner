@@ -93,7 +93,7 @@
     <string name="scan_error_exception_label">Błąd: %1$s</string>
     <string name="flash_label">Lampa</string>
     <string name="scan_from_image_label">Obraz</string>
-    <string name="intent_filter_scan_by_image">Wybierz obraz</string>
+    <string name="intent_filter_scan_by_image">Skanuj obraz</string>
     <string name="scan_information_label">Wyceluj w kod do zeskanowania</string>
     <!-- BarcodeAnalysisActivity -->
     <string name="barcode_information_search_label">Szukanie…</string>
@@ -288,7 +288,7 @@
     <!-- Snackbar Feddbacks -->
     <string name="snack_bar_message_permission_refused">Musisz zaakceptować pozwolenie na korzystanie z tej funkcji.</string>
     <string name="snack_bar_message_save_bitmap_ok">Obraz zapisany</string>
-    <string name="snack_bar_message_save_bitmap_error">Obraz niezapisany… \nInsufficient memory?</string>
+    <string name="snack_bar_message_save_bitmap_error">Obraz niezapisany… \nZa mało pamięci?</string>
     <string name="snack_bar_message_share_bitmap_error">Wystąpił błąd podczas konfiguracji.</string>
     <!-- Actions -->
     <string name="actions_label">Akcje</string>
@@ -703,7 +703,7 @@
     <string name="error_empty_fields">Pola wejściowe nie mogą być puste.</string>
     <string name="preferences_switch_history_save_duplicates_summary_on">Duplikaty zostaną dodane do historii</string>
     <string name="preferences_additional_options">Opcje dodatkowe</string>
-    <string name="preferences_display_barcode_image_results_view">Wyświetl obraz kodu kreskowego w widoku wyników</string>
+    <string name="preferences_display_barcode_image_results_view">Wyświetl obraz kodu kreskowego w widoku wyników</string>
     <string name="barcode_search_error_no_compatible_application_found">Nie znaleziono zgodnej aplikacji</string>
     <string name="custom_urls">Niestandardowe adresy URL</string>
     <string name="custom_search_urls_add_url">Dodaj adres URL</string>

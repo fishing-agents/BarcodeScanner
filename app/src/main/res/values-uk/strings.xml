@@ -305,7 +305,7 @@
     <string name="snack_bar_message_save_bitmap_error">Зображення не було збережено…
 \nНедостатньо пам\'яті?</string>
     <string name="preferences_color">Основний колір</string>
-    <string name="qr_code_text_input_edit_text_hint_email">Email</string>
+    <string name="qr_code_text_input_edit_text_hint_email">Електронна пошта</string>
     <string name="open_pet_food_facts_source_description_label">Інформація про корм взята з вільної бази даних Open Pet Food Facts.</string>
     <string name="country_kg">Киргизстан</string>
     <string name="country_md">Молдова</string>

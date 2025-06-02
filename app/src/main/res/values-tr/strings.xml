@@ -725,4 +725,11 @@
     <string name="preferences_switch_history_save_duplicates_summary_on">Yinelenenler geçmişe eklenecek</string>
     <string name="preferences_switch_history_save_duplicates_summary_off">Yinelenenler geçmişe eklenmeyecek</string>
     <string name="preferences_switch_history_save_duplicates_label">Yinelenenleri kaydet</string>
+    <string name="barcode_not_found">Barkod bulunamadı</string>
+    <string name="margins">Kenarlar</string>
+    <string name="apply">Uygula</string>
+    <string name="action_assign_a_name">İsim ata</string>
+    <string name="increase">Arttır</string>
+    <string name="decrease">Azalt</string>
+    <string name="value_px">%1$spx</string>
 </resources>

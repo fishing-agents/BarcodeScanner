@@ -114,8 +114,8 @@
     <string name="no_product_found_label">找不到產品！</string>
     <!-- Barcode Searching Error -->
     <string name="warning_label">警告</string>
-    <string name="scan_error_information_label">在遠端 API 搜尋資訊時發生錯誤…請檢查你的網路連接和應用程式的權限！如果問題仍然存在，則應該是伺服器問題。</string>
-    <string name="scan_error_internet_information_label">沒有產品檢索的資訊，你似乎沒有連接到網路！</string>
+    <string name="scan_error_information_label">在遠端 API 搜尋資訊時發生錯誤…請檢查你的網路連線和應用程式的權限！如果問題仍然存在，則應該是伺服器問題。</string>
+    <string name="scan_error_internet_information_label">沒有產品檢索的資訊，你似乎沒有連線至網路！</string>
     <string name="scan_error_message_label">錯誤訊息：</string>
     <!-- Food Beauty and Pet Food Product -->
     <string name="overview_tab_label">概述</string>
@@ -147,7 +147,7 @@
     <string name="eco_score_description_e">非常高環境影響</string>
     <string name="eco_score_description_unknown">未知環境影響</string>
     <!-- Details -->
-    <string name="details_label">詳情</string>
+    <string name="details_label">詳細資料</string>
     <string name="ingredients_analysis_label">原料分析</string>
     <string name="labels_label">標籤</string>
     <string name="origins_label">原料</string>
@@ -274,7 +274,7 @@
     <string name="matrix_localisation_query_label">查詢</string>
     <string name="matrix_localisation_button_find_location">從你的位置產生</string>
     <string name="matrix_localisation_search_current_position_label">搜尋目前位置…</string>
-    <string name="matrix_localisation_location_disabled_label">你的裝置定位似乎沒有被啟用。</string>
+    <string name="matrix_localisation_location_disabled_label">你似乎沒有啟用裝置定位。</string>
     <!-- Barcode Description -->
     <string name="barcode_industrial_description_label">此條碼類型經常被使用於工業。</string>
     <string name="barcode_code_39_description_label">Code 39 是一種用於紡織記號與西藥房藥品的條碼。它也用於軍事行業與汽車工業。</string>
@@ -287,14 +287,14 @@
     <string name="barcode_ean_13_description_label">Code EAN-13 (歐洲商品條碼 13) 是一種廣泛用於辨識銷售在歐洲與世界上幾乎所有地方的產品的條碼。它由 13 位數字組成。</string>
     <string name="barcode_ean_8_description_label">Code EAN-8 (歐洲商品條碼 8) 是 EAN-13 代碼的壓縮條碼，用於辨識銷售在歐洲與世界上幾乎所有地方的產品的條碼。它用於太小而無法使用 EAN-13 的包裝。</string>
     <!-- Snackbar Feddbacks -->
-    <string name="snack_bar_message_permission_refused">你必須接受許可以使用此功能。</string>
+    <string name="snack_bar_message_permission_refused">你必須接受授權以使用此功能。</string>
     <string name="snack_bar_message_save_bitmap_ok">圖片已儲存</string>
-    <string name="snack_bar_message_save_bitmap_error">圖片未被儲存… \n可能是儲存空間不足？</string>
+    <string name="snack_bar_message_save_bitmap_error">圖片未被儲存… \n可能因儲存空間不足？</string>
     <string name="snack_bar_message_share_bitmap_error">分享組態時發生錯誤。</string>
     <!-- Actions -->
-    <string name="actions_label">功能</string>
+    <string name="actions_label">動作</string>
     <string name="intent_chooser_share_title">"分享…"</string>
-    <string name="intent_chooser_mail_title">"發送郵件…"</string>
+    <string name="intent_chooser_mail_title">寄出郵件…</string>
     <string name="copy_barcode_label">複製條碼</string>
     <string name="barcode_copied_label">條碼已複製</string>
     <string name="barcode_search_error_label">URL 不支援</string>
@@ -303,23 +303,23 @@
     <string name="action_go_to_url_label">前往 URL</string>
     <string name="action_web_search_label">在網路上搜尋</string>
     <string name="action_product_search_label">搜尋 %1$s</string>
-    <string name="action_send_mail_label">發送電子郵件</string>
-    <string name="action_send_sms_label">發送簡訊</string>
+    <string name="action_send_mail_label">寄出電子郵件</string>
+    <string name="action_send_sms_label">傳送簡訊</string>
     <string name="action_call_phone_label">播打電話號碼</string>
-    <string name="action_add_to_calendar">新增到行事曆</string>
+    <string name="action_add_to_calendar">新增至行事曆</string>
     <string name="action_add_to_contacts">新增至通訊綠</string>
     <string name="action_show_location">顯示位置</string>
     <string name="action_open_link">開啟連結</string>
     <!-- Wi-Fi Connection -->
-    <string name="action_wifi_connection_title_label">Wi-Fi連接</string>
-    <string name="action_wifi_connection_from_app">連接到 Wi-Fi</string>
+    <string name="action_wifi_connection_title_label">Wi-Fi 連線</string>
+    <string name="action_wifi_connection_from_app">連線至 Wi-Fi</string>
     <string name="action_wifi_connection_from_wifi_settings">複製密碼並移至 Wi-Fi 設定</string>
     <string name="action_wifi_connection_error_wifi_not_activated">你必須在你的裝置上開啟 Wi-Fi！</string>
     <string name="action_wifi_password_copy_label">密碼已複製！</string>
     <string name="action_wifi_success_added_label">Wi-Fi 連接已新增！</string>
-    <string name="action_wifi_failure_added_label">Wi-Fi 連接新增失敗</string>
-    <string name="action_wifi_already_added_label">Wi-Fi 連接已經新增了</string>
-    <string name="action_wifi_add_network_refused">新增 Wi-Fi 連接已被取消。</string>
+    <string name="action_wifi_failure_added_label">Wi-Fi 連線新增失敗</string>
+    <string name="action_wifi_already_added_label">Wi-Fi 連線已經新增了</string>
+    <string name="action_wifi_add_network_refused">新增 Wi-Fi 連線已被取消。</string>
     <string name="action_wifi_add_network_successful">新增 Wi-Fi 網路成功。</string>
     <string name="action_wifi_add_network_failed">新增 Wi-Fi 網路失敗。</string>
     <string name="action_wifi_add_network_already_exists">你已經新增過此 Wi-Fi 網路。</string>
@@ -515,7 +515,7 @@
     <string name="preferences_switch_scan_use_camera_x_api_label">使用 CameraX API</string>
     <string name="preferences_switch_scan_vibrate_label">掃描成功後震動</string>
     <string name="preferences_switch_scan_bip_label">掃描成功後播放聲音</string>
-    <string name="preferences_switch_scan_screen_rotation_label">掃描期間禁用自動旋轉螢幕</string>
+    <string name="preferences_switch_scan_screen_rotation_label">掃描期間停用自動旋轉螢幕</string>
     <string name="preferences_switch_scan_barcode_copied_label">複製掃描的結果至剪貼簿</string>
     <string name="preferences_switch_scan_add_barcode_to_the_history_label">新增已掃描的條碼至歷史紀錄</string>
     <string name="preferences_seek_bar_camera_default_zoom_value_label">攝影機縮放的預設值</string>
@@ -534,14 +534,14 @@
     <!-- About Permissions -->
     <string name="permission_camera_label">相機</string>
     <string name="permission_camera_description_label">掃描條碼所需。</string>
-    <string name="permission_internet_label">網路</string>
+    <string name="permission_internet_label">網際網路</string>
     <string name="permission_internet_description_label">遠端 API 查詢資訊所需。</string>
     <string name="permission_contact_label">通訊錄</string>
     <string name="permission_contact_description_label">匯入通訊錄以產生 QR Code 所需。</string>
     <string name="permission_location_label">定位</string>
     <string name="permission_location_description_label">從裝置定位產生 QR Code 所需。</string>
     <string name="permission_wifi_label">Wi-Fi</string>
-    <string name="permission_wifi_description_label">通過掃描含有 Wi-Fi 存取之 QR Code 以連接到 Wi-Fi 所需。 </string>
+    <string name="permission_wifi_description_label">透過掃描含有 Wi-Fi 存取之 QR 圖碼以連線至 Wi-Fi 所需。</string>
     <string name="permission_vibrate_label">震動</string>
     <string name="permission_vibrate_description_label">用於在掃描時震動。</string>
     <string name="permission_query_all_packages_label">查詢所有套件</string>
@@ -577,7 +577,7 @@
     <string name="country_uz">烏茲別克</string>
     <string name="country_lk">斯里蘭卡</string>
     <string name="country_ph">菲律賓</string>
-    <string name="country_by">白俄羅斯</string>
+    <string name="country_by">白羅斯</string>
     <string name="country_ua">烏克蘭</string>
     <string name="country_tm">土庫曼</string>
     <string name="country_md">摩爾多瓦</string>
@@ -658,10 +658,10 @@
     <string name="country_cz">捷克</string>
     <string name="country_rs">塞爾維亞</string>
     <string name="country_mn">蒙古</string>
-    <string name="country_kp">朝鮮</string>
+    <string name="country_kp">北韓</string>
     <string name="country_tr">土耳其</string>
     <string name="country_nl">荷蘭</string>
-    <string name="country_kr">韓國</string>
+    <string name="country_kr">南韓</string>
     <string name="country_mm">緬甸</string>
     <string name="country_kh">柬埔寨</string>
     <string name="country_th">泰國</string>
@@ -704,7 +704,7 @@
     <string name="shortcuts">捷徑</string>
     <string name="create_qr_from_clipboard">從剪貼簿產生 QR 圖碼</string>
     <string name="custom_search_urls">自訂搜尋網址</string>
-    <string name="examples">例子：</string>
+    <string name="examples">範例：</string>
     <string name="error_empty_fields">輸入欄位不得為空白。</string>
     <string name="preferences_display_barcode_image_results_view">在結果檢視中顯示條碼圖片</string>
     <string name="barcode_search_error_no_compatible_application_found">找不到相容的應用程式</string>
@@ -712,7 +712,7 @@
     <string name="custom_search_urls_add_url">新增網址</string>
     <string name="custom_urls">自訂網址</string>
     <string name="custom_search_urls_modify_url">修改網址</string>
-    <string name="custom_search_urls_list">網址列表</string>
+    <string name="custom_search_urls_list">網址清單</string>
     <string name="custom_search_urls_list_is_empty_message">沒有項目…
 \n你尚未產生自訂網址。</string>
     <string name="popup_message_confirmation_deleted_all_custom_urls">你想刪除所有自訂網址嗎？</string>
@@ -727,9 +727,12 @@
     <string name="preferences_switch_history_save_duplicates_summary_off">重複項目將不會新增至歷史記錄中</string>
     <string name="app_name">條碼掃描器</string>
     <string name="matrix_contact_job_title_label">職位名稱</string>
-    <string name="snack_bar_message_items_deleted">已從歷史記錄中刪除項目。</string>
-    <string name="apply">應用</string>
+    <string name="snack_bar_message_items_deleted">已從歷史紀錄中刪除項目。</string>
+    <string name="apply">套用</string>
     <string name="action_assign_a_name">分配一個名稱</string>
     <string name="barcode_not_found">找不到條碼</string>
     <string name="margins">邊緣</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">增加</string>
+    <string name="decrease">减少</string>
 </resources>
