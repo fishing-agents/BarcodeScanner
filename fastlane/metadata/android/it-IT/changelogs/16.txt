@@ -8,6 +8,6 @@
 1.5.1
 
 - Risolto errore "java.lang.NumberFormatException: empty String" durante la ricerca su OpenFoodFacts.
-- Correzione di valori errati nella tabella nutrizionale per "per porzione".
+- Correzione di valori errati nella tabella nutrizionale "per porzione".
 - Alcuni miglioramenti.
 - Aggiornamento delle dipendenze.
