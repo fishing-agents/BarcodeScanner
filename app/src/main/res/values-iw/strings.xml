@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">סורק ברקוד</string>
+    <string name="camera_permission_denied">לא אישרת גישה למצלמה.\nחובה לאשר זאת כדי לסרוק ברקוד.</string>
+    <string name="close_dialog_label">סגור</string>
+    <string name="yes_label">כן</string>
+    <string name="no_label">לא</string>
+    <string name="go_to_dialog_label">היכנס לאתר</string>
+    <string name="error">שגיאה</string>
+    <string name="image_view_description_flag">דגל</string>
+    <string name="image_view_description_logo">לוגו</string>
+    <string name="image_view_description_type_icon">סוג</string>
+    <string name="image_view_description_bar_code">ברקוד</string>
+    <string name="image_view_description_icon">סמליל</string>
+    <string name="image_view_description_product_front">תמונת מוצר</string>
+    <string name="image_view_description_nutriscore">ציון תזונתי</string>
+    <string name="image_view_description_nova_group">NOVA GROUP</string>
 </resources>
