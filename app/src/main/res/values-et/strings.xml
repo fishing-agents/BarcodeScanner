@@ -187,6 +187,13 @@
     <string name="matrix_contact_address_label">Aadress</string>
     <string name="matrix_contact_notes_label">Märkused</string>
     <string name="matrix_agenda_name_event_label">Sündmuse nimi</string>
-    <string name="matrix_agenda_start_date_event_label">Algus</string>
+    <string name="matrix_agenda_start_date_event_label">Algab</string>
     <string name="matrix_agenda_end_date_event_label">Lõppeb</string>
+    <string name="matrix_agenda_place_event_label">Toimumiskoht</string>
+    <string name="matrix_agenda_description_event_label">Kirjeldus</string>
+    <string name="matrix_phone_tel_number_label">Telefon</string>
+    <string name="matrix_email_recipient_label">Saaja</string>
+    <string name="matrix_email_cc_label">Koopia</string>
+    <string name="matrix_email_bcc_label">Pimekoopia</string>
+    <string name="matrix_subject_label">Teema</string>
 </resources>
