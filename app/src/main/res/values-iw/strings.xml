@@ -492,4 +492,14 @@
     <string name="preferences_search_title">חיפוש</string>
     <string name="preferences_search_engine">מנוע חיפוש</string>
     <string name="preferences_additional_options">אפשרויות נוספות</string>
+    <string name="preferences_display_barcode_image_results_view">הצג את תמונת הברקוד בתצוגת התוצאות</string>
+    <string name="shortcuts">קיצורי דרך</string>
+    <string name="shortcuts_info">סדר את קיצורי הדרך לפי סדר העדיפויות שלך.</string>
+    <string name="preferences_about_title">אודות</string>
+    <string name="preferences_about_permissions_label">הרשאות</string>
+    <string name="preferences_about_third_party_libraries_label">ספריות צד שלישי</string>
+    <string name="preferences_about_bdd_label">מסד נתונים</string>
+    <string name="preferences_source_code_label">קוד מקור</string>
+    <string name="permission_camera_label">מצלמה</string>
+    <string name="permission_camera_description_label">נדרשת על מנת לסרוק ברקוד</string>
 </resources>
