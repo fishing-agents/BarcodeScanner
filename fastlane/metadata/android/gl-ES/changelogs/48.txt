@@ -3,5 +3,5 @@
 Lista de cambios completa aquí: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
 - Traducións actualizadas (Weblate).
-- Arranxado un erro que ocorría que podía ocorrer mentres ae engadía unha wifi desde un código QR (grazas a Markus Fisch).
+- Arranxado un erro que podía ocorrer ao engadir unha wifi desde un código QR (grazas a Markus Fisch).
 - Dependencias actualizadas.
