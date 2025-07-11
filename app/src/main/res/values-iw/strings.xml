@@ -363,4 +363,27 @@
     <string name="qr_code_text_input_edit_text_hint_epc_version">גירסה</string>
     <string name="qr_code_text_input_edit_text_hint_epc_identification">זיהוי</string>
     <string name="qr_code_text_input_edit_text_hint_epc_bic">BIC</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_name">שם</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_iban">IBAN</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_amount">סכום</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_purpose">מטרה</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_information">מידע</string>
+    <string name="qr_code_text_input_edit_text_epc_name_error">שדה \"שם\" הינו חובה</string>
+    <string name="qr_code_text_input_edit_text_epc_iban_error">IBAN שגוי</string>
+    <string name="qr_code_text_input_edit_text_hint_email">דוא\"ל</string>
+    <string name="qr_code_text_input_edit_text_hint_email_subject">נושא</string>
+    <string name="qr_code_text_input_edit_text_hint_localisation_latitude">קו רוחב</string>
+    <string name="qr_code_text_input_edit_text_hint_localisation_longitude">קו אורך</string>
+    <string name="qr_code_text_input_edit_text_hint_wifi_ssid">SSID / שם רשת</string>
+    <string name="qr_code_text_input_edit_text_hint_wifi_password">סיסמה</string>
+    <string name="qr_code_text_input_edit_text_hint_wifi_hide">מוסתר</string>
+    <string name="spinner_wifi_encryption_wep">WEP</string>
+    <string name="spinner_wifi_encryption_wpa">WPA/WPA2</string>
+    <string name="spinner_wifi_encryption_sae">WPA3</string>
+    <string name="spinner_wifi_encryption_none">ללא סיסמה</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_event_name">שם אירוע</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_place">מקום</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_description">תיאור</string>
+    <string name="check_box_event_all_of_day">כל היום</string>
+    <string name="begin_label">התחלה</string>
 </resources>
