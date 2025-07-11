@@ -10,6 +10,8 @@
     <a href="https://www.amazon.com/Atharok-Barcode-Scanner/dp/B0BCDZ19T2" target="_blank"><img src="assets/get-it-on-amazon-badge.png" alt="Get it on Amazon Appstore" height="90"></a>
 </div>
 
+You may also download the APK directly from [GitLab](https://gitlab.com/Atharok/BarcodeScanner/-/releases).
+
 [![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Overview
@@ -65,6 +67,21 @@ If you like Barcode Scanner, you can support me via [Liberapay](https://liberapa
 ## Translation
 
 If you want to translate Barcode Scanner, you can use [Weblate](https://hosted.weblate.org/projects/barcodescanner/) or make a merge request.
+
+## Checksums
+
+To verify the authenticity and integrity of the APK, compare its signature against the certificate fingerprints shown below:
+
+```
+SHA-256: 7ef567187de762dcc47116366e20c08c4673f68d445340673b72c42120ff40c7
+SHA-1: 4d0484ab1a4da71a2fea2e53d134d4e3839440ed
+MD5: 8d327b5dc6509672426d12bb47ae8012
+```
+
+Notes about third-party distribution platforms:
+
+- Google Play: The app is re-signed by Google with its own key, so the certificate fingerprints will differ.
+- F-Droid: The app is built from source and signed by F-Droid with its own key, so the certificate fingerprints will also differ.
 
 ## Licences
 
