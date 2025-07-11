@@ -385,5 +385,111 @@
     <string name="qr_code_text_input_edit_text_hint_agenda_place">מקום</string>
     <string name="qr_code_text_input_edit_text_hint_agenda_description">תיאור</string>
     <string name="check_box_event_all_of_day">כל היום</string>
-    <string name="begin_label">התחלה</string>
+    <string name="begin_label">התחל</string>
+    <string name="end_label">סיים</string>
+    <string name="custom_search_urls_add_url">הוסף URL</string>
+    <string name="custom_search_urls_list">רשימת URL</string>
+    <string name="barcode_data_matrix_label">מטריקס נתונים</string>
+    <string name="country_mo">מקאו</string>
+    <string name="country_ar">ארגנטינה</string>
+    <string name="country_cl">צ\'ילה</string>
+    <string name="country_py">פרגוואי</string>
+    <string name="country_ec">אקוודור</string>
+    <string name="country_br">ברזיל</string>
+    <string name="country_it">איטליה</string>
+    <string name="country_es">ספרד</string>
+    <string name="country_cu">קובה</string>
+    <string name="country_sk">סלובקיה</string>
+    <string name="country_cz">צ\'כיה</string>
+    <string name="country_rs">סרביה</string>
+    <string name="country_mn">מונגוליה</string>
+    <string name="country_kp">קוריאה הצפונית</string>
+    <string name="country_tr">טורקיה</string>
+    <string name="country_nl">הולנד</string>
+    <string name="country_kr">קוריאה הדרומית</string>
+    <string name="country_mm">מיאנמר</string>
+    <string name="country_kh">קמבודיה</string>
+    <string name="country_th">תאילנד</string>
+    <string name="country_sg">סינגפור</string>
+    <string name="country_in">הודו</string>
+    <string name="country_vn">וייטנאם</string>
+    <string name="country_pk">פקיסטן</string>
+    <string name="country_id">אינדונזיה</string>
+    <string name="country_at">אוסטריה</string>
+    <string name="country_au">אוסטרליה</string>
+    <string name="country_nz">ניו זילנד</string>
+    <string name="country_my">מלזיה</string>
+    <string name="base_api_open_food_facts_url">https://world.openfoodfacts.org/api/v0/product/</string>
+    <string name="base_api_open_pet_food_facts_url">https://world.openpetfoodfacts.org/api/v0/product/</string>
+    <string name="base_api_open_beauty_facts_url">https://world.openbeautyfacts.org/api/v0/product/</string>
+    <string name="base_api_musicbrainz_url">https://musicbrainz.org/ws/2/</string>
+    <string name="base_api_cover_art_archive_url">https://coverartarchive.org/</string>
+    <string name="base_api_open_library_url">https://openlibrary.org</string>
+    <string name="search_engine_google_url">https://www.google.com/search?q=%1$s</string>
+    <string name="search_engine_bing_url">https://www.bing.com/search?q=%1$s</string>
+    <string name="search_engine_duck_duck_go_url">https://duckduckgo.com/?q=%1$s</string>
+    <string name="search_engine_startpage_url">https://www.startpage.com/do/metasearch.pl?query=%1$s</string>
+    <string name="search_engine_brave_search_url">https://search.brave.com/search?q=%1$s</string>
+    <string name="search_engine_qwant_url">https://www.qwant.com/?q=%1$s</string>
+    <string name="search_engine_ecosia_url">https://www.ecosia.org/search?q=%1$s</string>
+    <string name="search_engine_lilo_url">https://search.lilo.org/?q=%1$s</string>
+    <string name="search_engine_amazon_url">https://www.amazon.com/s?k=%1$s</string>
+    <string name="search_engine_ebay_url">https://www.ebay.com/sch/i.html?_nkw=%1$s</string>
+    <string name="search_engine_fnac_url">https://www.fnac.com/SearchResult/ResultList.aspx?Search=%1$s</string>
+    <string name="search_engine_open_food_facts_product_url">https://world.openfoodfacts.org/product/%1$s</string>
+    <string name="search_engine_open_pet_food_facts_product_url">https://world.openpetfoodfacts.org/product/%1$s</string>
+    <string name="search_engine_open_beauty_facts_product_url">https://world.openbeautyfacts.org/product/%1$s</string>
+    <string name="search_engine_musicbrainz_product_url">https://musicbrainz.org/search?query=%1$s&amp;type=release</string>
+    <string name="search_engine_open_library_product_url">https://openlibrary.org/search?q=%1$s</string>
+    <string name="search_engine_additive_url">https://world.openfoodfacts.org/additive/%1$s</string>
+    <string name="search_engine_open_food_facts_url">https://world.openfoodfacts.org/</string>
+    <string name="search_engine_open_pet_food_facts_url">https://world.openpetfoodfacts.org/</string>
+    <string name="search_engine_open_beauty_facts_url">https://world.openbeautyfacts.org/</string>
+    <string name="search_engine_open_library_url">https://openlibrary.org/</string>
+    <string name="search_engine_music_brainz_url">https://musicbrainz.org/</string>
+    <string name="preferences_color_orange">כתום</string>
+    <string name="preferences_color_green">ירוק</string>
+    <string name="preferences_color_red">אדום</string>
+    <string name="preferences_color_purple">סגול</string>
+    <string name="preferences_languages_title">שפות</string>
+    <string name="preferences_languages_change">שנה שפה</string>
+    <string name="preferences_remote_api_title">מוצרים ו־API</string>
+    <string name="preferences_remote_api_to_use_label">API ברירת מחדל</string>
+    <string name="preferences_remote_api_choose_label">בחר API</string>
+    <string name="preferences_remote_api_food_label">Open Food Facts (מוצרי מזון)</string>
+    <string name="preferences_remote_api_cosmetic_label">Open Beauty Facts (מוצרי קוסמטיקה)</string>
+    <string name="preferences_remote_api_pet_food_label">Open Pet Food Facts (מוצרי מזון בע\"ח)</string>
+    <string name="preferences_remote_api_musicbrainz_label">MusicBrainz (תקליטורים, תקליטים, …)</string>
+    <string name="preferences_remote_api_book_label">Open Library (ספרים)</string>
+    <string name="preferences_information_about_remote_api_title">מידע על API</string>
+    <string name="preferences_information_about_remote_api_what_is_an_api_title">מה זה API?</string>
+    <string name="preferences_information_about_remote_api_product_types_supported_title">סוגי מוצרים הנתמכים כרגע</string>
+    <string name="preferences_information_about_remote_api_product_types_supported_food">• מוצרי מזון (עם Open Food Facts API)</string>
+    <string name="preferences_information_about_remote_api_product_types_supported_beauty">• מוצרי קוסמטיקה (עם Open Beauty Facts API)</string>
+    <string name="preferences_information_about_remote_api_product_types_supported_pet_food">• מוצרי מזון לבע\"ח (עם Open Pet Food Facts API)</string>
+    <string name="preferences_information_about_remote_api_product_types_supported_music">• תקליטורים, תקליטים, … (עם MusicBrainz API)</string>
+    <string name="preferences_information_about_remote_api_product_types_supported_book">• ספרים (עם Open Library API)</string>
+    <string name="preferences_information_about_remote_api_some_additional_information_title">מידע נוסף</string>
+    <string name="preferences_information_about_remote_api_some_additional_information_description_1">• חלק מהמוצרים אולי לא יכללו במאגרי מידע מסוימים.</string>
+    <string name="preferences_information_about_remote_api_some_additional_information_description_2">• ייתכן שיהיו שגיאות במידע המסופק על ידי ה־API.</string>
+    <string name="preferences_information_about_remote_api_how_it_works">איך זה עובד</string>
+    <string name="preferences_information_about_remote_api_automatic_search_title">חיפוש אוטומטי</string>
+    <string name="preferences_information_about_remote_api_manual_search_title">חיפוש ידני</string>
+    <string name="preferences_information_about_remote_api_about_books_title">ספרים</string>
+    <string name="preferences_scan_title">סרוק</string>
+    <string name="preferences_switch_scan_use_camera_x_api_label">השתמש ב־API של CameraX</string>
+    <string name="preferences_switch_scan_vibrate_label">רטט כאשר סריקה מצליחה</string>
+    <string name="preferences_switch_scan_bip_label">הפעל קול כשסריקה מצליחה</string>
+    <string name="preferences_switch_scan_screen_rotation_label">בטל סיבוב אוטומטי בזמן סריקה</string>
+    <string name="preferences_switch_scan_barcode_copied_label">העתק ברקודים סרוקים ללוח העריכה</string>
+    <string name="preferences_seek_bar_camera_default_zoom_value_label">ערך ברירת מחדל של זום המצלמה</string>
+    <string name="preferences_barcode_generation_title">יצירת ברקוד</string>
+    <string name="preferences_switch_scan_add_barcode_to_the_history_label">הוסף ברקודים סרוקים להיסטוריה</string>
+    <string name="preferences_switch_barcode_generation_add_barcode_to_the_history_label">הוסף ברקודים מיוצרים להיסטוריה</string>
+    <string name="preferences_switch_history_save_duplicates_label">שמור עותקים כפולים</string>
+    <string name="preferences_switch_history_save_duplicates_summary_on">עותקים כפולים יתווספו להיסטוריה</string>
+    <string name="preferences_switch_history_save_duplicates_summary_off">עותקים כפולים לא יתווספו להיסטוריה</string>
+    <string name="preferences_search_title">חיפוש</string>
+    <string name="preferences_search_engine">מנוע חיפוש</string>
+    <string name="preferences_additional_options">אפשרויות נוספות</string>
 </resources>
