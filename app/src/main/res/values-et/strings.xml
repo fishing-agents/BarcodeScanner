@@ -275,5 +275,6 @@
     <string name="value_px">%1$s pikslit</string>
     <string name="increase">Suurenda</string>
     <string name="decrease">Vähenda</string>
-    <string name="intent_chooser_share_title">Jaga kasutades</string>
+    <string name="intent_chooser_share_title">Jaga kasutades…</string>
+    <string name="snack_bar_message_share_bitmap_error">Jagamise seadistamisel tekkis viga.</string>
 </resources>
