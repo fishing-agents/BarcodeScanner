@@ -342,5 +342,25 @@
     <string name="qr_code_text_input_edit_text_hint_name">שם</string>
     <string name="qr_code_text_input_edit_text_hint_first_name">שם פרטי</string>
     <string name="qr_code_text_input_edit_text_hint_web_site">אתר אינטרנט</string>
-    <string name="qr_code_text_input_edit_text_hint_mail_1">כתובת דוא\"ל 1</string>
+    <string name="qr_code_text_input_edit_text_hint_mail_1">כתובת דואר 1</string>
+    <string name="qr_code_text_input_edit_text_hint_mail_2">כתובת דואר 2</string>
+    <string name="qr_code_text_input_edit_text_hint_mail_3">כתובת דואר 3</string>
+    <string name="qr_code_text_input_edit_text_hint_phone_1">מספר טלפון 1</string>
+    <string name="qr_code_text_input_edit_text_hint_phone_2">מספר טלפון 2</string>
+    <string name="qr_code_text_input_edit_text_hint_phone_3">מספר טלפון 3</string>
+    <string name="qr_code_text_input_edit_text_hint_street_address">רחוב</string>
+    <string name="qr_code_text_input_edit_text_hint_postal_code">מיקוד</string>
+    <string name="qr_code_text_input_edit_text_hint_city">עיר</string>
+    <string name="qr_code_text_input_edit_text_hint_country">מדינה</string>
+    <string name="qr_code_text_input_edit_text_hint_region">אזור</string>
+    <string name="qr_code_text_input_edit_text_hint_notes">הערות</string>
+    <string name="qr_code_spinner_prompt_none">ללא</string>
+    <string name="spinner_type_mobile">נייד</string>
+    <string name="spinner_type_fax">פקס</string>
+    <string name="spinner_type_home">בית</string>
+    <string name="spinner_type_work">משרד</string>
+    <string name="spinner_type_other">אחר</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_version">גירסה</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_identification">זיהוי</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_bic">BIC</string>
 </resources>
