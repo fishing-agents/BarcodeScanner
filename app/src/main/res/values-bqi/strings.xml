@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">اسکنر بارکود</string>
+    <string name="camera_permission_denied">ایسا دسرسی شؽواتگر ن رڌ کردین.\nوا هو ن سی اسکنر بارکود موجاز کۊنین.</string>
+    <string name="close_dialog_label">بستن</string>
+    <string name="yes_label">هری</string>
+    <string name="error">ختا</string>
+    <string name="image_view_description_flag">پرچم</string>
+    <string name="image_view_description_logo">آرم</string>
+    <string name="image_view_description_type_icon">نوع</string>
 </resources>
