@@ -58,6 +58,9 @@
     <string name="bar_code_type_pet_food">خردنی هیووݩ یل هووه ای</string>
     <string name="bar_code_type_beauty">مئسۊل آرایشی</string>
     <string name="bar_code_type_music">آرنگ</string>
-    <string name="bar_code_type_unknown_music_album_title">عنوان آلبوم نشناخته</string>
+    <string name="bar_code_type_unknown_music_album_title">عونوان آلبوم نشناخته</string>
     <string name="bar_code_type_book">کتاو</string>
+    <string name="bar_code_type_unknown_book_title">عونوان کتاو نشناخته</string>
+    <string name="bar_code_type_industrial">کود سنعتی</string>
+    <string name="bar_code_type_unknown_matrix">کود ماتریکس</string>
 </resources>
