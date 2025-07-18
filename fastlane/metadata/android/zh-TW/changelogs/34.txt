@@ -1,0 +1,3 @@
+1.16.1
+
+因拒絕在 Google Play 更新應用程式，刪除 QUERY_ALL_PACKAGES 權限。

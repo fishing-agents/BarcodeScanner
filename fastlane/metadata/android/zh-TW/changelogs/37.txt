@@ -1,0 +1,11 @@
+1.19.0
+
+- 新增完整的阿拉伯語翻譯（感謝 testing150）（使用 Weblate）。
+
+完整變更紀錄請見：https://gitlab.com/Atharok/BarcodeScanner/-/releases
+- 更新至 SDK 34 (Android 14) + 相依套件。
+- 新增變更生成條碼顏色與大小的功能。
+- 更新翻譯（使用 Weblate）。
+- 條碼生成效能提升。
+- 穩定性提升並修正了幾項崩潰問題。
+- 部分使用者介面/使用者體驗優化。

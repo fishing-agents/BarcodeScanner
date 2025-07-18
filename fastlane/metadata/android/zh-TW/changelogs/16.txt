@@ -1,0 +1,13 @@
+1.6.0
+
+- 開始俄文翻譯（感謝 s s）。
+- 將 Glide 和 GlideToVectorYou 依賴項替換為 Coil。
+- 修正 Android 5 上的當機問題。
+1.5.1
+
+- 程式碼改善。
+
+- 修正了在 OpenFoodFacts 上搜尋時出現的「java.lang.NumberFormatException: empty String」錯誤。
+- 修正了營養成分表中「每份」數值不正確的問題。
+- 部分改進。
+- 依賴項更新。

@@ -1,0 +1,5 @@
+1.9.1
+
+- 重新設計樣式，以完整整合 Material3 並更好地實作 Material You。
+- 變更了捷徑圖示的顏色。
+- 新增了 OpenFoodFacts 的新標誌。

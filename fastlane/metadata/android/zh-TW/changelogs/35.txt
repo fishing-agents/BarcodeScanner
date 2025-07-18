@@ -1,0 +1,17 @@
+1.17.0
+
+- 新增瀏覽器預設搜尋引擎。
+新功能：
+- 新增支援 WPA3 安全性協定的 Wi-Fi 連線 (感謝 Mateus J.)。
+- 新增葡萄牙語 (巴西) 翻譯 (感謝 joaooliva)。
+翻譯 (使用 Weblate)：
+- 新增日文翻譯（尚未完成）（感謝 しいたけ）。
+- 新增烏克蘭文翻譯（尚未完成）（感謝 MaSHiNiK）。
+- 新增義大利文翻譯（尚未完成）（感謝 Tua madre）。
+- 新增印尼文翻譯（尚未完成）（感謝 Reza）。
+- 更新了德文翻譯（感謝 Fabian Rennebeck）。
+- 更新了挪威語（書面語）翻譯（感謝 Allan Nordhøy）。
+- 更新了簡體中文翻譯（感謝 御坂 13766 号 和 Red Star Over Earth）。
+- 更新了波蘭文翻譯（感謝 Eryk Michalak）。
+- 更新了土耳其文翻譯（感謝 abfreeman）。
+- 更新了西班牙文翻譯（感謝 gallegonovato）。
