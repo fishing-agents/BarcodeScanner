@@ -1,0 +1,10 @@
+1.18.0
+
+完整變更紀錄請見：https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- 更新翻譯（使用 Weblate）。
+- 新增義大利文翻譯（感謝 Kevin Concilio）。
+- 為執行 Android 7 或更高版本的裝置新增語言切換功能（感謝 Hu Shenghao）。
+- 新增 CSV 和 JSON 格式的資料庫匯出功能。
+- 將 JSON 檔案匯入資料庫。
+- 相依性更新。

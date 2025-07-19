@@ -1,0 +1,2 @@
+- Code verbetering
+- Probleem opgelost waarbij de camera soms niet werd uitgeschakeld na het scannen vanaf een afbeelding.

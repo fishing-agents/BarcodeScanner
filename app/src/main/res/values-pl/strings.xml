@@ -80,7 +80,7 @@
     <string name="snack_bar_message_item_deleted">Produkt „%1$s” usunięto z historii.</string>
     <string name="popup_message_confirmation_delete_history">Usunąć całą historię?</string>
     <string name="popup_message_confirmation_delete_selected_items_history">Usunąć wybrane?</string>
-    <string name="menu_item_history_delete">Historia usunięta</string>
+    <string name="menu_item_history_delete">Usuń historię</string>
     <string name="menu_item_history_delete_from_history">Usuń z historii</string>
     <string name="menu_item_history_removed_from_history">Usunięte z historii!</string>
     <string name="menu_item_history_add_in_history">Dodaj do historii</string>
@@ -525,7 +525,7 @@
     <!-- About Settings -->
     <string name="preferences_about_title">Informacje</string>
     <string name="preferences_about_permissions_label">Uprawnienia</string>
-    <string name="preferences_about_third_party_libraries_label">Inne bilbioteki</string>
+    <string name="preferences_about_third_party_libraries_label">Biblioteki stron trzecich</string>
     <string name="preferences_about_bdd_label">Baza danych</string>
     <string name="preferences_source_code_label">Kod źródłowy</string>
     <!-- About Permissions -->

@@ -1,0 +1,4 @@
+- 修正了在 OpenFoodFacts 上搜尋時出現的「java.lang.NumberFormatException: empty String」錯誤。
+- 修正了營養成分表中「每份」數值不正確的問題。
+- 部分改進。
+- 依賴項更新。
