@@ -160,4 +160,13 @@
     <string name="off_sodium_label">سودیوم</string>
     <string name="book_product_more_label">قلوه</string>
     <string name="book_product_pages_number_label">تئداد بلگه یل</string>
+    <string name="nova_group_description_unknown">بؽ بونکۊ NOVA</string>
+    <string name="eco_score_entitled_label">نومره اکولوژیک</string>
+    <string name="additive_no_information_found_label">هیچ داده ای زبار ای وردنی نجۊرست!</string>
+    <string name="palm_oil_free_label">بؽ رۊقن نخل</string>
+    <string name="contain_palm_oil_label">وا رۊقن نخل</string>
+    <string name="may_contain_palm_oil_label">گاشڌ وا رۊقن نخل بۊ</string>
+    <string name="is_vegan_label">وگان</string>
+    <string name="no_vegan_label">قیر وگان</string>
+    <string name="maybe_vegan_label">گاشڌ وگان</string>
 </resources>
