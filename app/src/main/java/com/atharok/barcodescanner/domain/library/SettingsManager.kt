@@ -60,6 +60,7 @@ class SettingsManager(private val context: Context) {
     private val copyBarcodeScanKey = context.getString(R.string.preferences_switch_scan_barcode_copied_key)
     private val addBarcodeToHistoryScanKey = context.getString(R.string.preferences_switch_scan_add_barcode_to_the_history_key)
     private val defaultZoomValueKey = context.getString(R.string.preferences_seek_bar_camera_default_zoom_value_key)
+    private val barcodeTypeFilterKey = context.getString(R.string.preferences_switch_scan_barcode_type_filter_key)
 
     var saveDuplicates = prefs.getBoolean(saveDuplicateKey, true)
         private set
@@ -73,6 +74,10 @@ class SettingsManager(private val context: Context) {
     var shouldCopyBarcodeScan = prefs.getBoolean(copyBarcodeScanKey, false)
         private set
     var shouldAddBarcodeScanToHistory = prefs.getBoolean(addBarcodeToHistoryScanKey, true)
+        private set
+
+    // Returns a set of allowed barcode formats, empty set means all formats are allowed
+    var allowedBarcodeFormats = prefs.getStringSet(barcodeTypeFilterKey, emptySet()) ?: emptySet()
         private set
 
     // Barcode Generation
@@ -105,6 +110,7 @@ class SettingsManager(private val context: Context) {
         isAutoScreenRotationScanDisabled = prefs.getBoolean(autoScreenRotationScanDisabledKey, true)
         shouldCopyBarcodeScan = prefs.getBoolean(copyBarcodeScanKey, false)
         shouldAddBarcodeScanToHistory = prefs.getBoolean(addBarcodeToHistoryScanKey, true)
+        allowedBarcodeFormats = prefs.getStringSet(barcodeTypeFilterKey, emptySet()) ?: emptySet()
         errorCorrectionLevelEntry = prefs.getString(errorCorrectionLevelKey, "low")
         shouldAddBarcodeGenerateToHistory = prefs.getBoolean(addBarcodeToHistoryGenerateKey, false)
         defaultSearchEngine = prefs.getString(searchEngineKey, "google")
@@ -200,4 +206,9 @@ class SettingsManager(private val context: Context) {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) "material_you" else "blue"
 
     fun getDefaultZoomValue(): Int = prefs.getInt(defaultZoomValueKey, 50)
+
+    fun updateAllowedBarcodeFormats(formats: Set<String>) {
+        prefs.edit().putStringSet(barcodeTypeFilterKey, formats).apply()
+        allowedBarcodeFormats = formats
+    }
 }

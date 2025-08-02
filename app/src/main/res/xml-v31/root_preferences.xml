@@ -84,6 +84,11 @@
             android:defaultValue="false"
             app:singleLineTitle="false"/>
 
+        <com.atharok.barcodescanner.presentation.customView.preferences.CustomPreference
+            android:key="@string/preferences_switch_scan_barcode_type_filter_key"
+            android:title="@string/preferences_switch_scan_barcode_type_filter_label"
+            app:singleLineTitle="false"/>
+
         <com.atharok.barcodescanner.presentation.customView.preferences.CustomSeekBarPreference
             android:key="@string/preferences_seek_bar_camera_default_zoom_value_key"
             android:title="@string/slider_description_zoom"

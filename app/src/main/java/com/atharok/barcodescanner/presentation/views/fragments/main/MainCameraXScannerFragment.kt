@@ -67,6 +67,7 @@ import com.atharok.barcodescanner.presentation.views.activities.BarcodeScanFromI
 import com.atharok.barcodescanner.presentation.views.activities.BaseActivity
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.fragments.BaseFragment
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.zxing.Result
 import org.koin.android.ext.android.get
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
@@ -237,8 +238,18 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
     override fun onBarcodeFound(result: Result) {
         viewBinding.fragmentMainCameraXScannerPreviewView.post {
             if(cameraConfig?.isRunning() == true) {
-                cameraConfig?.stopCamera()
-                onSuccessfulScanFromCamera(result)
+                // Check if this barcode type is allowed
+                val allowedFormats = settingsManager.allowedBarcodeFormats
+                val barcodeFormat = result.barcodeFormat?.name
+
+                // If no formats are specified (empty set), all formats are allowed
+                if (allowedFormats.isEmpty() || (barcodeFormat != null && allowedFormats.contains(barcodeFormat))) {
+                    cameraConfig?.stopCamera()
+                    onSuccessfulScanFromCamera(result)
+                } else {
+                    // Barcode type is not whitelisted - show popup but don't save to history
+                    showNonWhitelistedBarcodePopup(result)
+                }
             }
         }
     }
@@ -248,6 +259,34 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
             cameraConfig?.stopCamera()
             viewBinding.fragmentMainCameraXScannerCameraPermissionTextView.text = getString(R.string.scan_error_exception_label, msg)
             doPermissionRefused()
+        }
+    }
+
+    private fun showNonWhitelistedBarcodePopup(result: Result) {
+        requireActivity().runOnUiThread {
+            cameraConfig?.stopCamera()
+
+            val barcodeFormatName = result.barcodeFormat?.name ?: "Unknown"
+
+            MaterialAlertDialogBuilder(requireContext())
+                .setTitle(R.string.non_whitelisted_barcode_title)
+                .setMessage(getString(R.string.non_whitelisted_barcode_message, barcodeFormatName))
+                .setPositiveButton(android.R.string.ok) { dialog, _ ->
+                    dialog.dismiss()
+                    // Resume scanning
+                    cameraConfig?.startCamera(
+                        lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
+                        previewView = viewBinding.fragmentMainCameraXScannerPreviewView
+                    )
+                }
+                .setOnCancelListener {
+                    // Resume scanning if dialog is cancelled
+                    cameraConfig?.startCamera(
+                        lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
+                        previewView = viewBinding.fragmentMainCameraXScannerPreviewView
+                    )
+                }
+                .show()
         }
     }
 

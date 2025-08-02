@@ -48,7 +48,10 @@ import com.atharok.barcodescanner.presentation.views.activities.BaseActivity
 import com.atharok.barcodescanner.presentation.views.activities.CustomSearchUrlListActivity
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.activities.ShortcutsActivity
+import com.atharok.barcodescanner.domain.entity.barcode.BarcodeFormatDetails
+import com.atharok.barcodescanner.domain.library.SettingsManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import org.koin.android.ext.android.inject
 import java.util.Locale
 import kotlin.reflect.KClass
 
@@ -76,6 +79,7 @@ class MainSettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSha
         configureStartActivity(R.string.preferences_about_library_third_key, AboutThirdPartyLibrariesActivity::class)
         configureStartActivity(R.string.preferences_about_bdd_key, AboutBddActivity::class)
         configureSourceCodePreference()
+        configureBarcodeTypeFilterPreference()
     }
 
     override fun onResume() {
@@ -232,5 +236,79 @@ class MainSettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSha
         val intent = createStartActivityIntent(requireContext(), activityKClass)
         startActivity(intent)
         return true
+    }
+
+    private fun configureBarcodeTypeFilterPreference() {
+        val pref = findPreference(getString(R.string.preferences_switch_scan_barcode_type_filter_key)) as Preference?
+        val settingsManager: SettingsManager by inject()
+
+        pref?.let {
+            it.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+                showBarcodeTypeFilterDialog(settingsManager)
+                true
+            }
+        }
+    }
+
+    private fun showBarcodeTypeFilterDialog(settingsManager: SettingsManager) {
+        // Get all available barcode formats
+        val allFormats = listOf(
+            BarcodeFormatDetails.QR_TEXT,
+            BarcodeFormatDetails.QR_URL,
+            BarcodeFormatDetails.QR_WIFI,
+            BarcodeFormatDetails.QR_MAIL,
+            BarcodeFormatDetails.QR_PHONE,
+            BarcodeFormatDetails.QR_SMS,
+            BarcodeFormatDetails.QR_CONTACT,
+            BarcodeFormatDetails.QR_AGENDA,
+            BarcodeFormatDetails.QR_LOCALISATION,
+            BarcodeFormatDetails.QR_APPLICATION,
+            BarcodeFormatDetails.QR_EPC,
+            BarcodeFormatDetails.DATA_MATRIX,
+            BarcodeFormatDetails.PDF_417,
+            BarcodeFormatDetails.AZTEC,
+            BarcodeFormatDetails.EAN_13,
+            BarcodeFormatDetails.EAN_8,
+            BarcodeFormatDetails.UPC_A,
+            BarcodeFormatDetails.UPC_E,
+            BarcodeFormatDetails.CODE_128,
+            BarcodeFormatDetails.CODE_93,
+            BarcodeFormatDetails.CODE_39,
+            BarcodeFormatDetails.CODABAR,
+            BarcodeFormatDetails.ITF
+        )
+
+        val formatNames = allFormats.map { getString(it.stringResource) }.toTypedArray()
+        val formatValues = allFormats.map { it.format.name }.toTypedArray()
+
+        // Get currently selected formats
+        val currentSelection = settingsManager.allowedBarcodeFormats
+        val checkedItems = BooleanArray(formatValues.size) { index ->
+            // If no formats are selected, all are allowed
+            currentSelection.isEmpty() || currentSelection.contains(formatValues[index])
+        }
+
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(R.string.preferences_switch_scan_barcode_type_filter_label)
+            .setMultiChoiceItems(formatNames, checkedItems) { _, which, isChecked ->
+                checkedItems[which] = isChecked
+            }
+            .setPositiveButton(android.R.string.ok) { _, _ ->
+                val selectedFormats = mutableSetOf<String>()
+                checkedItems.forEachIndexed { index, isChecked ->
+                    if (isChecked) {
+                        selectedFormats.add(formatValues[index])
+                    }
+                }
+
+                // If all formats are selected, save empty set (meaning all allowed)
+                if (selectedFormats.size == formatValues.size) {
+                    settingsManager.updateAllowedBarcodeFormats(emptySet())
+                } else {
+                    settingsManager.updateAllowedBarcodeFormats(selectedFormats)
+                }
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
     }
 }
