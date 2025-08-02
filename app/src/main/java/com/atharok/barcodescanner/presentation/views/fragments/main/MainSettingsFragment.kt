@@ -48,9 +48,9 @@ import com.atharok.barcodescanner.presentation.views.activities.BaseActivity
 import com.atharok.barcodescanner.presentation.views.activities.CustomSearchUrlListActivity
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.activities.ShortcutsActivity
-import com.atharok.barcodescanner.domain.entity.barcode.BarcodeFormatDetails
 import com.atharok.barcodescanner.domain.library.SettingsManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.zxing.BarcodeFormat
 import org.koin.android.ext.android.inject
 import java.util.Locale
 import kotlin.reflect.KClass
@@ -250,36 +250,26 @@ class MainSettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSha
         }
     }
 
-    private fun showBarcodeTypeFilterDialog(settingsManager: SettingsManager) {
-        // Get all available barcode formats
+        private fun showBarcodeTypeFilterDialog(settingsManager: SettingsManager) {
+        // Get all available barcode formats (actual barcode types only)
         val allFormats = listOf(
-            BarcodeFormatDetails.QR_TEXT,
-            BarcodeFormatDetails.QR_URL,
-            BarcodeFormatDetails.QR_WIFI,
-            BarcodeFormatDetails.QR_MAIL,
-            BarcodeFormatDetails.QR_PHONE,
-            BarcodeFormatDetails.QR_SMS,
-            BarcodeFormatDetails.QR_CONTACT,
-            BarcodeFormatDetails.QR_AGENDA,
-            BarcodeFormatDetails.QR_LOCALISATION,
-            BarcodeFormatDetails.QR_APPLICATION,
-            BarcodeFormatDetails.QR_EPC,
-            BarcodeFormatDetails.DATA_MATRIX,
-            BarcodeFormatDetails.PDF_417,
-            BarcodeFormatDetails.AZTEC,
-            BarcodeFormatDetails.EAN_13,
-            BarcodeFormatDetails.EAN_8,
-            BarcodeFormatDetails.UPC_A,
-            BarcodeFormatDetails.UPC_E,
-            BarcodeFormatDetails.CODE_128,
-            BarcodeFormatDetails.CODE_93,
-            BarcodeFormatDetails.CODE_39,
-            BarcodeFormatDetails.CODABAR,
-            BarcodeFormatDetails.ITF
+            BarcodeFormat.QR_CODE to getString(R.string.barcode_qr_code_label),
+            BarcodeFormat.DATA_MATRIX to getString(R.string.barcode_data_matrix_label),
+            BarcodeFormat.PDF_417 to getString(R.string.barcode_pdf_417_label),
+            BarcodeFormat.AZTEC to getString(R.string.barcode_aztec_label),
+            BarcodeFormat.EAN_13 to getString(R.string.barcode_ean_13_label),
+            BarcodeFormat.EAN_8 to getString(R.string.barcode_ean_8_label),
+            BarcodeFormat.UPC_A to getString(R.string.barcode_upc_a_label),
+            BarcodeFormat.UPC_E to getString(R.string.barcode_upc_e_label),
+            BarcodeFormat.CODE_128 to getString(R.string.barcode_code_128_label),
+            BarcodeFormat.CODE_93 to getString(R.string.barcode_code_93_label),
+            BarcodeFormat.CODE_39 to getString(R.string.barcode_code_39_label),
+            BarcodeFormat.CODABAR to getString(R.string.barcode_codabar_label),
+            BarcodeFormat.ITF to getString(R.string.barcode_itf_label)
         )
 
-        val formatNames = allFormats.map { getString(it.stringResource) }.toTypedArray()
-        val formatValues = allFormats.map { it.format.name }.toTypedArray()
+        val formatNames = allFormats.map { it.second }.toTypedArray()
+        val formatValues = allFormats.map { it.first.name }.toTypedArray()
 
         // Get currently selected formats
         val currentSelection = settingsManager.allowedBarcodeFormats

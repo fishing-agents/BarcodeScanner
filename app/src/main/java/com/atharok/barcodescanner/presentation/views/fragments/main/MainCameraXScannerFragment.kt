@@ -67,7 +67,12 @@ import com.atharok.barcodescanner.presentation.views.activities.BarcodeScanFromI
 import com.atharok.barcodescanner.presentation.views.activities.BaseActivity
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.fragments.BaseFragment
+import com.atharok.barcodescanner.common.extensions.getDisplayName
+import com.atharok.barcodescanner.common.extensions.is1DIndustrialBarcode
+import com.atharok.barcodescanner.common.extensions.is1DProductBarcode
+import com.atharok.barcodescanner.common.extensions.is2DBarcode
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
 import org.koin.android.ext.android.get
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
@@ -262,31 +267,50 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
         }
     }
 
-    private fun showNonWhitelistedBarcodePopup(result: Result) {
+            private fun showNonWhitelistedBarcodePopup(result: Result) {
         requireActivity().runOnUiThread {
             cameraConfig?.stopCamera()
 
-            val barcodeFormatName = result.barcodeFormat?.name ?: "Unknown"
+            val barcodeFormat = result.barcodeFormat
+            val displayName = barcodeFormat?.getDisplayName(requireContext()) ?: "Unknown"
+            val iconResource = getBarcodeFormatIcon(barcodeFormat)
 
             MaterialAlertDialogBuilder(requireContext())
                 .setTitle(R.string.non_whitelisted_barcode_title)
-                .setMessage(getString(R.string.non_whitelisted_barcode_message, barcodeFormatName))
-                .setPositiveButton(android.R.string.ok) { dialog, _ ->
+                .setIcon(iconResource)
+                .setMessage(getString(R.string.non_whitelisted_barcode_message, displayName))
+                .setPositiveButton(R.string.allow_this_time) { dialog, _ ->
                     dialog.dismiss()
-                    // Resume scanning
+                    // Process the barcode as if it was whitelisted (one-time exception)
+                    onSuccessfulScanFromCamera(result)
+                }
+                .setNegativeButton(R.string.go_back) { dialog, _ ->
+                    dialog.dismiss()
+                    // Just resume scanning without processing the barcode
                     cameraConfig?.startCamera(
                         lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
                         previewView = viewBinding.fragmentMainCameraXScannerPreviewView
                     )
                 }
-                .setOnCancelListener {
-                    // Resume scanning if dialog is cancelled
-                    cameraConfig?.startCamera(
-                        lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
-                        previewView = viewBinding.fragmentMainCameraXScannerPreviewView
-                    )
-                }
+                .setCancelable(false) // Force user to make a choice
                 .show()
+        }
+    }
+
+    private fun getBarcodeFormatIcon(format: BarcodeFormat?): Int {
+        return when {
+            format == null -> R.drawable.ic_bar_code_24
+            format.is1DProductBarcode() || format.is1DIndustrialBarcode() -> R.drawable.ic_bar_code_24
+            format.is2DBarcode() -> {
+                when(format) {
+                    BarcodeFormat.AZTEC -> R.drawable.ic_aztec_code_24
+                    BarcodeFormat.DATA_MATRIX -> R.drawable.ic_data_matrix_code_24
+                    BarcodeFormat.PDF_417 -> R.drawable.ic_pdf_417_code_24
+                    BarcodeFormat.QR_CODE -> R.drawable.baseline_qr_code_24
+                    else -> R.drawable.baseline_qr_code_24
+                }
+            }
+            else -> R.drawable.baseline_qr_code_24
         }
     }
 
