@@ -74,6 +74,10 @@ import com.atharok.barcodescanner.common.extensions.is2DBarcode
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import org.koin.android.ext.android.get
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.parameter.parametersOf
@@ -91,6 +95,7 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
 
     private var cameraConfig: CameraConfig? = null
     private val databaseBarcodeViewModel: DatabaseBarcodeViewModel by activityViewModel()
+    private var isProcessingBarcode = false
 
     // ---- View ----
     private var _binding: FragmentMainCameraXScannerBinding? = null
@@ -120,6 +125,9 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
 
     override fun onResume() {
         super.onResume()
+
+        // Reset processing flag when fragment resumes
+        isProcessingBarcode = false
 
         if (allPermissionsGranted()) {
             doPermissionGranted()
@@ -242,7 +250,10 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
 
     override fun onBarcodeFound(result: Result) {
         viewBinding.fragmentMainCameraXScannerPreviewView.post {
-            if(cameraConfig?.isRunning() == true) {
+            // Prevent processing multiple barcodes at once
+            if(cameraConfig?.isRunning() == true && !isProcessingBarcode) {
+                isProcessingBarcode = true
+
                 // Check if this barcode type is allowed
                 val allowedFormats = settingsManager.allowedBarcodeFormats
                 val barcodeFormat = result.barcodeFormat?.name
@@ -276,23 +287,39 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
             val iconResource = getBarcodeFormatIcon(barcodeFormat)
 
             MaterialAlertDialogBuilder(requireContext())
-                .setTitle(R.string.non_whitelisted_barcode_title)
+                .setTitle(getString(R.string.non_whitelisted_barcode_title, displayName))
                 .setIcon(iconResource)
-                .setMessage(getString(R.string.non_whitelisted_barcode_message, displayName))
+                .setMessage(getString(R.string.non_whitelisted_barcode_message))
                 .setPositiveButton(R.string.allow_this_time) { dialog, _ ->
                     dialog.dismiss()
                     // Process the barcode as if it was whitelisted (one-time exception)
                     onSuccessfulScanFromCamera(result)
+                    // Flag will be reset after processing completes
                 }
                 .setNegativeButton(R.string.go_back) { dialog, _ ->
                     dialog.dismiss()
-                    // Just resume scanning without processing the barcode
-                    cameraConfig?.startCamera(
-                        lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
-                        previewView = viewBinding.fragmentMainCameraXScannerPreviewView
-                    )
+                    isProcessingBarcode = false // Reset flag before resuming
+                    // Add small delay to avoid surface abandoned error
+                    CoroutineScope(Dispatchers.Main).launch {
+                        delay(100)
+                        cameraConfig?.startCamera(
+                            lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
+                            previewView = viewBinding.fragmentMainCameraXScannerPreviewView
+                        )
+                    }
                 }
-                .setCancelable(false) // Force user to make a choice
+                .setOnCancelListener {
+                    isProcessingBarcode = false // Reset flag before resuming
+                    // Add small delay to avoid surface abandoned error
+                    CoroutineScope(Dispatchers.Main).launch {
+                        delay(100)
+                        cameraConfig?.startCamera(
+                            lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
+                            previewView = viewBinding.fragmentMainCameraXScannerPreviewView
+                        )
+                    }
+                }
+                .setCancelable(true) // Allow dismissing by tapping outside
                 .show()
         }
     }

@@ -570,8 +570,8 @@
     <string name="preferences_switch_scan_screen_rotation_label">Disable automatic rotation during scan</string>
     <string name="preferences_switch_scan_barcode_copied_label">Copy scanned barcodes to clipboard</string>
     <string name="preferences_switch_scan_barcode_type_filter_label">Select barcode types to scan</string>
-    <string name="non_whitelisted_barcode_title">Barcode Type Not Allowed</string>
-    <string name="non_whitelisted_barcode_message">Detected a %s barcode, but this type is not enabled for scanning. Enable it in settings if you want to scan this type.</string>
+    <string name="non_whitelisted_barcode_title">%s Not Whitelisted</string>
+    <string name="non_whitelisted_barcode_message">This barcode type is not enabled for scanning. You can enable it in settings or allow it just this once.</string>
     <string name="allow_this_time">Allow This Time</string>
     <string name="go_back">Go Back</string>
     <string name="preferences_seek_bar_camera_default_zoom_value_label">Default value of the camera zoom</string>
