@@ -33,39 +33,47 @@ class CameraXBarcodeLegacyAnalyzer(
 ) : AbstractCameraXBarcodeAnalyzer(barcodeDetector) {
 
     override fun analyze(image: ImageProxy) {
-        val plane = image.planes[0]
-        val rotationDegrees = image.imageInfo.rotationDegrees
+        try {
+            val plane = image.planes[0]
+            val rotationDegrees = image.imageInfo.rotationDegrees
 
-        val byteArray: ByteArray
-        val imageWidth: Int
-        val imageHeight: Int
+            val byteArray: ByteArray
+            val imageWidth: Int
+            val imageHeight: Int
 
-        if (rotationDegrees == 0 || rotationDegrees == 180) {
-            byteArray = plane.buffer.toByteArray()
-            imageWidth = image.width
-            imageHeight = image.height
-        } else {
-            byteArray = rotateImageArray(plane.buffer.toByteArray(), image.width, image.height, rotationDegrees)
-            imageWidth = image.height
-            imageHeight = image.width
+            if (rotationDegrees == 0 || rotationDegrees == 180) {
+                byteArray = plane.buffer.toByteArray()
+                imageWidth = image.width
+                imageHeight = image.height
+            } else {
+                byteArray = rotateImageArray(plane.buffer.toByteArray(), image.width, image.height, rotationDegrees)
+                imageWidth = image.height
+                imageHeight = image.width
+            }
+
+            val size = imageWidth.coerceAtMost(imageHeight) * ScanOverlay.RATIO
+
+            val left = (imageWidth - size) / 2f
+            val top = (imageHeight - size) / 2f
+
+            analyse(
+                yuvData = byteArray,
+                dataWidth = imageWidth,
+                dataHeight = imageHeight,
+                left = left.roundToInt(),
+                top = top.roundToInt(),
+                width = size.roundToInt(),
+                height = size.roundToInt()
+            )
+        } catch (e: IllegalStateException) {
+            // Surface abandoned errors are expected when camera is stopping
+            // Just ignore them
+        } catch (e: Exception) {
+            // Log other unexpected errors but don't crash
+            e.printStackTrace()
+        } finally {
+            image.close()
         }
-
-        val size = imageWidth.coerceAtMost(imageHeight) * ScanOverlay.RATIO
-
-        val left = (imageWidth - size) / 2f
-        val top = (imageHeight - size) / 2f
-
-        analyse(
-            yuvData = byteArray,
-            dataWidth = imageWidth,
-            dataHeight = imageHeight,
-            left = left.roundToInt(),
-            top = top.roundToInt(),
-            width = size.roundToInt(),
-            height = size.roundToInt()
-        )
-
-        image.close()
     }
 
     // 90, 180. 270 rotation

@@ -120,6 +120,7 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
     override fun onDestroyView() {
         super.onDestroyView()
         cameraConfig?.stopCamera()
+        cameraConfig = null
         _binding=null
     }
 
