@@ -61,6 +61,8 @@ class SettingsManager(private val context: Context) {
     private val addBarcodeToHistoryScanKey = context.getString(R.string.preferences_switch_scan_add_barcode_to_the_history_key)
     private val defaultZoomValueKey = context.getString(R.string.preferences_seek_bar_camera_default_zoom_value_key)
     private val barcodeTypeFilterKey = context.getString(R.string.preferences_switch_scan_barcode_type_filter_key)
+    private val rateLimitEnabledKey = context.getString(R.string.preferences_switch_scan_rate_limit_key)
+    private val rateLimitDurationKey = context.getString(R.string.preferences_scan_rate_limit_duration_key)
 
     var saveDuplicates = prefs.getBoolean(saveDuplicateKey, true)
         private set
@@ -78,6 +80,11 @@ class SettingsManager(private val context: Context) {
 
     // Returns a set of allowed barcode formats, empty set means all formats are allowed
     var allowedBarcodeFormats = prefs.getStringSet(barcodeTypeFilterKey, emptySet()) ?: emptySet()
+        private set
+
+    var isRateLimitEnabled = prefs.getBoolean(rateLimitEnabledKey, false)
+        private set
+    var rateLimitDurationSeconds = prefs.getString(rateLimitDurationKey, "10")?.toIntOrNull() ?: 10
         private set
 
     // Barcode Generation
@@ -111,6 +118,8 @@ class SettingsManager(private val context: Context) {
         shouldCopyBarcodeScan = prefs.getBoolean(copyBarcodeScanKey, false)
         shouldAddBarcodeScanToHistory = prefs.getBoolean(addBarcodeToHistoryScanKey, true)
         allowedBarcodeFormats = prefs.getStringSet(barcodeTypeFilterKey, emptySet()) ?: emptySet()
+        isRateLimitEnabled = prefs.getBoolean(rateLimitEnabledKey, false)
+        rateLimitDurationSeconds = prefs.getString(rateLimitDurationKey, "10")?.toIntOrNull() ?: 10
         errorCorrectionLevelEntry = prefs.getString(errorCorrectionLevelKey, "low")
         shouldAddBarcodeGenerateToHistory = prefs.getBoolean(addBarcodeToHistoryGenerateKey, false)
         defaultSearchEngine = prefs.getString(searchEngineKey, "google")
