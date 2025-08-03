@@ -351,10 +351,8 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
                     // Add small delay to avoid surface abandoned error
                     CoroutineScope(Dispatchers.Main).launch {
                         delay(100)
-                        cameraConfig?.startCamera(
-                            lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
-                            previewView = viewBinding.fragmentMainCameraXScannerPreviewView
-                        )
+                        // Properly reconfigure camera with analyzer
+                        configureCamera()
                     }
                 }
                 .setOnCancelListener {
@@ -362,10 +360,8 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
                     // Add small delay to avoid surface abandoned error
                     CoroutineScope(Dispatchers.Main).launch {
                         delay(100)
-                        cameraConfig?.startCamera(
-                            lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,
-                            previewView = viewBinding.fragmentMainCameraXScannerPreviewView
-                        )
+                        // Properly reconfigure camera with analyzer
+                        configureCamera()
                     }
                 }
                 .setCancelable(true) // Allow dismissing by tapping outside
