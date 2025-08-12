@@ -197,7 +197,7 @@
     <string name="copy_label">Kopiëren</string>
     <string name="barcode_copied_label">Barcode gekopieerd</string>
     <string name="search_label">Zoeken</string>
-    <string name="action_title_dialog_label">Acties</string>
+    <string name="action_title_dialog_label">Wat wil je doen?</string>
     <string name="action_go_to_url_label">URL openen</string>
     <string name="action_web_search_label">Op het web zoeken</string>
     <string name="action_product_search_label">Search op %1$s</string>
