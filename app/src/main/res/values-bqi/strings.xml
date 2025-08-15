@@ -239,4 +239,19 @@
     <string name="preferences_languages_title">زووا</string>
     <string name="preferences_languages_change">آلشت زووݩ</string>
     <string name="permission_wifi_label">Wi-Fi</string>
+    <string name="action_wifi_password_copy_label">رزم لف گیری وابی!</string>
+    <string name="save_label">زفت کردن</string>
+    <string name="share_label">یک رسۊوی</string>
+    <string name="share_image_label">یک رسۊوی شؽوات</string>
+    <string name="share_text_label">یک رسۊوی هؽل</string>
+    <string name="popup_message_confirmation_save_image">اخۊی شؽوات ن زفت کۊنی؟</string>
+    <string name="clipboard_empty">ویرگه مووقت پتی هڌ.</string>
+    <string name="image_properties">دووسمندیا شؽوات</string>
+    <string name="colors_label">رنگا</string>
+    <string name="background_color">رنگ پس زمینه</string>
+    <string name="barcode_color">رنگ بارکود</string>
+    <string name="shapes_label">ختا</string>
+    <string name="width_label">پئنا</string>
+    <string name="height_label">درازا</string>
+    <string name="value_px">%1$spx</string>
 </resources>
