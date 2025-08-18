@@ -1,0 +1,7 @@
+1.25.2
+
+Registo de alterações completo aqui: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Traduções atualizadas via Weblate.
+- Alterada a unidade de margem da imagem do código de barras: agora é expressa em pixels em vez de percentagens.
+- Adicionados botões para definir o valor da margem com mais precisão.
