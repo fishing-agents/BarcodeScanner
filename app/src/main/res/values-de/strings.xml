@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Permission Denied -->
-    <string name="camera_permission_denied">Sie haben den Zugriff auf die Kamera verweigert.
-\nZum Scannen eines Barcodes ist diese Berechtigung allerdings erforderlich.</string>
+    <string name="camera_permission_denied">Du hast den Zugriff auf die Kamera verweigert. \nZum Scannen eines Barcodes ist diese Berechtigung allerdings erforderlich.</string>
     <!-- AlertDialog -->
     <string name="close_dialog_label">Schließen</string>
     <string name="yes_label">Ja</string>
     <string name="no_label">Nein</string>
-    <string name="go_to_dialog_label">Gehe zur Website</string>
+    <string name="go_to_dialog_label">Website aufrufen</string>
     <!-- ImageView Description -->
     <string name="image_view_description_flag">Flagge</string>
     <string name="image_view_description_logo">Logo</string>
@@ -25,11 +24,11 @@
     <string name="title_history">Verlauf</string>
     <string name="title_generate">Erzeugen</string>
     <string name="title_settings">Einstellungen</string>
-    <string name="title_qr_code_creator">Erzeuge einen QR-Code</string>
-    <string name="title_bar_code_creator">Erzeuge einen Barcode</string>
+    <string name="title_qr_code_creator">Einen QR-Code erzeugen</string>
+    <string name="title_bar_code_creator">Einen Barcode erzeugen</string>
     <string name="information_label">Informationen</string>
     <string name="barcode_label">Barcode</string>
-    <string name="download_from_api_label">Lade von APIs</string>
+    <string name="download_from_api_label">Von APIs herunterladen</string>
     <string name="menu_more">Mehr</string>
     <!-- Barcode Type -->
     <string name="barcode_qr_code_label">QR-Code</string>
@@ -47,14 +46,14 @@
     <string name="barcode_itf_label">ITF</string>
     <!-- QR Type -->
     <string name="qr_code_type_name_text">Text</string>
-    <string name="qr_code_type_name_web_site">Webseite</string>
+    <string name="qr_code_type_name_web_site">Website</string>
     <string name="qr_code_type_name_contact">Kontakt</string>
     <string name="qr_code_type_name_epc">EPC-QR-Code</string>
     <string name="qr_code_type_name_mail">E-Mail</string>
     <string name="qr_code_type_name_sms">SMS</string>
     <string name="qr_code_type_name_phone">Telefonnummer</string>
     <string name="qr_code_type_name_geographic_coordinates">Geografische Koordinaten</string>
-    <string name="qr_code_type_name_agenda">Agenda</string>
+    <string name="qr_code_type_name_agenda">Termine</string>
     <string name="qr_code_type_name_wifi">WLAN</string>
     <string name="qr_code_type_name_apps">Anwendung</string>
     <!-- Product Type -->
@@ -66,21 +65,21 @@
     <string name="bar_code_type_unknown_music_album_title">Albumtitel unbekannt</string>
     <string name="bar_code_type_book">Buch</string>
     <string name="bar_code_type_unknown_book_title">Buchtitel unbekannt</string>
-    <string name="bar_code_type_industrial">Industrieller Code</string>
+    <string name="bar_code_type_industrial">Industriecode</string>
     <string name="bar_code_type_unknown_matrix">Matrix-Code</string>
     <string name="bar_code_type_name_unknown">Unbekannt</string>
     <!-- Error Correction Level -->
     <string name="qr_code_error_correction_level_label">Fehlerkorrekturlevel</string>
     <string name="qr_code_error_correction_level_settings_label">Fehlerkorrekturlevel (QR-Code)</string>
-    <string name="qr_code_error_correction_level_name_low">Low (~7%)</string>
-    <string name="qr_code_error_correction_level_name_medium">Medium (~15%)</string>
+    <string name="qr_code_error_correction_level_name_low">Niedrig (~7%)</string>
+    <string name="qr_code_error_correction_level_name_medium">Mittel (~15%)</string>
     <string name="qr_code_error_correction_level_name_quartile">Quartil (~25%)</string>
-    <string name="qr_code_error_correction_level_name_high">High (~30%)</string>
+    <string name="qr_code_error_correction_level_name_high">Hoch (~30%)</string>
     <!-- History -->
-    <string name="label_history_empty">Kein Element gescannt…</string>
+    <string name="label_history_empty">Kein Element gescannt …</string>
     <string name="snack_bar_message_item_deleted">Das Produkt „%1$s“ wurde aus dem Verlauf gelöscht.</string>
     <string name="popup_message_confirmation_delete_history">Den gesamten Verlauf löschen\?</string>
-    <string name="popup_message_confirmation_delete_selected_items_history">Ausgewählte Elemente löschen\?</string>
+    <string name="popup_message_confirmation_delete_selected_items_history">Ausgewählte Einträge löschen?</string>
     <string name="menu_item_history_delete">Verlauf löschen</string>
     <string name="menu_item_history_delete_from_history">Aus dem Verlauf löschen</string>
     <string name="menu_item_history_removed_from_history">Aus dem Verlauf entfernt!</string>
@@ -97,13 +96,13 @@
     <string name="intent_filter_scan_by_image">Bild scannen</string>
     <string name="scan_information_label">Zum Scannen auf den Barcode zielen</string>
     <!-- BarcodeAnalysisActivity -->
-    <string name="barcode_information_search_label">Suche…</string>
+    <string name="barcode_information_search_label">Suche …</string>
     <string name="scan_error_label">Fehler beim Scannen!</string>
     <string name="scan_error_short_information_label">Beim Nachschlagen der Informationen ist ein Fehler aufgetreten!</string>
     <string name="barcode_scanned_label">%1$s gescannt!</string>
     <string name="barcode_found_on_label">Gefunden auf %1$s!</string>
     <string name="barcode_not_found_on_api_label">Keine Informationen auf %1$s gefunden.</string>
-    <string name="no_internet_permission">Sie haben keine Berechtigung zum Internetzugriff.</string>
+    <string name="no_internet_permission">Du hast keine Berechtigung, auf das Internet zuzugreifen.</string>
     <string name="about_barcode_information_label">Informationen zum Barcode</string>
     <string name="about_barcode_label">Über den Barcode</string>
     <string name="about_barcode_format_label">Format: %1$s</string>
@@ -114,8 +113,8 @@
     <string name="no_product_found_label">Es wurde kein Produkt gefunden!</string>
     <!-- Barcode Searching Error -->
     <string name="warning_label">Warnung</string>
-    <string name="scan_error_information_label">Während der Suche nach Informationen über die externe API ist ein Fehler aufgetreten… Bitte die Internetverbindung und die Berechtigungen der App prüfen! Wenn das Problem weiterhin besteht, liegt es wohl am Server.</string>
-    <string name="scan_error_internet_information_label">Keine Informationen zum Produkt abgerufen, Sie haben vermutlich keine Internetverbindung!</string>
+    <string name="scan_error_information_label">Während der Suche nach Informationen über die externe API ist ein Fehler aufgetreten … Bitte die Internetverbindung und die Berechtigungen der App prüfen! Wenn das Problem weiterhin besteht, liegt es wohl am Server.</string>
+    <string name="scan_error_internet_information_label">Keine Informationen zum Produkt abgerufen, es besteht vermutlich keine Internetverbindung!</string>
     <string name="scan_error_message_label">Fehler: </string>
     <!-- Food Beauty and Pet Food Product -->
     <string name="overview_tab_label">Übersicht</string>
@@ -160,7 +159,7 @@
     <string name="stores_label">Geschäfte</string>
     <string name="countries_label">Verkaufsland</string>
     <!-- Ingredients -->
-    <string name="ingredients_no_information_found_label">Keine Zutatenliste für das Produkt gefunden…</string>
+    <string name="ingredients_no_information_found_label">Keine Zutatenliste für das Produkt gefunden …</string>
     <string name="allergens_label">Allergene</string>
     <string name="traces_label">Spurenelemente</string>
     <string name="additives_label">Zusatzstoffe</string>
@@ -220,7 +219,7 @@
     <!-- Book -->
     <string name="book_product_summary_label">Zusammenfassung</string>
     <string name="book_product_more_label">Mehr</string>
-    <string name="book_product_pages_number_label">Anzahl der Seiten</string>
+    <string name="book_product_pages_number_label">Seitenanzahl</string>
     <string name="book_product_contributions_label">Mitwirkungen</string>
     <string name="book_product_publish_date_label">Veröffentlichungsdatum</string>
     <string name="book_product_original_title_label">Originaltitel</string>
@@ -248,8 +247,8 @@
     <string name="matrix_phone_tel_number_label">Telefonnummer</string>
     <!-- Matrix Barcode Email Analysis -->
     <string name="matrix_email_recipient_label">Empfänger</string>
-    <string name="matrix_email_cc_label">CC</string>
-    <string name="matrix_email_bcc_label">BCC</string>
+    <string name="matrix_email_cc_label">Kopie</string>
+    <string name="matrix_email_bcc_label">Blindkopie</string>
     <string name="matrix_subject_label">Betreff</string>
     <string name="matrix_body_label">Nachricht</string>
     <!-- Matrix Barcode Wi-Fi Analysis -->
@@ -263,21 +262,21 @@
     <string name="matrix_wifi_phase_2_method_label">Phase-2-Methode</string>
     <!-- Matrix Barcode URL Analysis -->
     <string name="matrix_uri_url_label">URL</string>
-    <string name="matrix_uri_malicious_label">URL könnte bösartige Inhalte enthalten…</string>
+    <string name="matrix_uri_malicious_label">URL könnte bösartige Inhalte enthalten …</string>
     <!-- Matrix Barcode URI UPI Analysis -->
     <string name="matrix_uri_upi_entitled_label">URI-Analyse</string>
     <string name="matrix_uri_upi_id_label">UPI-ID</string>
-    <string name="matrix_uri_upi_payee_name_label">Name des Zahlungsempfängers</string>
+    <string name="matrix_uri_upi_payee_name_label">Zahlungsempfänger</string>
     <string name="matrix_uri_upi_amount_label">Betrag</string>
-    <string name="matrix_uri_upi_currency_label">Currency</string>
-    <string name="matrix_uri_upi_description_label">Description</string>
+    <string name="matrix_uri_upi_currency_label">Währung</string>
+    <string name="matrix_uri_upi_description_label">Beschreibung</string>
     <!-- Matrix Barcode URL Localisation Analysis -->
     <string name="matrix_localisation_latitude_label">Breitengrad</string>
     <string name="matrix_localisation_longitude_label">Längengrad</string>
     <string name="matrix_localisation_altitude_label">Höhe</string>
     <string name="matrix_localisation_query_label">Anfrage</string>
-    <string name="matrix_localisation_button_find_location">Generiere von deinem Standpunkt aus</string>
-    <string name="matrix_localisation_search_current_position_label">Suche nach dem aktuellen Standort…</string>
+    <string name="matrix_localisation_button_find_location">Vom eigenen Standort aus erzeugen</string>
+    <string name="matrix_localisation_search_current_position_label">Suche nach dem aktuellen Standort …</string>
     <string name="matrix_localisation_location_disabled_label">Die Standort-Funktion scheint auf deinem Gerät nicht aktiviert zu sein.</string>
     <!-- Barcode Description -->
     <string name="barcode_industrial_description_label">Dieser Barcodetyp wird häufig in der Industrie eingesetzt.</string>
@@ -293,32 +292,32 @@
     <!-- Snackbar Feddbacks -->
     <string name="snack_bar_message_permission_refused">Du musst die Berechtigungen gewähren, um diese Funktion nutzen zu können.</string>
     <string name="snack_bar_message_save_bitmap_ok">Bild wurde gespeichert</string>
-    <string name="snack_bar_message_save_bitmap_error">Bild wurde nicht gespeichert… \nZu wenig Speicherplatz?</string>
-    <string name="snack_bar_message_share_bitmap_error">Ein Fehler ist während der "Teilen" Konfiguration aufgetreten.</string>
+    <string name="snack_bar_message_save_bitmap_error">Bild wurde nicht gespeichert … \nZu wenig Speicherplatz?</string>
+    <string name="snack_bar_message_share_bitmap_error">Ein Fehler ist während des Teilens aufgetreten.</string>
     <!-- Actions -->
-    <string name="actions_label">Actions</string>
-    <string name="intent_chooser_share_title">"Teilen mit…"</string>
+    <string name="actions_label">Aktionen</string>
+    <string name="intent_chooser_share_title">Teilen mit …</string>
     <string name="intent_chooser_mail_title">E-Mail senden …</string>
     <string name="copy_barcode_label">Kopieren</string>
     <string name="barcode_copied_label">Barcode kopiert</string>
     <string name="barcode_search_error_label">URL nicht unterstützt</string>
     <string name="search_label">Suche</string>
-    <string name="action_title_dialog_label">Was möchten Sie tun?</string>
-    <string name="action_go_to_url_label">Gehe zu URL</string>
-    <string name="action_web_search_label">Suche im Web</string>
-    <string name="action_product_search_label">Suche auf %1$s</string>
+    <string name="action_title_dialog_label">Was möchtest du tun?</string>
+    <string name="action_go_to_url_label">Zur URL gehen</string>
+    <string name="action_web_search_label">Im Web suchen</string>
+    <string name="action_product_search_label">Auf %1$s suchen</string>
     <string name="action_send_mail_label">E-Mail senden</string>
-    <string name="action_send_sms_label">Sende SMS</string>
-    <string name="action_call_phone_label">Wähle Telefonnummer</string>
+    <string name="action_send_sms_label">SMS senden</string>
+    <string name="action_call_phone_label">Telefonnummer anrufen</string>
     <string name="action_add_to_calendar">Zum Kalender hinzufügen</string>
-    <string name="action_add_to_contacts">Add to contacts</string>
-    <string name="action_show_location">Zeige den Standort</string>
+    <string name="action_add_to_contacts">Zu Kontakten hinzufügen</string>
+    <string name="action_show_location">Standort anzeigen</string>
     <string name="action_open_link">Link öffnen</string>
     <!-- Wi-Fi Connection -->
     <string name="action_wifi_connection_title_label">WLAN-Verbindung</string>
-    <string name="action_wifi_connection_from_app">Verbinde mit WLAN</string>
-    <string name="action_wifi_connection_from_wifi_settings">Kopiere Passwort und gehe zu den WLAN-Einstellungen</string>
-    <string name="action_wifi_connection_error_wifi_not_activated">Sie müssen WLAN auf Ihrem Gerät aktivieren!</string>
+    <string name="action_wifi_connection_from_app">Mit WLAN verbinden</string>
+    <string name="action_wifi_connection_from_wifi_settings">Passwort kopieren und zu den WLAN-Einstellungen gehen</string>
+    <string name="action_wifi_connection_error_wifi_not_activated">Du musst WLAN auf deinem Gerät aktivieren!</string>
     <string name="action_wifi_password_copy_label">Passwort kopiert!</string>
     <string name="action_wifi_success_added_label">WLAN-Verbindung hinzugefügt!</string>
     <string name="action_wifi_failure_added_label">Fehler beim Hinzufügen der WLAN-Verbindung</string>
@@ -330,7 +329,7 @@
     <string name="action_wifi_add_network_unknown_error">Unbekannter Fehler beim Hinzufügen der WLAN-Verbindung.</string>
     <!-- QR Code Generator -->
     <!-- Barcode Generator Errors -->
-    <string name="error_barcode_none_character_message">Sie müssen einen korrekten Wert im Eingabefeld eingeben.</string>
+    <string name="error_barcode_none_character_message">Du musst einen korrekten Wert im Eingabefeld eingeben.</string>
     <string name="error_barcode_not_a_number_message">Barcodes dürfen nur aus Zahlen bestehen.</string>
     <string name="error_barcode_wrong_length_message">Barcode muss aus %1$s Zahlen bestehen.</string>
     <string name="error_barcode_wrong_key_message">%1$ste Zahl (Prüfziffer) sollte %2$s sein.</string>
@@ -342,30 +341,30 @@
     <string name="error_barcode_itf_error_message">Der ITF-Barcode muss aus einer geraden Anzahl an Zeichen bestehen.</string>
     <string name="error_barcode_upc_e_not_start_with_0_error_message">Der UPC-E-Barcode muss mit einer 0 beginnen.</string>
     <string name="error_barcode_qr_url_format_message">Eine Webadresse muss mit "http://" oder "https://" beginnen</string>
-    <string name="error_barcode_qr_phone_number_missing_message">Sie müssen eine Telefonnummer eingeben</string>
-    <string name="error_barcode_qr_email_missing_message">Sie müssen mindestens ein Eingabefeld ausfüllen</string>
-    <string name="error_barcode_qr_localisation_missing_message">Sie müssen Längen- und Breitengrad angeben</string>
+    <string name="error_barcode_qr_phone_number_missing_message">Du musst eine Telefonnummer eingeben</string>
+    <string name="error_barcode_qr_email_missing_message">Du musst mindestens ein Eingabefeld ausfüllen</string>
+    <string name="error_barcode_qr_localisation_missing_message">Du musst Längen- und Breitengrad angeben</string>
     <!-- Action Barcode Generated -->
-    <string name="barcode_creator_confirm_text_label">Generieren</string>
+    <string name="barcode_creator_confirm_text_label">Erzeugen</string>
     <string name="save_label">Speichern</string>
     <string name="share_label">Teilen</string>
-    <string name="share_image_label">Teile Bild</string>
-    <string name="share_text_label">Teile Text</string>
+    <string name="share_image_label">Bild teilen</string>
+    <string name="share_text_label">Text teilen</string>
     <string name="popup_message_confirmation_save_image">Bild speichern?</string>
     <!-- Form -->
-    <string name="qr_code_text_generator_hint_text_input_edit_text">Text eingeben…</string>
-    <string name="qr_code_text_generator_hint_phone_input_edit_text">Telefonnummer eingeben…</string>
-    <string name="qr_code_text_generator_hint_url_input_edit_text">Webadresse eingeben…</string>
+    <string name="qr_code_text_generator_hint_text_input_edit_text">Text eingeben …</string>
+    <string name="qr_code_text_generator_hint_phone_input_edit_text">Telefonnummer eingeben …</string>
+    <string name="qr_code_text_generator_hint_url_input_edit_text">Webadresse eingeben …</string>
     <string name="qr_code_text_input_edit_text_hint_message">Nachricht</string>
     <!-- Contact Creator -->
-    <string name="qr_code_type_name_generate_from_contact">Aus Kontakt generieren</string>
+    <string name="qr_code_type_name_generate_from_contact">Aus Kontakt erzeugen</string>
     <string name="qr_code_text_radio_button_label_m">Herr</string>
     <string name="qr_code_text_radio_button_label_mrs">Frau</string>
     <string name="qr_code_text_radio_button_label_miss">Frau</string>
-    <string name="qr_code_text_radio_button_label_none">keine</string>
+    <string name="qr_code_text_radio_button_label_none">Keine</string>
     <string name="qr_code_text_input_edit_text_hint_name">Name</string>
     <string name="qr_code_text_input_edit_text_hint_first_name">Vorname</string>
-    <string name="qr_code_text_input_edit_text_hint_web_site">Webseite</string>
+    <string name="qr_code_text_input_edit_text_hint_web_site">Website</string>
     <string name="qr_code_text_input_edit_text_hint_mail_1">E-Mail-Adresse 1</string>
     <string name="qr_code_text_input_edit_text_hint_mail_2">E-Mail-Adresse 2</string>
     <string name="qr_code_text_input_edit_text_hint_mail_3">E-Mail-Adresse 3</string>
@@ -387,20 +386,19 @@
     <!-- EPC Creator -->
     <string name="qr_code_text_input_edit_text_hint_epc_service_tag">Service-Tag</string>
     <string name="qr_code_text_input_edit_text_hint_epc_version">Version</string>
-    <string name="qr_code_text_input_edit_text_hint_epc_character_set">Zeichencodierung</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_character_set">Zeichenkodierung</string>
     <string name="qr_code_text_input_edit_text_hint_epc_identification">Identifikation</string>
     <string name="qr_code_text_input_edit_text_hint_epc_bic">BIC</string>
     <string name="qr_code_text_input_edit_text_hint_epc_name">Name</string>
     <string name="qr_code_text_input_edit_text_hint_epc_iban">IBAN</string>
-    <string name="qr_code_text_input_edit_text_hint_epc_amount">Zahlungsbetrag</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_amount">Betrag</string>
     <string name="qr_code_text_input_edit_text_hint_epc_purpose">Zweck</string>
     <string name="qr_code_text_input_edit_text_hint_epc_remittance_ref">Referenz</string>
     <string name="qr_code_text_input_edit_text_hint_epc_remittance_text">Verwendungszweck</string>
-    <string name="qr_code_text_input_edit_text_hint_epc_information">Hinweis an den Nutzer</string>
+    <string name="qr_code_text_input_edit_text_hint_epc_information">Nutzerhinweis</string>
     <string name="qr_code_text_input_edit_text_epc_name_error">Das Feld „Name“ ist obligatorisch</string>
     <string name="qr_code_text_input_edit_text_epc_iban_error">IBAN nicht korrekt</string>
-    <string name="list_bank_empty_message">Kein Element…
-\nDu hast noch keinen EPC-QR-Code generiert.</string>
+    <string name="list_bank_empty_message">Kein Eintrag … \nDu hast noch keinen EPC-QR-Code erzeugt.</string>
     <!-- Mail Creator -->
     <string name="qr_code_text_input_edit_text_hint_email">E-Mail</string>
     <string name="qr_code_text_input_edit_text_hint_email_subject">Betreff</string>
@@ -469,7 +467,7 @@
     <string name="preferences_switch_system_theme_label">System</string>
     <string name="preferences_switch_light_theme_label">Hell</string>
     <string name="preferences_switch_dark_theme_label">Dunkel</string>
-    <string name="preferences_switch_black_theme_label">Black</string>
+    <string name="preferences_switch_black_theme_label">Schwarz</string>
     <string name="preferences_color">Hauptfarbe</string>
     <string name="preferences_color_material_you">System („Material You“: Android-Designsprache)</string>
     <string name="preferences_color_blue">Blau</string>
@@ -479,16 +477,16 @@
     <string name="preferences_color_purple">Lila</string>
     <!-- Languages Settings -->
     <string name="preferences_languages_title">Sprache</string>
-    <string name="preferences_languages_change">Ändere die Sprache</string>
+    <string name="preferences_languages_change">Sprache ändern</string>
     <!-- Remote API -->
     <string name="preferences_remote_api_title">Produkte und Schnittstelle (API)</string>
     <string name="preferences_switch_scan_search_on_api_label">Remote-API automatisch abfragen</string>
-    <string name="preferences_remote_api_to_use_label">Standard-PI</string>
-    <string name="preferences_remote_api_choose_label">Wähle eine Schnittstelle (API)</string>
+    <string name="preferences_remote_api_to_use_label">Standard-API</string>
+    <string name="preferences_remote_api_choose_label">Eine Schnittstelle auswählen (API)</string>
     <string name="preferences_remote_api_food_label">Open Food Facts (frei verfügbare Fakten zu Nahrungsmitteln)</string>
     <string name="preferences_remote_api_cosmetic_label">Open Beauty Facts (Kosmetikprodukte)</string>
     <string name="preferences_remote_api_pet_food_label">Open Pet Food Facts (frei verfügbare Fakten zu Tierfutter)</string>
-    <string name="preferences_remote_api_musicbrainz_label">MusicBrainz (CDs, Vinylscheiben, …)</string>
+    <string name="preferences_remote_api_musicbrainz_label">MusicBrainz (CDs, Vinylscheiben, …)</string>
     <string name="preferences_remote_api_book_label">Open Library (Bücher)</string>
     <!-- About Remote API -->
     <string name="preferences_information_about_remote_api_title">Informationen über Schnittstellen (APIs)</string>
@@ -502,56 +500,56 @@
     <string name="preferences_information_about_remote_api_product_types_supported_food">• Nahrungsmittel (mit Open-Food-Facts-Schnitttelle)</string>
     <string name="preferences_information_about_remote_api_product_types_supported_beauty">• Kosmetikprodukte (mit Open-Beauty-Facts-Schnittstelle)</string>
     <string name="preferences_information_about_remote_api_product_types_supported_pet_food">• Tierfutter (mit Open-Pet-Food-Facts-Schnittstelle)</string>
-    <string name="preferences_information_about_remote_api_product_types_supported_music">• CDs, Vinylschallplatten … (mit MusicBrainz-Schnittstelle)</string>
+    <string name="preferences_information_about_remote_api_product_types_supported_music">• CDs, Vinylschallplatten … (mit MusicBrainz-Schnittstelle)</string>
     <string name="preferences_information_about_remote_api_product_types_supported_book">• Bücher (mit Open-Library-Schnittstelle)</string>
     <string name="preferences_information_about_remote_api_some_additional_information_title">Einige zusätzliche Informationen</string>
     <string name="preferences_information_about_remote_api_some_additional_information_description_1">• Einige Produkte sind eventuell nicht enthalten in bestimmen Datenbanken.</string>
     <string name="preferences_information_about_remote_api_some_additional_information_description_2">• Möglicherweise existieren Fehler bei den Informationen der bereitgestellten Schnittstellen.</string>
     <string name="preferences_information_about_remote_api_how_it_works">So funktioniert es</string>
     <string name="preferences_information_about_remote_api_automatic_search_title">Automatische Suche</string>
-    <string name="preferences_information_about_remote_api_automatic_search_description">Wenn die Option „%1$s“ aktiviert ist, wird beim Scannen eines Produktbarcodes automatisch eine Suche in der in den Einstellungen ausgewählten Schnittstelle (auch API genannt) durchgeführt. Wenn in der API keine Informationen gefunden werden, können Sie nach dem Scannen jederzeit eine manuelle Suche in einer anderen API durchführen.</string>
+    <string name="preferences_information_about_remote_api_automatic_search_description">Wenn die Option „%1$s“ aktiviert ist, wird beim Scannen eines Produktbarcodes automatisch eine Suche in der in den Einstellungen ausgewählten Schnittstelle (auch API genannt) durchgeführt. Wenn in der API keine Informationen gefunden werden, kannst du nach dem Scannen jederzeit eine manuelle Suche in einer anderen API durchführen.</string>
     <string name="preferences_information_about_remote_api_manual_search_title">Manuelle Suche</string>
-    <string name="preferences_information_about_remote_api_manual_search_description">Wenn die Option „%1$s“ deaktiviert ist, werden beim Scannen eines Produktbarcodes keine Informationen von den Remote-Servern (remote, engl. = entfernt) abgerufen. Sie können jedoch jederzeit manuell nach Informationen über das gescannte Produkt suchen. Klicken Sie dazu nach dem Scannen des Produkts auf das Symbol in der Menüleiste. Sie können dann eine Schnittstelle (API) für die Suche auswählen.</string>
+    <string name="preferences_information_about_remote_api_manual_search_description">Wenn die Option „%1$s“ deaktiviert ist, werden beim Scannen eines Produktbarcodes keine Informationen von den Remote-Servern (remote, engl. = entfernt) abgerufen. Du kannst jedoch jederzeit manuell nach Informationen über das gescannte Produkt suchen. Klicke dazu nach dem Scannen des Produkts auf das Symbol in der Menüleiste. Du kannst dann eine Schnittstelle (API) für die Suche auswählen.</string>
     <string name="preferences_information_about_remote_api_about_books_title">Bücher</string>
     <string name="preferences_information_about_remote_api_about_books_description">Wenn es sich bei dem zu scannenden Produkt um ein Buch handelt, musst Du die Schnittstelle (API), über die Du nach Informationen suchst, nicht angeben. Der Barcode eines Buches ist identifizierbar, da er immer mit den Ziffern „978” beginnt. Die Suche wird automatisch in Open Library durchgeführt.</string>
     <!-- Scan Settings -->
     <string name="preferences_scan_title">Scan</string>
-    <string name="preferences_switch_scan_use_camera_x_api_label">Verwende die CameraX-Schnittstelle (API)</string>
-    <string name="preferences_switch_scan_vibrate_label">Vibriere bei erfolgreichem Scan</string>
+    <string name="preferences_switch_scan_use_camera_x_api_label">CameraX-Schnittstelle (API) verwenden</string>
+    <string name="preferences_switch_scan_vibrate_label">Vibrieren bei erfolgreichem Scan</string>
     <string name="preferences_switch_scan_bip_label">Ton ausgeben bei erfolgeichem Scan</string>
     <string name="preferences_switch_scan_screen_rotation_label">Automatische Drehung während des Scans deaktivieren</string>
-    <string name="preferences_switch_scan_barcode_copied_label">Kopiere gescannten Barcode in die Zwischenablage</string>
-    <string name="preferences_switch_scan_add_barcode_to_the_history_label">Füge gescannte Barcodes zum Verlauf hinzu</string>
-    <string name="preferences_seek_bar_camera_default_zoom_value_label">Standardwerte des Kamerazooms</string>
+    <string name="preferences_switch_scan_barcode_copied_label">Kopieren des gescannten Barcodes in die Zwischenablage</string>
+    <string name="preferences_switch_scan_add_barcode_to_the_history_label">Gescannte Barcodes zum Verlauf hinzufügen</string>
+    <string name="preferences_seek_bar_camera_default_zoom_value_label">Standardwert des Kamerazooms</string>
     <!-- Barcode Generation Settings -->
     <string name="preferences_barcode_generation_title">Barcodegenerierung</string>
-    <string name="preferences_switch_barcode_generation_add_barcode_to_the_history_label">Füge generierte Barcodes zum Verlauf hinzu</string>
+    <string name="preferences_switch_barcode_generation_add_barcode_to_the_history_label">Erzeugte Barcodes zum Verlauf hinzufügen</string>
     <!-- Search Engine Settings -->
     <string name="preferences_search_title">Suche</string>
     <string name="preferences_search_engine">Suchmaschine</string>
     <!-- About Settings -->
     <string name="preferences_about_title">Über</string>
     <string name="preferences_about_permissions_label">Berechtigungen</string>
-    <string name="preferences_about_third_party_libraries_label">Fremde Bibliotheken</string>
+    <string name="preferences_about_third_party_libraries_label">Drittanbieter-Bibliotheken</string>
     <string name="preferences_about_bdd_label">Datenbank</string>
     <string name="preferences_source_code_label">Quellcode</string>
     <!-- About Permissions -->
     <string name="permission_camera_label">Kamera</string>
-    <string name="permission_camera_description_label">Benötigt, um den Barcode zu scannen.</string>
+    <string name="permission_camera_description_label">Erforderlich, um den Barcode zu scannen.</string>
     <string name="permission_internet_label">Internet</string>
-    <string name="permission_internet_description_label">Benötigt, um die Remote-APIs abzufragen.</string>
+    <string name="permission_internet_description_label">Erforderlich, um Informationen von einer Remote-API abzurufen.</string>
     <string name="permission_contact_label">Kontakte</string>
-    <string name="permission_contact_description_label">Benötigt, um Kontake zu importieren oder Kontakt-QR-Codes zu generieren.</string>
+    <string name="permission_contact_description_label">Erforderlich, um Kontakte zu importieren, um QR-Codes aus diesen zu erzeugen.</string>
     <string name="permission_location_label">Standort</string>
-    <string name="permission_location_description_label">Notwendig, um einen QR-Code zum Standort des Gerätes zu generieren.</string>
+    <string name="permission_location_description_label">Erforderlich, um einen QR-Code anhand des Gerätestandorts zu erzeugen.</string>
     <string name="permission_wifi_label">WLAN</string>
-    <string name="permission_wifi_description_label">Benötigt, um sich mit einem WLAN zu verbinden, dessen QR-Code gescannt wurde.</string>
+    <string name="permission_wifi_description_label">Erforderlich, um sich mit einem WLAN zu verbinden, dessen QR-Code gescannt wurde.</string>
     <string name="permission_vibrate_label">Vibrieren</string>
-    <string name="permission_vibrate_description_label">Benötigt um beim Scannen zu vibrieren.</string>
-    <string name="permission_query_all_packages_label">Abfrage aller Daten-Pakete</string>
-    <string name="permission_query_all_packages_description_label">Nützlich, um einen QR-Code einer installierten App zu generieren.</string>
+    <string name="permission_vibrate_description_label">Erforderlich, um beim Scannen zu vibrieren.</string>
+    <string name="permission_query_all_packages_label">Abfrage aller Datenpakete</string>
+    <string name="permission_query_all_packages_description_label">Nützlich, um einen QR-Code einer installierten App zu erzeugen.</string>
     <!-- About BDD -->
-    <string name="bdd_open_food_facts_description_label">Open Food Facts ist eine freie, Online-Crowdsourcing-Datenbank von Lebensmittelprodukten aus der ganzen Welt. Sie listet alle auf dem Produktlabel gekennzeichneten Informationen wie z.B. Zutaten, Allergene und Nährwerte.</string>
+    <string name="bdd_open_food_facts_description_label">Open Food Facts ist eine freie, Online-Crowdsourcing-Datenbank von Lebensmittelprodukten aus der ganzen Welt. Sie listet alle auf dem Produktlabel gekennzeichneten Informationen wie z. B. Zutaten, Allergene und Nährwerte.</string>
     <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts ist eine freie, Online-Crowdsourcing-Datenbank von Tierfutterprodukten.</string>
     <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts ist eine freie, Online-Crowdsourcing-Datenbank von Kosmetikprodukten.</string>
     <string name="bdd_music_brainz_description_label">MusicBrainz ist eine freie Musikbibliothek, die Musikmetadaten sammelt und diese öffentlich zur Verfügung stellt.</string>
@@ -690,8 +688,8 @@
     <string name="export_json_label">Als JSON exportieren</string>
     <string name="corners_radius">Eckradius</string>
     <string name="barcode_color">Barcode-Farbe</string>
-    <string name="color_shades_issue">Einige Farbnuancen werden möglicherweise nicht erkannt.</string>
-    <string name="keep_proportions">Seitenverhältnis bewahren</string>
+    <string name="color_shades_issue">Einige Farbtöne werden möglicherweise nicht erkannt.</string>
+    <string name="keep_proportions">Seitenverhältnis beibehalten</string>
     <string name="dimensions_label">Abmessungen</string>
     <string name="background_color">Hintergrundfarbe</string>
     <string name="image_properties">Bildeigenschaften</string>
@@ -700,37 +698,37 @@
     <string name="height_label">Höhe</string>
     <string name="shapes_label">Formen</string>
     <string name="copy_label">Kopie</string>
-    <string name="custom_search_urls">Benutzerdefinierte Such-URLs</string>
+    <string name="custom_search_urls">Eigene Such-URLs</string>
     <string name="custom_search_urls_add_url">URL hinzufügen</string>
     <string name="custom_search_urls_modify_url">URL ändern</string>
-    <string name="custom_url_added">Benutzerdefinierte URL hinzugefügt!</string>
-    <string name="custom_url_updated">Benutzerdefinierte URL aktualisiert!</string>
+    <string name="custom_url_added">Eigene URL hinzugefügt!</string>
+    <string name="custom_url_updated">Eigene URL aktualisiert!</string>
     <string name="custom_search_urls_add_info">Verwende den Begriff „%1$s“ in der URL. Dieser Begriff wird bei der Suche durch den Inhalt des Barcodes ersetzt.</string>
     <string name="examples">Beispiele:</string>
     <string name="error_empty_fields">Eingabefelder dürfen nicht leer sein.</string>
     <string name="preferences_additional_options">Zusätzliche Optionen</string>
     <string name="action_modify_barcode">Barcode ändern</string>
     <string name="error">Fehler</string>
-    <string name="create_qr_from_clipboard">Erzeugen eines QR-Codes aus der Zwischenablage</string>
+    <string name="create_qr_from_clipboard">Einen QR-Code aus der Zwischenablage erzeugen</string>
     <string name="shortcuts_info">Ordne die Kürzel in der Reihenfolge an, die du bevorzugst.</string>
-    <string name="custom_urls">Benutzerdefinierte URLs</string>
+    <string name="custom_urls">Eigene URLs</string>
     <string name="custom_search_urls_list">URL-Liste</string>
-    <string name="custom_search_urls_list_is_empty_message">Kein Eintrag…\nDu hast noch keine benutzerdefinierte URL erstellt.</string>
+    <string name="custom_search_urls_list_is_empty_message">Kein Eintrag …\nDu hast noch keine eigene URL erzeugt.</string>
     <string name="shortcuts">Kürzel</string>
     <string name="barcode_search_error_no_compatible_application_found">Keine kompatible Anwendung gefunden</string>
     <string name="clipboard_empty">Die Zwischenablage ist leer.</string>
-    <string name="popup_message_confirmation_deleted_all_custom_urls">Willst du alle benutzerdefinierten URLs löschen?</string>
-    <string name="custom_url_deleted">Benutzerdefinierte URL gelöscht!</string>
+    <string name="popup_message_confirmation_deleted_all_custom_urls">Möchtest du alle eigenen URLs löschen?</string>
+    <string name="custom_url_deleted">Eigene URL gelöscht!</string>
     <string name="custom_search_urls_error_url">Der Begriff „%1$s“ muss in der URL enthalten sein.</string>
-    <string name="action_share_vcf_file">Teilen als VCF</string>
-    <string name="preferences_display_barcode_image_results_view">Anzeige des Barcode-Bildes in der Ergebnisansicht</string>
+    <string name="action_share_vcf_file">Als VCF teilen</string>
+    <string name="preferences_display_barcode_image_results_view">Anzeigen des Barcode-Bildes in der Ergebnisansicht</string>
     <string name="app_name">Barcode-Scanner</string>
-    <string name="matrix_contact_job_title_label">Berufsbezeichnung</string>
-    <string name="snack_bar_message_items_deleted">Aus dem Verlauf gelöschte Elemente.</string>
-    <string name="preferences_switch_history_save_duplicates_summary_off">Duplikate werden nicht in den Verlauf hinzugefügt</string>
+    <string name="matrix_contact_job_title_label">Beruf</string>
+    <string name="snack_bar_message_items_deleted">Einträge aus dem Verlauf gelöscht.</string>
+    <string name="preferences_switch_history_save_duplicates_summary_off">Duplikate werden nicht dem Verlauf hinzugefügt</string>
     <string name="preferences_switch_history_save_duplicates_label">Duplikate speichern</string>
     <string name="preferences_switch_history_save_duplicates_summary_on">Duplikate werden dem Verlauf hinzugefügt</string>
-    <string name="action_assign_a_name">Füge einen Namen hinzu</string>
+    <string name="action_assign_a_name">Einen Namen zuweisen</string>
     <string name="apply">Anwenden</string>
     <string name="margins">Ränder</string>
     <string name="barcode_not_found">Barcode nicht gefunden</string>
