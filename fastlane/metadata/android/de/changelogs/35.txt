@@ -1,17 +1,17 @@
 1.17.0
 
 Neue Funktionen:
-- Standard-Suchmaschine für den Browser hinzugefügt.
-- Wi-Fi-Verbindung mit WPA3-Sicherheit hinzugefügt (Dank an Mateus J.).
+- Browser-Standardsuchmaschine hinzugefügt.
+- WLAN-Verbindung mit WPA3-Sicherheit hinzugefügt (dank Mateus J.).
 Übersetzung (mit Weblate):
-- Portugiesische (Brasilien) Übersetzung hinzugefügt (Dank an joaooliva).
-- Japanische Übersetzung hinzugefügt (nicht vollständig) (Dank an しいたけ).
-- Ukrainische Übersetzung hinzugefügt (nicht vollständig) (Dank an MaSHiNiK).
-- Italienische Übersetzung hinzugefügt (nicht vollständig) (Dank an Tua madre).
-- Indonesische Übersetzung hinzugefügt (nicht vollständig) (Dank an Reza).
-- Deutsche Übersetzung aktualisiert (mit Dank an Fabian Rennebeck).
-- Norwegische Bokmål-Übersetzung aktualisiert (mit Dank an Allan Nordhøy).
-- Aktualisierte chinesische (vereinfachte) Übersetzung (mit Dank an 御坂13766号 und Red Star Over Earth).
-- Aktualisierte polnische Übersetzung (mit Dank an Eryk Michalak).
-- Aktualisierte türkische Übersetzung (mit Dank an abfreeman).
-- Aktualisierte spanische Übersetzung (danke an gallegonovato).
+- Portugiesische (Brasilien) Übersetzung hinzugefügt (dank joaooliva).
+- Japanische Übersetzung hinzugefügt (unvollständig) (dank しいたけ).
+- Ukrainische Übersetzung hinzugefügt (unvollständig) (dank MaSHiNiK).
+- Italienische Übersetzung hinzugefügt (unvollständig) (dank Tua madre).
+- Indonesische Übersetzung hinzugefügt (unvollständig) (dank Reza).
+- Deutsche Übersetzung aktualisiert (dank Fabian Rennebeck).
+- Norwegisch (Bokmål) aktualisiert (dank Allan Nordhøy).
+- Chinesische (vereinfachte) Übersetzung aktualisiert (dank 御坂13766号 und Red Star Over Earth).
+- Polnische Übersetzung aktualisiert (dank Eryk Michalak).
+- Türkische Übersetzung aktualisiert (dank abfreeman).
+- Spanische Übersetzung aktualisiert (dank gallegonovato).

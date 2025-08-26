@@ -1,9 +1,9 @@
 1.24.0
 
-Gesamter Changelog hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
-- Aktualisierte Übersetzungen (Weblate).
-- Korrektur mehrerer grafischer Fehler.
-- Änderung von Textstilen zur Verbesserung der Lesbarkeit.
-- Änderung des OLED Black Themas.
-- Mehrere kleinere Verbesserungen.
+- Übersetzungen aktualisiert (Weblate).
+- Korrektur einiger grafischer Fehler.
+- Änderung der Textstile zur Verbesserung der Lesbarkeit.
+- Änderung des schwarzen OLED-Farbschemas.
+- Einige kleinere Verbesserungen.

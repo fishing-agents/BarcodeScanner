@@ -1,8 +1,8 @@
 1.15.0
 
-- Polnische Übersetzung aktualisiert (Dank an phyrz91).
-- Traditionelle chinesische Übersetzung aktualisiert (danke an plum7x).
-- Fehlerkorrekturstufe für QR-Codes hinzugefügt.
-- Option hinzugefügt, um generierte Barcodes zum Verlauf hinzuzufügen (muss in den Einstellungen aktiviert werden).
-- Modifikation der Verwaltung von Remote-APIs.
-- MusicBrainz API hinzugefügt.
+- Polnische Übersetzung aktualisiert (dank phyrz91).
+- Traditionelle chinesische Übersetzung aktualisiert (dank plum7x).
+- Fehlerkorrekturlevel für QR-Codes hinzugefügt.
+- Option hinzugefügt, um erzeugte Barcodes zum Verlauf hinzuzufügen (muss in den Einstellungen aktiviert werden).
+- Änderung der Verwaltung von Remote-APIs.
+- MusicBrainz-API hinzugefügt.

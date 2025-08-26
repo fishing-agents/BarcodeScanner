@@ -1,12 +1,12 @@
 1.22.0
 
-Vollständiger Changelog hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
-- Ersetzen der statischen Verknüpfungen durch dynamische Verknüpfungen (dies kann in den Einstellungen konfiguriert werden).
-- Es wurde eine Verknüpfung hinzugefügt, um einen QR-Code aus der Zwischenablage zu generieren (Dank an Austen).
-- Es wurde die Möglichkeit hinzugefügt, eigene Such-URLs zu erstellen und zu verwenden.
-- Es wurde eine Option zur Anzeige des Barcode-Bildes in der Ergebnisansicht hinzugefügt.
+- Ersetzen statischer Verknüpfungen durch dynamische Verknüpfungen (dies kann in den Einstellungen konfiguriert werden).
+- Hinzufügen einer Verknüpfung zum Erzeugen eines QR-Codes aus der Zwischenablage (dank Austen).
+- Hinzufügen der Möglichkeit, benutzerdefinierte Such-URLs zu erstellen und zu verwenden.
+- Hinzufügen einer Option zum Anzeigen des Barcode-Bildes in der Ergebnisansicht.
 - Fehlerbehebungen.
-- Verbesserte Themen, Stile und Ansichten.
-- Aktualisierte Übersetzungen (Weblate).
+- Verbesserte Farbschemas, Stile und Ansichten.
+- Übersetzungen aktualisiert (Weblate).
 - Abhängigkeiten aktualisiert.

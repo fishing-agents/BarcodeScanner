@@ -1,7 +1,7 @@
 1.25.2
 
-Vollständige Änderungsübersicht: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
 - Übersetzungen aktualisiert (Weblate).
-- Einheit für »Rand« des Barcode-Bildes von Prozent zu Pixel geändert.
-- Buttons hinzugefügt, um den Wert für »Rand« genauer einzustellen.
+- Einheit für „Rand“ des Barcode-Bildes von Prozent zu Pixel geändert.
+- Schaltflächen hinzugefügt, um den Wert für „Rand“ genauer einzustellen.

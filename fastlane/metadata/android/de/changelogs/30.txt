@@ -1,7 +1,7 @@
 1.14.0
 
-- Polnische Übersetzung hinzugefügt (Dank an phyrz91).
-- Ein Absturz unter Android 7 wurde behoben.
-- Es wurde ein Parameter hinzugefügt, um den Standard-Zoomwert der Kamera einzustellen.
-- UPI-QR-Code-Analyse zugefügt.
-- Eine Historie für die Erstellung von EPC-QR-Codes wurde zugefügt.
+- Polnische Übersetzung hinzugefügt (dank phyrz91).
+- Absturz unter Android 7 behoben.
+- Parameter zum Einstellen des Standard-Zoomwerts der Kamera hinzugefügt.
+- UPI-QR-Code-Analyse hinzugefügt.
+- Verlauf für das Erstellen von EPC-QR-Codes hinzugefügt.

@@ -1,7 +1,7 @@
 1.25.3
 
-Vollständiges Änderungsprotokoll hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
 - Übersetzungen aktualisiert (Weblate).
-- Absturz behoben, der beim Hinzufügen eines WLAN-Netzwerks über einen QR-Code auftreten konnte (danke an Markus Fisch).
+- Absturz behoben, der beim Hinzufügen eines WLAN-Netzwerks über einen QR-Code auftreten konnte (dank Markus Fisch).
 - Abhängigkeiten aktualisiert.

@@ -1,12 +1,12 @@
 1.23.0
 
-Vollständiger Changelog hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
-- Katalanische Übersetzung hinzugefügt (Dank an Paco Rivière).
-- Der Anwendungsname wurde in einige Sprachen übersetzt.
-- Schaltfläche zum Ignorieren doppelter Einträge in der Historie hinzugefügt.
-- In der Snackbar wurde eine Rückgängig-Schaltfläche hinzugefügt, wenn ein Eintrag gelöscht wird.
-- Die Abhängigkeit von der Implementierung der alten Kamera-API wurde entfernt und nur die CameraX-Implementierung beibehalten.
-- Abstürze, die während des VCard-Imports auftreten können, wurden behoben.
-- Aktualisierte Abhängigkeiten.
+- Katalanische Übersetzung hinzugefügt (dank Paco Rivière).
+- Anwendungsname in einige Sprachen übersetzt.
+- Schaltfläche hinzugefügt, um doppelte Einträge im Verlauf zu ignorieren.
+- Rückgängig-Schaltfläche zur Snackbar hinzugefügt, wenn ein Eintrag gelöscht wird.
+- Abhängigkeit von der alten Kamera-API entfernt, nur die CameraX-Implementierung wird beibehalten.
+- Abstürze behoben, die beim Importieren von VCard auftreten konnten.
+- Abhängigkeiten aktualisiert.
 - Mehrere kleinere Verbesserungen.

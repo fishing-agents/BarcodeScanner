@@ -1,4 +1,4 @@
 1.14.1
 
-- Es wurde ein Fehler behoben, der die Suche auf entfernten APIs blockierte.
-- Aktualisierung der polnischen Übersetzung.
+- Fehler behoben, der die Suche auf Remote-APIs blockierte.
+- Polnische Übersetzung aktualisiert.

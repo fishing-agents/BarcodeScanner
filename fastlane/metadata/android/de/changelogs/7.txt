@@ -1,1 +1,1 @@
-- Komponenten auf Material Design 3 migrieren.
+- Migration von Komponenten zu Material Design 3.

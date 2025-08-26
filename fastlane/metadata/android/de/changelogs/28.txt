@@ -1,3 +1,3 @@
 1.13.1
 
-- Die Übersetzung ins traditionelle Chinesisch wurde aktualisiert.
+- Die Übersetzung ins traditionelle Chinesisch aktualisiert.

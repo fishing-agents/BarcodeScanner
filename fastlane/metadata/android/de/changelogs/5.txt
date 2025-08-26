@@ -1,4 +1,4 @@
-- Modifikation einer Bibliothek, die das Scannen von Barcodes ermöglicht.
+- Änderung einer Bibliothek, die das Scannen von Barcodes ermöglicht.
 - Aktualisierungen von: Kotlin Version (1.7.10), SDK (API 33) und Abhängigkeiten.
 - Code-Verbesserung.
 - Hinzufügen des monochromen Symbols für Android 13.

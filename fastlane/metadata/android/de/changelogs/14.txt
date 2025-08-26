@@ -1,4 +1,4 @@
-- Spanische Übersetzung hinzugefügt (Dank an zgll2022).
+- Spanische Übersetzung hinzugefügt (dank zgll2022).
 - Brave Search als Suchmaschine hinzugefügt.
 - Änderung des Eco-Score-Symbols.
 - Änderung des Symbols für die Aktion „mit einem Browser öffnen”.

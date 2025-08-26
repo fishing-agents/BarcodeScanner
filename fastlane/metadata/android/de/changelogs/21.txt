@@ -1,9 +1,9 @@
 1.9.0
 
-- Neues Icon + animiertes Icon im Splash Screen.
-- Übergangsanimationen zwischen den Ansichten bei der Barcode-Generierung hinzugefügt.
+- Neues Symbol u. animiertes Symbol im Begrüßungsbildschirm.
+- Übergangsanimationen zwischen den Ansichten bei der Barcodegenerierung hinzugefügt.
 - Animation von Symbolen im unteren Navigationsfeld hinzugefügt.
-- Code und Stile verbessert. Spinner-Komponenten wurden durch MaterialAutoCompleteTextView ersetzt.
-- Roboto-Schriftarten wurden entfernt. Jetzt verwendet die Anwendung die Systemschriftart.
-- Hinzufügen von Systemfunktionen.
-- Russische Übersetzung aktualisiert (Dank an s s).
+- Code und Stile verbessert. Spinner-Komponenten durch MaterialAutoCompleteTextView ersetzt.
+- Roboto-Schriftarten entfernt. Die Anwendung verwendet nun die Systemschriftart.
+- Systemfunktionen hinzugefügt.
+- Russische Übersetzung aktualisiert (dank s s).

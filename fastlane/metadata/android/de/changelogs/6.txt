@@ -1,2 +1,2 @@
-- Hinzufügen der Möglichkeit, die Sprache für Android 13 zu ändern.
-- Zugang zum Quellcode in den Einstellungen.
+- Möglichkeit zum Ändern der Sprache für Android 13.
+- Zugriff auf den Quellcode in den Einstellungen.

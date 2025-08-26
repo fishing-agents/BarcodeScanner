@@ -1,4 +1,4 @@
 1.8.1
 
-- Fix: CameraX Schnittstellen-Implementierung beim Scannen über einen Intent hinzugefügt.
+- Fehlerbehebung: Implementierung der CameraX-API beim Scannen über einen Intent hinzugefügt.
 - Abhängigkeiten aktualisiert.

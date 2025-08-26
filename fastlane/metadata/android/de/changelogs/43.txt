@@ -1,9 +1,9 @@
 1.24.1
 
-Vollständiges Änderungsprotokoll hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
-- Vollständige serbische Übersetzung hinzugefügt (danke an eevan78).
-- Teilweise bulgarische Übersetzung hinzugefügt (danke an trunars).
+- Vollständige serbische Übersetzung hinzugefügt (dank eevan78).
+- Teilweise bulgarische Übersetzung hinzugefügt (dank trunars).
 - Übersetzungen aktualisiert (Weblate).
 - Einige Anpassungen an den Textstilen.
 - Abhängigkeiten aktualisiert.
