@@ -102,7 +102,7 @@
     <string name="barcode_scanned_label">%1$s 已扫描！</string>
     <string name="barcode_found_on_label">发现 %1$s！</string>
     <string name="barcode_not_found_on_api_label">没有发现信息 %1$s。</string>
-    <string name="no_internet_permission">您没有同意网络权限。</string>
+    <string name="no_internet_permission">您没有访问互联网的权限。</string>
     <string name="about_barcode_information_label">条码信息</string>
     <string name="about_barcode_label">关于条码</string>
     <string name="about_barcode_format_label">格式：%1$s</string>
@@ -115,7 +115,7 @@
     <string name="warning_label">警告</string>
     <string name="scan_error_information_label">在网络API上搜索信息时发生错误…请检查您的互联网连接和应用程序的权限！如果问题仍然存在，应该是服务器问题。</string>
     <string name="scan_error_internet_information_label">没有关于产品检索的信息，您似乎没有互联网连接！</string>
-    <string name="scan_error_message_label">错误信息：</string>
+    <string name="scan_error_message_label">错误消息：</string>
     <!-- Food Beauty and Pet Food Product -->
     <string name="overview_tab_label">概述</string>
     <string name="ingredients_label">成分</string>
@@ -153,7 +153,7 @@
     <string name="categories_label">分类</string>
     <string name="packaging_label">包装</string>
     <string name="stores_label">商店</string>
-    <string name="countries_label">销售国家</string>
+    <string name="countries_label">销售国家/地区</string>
     <!-- Ingredients -->
     <string name="ingredients_no_information_found_label">没有找到该产品的成分…</string>
     <string name="allergens_label">过敏原</string>
@@ -238,15 +238,15 @@
     <string name="matrix_agenda_start_date_event_label">开始</string>
     <string name="matrix_agenda_end_date_event_label">结束</string>
     <string name="matrix_agenda_place_event_label">地点</string>
-    <string name="matrix_agenda_description_event_label">介绍</string>
+    <string name="matrix_agenda_description_event_label">描述</string>
     <!-- Matrix Barcode Phone Analysis -->
     <string name="matrix_phone_tel_number_label">电话</string>
     <!-- Matrix Barcode Email Analysis -->
     <string name="matrix_email_recipient_label">收件人</string>
     <string name="matrix_email_cc_label">抄送</string>
-    <string name="matrix_email_bcc_label">BCC</string>
+    <string name="matrix_email_bcc_label">密送</string>
     <string name="matrix_subject_label">主题</string>
-    <string name="matrix_body_label">信息</string>
+    <string name="matrix_body_label">消息</string>
     <!-- Matrix Barcode Wi-Fi Analysis -->
     <string name="matrix_wifi_ssid_label">SSID</string>
     <string name="matrix_wifi_password_label">密码</string>
@@ -297,7 +297,7 @@
     <string name="intent_chooser_mail_title">发送邮件…</string>
     <string name="copy_barcode_label">复制内容</string>
     <string name="barcode_copied_label">条码已复制</string>
-    <string name="barcode_search_error_label">Url 不支持</string>
+    <string name="barcode_search_error_label">不支持的 URL</string>
     <string name="search_label">搜索</string>
     <string name="action_title_dialog_label">您想做什么？</string>
     <string name="action_go_to_url_label">打开 URL</string>
@@ -395,8 +395,7 @@
     <string name="qr_code_text_input_edit_text_hint_epc_information">信息</string>
     <string name="qr_code_text_input_edit_text_epc_name_error">“名称” 字段是必须的</string>
     <string name="qr_code_text_input_edit_text_epc_iban_error">IBAN 错误</string>
-    <string name="list_bank_empty_message">没有记录…
-\n您尚未生成过 EPC 二维码。</string>
+    <string name="list_bank_empty_message">无项目…\n您尚未生成 EPC QR 码。</string>
     <!-- Mail Creator -->
     <string name="qr_code_text_input_edit_text_hint_email">电子邮件</string>
     <string name="qr_code_text_input_edit_text_hint_email_subject">主题</string>
@@ -414,7 +413,7 @@
     <!-- Event Creator -->
     <string name="qr_code_text_input_edit_text_hint_agenda_event_name">事件名</string>
     <string name="qr_code_text_input_edit_text_hint_agenda_place">地点</string>
-    <string name="qr_code_text_input_edit_text_hint_agenda_description">说明</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_description">描述</string>
     <string name="check_box_event_all_of_day">全天</string>
     <string name="begin_label">开始</string>
     <string name="end_label">结束</string>
@@ -475,7 +474,7 @@
     <string name="preferences_color_purple">紫色</string>
     <!-- Languages Settings -->
     <string name="preferences_languages_title">语言</string>
-    <string name="preferences_languages_change">修改语言</string>
+    <string name="preferences_languages_change">更改语言</string>
     <!-- Remote API -->
     <string name="preferences_remote_api_title">产品与 API</string>
     <string name="preferences_switch_scan_search_on_api_label">自动查询远程 API</string>
@@ -530,11 +529,11 @@
     <string name="preferences_about_permissions_label">权限</string>
     <string name="preferences_about_third_party_libraries_label">第三方库</string>
     <string name="preferences_about_bdd_label">数据库</string>
-    <string name="preferences_source_code_label">源码</string>
+    <string name="preferences_source_code_label">源代码</string>
     <!-- About Permissions -->
     <string name="permission_camera_label">相机</string>
     <string name="permission_camera_description_label">用于扫描条码。</string>
-    <string name="permission_internet_label">网络</string>
+    <string name="permission_internet_label">互联网</string>
     <string name="permission_internet_description_label">用于从远程 API 查询信息。</string>
     <string name="permission_contact_label">通讯录</string>
     <string name="permission_contact_description_label">用于导入通讯录信息并生成 QR 码。</string>
@@ -672,7 +671,7 @@
     <string name="country_at">奥地利</string>
     <string name="country_au">澳大利亚</string>
     <string name="country_nz">新西兰</string>
-    <string name="country_my">西马来西亚</string>
+    <string name="country_my">马来西亚</string>
     <string name="country_mo">澳门</string>
     <!-- External Services Label -->
     <string name="google_label">谷歌</string>
@@ -700,8 +699,7 @@
     <string name="colors_label">颜色</string>
     <string name="height_label">高度</string>
     <string name="action_modify_barcode">修改条形码</string>
-    <string name="custom_search_urls_list_is_empty_message">没有内容…
-\n您尚未生成自定义 URL。</string>
+    <string name="custom_search_urls_list_is_empty_message">无项目…\n您尚未生成自定义 URL。</string>
     <string name="preferences_display_barcode_image_results_view">在结果视图中显示条形码图像</string>
     <string name="error">错误</string>
     <string name="barcode_search_error_no_compatible_application_found">未找到兼容的应用程序</string>
