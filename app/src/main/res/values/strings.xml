@@ -569,7 +569,15 @@
     <string name="preferences_switch_scan_bip_label">Play sound when scan is successful</string>
     <string name="preferences_switch_scan_screen_rotation_label">Disable automatic rotation during scan</string>
     <string name="preferences_switch_scan_barcode_copied_label">Copy scanned barcodes to clipboard</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Select barcode types to scan</string>
+    <string name="non_whitelisted_barcode_title">%s Not Whitelisted</string>
+    <string name="non_whitelisted_barcode_message">This barcode type is not enabled for scanning. You can enable it in settings or allow it just this once.</string>
+    <string name="allow_this_time">Allow This Time</string>
+    <string name="go_back">Go Back</string>
     <string name="preferences_seek_bar_camera_default_zoom_value_label">Default value of the camera zoom</string>
+    <string name="preferences_switch_scan_rate_limit_label">Enable scan rate limiting</string>
+    <string name="preferences_scan_rate_limit_duration_label">Rate limit duration</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
     <!-- Barcode Generation Settings -->
     <string name="preferences_barcode_generation_title">Barcode generation</string>
     <!-- History settings-->
@@ -776,7 +784,10 @@
     <string name="preferences_switch_scan_screen_rotation_key" translatable="false">preferences_switch_scan_screen_rotation_key</string>
     <string name="preferences_switch_scan_barcode_copied_key" translatable="false">preferences_switch_scan_barcode_copied_key</string>
     <string name="preferences_switch_scan_add_barcode_to_the_history_key" translatable="false">preferences_switch_scan_add_barcode_to_the_history_key</string>
+    <string name="preferences_switch_scan_barcode_type_filter_key" translatable="false">preferences_switch_scan_barcode_type_filter_key</string>
     <string name="preferences_seek_bar_camera_default_zoom_value_key" translatable="false">preferences_seek_bar_camera_default_zoom_value_default_key</string>
+    <string name="preferences_switch_scan_rate_limit_key" translatable="false">preferences_switch_scan_rate_limit_key</string>
+    <string name="preferences_scan_rate_limit_duration_key" translatable="false">preferences_scan_rate_limit_duration_key</string>
     <string name="preferences_barcode_generation_error_correction_level_key" translatable="false">preferences_barcode_generation_error_correction_level_key</string>
     <string name="preferences_switch_barcode_generation_add_barcode_to_the_history_key" translatable="false">preferences_switch_barcode_generation_add_barcode_to_the_history_key</string>
     <string name="preferences_search_engine_key" translatable="false">preferences_search_engine_key</string>

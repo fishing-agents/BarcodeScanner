@@ -81,6 +81,8 @@ class CameraConfig(private val context: Context) {
 
     fun stopCamera() {
         switchOffFlash()
+        // Clear analyzer first to stop processing new frames
+        imageAnalysis.clearAnalyzer()
         cameraProvider?.let {
             it.unbindAll()
             camera = null

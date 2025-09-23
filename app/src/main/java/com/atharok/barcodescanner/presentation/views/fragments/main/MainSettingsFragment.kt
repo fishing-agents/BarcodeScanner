@@ -48,7 +48,11 @@ import com.atharok.barcodescanner.presentation.views.activities.BaseActivity
 import com.atharok.barcodescanner.presentation.views.activities.CustomSearchUrlListActivity
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.activities.ShortcutsActivity
+import com.atharok.barcodescanner.presentation.views.adapters.BarcodeTypeMultiChoiceAdapter
+import com.atharok.barcodescanner.domain.library.SettingsManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.zxing.BarcodeFormat
+import org.koin.android.ext.android.inject
 import java.util.Locale
 import kotlin.reflect.KClass
 
@@ -76,6 +80,7 @@ class MainSettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSha
         configureStartActivity(R.string.preferences_about_library_third_key, AboutThirdPartyLibrariesActivity::class)
         configureStartActivity(R.string.preferences_about_bdd_key, AboutBddActivity::class)
         configureSourceCodePreference()
+        configureBarcodeTypeFilterPreference()
     }
 
     override fun onResume() {
@@ -232,5 +237,70 @@ class MainSettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSha
         val intent = createStartActivityIntent(requireContext(), activityKClass)
         startActivity(intent)
         return true
+    }
+
+    private fun configureBarcodeTypeFilterPreference() {
+        val pref = findPreference(getString(R.string.preferences_switch_scan_barcode_type_filter_key)) as Preference?
+        val settingsManager: SettingsManager by inject()
+
+        pref?.let {
+            it.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+                showBarcodeTypeFilterDialog(settingsManager)
+                true
+            }
+        }
+    }
+
+    private fun showBarcodeTypeFilterDialog(settingsManager: SettingsManager) {
+        // Get all available barcode formats with their display names and icons
+        val allFormats = listOf(
+            Triple(BarcodeFormat.QR_CODE, getString(R.string.barcode_qr_code_label), R.drawable.baseline_qr_code_24),
+            Triple(BarcodeFormat.DATA_MATRIX, getString(R.string.barcode_data_matrix_label), R.drawable.ic_data_matrix_code_24),
+            Triple(BarcodeFormat.PDF_417, getString(R.string.barcode_pdf_417_label), R.drawable.ic_pdf_417_code_24),
+            Triple(BarcodeFormat.AZTEC, getString(R.string.barcode_aztec_label), R.drawable.ic_aztec_code_24),
+            Triple(BarcodeFormat.EAN_13, getString(R.string.barcode_ean_13_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.EAN_8, getString(R.string.barcode_ean_8_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.UPC_A, getString(R.string.barcode_upc_a_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.UPC_E, getString(R.string.barcode_upc_e_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.CODE_128, getString(R.string.barcode_code_128_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.CODE_93, getString(R.string.barcode_code_93_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.CODE_39, getString(R.string.barcode_code_39_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.CODABAR, getString(R.string.barcode_codabar_label), R.drawable.ic_bar_code_24),
+            Triple(BarcodeFormat.ITF, getString(R.string.barcode_itf_label), R.drawable.ic_bar_code_24)
+        )
+
+        val formatValues = allFormats.map { it.first.name }.toTypedArray()
+
+        // Get currently selected formats
+        val currentSelection = settingsManager.allowedBarcodeFormats
+        val checkedItems = BooleanArray(formatValues.size) { index ->
+            // If no formats are selected, all are allowed
+            currentSelection.isEmpty() || currentSelection.contains(formatValues[index])
+        }
+
+        // Create adapter items with format name, display name, and icon
+        val adapterItems = allFormats.map { Triple(it.first.name, it.second, it.third) }
+        val adapter = BarcodeTypeMultiChoiceAdapter(requireContext(), adapterItems, checkedItems)
+
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(R.string.preferences_switch_scan_barcode_type_filter_label)
+            .setAdapter(adapter, null)
+            .setPositiveButton(android.R.string.ok) { _, _ ->
+                val selectedFormats = mutableSetOf<String>()
+                checkedItems.forEachIndexed { index, isChecked ->
+                    if (isChecked) {
+                        selectedFormats.add(formatValues[index])
+                    }
+                }
+
+                // If all formats are selected, save empty set (meaning all allowed)
+                if (selectedFormats.size == formatValues.size) {
+                    settingsManager.updateAllowedBarcodeFormats(emptySet())
+                } else {
+                    settingsManager.updateAllowedBarcodeFormats(selectedFormats)
+                }
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
     }
 }

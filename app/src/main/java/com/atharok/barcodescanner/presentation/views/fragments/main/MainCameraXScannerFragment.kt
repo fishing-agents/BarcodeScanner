@@ -67,7 +67,17 @@ import com.atharok.barcodescanner.presentation.views.activities.BarcodeScanFromI
 import com.atharok.barcodescanner.presentation.views.activities.BaseActivity
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.fragments.BaseFragment
+import com.atharok.barcodescanner.common.extensions.getDisplayName
+import com.atharok.barcodescanner.common.extensions.is1DIndustrialBarcode
+import com.atharok.barcodescanner.common.extensions.is1DProductBarcode
+import com.atharok.barcodescanner.common.extensions.is2DBarcode
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import org.koin.android.ext.android.get
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.parameter.parametersOf
@@ -85,6 +95,11 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
 
     private var cameraConfig: CameraConfig? = null
     private val databaseBarcodeViewModel: DatabaseBarcodeViewModel by activityViewModel()
+    private var isProcessingBarcode = false
+    private var lastProcessingTime = 0L
+
+    // Rate limiting data
+    private val recentScans = mutableMapOf<String, Long>()
 
     // ---- View ----
     private var _binding: FragmentMainCameraXScannerBinding? = null
@@ -109,11 +124,23 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
     override fun onDestroyView() {
         super.onDestroyView()
         cameraConfig?.stopCamera()
+        cameraConfig = null
         _binding=null
     }
 
     override fun onResume() {
         super.onResume()
+
+        // Reload settings in case they changed
+        settingsManager.reload()
+
+        // Clear rate limit cache if rate limiting is disabled
+        if (!settingsManager.isRateLimitEnabled) {
+            recentScans.clear()
+        }
+
+        // Reset processing flag when fragment resumes
+        isProcessingBarcode = false
 
         if (allPermissionsGranted()) {
             doPermissionGranted()
@@ -217,6 +244,9 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
     // ---- Camera ----
 
     private fun configureCamera() {
+        // Reset processing flag when configuring camera
+        isProcessingBarcode = false
+
         cameraConfig = CameraConfig(requireContext()).apply {
 
             val analyzer: AbstractCameraXBarcodeAnalyzer = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -236,9 +266,55 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
 
     override fun onBarcodeFound(result: Result) {
         viewBinding.fragmentMainCameraXScannerPreviewView.post {
-            if(cameraConfig?.isRunning() == true) {
-                cameraConfig?.stopCamera()
-                onSuccessfulScanFromCamera(result)
+            try {
+                // Check if processing is stuck (more than 5 seconds)
+                val currentTime = System.currentTimeMillis()
+                if (isProcessingBarcode && currentTime - lastProcessingTime > 5000) {
+                    // Reset the flag if it's been stuck for more than 5 seconds
+                    isProcessingBarcode = false
+                }
+
+                // Prevent processing multiple barcodes at once
+                if(cameraConfig?.isRunning() == true && !isProcessingBarcode) {
+                    // Check rate limiting first
+                    if (settingsManager.isRateLimitEnabled) {
+                        try {
+                            if (isWithinRateLimit(result.text)) {
+                                // Barcode was recently scanned, ignore it and continue scanning
+                                // Don't set isProcessingBarcode = true so scanner keeps running
+                                return@post
+                            }
+                        } catch (e: Exception) {
+                            // If rate limiting check fails, continue scanning
+                            e.printStackTrace()
+                        }
+                    }
+
+                    isProcessingBarcode = true
+                    lastProcessingTime = currentTime
+
+                    // Check if this barcode type is allowed
+                    val allowedFormats = settingsManager.allowedBarcodeFormats
+                    val barcodeFormat = result.barcodeFormat?.name
+
+                    // If no formats are specified (empty set), all formats are allowed
+                    if (allowedFormats.isEmpty() || (barcodeFormat != null && allowedFormats.contains(barcodeFormat))) {
+                        // Record scan time for rate limiting BEFORE stopping camera
+                        if (settingsManager.isRateLimitEnabled) {
+                            recordScanTime(result.text)
+                        }
+
+                        cameraConfig?.stopCamera()
+                        onSuccessfulScanFromCamera(result)
+                    } else {
+                        // Barcode type is not whitelisted - show popup but don't save to history
+                        showNonWhitelistedBarcodePopup(result)
+                    }
+                }
+            } catch (e: Exception) {
+                // Reset flag on any error to prevent scanner from getting stuck
+                isProcessingBarcode = false
+                e.printStackTrace()
             }
         }
     }
@@ -248,6 +324,65 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
             cameraConfig?.stopCamera()
             viewBinding.fragmentMainCameraXScannerCameraPermissionTextView.text = getString(R.string.scan_error_exception_label, msg)
             doPermissionRefused()
+        }
+    }
+
+            private fun showNonWhitelistedBarcodePopup(result: Result) {
+        requireActivity().runOnUiThread {
+            cameraConfig?.stopCamera()
+
+            val barcodeFormat = result.barcodeFormat
+            val displayName = barcodeFormat?.getDisplayName(requireContext()) ?: "Unknown"
+            val iconResource = getBarcodeFormatIcon(barcodeFormat)
+
+            MaterialAlertDialogBuilder(requireContext())
+                .setTitle(getString(R.string.non_whitelisted_barcode_title, displayName))
+                .setIcon(iconResource)
+                .setMessage(getString(R.string.non_whitelisted_barcode_message))
+                .setPositiveButton(R.string.allow_this_time) { dialog, _ ->
+                    dialog.dismiss()
+                    // Process the barcode as if it was whitelisted (one-time exception)
+                    onSuccessfulScanFromCamera(result)
+                    // Flag will be reset after processing completes
+                }
+                .setNegativeButton(R.string.go_back) { dialog, _ ->
+                    dialog.dismiss()
+                    isProcessingBarcode = false // Reset flag before resuming
+                    // Add small delay to avoid surface abandoned error
+                    CoroutineScope(Dispatchers.Main).launch {
+                        delay(100)
+                        // Properly reconfigure camera with analyzer
+                        configureCamera()
+                    }
+                }
+                .setOnCancelListener {
+                    isProcessingBarcode = false // Reset flag before resuming
+                    // Add small delay to avoid surface abandoned error
+                    CoroutineScope(Dispatchers.Main).launch {
+                        delay(100)
+                        // Properly reconfigure camera with analyzer
+                        configureCamera()
+                    }
+                }
+                .setCancelable(true) // Allow dismissing by tapping outside
+                .show()
+        }
+    }
+
+    private fun getBarcodeFormatIcon(format: BarcodeFormat?): Int {
+        return when {
+            format == null -> R.drawable.ic_bar_code_24
+            format.is1DProductBarcode() || format.is1DIndustrialBarcode() -> R.drawable.ic_bar_code_24
+            format.is2DBarcode() -> {
+                when(format) {
+                    BarcodeFormat.AZTEC -> R.drawable.ic_aztec_code_24
+                    BarcodeFormat.DATA_MATRIX -> R.drawable.ic_data_matrix_code_24
+                    BarcodeFormat.PDF_417 -> R.drawable.ic_pdf_417_code_24
+                    BarcodeFormat.QR_CODE -> R.drawable.baseline_qr_code_24
+                    else -> R.drawable.baseline_qr_code_24
+                }
+            }
+            else -> R.drawable.baseline_qr_code_24
         }
     }
 
@@ -384,6 +519,41 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
         requireActivity().apply {
             setResult(Activity.RESULT_OK, intent)
             finish()
+        }
+    }
+
+    // ---- Rate Limiting ----
+
+            private fun isWithinRateLimit(barcodeContent: String): Boolean {
+        // Don't rate limit empty barcodes
+        if (barcodeContent.isBlank()) return false
+
+        val currentTime = System.currentTimeMillis()
+        val rateLimitMillis = settingsManager.rateLimitDurationSeconds * 1000L
+
+        // Clean up expired entries first
+        recentScans.entries.removeIf { (_, timestamp) ->
+            currentTime - timestamp >= rateLimitMillis
+        }
+
+        // Now check if the barcode is still in the map (not expired)
+        val lastScanTime = recentScans[barcodeContent] ?: return false
+        val isWithinLimit = currentTime - lastScanTime < rateLimitMillis
+
+        // Debug logging
+        if (isWithinLimit) {
+            val remainingSeconds = (rateLimitMillis - (currentTime - lastScanTime)) / 1000
+            println("Rate limit: Barcode blocked for $remainingSeconds more seconds")
+        }
+
+        return isWithinLimit
+    }
+
+    private fun recordScanTime(barcodeContent: String) {
+        // Don't record empty barcodes
+        if (barcodeContent.isNotBlank()) {
+            recentScans[barcodeContent] = System.currentTimeMillis()
+            println("Rate limit: Recorded scan of barcode, will be blocked for ${settingsManager.rateLimitDurationSeconds} seconds")
         }
     }
 }

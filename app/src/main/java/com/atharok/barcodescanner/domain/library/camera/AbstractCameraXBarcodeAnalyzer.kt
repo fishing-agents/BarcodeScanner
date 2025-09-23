@@ -79,6 +79,12 @@ abstract class AbstractCameraXBarcodeAnalyzer(
                     //e.printStackTrace() // Not Found
                 }
             }
+        } catch (e: IllegalStateException) {
+            // Surface has been abandoned - this can happen when camera is stopped while analyzing
+            // This is expected behavior, so we just ignore it
+            if (!e.message.orEmpty().contains("Surface has been abandoned")) {
+                barcodeDetector.onError(e.toString())
+            }
         } catch (e: Exception) {
             barcodeDetector.onError(e.toString())
         }

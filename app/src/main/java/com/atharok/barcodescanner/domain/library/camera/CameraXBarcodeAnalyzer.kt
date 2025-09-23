@@ -30,24 +30,32 @@ class CameraXBarcodeAnalyzer(
 ) : AbstractCameraXBarcodeAnalyzer(barcodeDetector) {
 
     override fun analyze(image: ImageProxy) {
-        val plane = image.planes[0]
-        val imageData = plane.buffer.toByteArray()
+        try {
+            val plane = image.planes[0]
+            val imageData = plane.buffer.toByteArray()
 
-        val size = image.width.coerceAtMost(image.height) * ScanOverlay.RATIO
+            val size = image.width.coerceAtMost(image.height) * ScanOverlay.RATIO
 
-        val left = (image.width - size) / 2f
-        val top = (image.height - size) / 2f
+            val left = (image.width - size) / 2f
+            val top = (image.height - size) / 2f
 
-        analyse(
-            yuvData = imageData,
-            dataWidth = plane.rowStride,
-            dataHeight = image.height,
-            left = left.roundToInt(),
-            top = top.roundToInt(),
-            width = size.roundToInt(),
-            height = size.roundToInt()
-        )
-
-        image.close()
+            analyse(
+                yuvData = imageData,
+                dataWidth = plane.rowStride,
+                dataHeight = image.height,
+                left = left.roundToInt(),
+                top = top.roundToInt(),
+                width = size.roundToInt(),
+                height = size.roundToInt()
+            )
+        } catch (e: IllegalStateException) {
+            // Surface abandoned errors are expected when camera is stopping
+            // Just ignore them
+        } catch (e: Exception) {
+            // Log other unexpected errors but don't crash
+            e.printStackTrace()
+        } finally {
+            image.close()
+        }
     }
 }
