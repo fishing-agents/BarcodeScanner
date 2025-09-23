@@ -395,7 +395,7 @@
     <string name="preferences_information_about_remote_api_how_it_works">Як це працює</string>
     <string name="qr_code_text_input_edit_text_hint_epc_identification">Ідентифікатор</string>
     <string name="palm_oil_content_unknown_label">Вміст пальмової олії невідомий</string>
-    <string name="qr_code_text_input_edit_text_hint_first_name">Ім\'я</string>
+    <string name="qr_code_text_input_edit_text_hint_first_name">Особисті Ім\'я</string>
     <string name="matrix_agenda_end_date_event_label">Закінчення</string>
     <string name="error_barcode_qr_email_missing_message">Вам необхідно заповнити принаймні одне з полів введення</string>
     <string name="country_me">Чорногорія</string>
@@ -489,7 +489,7 @@
     <string name="matrix_wifi_phase_2_method_label">Phase 2 метод</string>
     <string name="matrix_localisation_query_label">Запит</string>
     <string name="matrix_contact_name_label">Ім\'я</string>
-    <string name="qr_code_text_input_edit_text_hint_email_subject">Тема</string>
+    <string name="qr_code_text_input_edit_text_hint_email_subject">Суб\'єкт</string>
     <string name="book_product_summary_label">Анотація</string>
     <string name="qr_code_text_input_edit_text_hint_localisation_request">Пошуковий запит</string>
     <string name="matrix_agenda_description_event_label">Опис</string>
@@ -512,7 +512,7 @@
     <string name="preferences_seek_bar_camera_default_zoom_value_label">Наближення камери за замовчуванням</string>
     <string name="error_barcode_wrong_length_message">Штрихкод має містити %1$s цифр.</string>
     <string name="barcode_industrial_description_label">Цей тип штрихкоду часто використовується в промисловості.</string>
-    <string name="matrix_subject_label">Тема</string>
+    <string name="matrix_subject_label">Суб\'єкт</string>
     <string name="nutrition_facts_tab_label">Харчування</string>
     <string name="off_quantity_low_label">Мала кількість</string>
     <string name="search_engine_open_library_product_url">https://openlibrary.org/search?q=%1$s</string>
@@ -672,4 +672,12 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">Збільшення</string>
     <string name="decrease">Зниження</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Виберіть типи штрих-кодів для сканування</string>
+    <string name="non_whitelisted_barcode_title">%s Не в білому списку</string>
+    <string name="non_whitelisted_barcode_message">Цей тип штрих-коду не можна сканувати. Ви можете ввімкнути його в налаштуваннях або дозволити лише цього разу.</string>
+    <string name="allow_this_time">Дозволити цей час</string>
+    <string name="go_back">Назад</string>
+    <string name="preferences_switch_scan_rate_limit_label">Увімкнути обмеження швидкості сканування</string>
+    <string name="preferences_scan_rate_limit_duration_label">Тривалість обмеження швидкості</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
