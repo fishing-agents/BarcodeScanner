@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_wifi_connection_from_app">Kết nối với Wi-Fi</string>
+    <string name="about_barcode_origin_label">Nguồn gốc:</string>
+    <string name="warning_label">Cảnh báo</string>
+    <string name="barcode_information_search_label">Đang tìm kiếm…</string>
+    <string name="no_internet_permission">Bạn không có quyền truy cập mạng Internet.</string>
+    <string name="quality_label">Chất lượng sản phẩm</string>
+    <string name="details_label">Chi tiết</string>
+    <string name="off_additive_info_label">Thông tin</string>
+    <string name="origins_label">Nguồn gốc nguyên liệu</string>
+    <string name="book_product_contributions_label">Các đóng góp</string>
+    <string name="cancel_label">Huỷ</string>
+    <string name="qr_code_type_name_phone">Số điện thoại</string>
+    <string name="qr_code_type_name_wifi">Mạng Wi-Fi</string>
+    <string name="record_label">Lưu</string>
+    <string name="export_label">Xuất</string>
+    <string name="delete_label">Xoá</string>
+    <string name="menu_item_history_delete_from_history">Xoá khỏi lịch sử</string>
+    <string name="menu_item_history_delete">Xoá lịch sử</string>
+    <string name="popup_message_confirmation_delete_history">Xoá toàn bộ lịch sử?</string>
+    <string name="snack_bar_message_file_export_success">Đã lưu tệp!</string>
+    <string name="search_label">Tìm kiếm</string>
+    <string name="action_web_search_label">Tìm kiếm trên mạng</string>
+    <string name="action_show_location">Hiện địa điểm</string>
+    <string name="action_open_link">Mở liên kết</string>
+</resources>

@@ -1,10 +1,10 @@
 1.13.0
 
 - Hinzufügen von Text am unteren Rand eines Barcode-Bildes.
-- Es wurde eine Einstellung hinzugefügt, um den Verlauf zu deaktivieren.
-- Hinzufügen der Generierung eines QR-Codes aus der ID einer installierten Anwendung.
-- Verbessertes Löschen von Objekten aus der Historie in den Aktionen.
-- In den Aktionen wurde eine Schaltfläche "Zur Historie hinzufügen" hinzugefügt, wenn das Element nicht in der Historie vorhanden ist.
-- Die Erkennung eines hellen Barcodes auf dunklem Hintergrund über ein Bild wurde verbessert.
-- Hinzufügen der Generierung eines Qr-Codes aus dem Standort.
-- Hinzufügen eines langen Drucks auf die Texte der Barcode-Analyse.
+- Einstellung zum Deaktivieren des Verlaufs hinzugefügt.
+- Erzeugen eines QR-Codes aus der ID einer installierten Anwendung hinzugefügt.
+- Verbessertes Löschen von Einträgen aus dem Verlauf in Aktionen.
+- Schaltfläche „Zum Verlauf hinzufügen” in Aktionen hinzugefügt, wenn das Element nicht im Verlauf vorhanden ist.
+- Verbesserte Erkennung eines hellen Barcodes auf dunklem Hintergrund in einem Bild.
+- Erzeugen eines QR-Codes vom eigenen Standort aus hinzugefügt.
+- Hinzufügen eines langen Drucks auf die Texte der Barcodeanalyse.

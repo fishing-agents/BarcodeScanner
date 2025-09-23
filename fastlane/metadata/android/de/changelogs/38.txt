@@ -1,11 +1,11 @@
 1.20.0
 
-Vollständiger Changelog hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
-- Ukrainische Übersetzung hinzugefügt (Dank an Сергій).
-- Aktualisierte Übersetzungen (mit Weblate).
+- Ukrainische Übersetzung hinzugefügt (dank Сергій).
+- Übersetzungen aktualisiert (mit Weblate).
 - Abhängigkeiten aktualisiert.
-- Behoben tile funktioniert nicht auf einigen Android 14-Geräten.
-- Es wurde die Möglichkeit zugefügt, einen gescannten Barcode zu ändern.
+- Problem behoben, dass Kacheln auf einigen Android-14-Geräten nicht funktionierten.
+- Möglichkeit hinzugefügt, einen gescannten Barcode zu ändern.
 - Einige grafische Änderungen.
 - Einige Code-Verbesserungen und Optimierungen.

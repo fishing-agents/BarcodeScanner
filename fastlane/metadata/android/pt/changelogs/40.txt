@@ -1,0 +1,11 @@
+1.22.0
+
+Changelog completo aqui: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Substitui atalhos estáticos por dinâmicos (configure nas configurações).
+- Adiciona atalho para gerar código QR da área de transferência (graças a Austen).
+- Adiciona habilidade de criar e usar URLs personalizadas.
+- Adiciona opção de exibir a imagem do código de barras na tela de resultados.
+- Corrige bugs.
+- Melhora temas, estilos e visualizações.
+- Atualizadas traduções (Weblate) e dependências.

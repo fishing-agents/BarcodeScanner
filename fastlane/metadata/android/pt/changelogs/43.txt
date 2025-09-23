@@ -1,0 +1,9 @@
+1.24.1
+
+Changelog inteiro aqui: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Adicionada tradução completa para sérvio (graças a eevan78).
+- Adicionada tradução parcial para búlgaro (graças a trunars).
+- Traduções atualizadas (Weblate).
+- Alguns ajustes aos estilos do texto.
+- Dependências atualizadas.

@@ -1,1 +1,1 @@
-- Reparieren Sie das Scannen eines Bildes, wenn das Bild geteilt wird.
+- Das Scannen von einem Bild repariert, wenn das Bild geteilt wird.

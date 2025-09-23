@@ -643,4 +643,5 @@
     <string name="custom_search_urls_modify_url">عدل عنوان URL</string>
     <string name="clipboard_empty">الحافظة فارغة.</string>
     <string name="custom_search_urls_list">قائمة عناوين URL</string>
+    <string name="app_name">ماسح الباركود</string>
 </resources>

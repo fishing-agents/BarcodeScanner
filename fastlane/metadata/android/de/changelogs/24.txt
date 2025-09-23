@@ -1,6 +1,6 @@
 1.10.1
 
-- Implementierung von CameraX wurde verbessert und Fehler behoben.
-- Fehler bei der Anzeige des Standardthemas unter Android 6 bis 11 behoben.
-- Behebung des Intent Filters, der es erlaubt, ein Ereignis im .ics Format zu erhalten.
+- Die Implementierung von CameraX verbessert und Fehler behoben.
+- Ein Fehler bei der Anzeige des Standard-Farbschemas unter Android 6 bis 11 behoben.
+- Der Intent-Filter korrigiert, der das Abrufen eines Ereignisses im .ics-Format ermöglicht.
 - Aktualisierung der Abhängigkeiten.

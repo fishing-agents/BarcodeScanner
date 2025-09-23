@@ -1,6 +1,6 @@
 1.25.1
 
-Vollständiges Änderungsprotokoll hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
 - Unterstützung für Ränder um Barcode-Bilder hinzugefügt.
 - Übersetzungen aktualisiert (Weblate).

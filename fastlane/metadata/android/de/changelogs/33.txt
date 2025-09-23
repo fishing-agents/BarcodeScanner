@@ -1,15 +1,15 @@
 1.16.0
 
 Übersetzung (mit Weblate):
-- Türkische Übersetzung hinzugefügt (Dank an abfreeman).
-- Norwegisches Bokmål hinzugefügt (nicht vollständig) (Dank an Allan Nordhøy).
-- Spanische Übersetzung aktualisiert (mit Dank an J. Lavoie und gallegonovato).
-- Traditionelle chinesische Übersetzung aktualisiert (danke an plum7x).
-- Aktualisierte deutsche Übersetzung (Dank an J. Lavoie).
-- Aktualisierte französische Übersetzung (Dank an J. Lavoie).
+- Türkische Übersetzung hinzugefügt (dank abfreeman).
+- Norwegisch (Bokmål) hinzugefügt (unvollständig) (dank Allan Nordhøy).
+- Spanische Übersetzung aktualisiert (dank J. Lavoie und gallegonovato).
+- Traditionelle chinesische Übersetzung aktualisiert (dank plum7x).
+- Deutsche Übersetzung aktualisiert (dank J. Lavoie).
+- Französische Übersetzung aktualisiert (dank J. Lavoie).
 
 Neue Funktionen:
-- Schwarzes Thema hinzugefügt.
+- Schwarzes Farbschema hinzugefügt.
 - JPG- und SVG-Export für Barcode-Bilder hinzugefügt.
 - Einige Code-Verbesserungen.
-- Einige Bugs behoben.
+- Einige Fehler behoben.

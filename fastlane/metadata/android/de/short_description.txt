@@ -1,1 +1,1 @@
-Eine quelloffene App, mit der Sie Barcodes lesen und erstellen können.
+Eine quelloffene App, mit der du Barcodes lesen und erzeugen kannst.

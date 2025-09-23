@@ -662,4 +662,14 @@
     <string name="clipboard_empty">Clipboard-ul este gol.</string>
     <string name="create_qr_from_clipboard">Generați un cod QR din clipboard</string>
     <string name="matrix_contact_job_title_label">Denumirea funcției</string>
+    <string name="barcode_not_found">Cod de bare negăsit</string>
+    <string name="action_assign_a_name">Atribuiți un nume</string>
+    <string name="apply">Aplică</string>
+    <string name="margins">Margini</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">Crește</string>
+    <string name="decrease">Descrește</string>
+    <string name="preferences_switch_history_save_duplicates_label">Salvați duplicatele</string>
+    <string name="preferences_switch_history_save_duplicates_summary_on">Duplicatele vor fi adăugate în istoric</string>
+    <string name="preferences_switch_history_save_duplicates_summary_off">Duplicatele nu vor fi adăugate în istoric</string>
 </resources>

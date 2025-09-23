@@ -1,0 +1,12 @@
+1.23.0
+
+Changelog inteiro aqui: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Adic. tradução para catalão (graças a Paco Rivière)
+- Nome da app traduzido em alguns idiomas
+- Adic. opção de ignorar cópias no histórico
+- Adic. botão de desfazer à snackbar ao remover elem
+- Removida dependência implementando API antiga da câmara, mantendo apenas implementação CameraX
+- Corrigidos crashes que poderiam ocorrer durante importação do VCard
+- Dependências atualizadas
+- Várias melhorias menores

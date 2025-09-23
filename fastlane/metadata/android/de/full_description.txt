@@ -1,26 +1,26 @@
-Barcode-Scanner ist eine kostenlose und quelloffene App, mit der Sie Strichcodes lesen und erzeugen können. Sie kann Informationen über Lebensmittel, Kosmetika, Bücher und Musik (CDs, Vinyls...) sammeln.
+Barcode-Scanner ist eine kostenlose und quelloffene App, mit der du Barcodes lesen und erzeugen kannst. Es können Informationen über Lebensmittel, Kosmetika, Bücher und Musik (CDs, Vinyls ...) gesammelt werden.
 
 Verschiedene Barcodeformate werden von der App unterstützt:
 - zweidimensionale Barcodes: QR-Code, Data-Matrix, PDF 417, AZTEC
 - eindimensionale Barcodes: EAN 13, EAN 8, UPC A, UPC E, Code 128, Code 93, Code 39, Codabar, ITF
 
-Sammeln Sie während des Scannens Informationen über ein Produkt:
+Sammele während des Scannens Informationen über ein Produkt:
 - Lebensmittel mit Open Food Facts
 - Kosmetik mit Open Beauty Facts
 - Tierfutter mit Open Pet Food Facts
 - Bücher mit Open Library
-- Musik-CDs, Vinylschallplatten... mit MusicBrainz
+- Musik-CDs, Vinylschallplatten ... mit MusicBrainz
 
 App-Funktionen:
-- Richten Sie einfach die Kamera Ihres Smartphones auf einen Barcode und erhalten Sie sofort Informationen darüber. Sie können Barcodes auch in einem Bild auf Ihrem Smartphone scannen.
-- Lesen Sie mit einem einfachen Scan Visitenkarten, fügen Sie neue Kontakte hinzu, fügen Sie neue Veranstaltungen zu Ihrer Agenda hinzu, öffnen Sie URLs oder stellen Sie sogar eine WLAN-Verbindung her.
-- Scannen Sie Barcodes von Lebensmitteln, um dank der Datenbanken Open Food Facts und Open Beauty Facts Informationen über deren Inhaltsstoffe zu erhalten.
-- Suchen Sie auf verschiedenen Websites wie Amazon oder Fnac nach Informationen über das gescannte Produkt.
-- Behalten Sie mit dem Verlaufstool den Überblick über alle gescannten Barcodes.
-- Erstellen Sie Ihre eigenen Barcodes.
-- Passen Sie die Benutzeroberfläche mit verschiedenen Farben an, mit einem hellen oder einem dunklen Thema. Die Benutzeroberfläche wurde mit Material 3 erstellt und ist mit Material You kompatibel, sodass Sie die Farben basierend auf Ihrem Hintergrundbild für Geräte mit Android 12 oder neuer anpassen können.
+- Richte einfach die Kamera des Smartphones auf einen Barcode und erhalte sofort Informationen darüber. Du kannst Barcodes auch in einem Bild auf deinem Smartphone scannen.
+- Lese mit einem einfachen Scan Visitenkarten, füge neue Kontakte hinzu, füge neue Veranstaltungen zu deinen Terminen hinzu, öffne URLs oder stelle sogar eine WLAN-Verbindung her.
+- Scanne Barcodes von Lebensmitteln, um dank der Datenbanken Open Food Facts und Open Beauty Facts Informationen über deren Inhaltsstoffe zu erhalten.
+- Suche auf verschiedenen Websites wie Amazon oder Fnac nach Informationen über das gescannte Produkt.
+- Behalte mit dem Verlaufstool den Überblick über alle gescannten Barcodes.
+- Erstelle eigene Barcodes.
+- Passe die Bedienoberfläche mit verschiedenen Farben an, mit einem hellen oder einem dunklen Farbschema. Die Bedienoberfläche wurde mit Material 3 erstellt und ist mit Material You kompatibel, sodass du die Farben basierend auf deinem Hintergrundbild für Geräte mit Android 12 oder neuer anpassen kannst.
 - Die Texte sind vollständig in Englisch, Arabisch, Spanisch, Französisch, Portugiesisch, Russisch, Deutsch, Türkisch, Italienisch, Ukrainisch, Polnisch, Niederländisch, Rumänisch und Chinesisch (vereinfacht und traditionell) übersetzt
 
-Diese App respektiert Ihre Privatsphäre. Sie enthält keine Tracker und sammelt keine Daten.
+Diese App respektiert deine Privatsphäre. Sie enthält keine Tracker und sammelt keine Daten.
 
 Der Quellcode ist hier verfügbar: https://gitlab.com/Atharok/BarcodeScanner

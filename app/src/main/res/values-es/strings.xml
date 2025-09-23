@@ -308,7 +308,7 @@
     <string name="action_add_to_calendar">Añadir al calendario</string>
     <string name="action_add_to_contacts">Add to contacts</string>
     <string name="action_show_location">Mostrar ubicación</string>
-    <string name="action_open_link">Open link</string>
+    <string name="action_open_link">Abrir enlace</string>
     <!-- Wi-Fi Connection -->
     <string name="action_wifi_connection_title_label">Conexión Wi-Fi</string>
     <string name="action_wifi_connection_from_app">Conectarse a una red Wi-Fi</string>

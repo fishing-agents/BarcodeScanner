@@ -1,5 +1,5 @@
 1.8.0
 
-- CameraX Schnittstellen-Implementierung.
+- Implementierung der CameraX-API.
 - Verbesserte Ansichten im Querformat.
-- Einige Verbesserungen in der russischen Übersetzung (Dank an s s).
+- Einige Verbesserungen in der russischen Übersetzung (dank s s).

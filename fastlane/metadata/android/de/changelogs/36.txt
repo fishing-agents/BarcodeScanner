@@ -1,10 +1,10 @@
 1.18.0
 
-Ganzes Änderungsprotokoll hier: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 
-- Aktualisierte Übersetzungen (mit Weblate).
-- Italienische Übersetzung hinzugefügt (Dank an Kevin Concilio).
-- Sprachumschaltung für Geräte mit Android 7 oder höher hinzugefügt (Dank an Hu Shenghao).
-- Datenbankexport in CSV und JSON hinzugefügt.
-- JSON-Dateien in die Datenbank Importieren hinzugefügt.
+- Übersetzungen aktualisiert (mit Weblate).
+- Italienische Übersetzung hinzugefügt (dank Kevin Concilio).
+- Sprachumschaltung für Geräte mit Android 7 oder höher hinzugefügt (dank Hu Shenghao).
+- Datenbank-Export in CSV und JSON hinzugefügt.
+- Import von JSON-Dateien in die Datenbank hinzugefügt.
 - Aktualisierung der Abhängigkeiten.

@@ -1,6 +1,6 @@
 1.6.0
 
-- Beginn der russischen Übersetzung (Dank an s s).
+- Beginn der russischen Übersetzung (dank s s).
 - Ersetzen der Abhängigkeiten von Glide und GlideToVectorYou durch Coil.
 - Behebung eines Absturzes unter Android 5.
 - Code-Verbesserungen.
