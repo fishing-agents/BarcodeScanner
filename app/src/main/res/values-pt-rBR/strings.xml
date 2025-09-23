@@ -671,4 +671,12 @@
     <string name="increase">Aumentar</string>
     <string name="decrease">Diminuir</string>
     <string name="value_px">%1$spx</string>
+    <string name="non_whitelisted_barcode_message">Este tipo de código de barras não está ativado para escaneamento. Você pode ativá-lo nas configurações ou permiti-lo somente desta vez.</string>
+    <string name="allow_this_time">Permitir Desta Vez</string>
+    <string name="go_back">Voltar</string>
+    <string name="preferences_switch_scan_rate_limit_label">Ativar limitação da taxa de escaneamento</string>
+    <string name="preferences_scan_rate_limit_duration_label">Duração do limite de taxa</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Selecione tipos de código de barras para escanear</string>
+    <string name="non_whitelisted_barcode_title">%s Não Permitido</string>
 </resources>
