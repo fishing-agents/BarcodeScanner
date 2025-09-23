@@ -25,7 +25,7 @@ import android.os.Build
 
 internal fun String.toEapMethod(): Int? = when (this) {
     "AKA" -> WifiEnterpriseConfig.Eap.AKA
-    "AKA_PRIME" -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) WifiEnterpriseConfig.Eap.AKA_PRIME else null
+    "AKA_PRIME" -> WifiEnterpriseConfig.Eap.AKA_PRIME
     "NONE" -> WifiEnterpriseConfig.Eap.NONE
     "PEAP" -> WifiEnterpriseConfig.Eap.PEAP
     "PWD" -> WifiEnterpriseConfig.Eap.PWD

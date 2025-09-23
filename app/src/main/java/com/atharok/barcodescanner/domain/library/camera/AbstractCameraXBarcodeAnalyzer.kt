@@ -19,7 +19,7 @@
  */
 
 package com.atharok.barcodescanner.domain.library.camera
-
+/*
 import androidx.camera.core.ImageAnalysis
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.BinaryBitmap
@@ -89,4 +89,4 @@ abstract class AbstractCameraXBarcodeAnalyzer(
             barcodeDetector.onError(e.toString())
         }
     }
-}
+}*/

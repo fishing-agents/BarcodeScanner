@@ -55,10 +55,8 @@ import com.atharok.barcodescanner.domain.entity.barcode.Barcode
 import com.atharok.barcodescanner.domain.entity.barcode.QrCodeErrorCorrectionLevel
 import com.atharok.barcodescanner.domain.library.BeepManager
 import com.atharok.barcodescanner.domain.library.VibratorAppCompat
-import com.atharok.barcodescanner.domain.library.camera.AbstractCameraXBarcodeAnalyzer
 import com.atharok.barcodescanner.domain.library.camera.CameraConfig
 import com.atharok.barcodescanner.domain.library.camera.CameraXBarcodeAnalyzer
-import com.atharok.barcodescanner.domain.library.camera.CameraXBarcodeLegacyAnalyzer
 import com.atharok.barcodescanner.domain.library.camera.CameraZoomGestureDetector
 import com.atharok.barcodescanner.presentation.intent.createStartActivityIntent
 import com.atharok.barcodescanner.presentation.viewmodel.DatabaseBarcodeViewModel
@@ -86,7 +84,7 @@ import org.koin.core.qualifier.named
 /**
  * A simple [Fragment] subclass.
  */
-class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyzer.BarcodeDetector {
+class MainCameraXScannerFragment : BaseFragment(), CameraXBarcodeAnalyzer.BarcodeDetector {
 
     companion object {
         private const val ZXING_SCAN_INTENT_ACTION = "com.google.zxing.client.android.SCAN"
@@ -247,14 +245,9 @@ class MainCameraXScannerFragment : BaseFragment(), AbstractCameraXBarcodeAnalyze
         // Reset processing flag when configuring camera
         isProcessingBarcode = false
 
+        val analyzer = CameraXBarcodeAnalyzer(this@MainCameraXScannerFragment)
+
         cameraConfig = CameraConfig(requireContext()).apply {
-
-            val analyzer: AbstractCameraXBarcodeAnalyzer = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                CameraXBarcodeAnalyzer(this@MainCameraXScannerFragment)
-            } else {
-                CameraXBarcodeLegacyAnalyzer(this@MainCameraXScannerFragment)
-            }
-
             this.setAnalyzer(analyzer)
             this.startCamera(
                 lifecycleOwner = this@MainCameraXScannerFragment as LifecycleOwner,

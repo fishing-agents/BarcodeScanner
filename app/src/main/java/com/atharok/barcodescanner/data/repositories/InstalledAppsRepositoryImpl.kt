@@ -54,8 +54,7 @@ class InstalledAppsRepositoryImpl(private val context: Context): InstalledAppsRe
         }
         return when {
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU -> pm.queryIntentActivities(query, PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_ALL.toLong()))
-            Build.VERSION.SDK_INT >= Build.VERSION_CODES.M -> pm.queryIntentActivities(query, PackageManager.MATCH_ALL)
-            else -> pm.queryIntentActivities(query, 0)
+            else -> pm.queryIntentActivities(query, PackageManager.MATCH_ALL)
         }
     }
 }

@@ -46,9 +46,7 @@ class CameraConfig(private val context: Context) {
     private val imageAnalysis: ImageAnalysis by lazy {
         ImageAnalysis.Builder().apply {
             setResolutionSelector(resolutionSelector)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                setOutputImageRotationEnabled(true)
-            }
+            setOutputImageRotationEnabled(true)
         }.build()
     }
 
@@ -64,7 +62,7 @@ class CameraConfig(private val context: Context) {
             cameraProvider = cameraProviderFuture.get().apply {
                 try {
                     unbindAll()
-                    preview.setSurfaceProvider(previewView.surfaceProvider)
+                    preview.surfaceProvider = previewView.surfaceProvider
                     camera = bindToLifecycle(lifecycleOwner, cameraSelector, preview, imageAnalysis).apply {
                         configureAutoFocus(previewView, this)
                         if (postZoom != -1f) {

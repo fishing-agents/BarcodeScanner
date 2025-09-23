@@ -40,11 +40,9 @@ class CustomPreferenceCategory: PreferenceCategory {
     override fun onBindViewHolder(holder: PreferenceViewHolder) {
         super.onBindViewHolder(holder)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            holder.itemView.let {
-                val titleView: TextView? = it.findViewById(android.R.id.title)
-                titleView?.setTextAppearance(R.style.AppTheme_TextView_Appearance_Title_Variant)
-            }
+        holder.itemView.let {
+            val titleView: TextView? = it.findViewById(android.R.id.title)
+            titleView?.setTextAppearance(R.style.AppTheme_TextView_Appearance_Title_Variant)
         }
     }
 }
