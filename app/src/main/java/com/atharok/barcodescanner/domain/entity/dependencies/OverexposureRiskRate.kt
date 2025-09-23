@@ -23,7 +23,7 @@ package com.atharok.barcodescanner.domain.entity.dependencies
 import androidx.annotation.AttrRes
 import com.atharok.barcodescanner.R
 
-enum class OverexposureRiskRate(val id: String, @AttrRes val colorResource: Int, val stringResource: Int) {
+enum class OverexposureRiskRate(val id: String, @param:AttrRes val colorResource: Int, val stringResource: Int) {
     LOW("en:no", R.attr.colorPositive, R.string.off_overexposure_risk_low_label),
     MODERATE("en:moderate", R.attr.colorMedium, R.string.off_overexposure_risk_moderate_label),
     HIGH("en:high",R.attr.colorNegative, R.string.off_overexposure_risk_high_label),

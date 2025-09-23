@@ -80,7 +80,7 @@ class Nutrient(val entitled: NutritionFactsEnum,
         fun getHighQuantity(): Float = if (isBeverage) highQuantity / 2 else highQuantity
     }
 
-    enum class QuantityRate(@AttrRes val colorResource: Int, val stringResource: Int) {
+    enum class QuantityRate(@param:AttrRes val colorResource: Int, val stringResource: Int) {
         LOW(R.attr.colorPositive, R.string.off_quantity_low_label),
         MODERATE(R.attr.colorMedium, R.string.off_quantity_moderate_label),
         HIGH(R.attr.colorNegative, R.string.off_quantity_high_label),

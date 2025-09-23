@@ -25,9 +25,9 @@ import androidx.annotation.StringRes
 
 data class DynamicShortcut(
     val id: String,
-    @StringRes val label: Int,
-    @DrawableRes val drawable: Int,
-    @DrawableRes val icon: Int,
+    @param:StringRes val label: Int,
+    @param:DrawableRes val drawable: Int,
+    @param:DrawableRes val icon: Int,
     val targetClass: Class<*>,
     val action: String
 )

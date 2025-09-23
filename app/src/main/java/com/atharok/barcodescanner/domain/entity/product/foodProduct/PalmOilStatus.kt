@@ -24,7 +24,7 @@ import androidx.annotation.AttrRes
 import androidx.annotation.StringRes
 import com.atharok.barcodescanner.R
 
-enum class PalmOilStatus(@StringRes val stringResource: Int, @AttrRes val colorResource: Int) {
+enum class PalmOilStatus(@param:StringRes val stringResource: Int, @param:AttrRes val colorResource: Int) {
     PALM_OIL_FREE(R.string.palm_oil_free_label, R.attr.colorPositive),
     PALM_OIL(R.string.contain_palm_oil_label, R.attr.colorNegative),
     MAYBE_PALM_OIL(R.string.may_contain_palm_oil_label, R.attr.colorMedium),

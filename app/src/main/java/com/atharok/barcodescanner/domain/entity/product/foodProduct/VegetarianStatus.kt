@@ -24,7 +24,7 @@ import androidx.annotation.AttrRes
 import androidx.annotation.StringRes
 import com.atharok.barcodescanner.R
 
-enum class VegetarianStatus(@StringRes val stringResource: Int, @AttrRes val colorResource: Int) {
+enum class VegetarianStatus(@param:StringRes val stringResource: Int, @param:AttrRes val colorResource: Int) {
     VEGETARIAN(R.string.is_vegetarian_label, R.attr.colorPositive),
     NO_VEGETARIAN(R.string.no_vegetarian_label, R.attr.colorNegative),
     MAYBE_VEGETARIAN(R.string.maybe_vegetarian_label, R.attr.colorMedium),

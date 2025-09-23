@@ -42,8 +42,8 @@ data class BarcodeImageGeneratorProperties(
         else -> BARCODE_1_DIMENSION_IMAGE_DEFAULT_MARGINS_PX
     },
     private val size: Int = BARCODE_IMAGE_DEFAULT_SIZE,
-    @ColorInt var frontColor: Int = Color.BLACK,
-    @ColorInt var backgroundColor: Int = Color.WHITE
+    @param:ColorInt var frontColor: Int = Color.BLACK,
+    @param:ColorInt var backgroundColor: Int = Color.WHITE
 ): Serializable {
 
     val is2DBarcode: Boolean = format.is2DBarcode()

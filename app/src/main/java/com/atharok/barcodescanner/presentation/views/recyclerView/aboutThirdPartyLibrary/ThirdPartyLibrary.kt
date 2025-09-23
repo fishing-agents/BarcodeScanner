@@ -24,13 +24,13 @@ import androidx.annotation.StringRes
 import com.atharok.barcodescanner.R
 
 enum class ThirdPartyLibrary(
-    @StringRes val title: Int,
-    @StringRes val author: Int,
-    @StringRes val id: Int,
-    @StringRes val license: Int,
-    @StringRes val licenseUrl: Int,
-    @StringRes val sourceCode: Int,
-    @StringRes val sourceCodeUrl: Int
+    @param:StringRes val title: Int,
+    @param:StringRes val author: Int,
+    @param:StringRes val id: Int,
+    @param:StringRes val license: Int,
+    @param:StringRes val licenseUrl: Int,
+    @param:StringRes val sourceCode: Int,
+    @param:StringRes val sourceCodeUrl: Int
 ) {
 
     ACTIVITY_KTX(

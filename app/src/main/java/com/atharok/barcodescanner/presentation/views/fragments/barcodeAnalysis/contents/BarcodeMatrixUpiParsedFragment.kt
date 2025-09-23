@@ -25,6 +25,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import com.atharok.barcodescanner.databinding.FragmentBarcodeMatrixUpiParsedBinding
 import com.atharok.barcodescanner.presentation.views.fragments.BaseFragment
 
@@ -53,7 +54,7 @@ class BarcodeMatrixUpiParsedFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         uri?.let {
-            val uriParsed: Uri = Uri.parse(uri)
+            val uriParsed: Uri = it.toUri()
 
             val upiIdView = viewBinding.fragmentBarcodeMatrixUpiParsedUpiIdLayout
             val payeeNameView = viewBinding.fragmentBarcodeMatrixUpiParsedPayeeNameLayout
@@ -73,7 +74,7 @@ class BarcodeMatrixUpiParsedFragment : BaseFragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding=null
+        _binding = null
     }
 
     companion object {
