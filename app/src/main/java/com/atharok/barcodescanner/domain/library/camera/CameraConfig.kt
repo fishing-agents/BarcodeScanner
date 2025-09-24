@@ -2,7 +2,6 @@ package com.atharok.barcodescanner.domain.library.camera
 
 import android.content.Context
 import android.content.pm.PackageManager
-import android.os.Build
 import android.util.Log
 import androidx.camera.core.Camera
 import androidx.camera.core.CameraInfoUnavailableException

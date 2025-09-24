@@ -25,7 +25,6 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.os.Build
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
 import android.view.LayoutInflater
@@ -46,6 +45,10 @@ import com.atharok.barcodescanner.R
 import com.atharok.barcodescanner.common.extensions.SCAN_RESULT
 import com.atharok.barcodescanner.common.extensions.SCAN_RESULT_ERROR_CORRECTION_LEVEL
 import com.atharok.barcodescanner.common.extensions.SCAN_RESULT_FORMAT
+import com.atharok.barcodescanner.common.extensions.getDisplayName
+import com.atharok.barcodescanner.common.extensions.is1DIndustrialBarcode
+import com.atharok.barcodescanner.common.extensions.is1DProductBarcode
+import com.atharok.barcodescanner.common.extensions.is2DBarcode
 import com.atharok.barcodescanner.common.extensions.toIntent
 import com.atharok.barcodescanner.common.utils.BARCODE_KEY
 import com.atharok.barcodescanner.common.utils.KOIN_NAMED_ERROR_CORRECTION_LEVEL_BY_RESULT
@@ -65,10 +68,6 @@ import com.atharok.barcodescanner.presentation.views.activities.BarcodeScanFromI
 import com.atharok.barcodescanner.presentation.views.activities.BaseActivity
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.fragments.BaseFragment
-import com.atharok.barcodescanner.common.extensions.getDisplayName
-import com.atharok.barcodescanner.common.extensions.is1DIndustrialBarcode
-import com.atharok.barcodescanner.common.extensions.is1DProductBarcode
-import com.atharok.barcodescanner.common.extensions.is2DBarcode
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
@@ -129,9 +128,6 @@ class MainCameraXScannerFragment : BaseFragment(), CameraXBarcodeAnalyzer.Barcod
     override fun onResume() {
         super.onResume()
 
-        // Reload settings in case they changed
-        settingsManager.reload()
-
         // Clear rate limit cache if rate limiting is disabled
         if (!settingsManager.isRateLimitEnabled) {
             recentScans.clear()
@@ -180,7 +176,7 @@ class MainCameraXScannerFragment : BaseFragment(), CameraXBarcodeAnalyzer.Barcod
             override fun onPrepareMenu(menu: Menu) {
                 super.onPrepareMenu(menu)
 
-                if(cameraConfig?.hasFlash()==true && allPermissionsGranted()) {
+                if(cameraConfig?.hasFlash() == true && allPermissionsGranted()) {
                     if (cameraConfig?.flashEnabled == true) {
                         menu.getItem(0).icon =
                             ContextCompat.getDrawable(
@@ -320,7 +316,7 @@ class MainCameraXScannerFragment : BaseFragment(), CameraXBarcodeAnalyzer.Barcod
         }
     }
 
-            private fun showNonWhitelistedBarcodePopup(result: Result) {
+    private fun showNonWhitelistedBarcodePopup(result: Result) {
         requireActivity().runOnUiThread {
             cameraConfig?.stopCamera()
 
@@ -517,7 +513,7 @@ class MainCameraXScannerFragment : BaseFragment(), CameraXBarcodeAnalyzer.Barcod
 
     // ---- Rate Limiting ----
 
-            private fun isWithinRateLimit(barcodeContent: String): Boolean {
+    private fun isWithinRateLimit(barcodeContent: String): Boolean {
         // Don't rate limit empty barcodes
         if (barcodeContent.isBlank()) return false
 
@@ -525,8 +521,12 @@ class MainCameraXScannerFragment : BaseFragment(), CameraXBarcodeAnalyzer.Barcod
         val rateLimitMillis = settingsManager.rateLimitDurationSeconds * 1000L
 
         // Clean up expired entries first
-        recentScans.entries.removeIf { (_, timestamp) ->
-            currentTime - timestamp >= rateLimitMillis
+        val iterator = recentScans.entries.iterator()
+        while(iterator.hasNext()) {
+            val (_, timestamp) = iterator.next()
+            if (currentTime - timestamp >= rateLimitMillis) {
+                iterator.remove()
+            }
         }
 
         // Now check if the barcode is still in the map (not expired)

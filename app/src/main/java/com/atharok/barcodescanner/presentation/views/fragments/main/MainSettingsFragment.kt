@@ -38,6 +38,7 @@ import androidx.core.os.LocaleListCompat
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.atharok.barcodescanner.R
+import com.atharok.barcodescanner.domain.library.SettingsManager
 import com.atharok.barcodescanner.presentation.intent.createSearchUrlIntent
 import com.atharok.barcodescanner.presentation.intent.createStartActivityIntent
 import com.atharok.barcodescanner.presentation.views.activities.AboutApisActivity
@@ -49,7 +50,6 @@ import com.atharok.barcodescanner.presentation.views.activities.CustomSearchUrlL
 import com.atharok.barcodescanner.presentation.views.activities.MainActivity
 import com.atharok.barcodescanner.presentation.views.activities.ShortcutsActivity
 import com.atharok.barcodescanner.presentation.views.adapters.BarcodeTypeMultiChoiceAdapter
-import com.atharok.barcodescanner.domain.library.SettingsManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.zxing.BarcodeFormat
 import org.koin.android.ext.android.inject
@@ -111,7 +111,10 @@ class MainSettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSha
                 getString(R.string.preferences_barcode_generation_error_correction_level_key),
                 getString(R.string.preferences_switch_barcode_generation_add_barcode_to_the_history_key),
                 getString(R.string.preferences_search_engine_key),
-                getString(R.string.preferences_display_barcode_image_results_view_key)
+                getString(R.string.preferences_display_barcode_image_results_view_key),
+                getString(R.string.preferences_switch_scan_barcode_type_filter_key),
+                getString(R.string.preferences_switch_scan_rate_limit_key),
+                getString(R.string.preferences_scan_rate_limit_duration_key)
                 -> mActivity.settingsManager.reload()
             }
         }

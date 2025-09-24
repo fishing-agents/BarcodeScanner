@@ -21,7 +21,6 @@
 package com.atharok.barcodescanner.presentation.customView.preferences
 
 import android.content.Context
-import android.os.Build
 import android.util.AttributeSet
 import android.widget.TextView
 import androidx.preference.PreferenceCategory

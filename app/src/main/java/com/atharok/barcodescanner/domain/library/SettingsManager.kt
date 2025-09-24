@@ -31,6 +31,7 @@ import com.atharok.barcodescanner.R
 import com.atharok.barcodescanner.domain.entity.barcode.QrCodeErrorCorrectionLevel
 import com.atharok.barcodescanner.presentation.intent.createSearchUrlIntent
 import com.atharok.barcodescanner.presentation.intent.createWebSearchIntent
+import androidx.core.content.edit
 
 class SettingsManager(private val context: Context) {
 
@@ -217,7 +218,7 @@ class SettingsManager(private val context: Context) {
     fun getDefaultZoomValue(): Int = prefs.getInt(defaultZoomValueKey, 50)
 
     fun updateAllowedBarcodeFormats(formats: Set<String>) {
-        prefs.edit().putStringSet(barcodeTypeFilterKey, formats).apply()
+        prefs.edit { putStringSet(barcodeTypeFilterKey, formats) }
         allowedBarcodeFormats = formats
     }
 }
