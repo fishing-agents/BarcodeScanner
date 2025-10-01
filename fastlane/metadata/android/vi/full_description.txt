@@ -1,0 +1,26 @@
+Trình quét mã vạch và QR (Barcode Scanner) là một ứng dụng mã nguồn mở miễn phí cho phép người dùng đọc và tạo mã vạch. Ứng dụng có thể quét và cung cấp thêm thông tin về các sảm phẩm thực phẩm, mỹ phẩm, sách và nhạc (CD, Vinyl…).
+
+Ứng dụng có thể xử lý nhiều định dạng mã vạch khác nhau:
+• Mã vạch 2 chiều: QR Code, Data Matrix, PDF 417, AZTEC
+• Mã vạch 1 chiều: EAN 13, EAN 8, UPC A, UPC E, Code 128, Code 93, Code 39, Codabar, ITF
+
+Ứng dụng có thể cung cấp thêm thông tin về các sản phẩm trong quá trình quét:
+• Thực phẩm với Open Food Facts
+• Mỹ phẩm với Open Beauty Facts
+• Thực phẩm cho thú cưng với Open Pet Food Facts
+• Sách với Open Library
+• CD nhạc, Vinyl… với MusicBrainz
+
+Các tính năng của ứng dụng:
+• Chỉ cần hướng camera của điện thoại thông minh vào mã vạch và ngay lập tức người dùng sẽ nhận được thông tin về mã vạch đó. Người dùng cũng có thể quét mã vạch thông qua hình ảnh có sẵn trên điện thoại thông minh.
+• Chỉ với một thao tác quét đơn giản, người dùng có thể đọc danh thiếp, thêm liên hệ mới, thêm sự kiện mới vào lịch trình, mở URL hoặc thậm chí kết nối Wi-Fi.
+• Quét mã vạch của các sản phẩm thực phẩm để nhận thông tin về thành phần của chúng nhờ cơ sở dữ liệu của Open Food Facts và Open Beauty Facts.
+• Tìm kiếm thông tin về sản phẩm người dùng quét bằng cách tra cứu nhanh trên các website khác nhau như Amazon hoặc Fnac.
+• Theo dõi tất cả các mã vạch đã quét của người dùng thông qua lịch sử quét.
+• Tự tạo mã vạch riêng.
+• Tùy chỉnh giao diện với nhiều màu sắc khác nhau, với chủ đề sáng hoặc tối. Giao diện được xây dựng dựa trên Material 3 và tương thích với Material You, cho phép người dùng điều chỉnh màu sắc dựa trên hình nền của mình cho các thiết bị chạy Android 12 trở lên.
+• Ứng dụng đã được dịch hoàn toàn sang tiếng Anh, tiếng Ả Rập, tiếng Tây Ban Nha, tiếng Pháp, tiếng Bồ Đào Nha, tiếng Nga, tiếng Đức, tiếng Thổ Nhĩ Kỳ, tiếng Ý, tiếng Ukraina, tiếng Ba Lan, tiếng Hà Lan, tiếng Rumani và tiếng Trung (giản thể và phồn thể).
+
+Trình quét mã vạch và QR (Barcode Scanner) tôn trọng quyền riêng tư của người dùng. Ứng dụng này không chứa bất kỳ trình theo dõi cũng như không thu thập bất kỳ dữ liệu nào.
+
+Mã nguồn có sẵn tại đây: https://gitlab.com/Atharok/BarcodeScanner

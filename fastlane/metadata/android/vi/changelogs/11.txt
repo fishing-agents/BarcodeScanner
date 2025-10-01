@@ -1,0 +1,2 @@
+- Cải tiến mã.
+- Sửa lỗi camera đôi khi không được tắt khi quét từ hình ảnh có trên thiết bị.

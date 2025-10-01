@@ -1,0 +1,1 @@
+Một ứng dụng mã nguồn mở cho phép người dùng đọc và tạo mã vạch.
