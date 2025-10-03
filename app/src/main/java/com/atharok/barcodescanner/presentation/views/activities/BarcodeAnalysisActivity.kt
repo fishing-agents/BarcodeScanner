@@ -28,7 +28,6 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.atharok.barcodescanner.R
 import com.atharok.barcodescanner.common.extensions.convertToString
-import com.atharok.barcodescanner.common.extensions.getColorInt
 import com.atharok.barcodescanner.common.extensions.serializable
 import com.atharok.barcodescanner.common.utils.BARCODE_KEY
 import com.atharok.barcodescanner.databinding.ActivityBarcodeAnalysisBinding
@@ -173,8 +172,8 @@ class BarcodeAnalysisActivity: BaseActivity() {
     private fun configureFoodAnalysisView(
         barcodeAnalysis: FoodBarcodeAnalysis
     ) {
-        // On supprime le comportement de changement de couleur de la Top Bar lors du scroll, car cette vue contient un TabLayout qui crée un contraste étrange.
-        viewBinding.activityBarcodeAnalysisActivityLayout.appBarLayout.setBackgroundColor(this.getColorInt(android.R.attr.colorBackground))
+        // The Top Bar color change on scroll has been disabled, as the TabLayout in this view created an inconsistent visual contrast.
+        removeAppBarLayoutScrollBehaviour()
 
         updateTypeIntoDatabase(barcodeAnalysis = barcodeAnalysis)
         configureContentFragment(

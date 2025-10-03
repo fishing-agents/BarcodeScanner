@@ -26,12 +26,12 @@ import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Build
+import androidx.core.content.edit
 import androidx.preference.PreferenceManager
 import com.atharok.barcodescanner.R
 import com.atharok.barcodescanner.domain.entity.barcode.QrCodeErrorCorrectionLevel
 import com.atharok.barcodescanner.presentation.intent.createSearchUrlIntent
 import com.atharok.barcodescanner.presentation.intent.createWebSearchIntent
-import androidx.core.content.edit
 
 class SettingsManager(private val context: Context) {
 

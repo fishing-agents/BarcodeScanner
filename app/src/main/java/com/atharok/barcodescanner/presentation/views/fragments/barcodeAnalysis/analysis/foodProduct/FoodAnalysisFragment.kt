@@ -53,7 +53,7 @@ class FoodAnalysisFragment: ApiAnalysisFragment<FoodBarcodeAnalysis>() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding=null
+        _binding = null
     }
 
     override fun start(analysis: FoodBarcodeAnalysis) {
@@ -65,7 +65,7 @@ class FoodAnalysisFragment: ApiAnalysisFragment<FoodBarcodeAnalysis>() {
         configureFoodProductView(analysis)
     }
 
-    private fun configureFoodProductView(barcodeAnalysis: FoodBarcodeAnalysis){
+    private fun configureFoodProductView(barcodeAnalysis: FoodBarcodeAnalysis) {
 
         val overviewFragment = FoodAnalysisRootOverviewFragment.newInstance(barcodeAnalysis)
         val ingredientsFragment = FoodAnalysisRootIngredientsFragment.newInstance(barcodeAnalysis)
@@ -79,12 +79,12 @@ class FoodAnalysisFragment: ApiAnalysisFragment<FoodBarcodeAnalysis>() {
     }
 
     // ---- ViewPager Configuration ----
-    private fun configureViewPager(adapter: FragmentStateAdapter, vararg textTab: String){
+    private fun configureViewPager(adapter: FragmentStateAdapter, vararg textTab: String) {
 
         val viewPager = viewBinding.fragmentFoodAnalysisViewPager
         val tabLayout = viewBinding.fragmentFoodAnalysisTabLayout
 
-        viewPager.adapter=adapter
+        viewPager.adapter = adapter
 
         if(textTab.isNotEmpty()) {
             TabLayoutMediator(tabLayout, viewPager) { tab, position ->
@@ -92,7 +92,7 @@ class FoodAnalysisFragment: ApiAnalysisFragment<FoodBarcodeAnalysis>() {
             }.attach()
 
             tabLayout.visibility = View.VISIBLE
-        }else{
+        } else {
             tabLayout.visibility = View.GONE
         }
     }

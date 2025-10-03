@@ -30,6 +30,7 @@ import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
@@ -85,6 +86,14 @@ abstract class BaseActivity: AppCompatActivity() {
             )
 
             WindowInsetsCompat.CONSUMED
+        }
+    }
+
+    fun removeAppBarLayoutScrollBehaviour() {
+        val appBarLayout: AppBarLayout? = findViewById(R.id.app_bar_layout)
+        (appBarLayout?.layoutParams as? CoordinatorLayout.LayoutParams)?.let {
+            it.behavior = null
+            appBarLayout.layoutParams = it
         }
     }
 
