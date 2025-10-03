@@ -1,0 +1,11 @@
+1.26.0
+
+Full changelog here: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Updated translations (Weblate).
+- Added the ability to select the type of barcode to scan (thanks to purr purr).
+- Added a restriction to prevent scanning the same barcode multiple times (can be enabled in settings) (thanks to purr purr).
+- Updated to Android 16 (API 36).
+- Minimum supported version is now Android 6 (API 23).
+- Code adjustments.
+- Updated dependencies.
