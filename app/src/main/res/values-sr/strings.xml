@@ -672,4 +672,12 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">Увећај</string>
     <string name="decrease">Умањи</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Изаберите тип баркода за скенирање</string>
+    <string name="non_whitelisted_barcode_title">%s није на белој листи</string>
+    <string name="non_whitelisted_barcode_message">Није дозвољено скенирање овог баркода. Можете да га укључите у подешавањима или да га омогућите само овај пут.</string>
+    <string name="allow_this_time">Дозволи овај пут</string>
+    <string name="go_back">Иди назад</string>
+    <string name="preferences_switch_scan_rate_limit_label">Укључи ограничење учесталости скенирања</string>
+    <string name="preferences_scan_rate_limit_duration_label">Трајање ограничења учесталости</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

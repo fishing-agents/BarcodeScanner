@@ -730,4 +730,12 @@
     <string name="increase">Zwiększ</string>
     <string name="decrease">Zmniejsz</string>
     <string name="value_px">%1$s px</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Wybierz typy kodów do zeskanowania</string>
+    <string name="non_whitelisted_barcode_title">Nie ma na białej liście: %s</string>
+    <string name="non_whitelisted_barcode_message">Ten typ kodu nie jest włączony do skanowania. Możesz włączyć go w ustawieniach lub zezwolić na niego tylko raz.</string>
+    <string name="allow_this_time">Zezwól tym razem</string>
+    <string name="go_back">Wróć</string>
+    <string name="preferences_switch_scan_rate_limit_label">Włącz ograniczenie szybkości skanowania</string>
+    <string name="preferences_scan_rate_limit_duration_label">Czas trwania ograniczenia szybkości</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

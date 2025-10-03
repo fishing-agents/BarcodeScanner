@@ -735,4 +735,12 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">Erhöhen</string>
     <string name="decrease">Verringern</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Zu scannende Barcode-Typen auswählen</string>
+    <string name="non_whitelisted_barcode_title">%s Nicht auf der Positivliste</string>
+    <string name="non_whitelisted_barcode_message">Dieser Barcode-Typ ist für das Scannen nicht aktiviert. Du kannst ihn in den Einstellungen aktivieren oder nur dieses eine Mal zulassen.</string>
+    <string name="allow_this_time">Diesmal zulassen</string>
+    <string name="go_back">Zurück</string>
+    <string name="preferences_switch_scan_rate_limit_label">Scan-Ratenbegrenzung aktivieren</string>
+    <string name="preferences_scan_rate_limit_duration_label">Dauer der Ratenbegrenzung</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

@@ -671,4 +671,10 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">Groter</string>
     <string name="decrease">Kleiner</string>
+    <string name="non_whitelisted_barcode_message">Het scannen van dit type barcode is uitgeschakeld. Sta het alleen deze keer toe of ga naar instellingen om het type in te schakelen.</string>
+    <string name="allow_this_time">Deze keer toestaan</string>
+    <string name="go_back">Terug</string>
+    <string name="preferences_switch_scan_rate_limit_label">Beperking van scanfrequentie inschakelen</string>
+    <string name="preferences_scan_rate_limit_duration_label">Duur van beperking</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

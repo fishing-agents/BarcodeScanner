@@ -735,4 +735,12 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">增加</string>
     <string name="decrease">减少</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">选择要扫描的条码类型</string>
+    <string name="non_whitelisted_barcode_title">%s 未列入白名单‌</string>
+    <string name="non_whitelisted_barcode_message">此条码类型未启用扫描。您可以在设置中启用它，或仅本次允许扫描。</string>
+    <string name="allow_this_time">本次允许</string>
+    <string name="go_back">返回‌</string>
+    <string name="preferences_switch_scan_rate_limit_label">启用扫描速率限制</string>
+    <string name="preferences_scan_rate_limit_duration_label">速率限制时长</string>
 </resources>
