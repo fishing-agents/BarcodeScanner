@@ -886,6 +886,7 @@
     <string name="locale_language_zh_Tw" translatable="false">繁體中文</string>
     <string name="locale_language_ar" translatable="false">العربية</string>
     <string name="locale_language_bg" translatable="false">български</string>
+    <string name="locale_language_bqi" translatable="false">لوری بختیاری</string>
     <string name="locale_language_ca" translatable="false">Català</string>
     <string name="locale_language_en" translatable="false">English</string>
     <string name="locale_language_de" translatable="false">Deutsch</string>
@@ -898,6 +899,7 @@
     <string name="locale_language_hr" translatable="false">Hrvatski</string>
     <string name="locale_language_ia" translatable="false">Interlingua</string>
     <string name="locale_language_in" translatable="false">Indonesia</string>
+    <string name="locale_language_iw" translatable="false">עִבְרִית</string>
     <string name="locale_language_it" translatable="false">Italiano</string>
     <string name="locale_language_ja" translatable="false">日本語</string>
     <string name="locale_language_ko" translatable="false">한국어</string>
@@ -915,4 +917,5 @@
     <string name="locale_language_ta" translatable="false">தமிழ்</string>
     <string name="locale_language_tr" translatable="false">Türkçe</string>
     <string name="locale_language_uk" translatable="false">Українська</string>
+    <string name="locale_language_vi" translatable="false">Tiếng Việt</string>
 </resources>
