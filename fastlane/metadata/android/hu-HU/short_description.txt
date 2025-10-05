@@ -1,0 +1,1 @@
+Egy nyílt forráskódú alkalmazás, amellyel vonalkódokat olvashat és generálhat.
