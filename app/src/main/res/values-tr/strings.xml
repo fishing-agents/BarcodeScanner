@@ -732,4 +732,12 @@
     <string name="increase">Arttır</string>
     <string name="decrease">Azalt</string>
     <string name="value_px">%1$spx</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Taranacak barkod türlerini seçin</string>
+    <string name="non_whitelisted_barcode_title">%s Beyaz Listeye Alınmadı</string>
+    <string name="non_whitelisted_barcode_message">Bu barkod türü tarama için etkinleştirilmedi. Ayarlardan etkinleştirebilir veya yalnızca bu seferlik izin verebilirsiniz.</string>
+    <string name="allow_this_time">Bu Sefer İzin Ver</string>
+    <string name="go_back">Geri Dön</string>
+    <string name="preferences_switch_scan_rate_limit_label">Tarama hızı sınırlamasını etkinleştir</string>
+    <string name="preferences_scan_rate_limit_duration_label">Hız sınırı süresi</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
