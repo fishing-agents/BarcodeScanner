@@ -1,0 +1,11 @@
+1.26.0
+
+Vollständiges Änderungsprotokoll: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Übersetzungen aktualisiert (Weblate).
+- Auswahlmöglichkeit für den zu scannenden Barcode-Typ hinzugefügt (dank purr purr).
+- Einschränkung hinzugefügt, um das mehrfache Scannen desselben Barcodes zu verhindern (in den Einstellungen aktivierbar) (dank purr purr).
+- Aktualisierung auf Android 16 (API 36).
+- Die minimal unterstützte Version ist jetzt Android 6 (API 23).
+- Codeanpassungen.
+- Abhängigkeiten aktualisiert.
