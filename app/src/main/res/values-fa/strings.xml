@@ -665,4 +665,11 @@
     <string name="increase">افزایش</string>
     <string name="decrease">کاهش</string>
     <string name="barcode_not_found">بارکد پیدا نشد</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">انواع بارکد را برای پویش انتخاب کنید</string>
+    <string name="non_whitelisted_barcode_title">%s در فهرست سفید نیست</string>
+    <string name="non_whitelisted_barcode_message">این نوع از بارکد برای پویش انتخاب نشده. میتوانید آن را در تنظیمات روشن کنید یا تنها برای این بار آن را مجاز کنید.</string>
+    <string name="allow_this_time">تنها این بار</string>
+    <string name="go_back">برگرد</string>
+    <string name="preferences_switch_scan_rate_limit_label">روشن‌کردن محدودیت نرخ پویش</string>
+    <string name="preferences_scan_rate_limit_duration_label">دوره محدودیت نرخ</string>
 </resources>
