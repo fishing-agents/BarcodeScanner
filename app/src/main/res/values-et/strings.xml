@@ -625,4 +625,16 @@
     <string name="custom_url_deleted">Sinu lisatud otsinguaadress on kustutatud!</string>
     <string name="custom_url_added">Sinu soovitud otsinguaadress on lisatud!</string>
     <string name="custom_url_updated">Sinu lisatud otsinguaadress on muudetud!</string>
+    <string name="open_food_facts_source_description_label">Toote teave on pärit vabast Open Food Factsi andmebaasist.</string>
+    <string name="open_pet_food_facts_source_description_label">Toote teave on pärit vabast Open Pet Food Factsi andmebaasist.</string>
+    <string name="open_beauty_facts_source_description_label">Toote teave on pärit vabast Open Beauty Factsi andmebaasist.</string>
+    <string name="music_brainz_source_description_label">Muusikatoote teave on pärit vabast MusicBrainzi andmebaasist.</string>
+    <string name="open_library_source_description_label">Raamatu teave on pärit vabast Open Library andmebaasist.</string>
+    <string name="nutriscore_description">Nutri-Score\'i märgistus annab infot toidu toitumisalasest teabe kohta. Tähistus on A-st E täheni ja see arvestab koostist, et <b>soovitada</b> (kuidained, valgud, puuviljad, aedviljad, kaunviljad, seemned, õlid) või <b>piirata</b> (energiasisaldus, küllastunud rasvad, suhkrud, sool) konkreetse toidu kasutamist.</string>
+    <string name="off_overexposure_risk_low_label">Madal liigtarvitamise risk</string>
+    <string name="off_overexposure_risk_moderate_label">Mõõdukas liigtarvitamise risk</string>
+    <string name="off_overexposure_risk_high_label">Suur liigtarvitamise risk</string>
+    <string name="off_overexposure_risk_none_label">Liigtarvitamise risk pole teada</string>
+    <string name="stabilizer_description_label">Stabilisaatorid, paksendajad ja želeerivad ained, nagu agar või pektiin (mida kasutatakse näiteks moosis), annavad toidule kindlama konsistentsi. Kuigi need ei ole tõelised emulgaatorid, aitavad nad emulsioone stabiliseerida.</string>
+    <string name="barcode_industrial_description_label">Sellist tüüpi triipkoodi kasutatakse sageli tööstuses.</string>
 </resources>
