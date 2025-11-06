@@ -1,0 +1,17 @@
+1.17.0
+
+Nové funkce:
+- Přidán výchozí vyhledávač prohlížeče.
+- Přidáno Wi-Fi připojení se zabezpečením WPA3 (díky Mateusovi J.).
+Překlad (pomocí Weblate):
+- Přidán překlad do portugalštiny (Brazílie) (díky joaooliva).
+- Přidán japonský překlad (neúplný) (díky しいたけ).
+- Přidán ukrajinský překlad (neúplný) (díky MaSHiNiK).
+- Přidán italský překlad (neúplný) (díky Tua madre).
+- Přidán indonéský překlad (neúplný) (díky Rezovi).
+- Aktualizován německý překlad (díky Fabianovi Rennebeckovi).
+- Aktualizován překlad do norštiny (bokmål) (díky Allanu Nordhøyovi).
+- Aktualizován překlad do zjednodušené čínštiny (díky 御坂13766号 a Red Star Over Earth).
+- Aktualizován polský překlad (díky Erykovi Michalakovi).
+- Aktualizován turecký překlad (díky uživateli abfreeman).
+- Aktualizovaný španělský překlad (díky uživateli gallegonovato).

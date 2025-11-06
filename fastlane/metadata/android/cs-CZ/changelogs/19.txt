@@ -1,0 +1,5 @@
+1.8.0
+
+- Implementace CameraX API.
+- Vylepšené zobrazení v režimu na šířku.
+- Několik vylepšení v ruském překladu (díky s s).

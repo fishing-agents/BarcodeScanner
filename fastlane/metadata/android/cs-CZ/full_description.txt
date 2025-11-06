@@ -1,0 +1,26 @@
+Skener čárových kódů je bezplatná aplikace s otevřeným zdrojovým kódem, která umožňuje číst a generovat čárové kódy. Dokáže shromažďovat informace o potravinách, kosmetice, knihách a hudbě (CD, vinyly…).
+
+Aplikace spravuje různé formáty čárových kódů:
+• dvourozměrné čárové kódy: QR kód, Data Matrix, PDF 417, AZTEC
+• jednorozměrné čárové kódy: EAN 13, EAN 8, UPC A, UPC E, Kód 128, Kód 93, Kód 39, Codabar, ITF
+
+Shromažďujte informace o produktu během skenování:
+• potraviny z Open Food Facts
+• kosmetiku z Open Beauty Facts
+• krmivo pro domácí mazlíčky z Open Pet Food Facts
+• knihy z Open Library
+• hudební CD, vinyly… z MusicBrainz
+
+Funkce aplikace: 
+• Jednoduše namiřte fotoaparát smartphonu na čárový kód a okamžitě o něm obdržíte informace. Čárové kódy můžete také skenovat pomocí obrázku ve smartphonu.
+• Jednoduchým skenováním si můžete přečíst vizitky, přidat nové kontakty, přidat nové události do agendy, otevřít URL nebo se připojit k Wi-Fi.
+• Skenujte čárové kódy potravinářských výrobků a získejte informace o jejich složení díky databázím Open Food Facts a Open Beauty Facts.
+• Vyhledávejte informace o skenovaném produktu rychlým vyhledáváním na různých webových stránkách, jako je Amazon nebo Fnac.
+• Sledujte všechny naskenované čárové kódy pomocí historie.
+• Generujte si vlastní čárové kódy.
+• Přizpůsobte si rozhraní různými barvami, světlým nebo tmavým motivem. Rozhraní je vytvořeno s Material 3 a je kompatibilní s Material You, což vám umožňuje upravovat barvy na základě tapety pro zařízení s Androidem 12 nebo novějším.
+• Texty jsou kompletně přeloženy do angličtiny, arabštiny, španělštiny, francouzštiny, portugalštiny, ruštiny, němčiny, turečtiny, italštiny, ukrajinštiny, polštiny, holandštiny, rumunštiny a čínštiny (zjednodušené a tradiční).
+
+Tato aplikace respektuje vaše soukromí. Neobsahuje žádné sledovací prvky a neshromažďuje žádná data.
+
+Zdrojový kód je k dispozici zde: https://gitlab.com/Atharok/BarcodeScanner

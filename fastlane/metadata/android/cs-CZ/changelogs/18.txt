@@ -1,0 +1,5 @@
+1.7.0
+
+- Přidán německý překlad (díky konwinovi).
+- Drobné změny v ruském překladu (díky s s).
+- Několik grafických vylepšení.

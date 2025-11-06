@@ -1,0 +1,7 @@
+1.25.2
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Aktualizované překlady (Weblate).
+- Změněna jednotka okraje obrázku čárového kódu: nyní je vyjádřena v pixelech místo v procentech.
+- Přidána tlačítka pro přesnější nastavení hodnoty okraje.

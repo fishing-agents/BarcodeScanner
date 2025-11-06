@@ -1,0 +1,12 @@
+1.22.0
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Nahrazení statických zkratek zkratkami dynamickými (lze nakonfigurovat v nastavení).
+- Přidána zkratka pro generování QR kódu ze schránky (díky Austen).
+- Přidána možnost vytvářet a používat vlastní adresy URL vyhledávání.
+- Přidána možnost zobrazení obrázku čárového kódu ve výsledcích.
+- Opravy chyb.
+- Vylepšené motivy, styly a zobrazení.
+- Aktualizované překlady (Weblate).
+- Aktualizované závislosti.

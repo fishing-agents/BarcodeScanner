@@ -1,0 +1,3 @@
+- Aktualizace závislostí.
+- Opraveno otevírání aplikace pomocí zkratek, které nefungovaly pro funkce „Historie“ a „Generovat“.
+- Opraveno skenování z obrázku při skenování z externí aplikace (intent-filter).

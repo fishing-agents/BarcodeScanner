@@ -1,0 +1,4 @@
+1.14.1
+
+- Opravena chyba, která blokovala vyhledávání na vzdálených API.
+- Aktualizován polský překlad.

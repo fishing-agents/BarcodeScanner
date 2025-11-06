@@ -1,0 +1,4 @@
+1.8.1
+
+- Oprava: Přidána implementace API cameraX při skenování pomocí Intentu.
+- Aktualizovány závislosti.

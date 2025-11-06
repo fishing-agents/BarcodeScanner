@@ -1,0 +1,2 @@
+- Vylepšení kódu. 
+- Opraven problém s fotoaparátem, který se někdy nevypínal při skenování z obrázku.

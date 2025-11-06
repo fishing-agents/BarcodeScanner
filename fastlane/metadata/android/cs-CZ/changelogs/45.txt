@@ -1,0 +1,10 @@
+1.25.0
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Přidán úplný tamilský překlad (díky தமிழ்நேரம்).
+- Přidán úplný litevský překlad (díky Rokas Bo).
+- Aktualizované překlady (Weblate).
+- Přidána podpora pro intent „com.google.zxing.client.android.ENCODE“ pro kódování a generování čárových kódů z aplikací třetích stran.
+- Přidána funkce, která umožňuje přiřadit název čárovému kódu.
+- Aktualizované závislosti.

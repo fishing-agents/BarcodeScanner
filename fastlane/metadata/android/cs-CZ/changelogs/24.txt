@@ -1,0 +1,6 @@
+1.10.1
+
+- Vylepšena implementace CameraX a opraveny chyby.
+- Opravena chyba v zobrazení výchozího motivu v systémech Android 6 až 11.
+- Opraven Intent filtr, který umožňoval získat událost ve formátu .ics.
+- Aktualizace závislostí.

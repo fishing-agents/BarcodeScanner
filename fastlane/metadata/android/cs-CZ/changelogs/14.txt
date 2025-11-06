@@ -1,0 +1,6 @@
+- Přidán španělský překlad (díky zgll2022).
+- Přidán Brave Search jako vyhledávač.
+- Změněna ikona Eco-Score.
+- Změněna ikona pro akci „otevřít v prohlížeči“.
+- Vylepšení světlého motivu.
+- Vylepšení kódu.

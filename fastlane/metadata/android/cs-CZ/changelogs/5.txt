@@ -1,0 +1,4 @@
+- Úprava knihovny umožňující skenování čárových kódů.
+- Aktualizace verze Kotlin (1.7.10), SDK (API 33) a závislostí.
+- Vylepšení kódu.
+- Přidání monochromatické ikony pro Android 13.

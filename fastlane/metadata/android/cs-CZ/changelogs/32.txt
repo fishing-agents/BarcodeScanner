@@ -1,0 +1,8 @@
+1.15.0
+
+- Aktualizován polský překlad (díky phyrz91).
+- Aktualizován překlad do tradiční čínštiny (díky plum7x).
+- Přidána úroveň opravy chyb pro QR kódy.
+- Přidána možnost přidávat vygenerované čárové kódy do historie (musí být povoleno v nastavení).
+- Úprava vzdálené správy API.
+- Přidáno MusicBrainz API.

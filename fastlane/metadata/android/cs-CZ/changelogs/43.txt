@@ -1,0 +1,9 @@
+1.24.1
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Přidán úplný srbský překlad (díky eevan78).
+- Přidán částečný překlad do bulharštiny (díky trunars).
+- Aktualizovány překlady (Weblate).
+- Několik úprav textových stylů.
+- Aktualizovány závislosti.

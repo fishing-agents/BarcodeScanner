@@ -1,0 +1,8 @@
+1.25.1
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Přidána podpora pro okraje kolem obrázků čárových kódů.
+- Aktualizované překlady (Weblate).
+- Aktualizovaná verze Kotlinu a závislosti.
+- Některé úpravy v kódu.

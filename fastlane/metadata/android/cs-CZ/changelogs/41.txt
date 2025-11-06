@@ -1,0 +1,12 @@
+1.23.0
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Přidán katalánský překlad (díky Paco Rivièrovi).
+- Název aplikace přeložen do některých jazyků.
+- Přidáno přepínací tlačítko pro ignorování duplicitních položek v historii.
+- Přidáno tlačítko pro vrácení zpět na snackbar při mazání položky.
+- Odebrána závislost implementující staré Camera API, zachována pouze implementace CameraX.
+- Opraveny pády, ke kterým mohlo dojít během importu VCard.
+- Aktualizovány závislosti.
+- Několik drobných vylepšení.

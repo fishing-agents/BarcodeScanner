@@ -1,0 +1,5 @@
+1.11.0
+
+- Přidán čínský překlad (od Hu Shenghao).
+- Přidán zoom kamery gesty (dvěma prsty a dvojitým klepnutím) (od Hu Shenghao).
+- Několik dalších drobných vylepšení.
