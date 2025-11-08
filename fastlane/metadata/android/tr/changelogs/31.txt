@@ -1,0 +1,4 @@
+1.14.1
+
+- Uzak API'lerde aramayı engelleyen bir hata düzeltildi.
+- Lehçe çeviri güncellendi.
