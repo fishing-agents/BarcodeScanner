@@ -254,4 +254,18 @@
     <string name="width_label">پئنا</string>
     <string name="height_label">درازا</string>
     <string name="value_px">%1$spx</string>
+    <string name="no_vegetarian_label">قیر گیاه خور</string>
+    <string name="is_vegetarian_label">گیاه خور</string>
+    <string name="vegan_status_unknown_label">وزعیت وگان نشناخته</string>
+    <string name="maybe_vegetarian_label">گاشڌ گیاه خور</string>
+    <string name="vegetarian_status_unknown_label">وزعیت گیاه خوری نشناخته</string>
+    <string name="off_per_100_label">سی 100%1$s</string>
+    <string name="off_per_serving_label">سی هر وعده (%1$s%2$s)</string>
+    <string name="off_energy_kj_label">انرژی (کژول)</string>
+    <string name="off_per_serving_no_quantity_label">به ازای هر وعده</string>
+    <string name="music_product_tracks_label">قتعات</string>
+    <string name="music_product_tracks_number">%1$s قتعه</string>
+    <string name="matrix_contact_job_title_label">عونوان شوغلی</string>
+    <string name="matrix_agenda_start_date_event_label">ناهاڌن پا</string>
+    <string name="matrix_agenda_end_date_event_label">دیندا</string>
 </resources>
