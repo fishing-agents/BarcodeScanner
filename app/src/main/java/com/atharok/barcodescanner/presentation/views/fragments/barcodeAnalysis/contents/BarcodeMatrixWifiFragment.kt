@@ -59,7 +59,7 @@ class BarcodeMatrixWifiFragment : AbstractBarcodeMatrixFragment() {
             ssidView.setContentsText(parsedResult.ssid)
             passwordView.setContentsText(parsedResult.password)
             encryptionView.setContentsText(parsedResult.networkEncryption)
-            isHiddenView.setContentsText(if(isHidden) getString(R.string.yes_label) else getString(R.string.no_label))
+            isHiddenView.setContentsText(if(parsedResult.isHidden) getString(R.string.yes_label) else getString(R.string.no_label))
         } else {
             viewBinding.root.visibility = View.GONE
         }
