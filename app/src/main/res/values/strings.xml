@@ -888,6 +888,7 @@
     <string name="locale_language_bg" translatable="false">български</string>
     <string name="locale_language_bqi" translatable="false">لوری بختیاری</string>
     <string name="locale_language_ca" translatable="false">Català</string>
+    <string name="locale_language_cs" translatable="false">Český</string>
     <string name="locale_language_en" translatable="false">English</string>
     <string name="locale_language_de" translatable="false">Deutsch</string>
     <string name="locale_language_es" translatable="false">Español</string>
@@ -897,6 +898,7 @@
     <string name="locale_language_fr" translatable="false">Français</string>
     <string name="locale_language_gl" translatable="false">Galego</string>
     <string name="locale_language_hr" translatable="false">Hrvatski</string>
+    <string name="locale_language_hu" translatable="false">Magyar</string>
     <string name="locale_language_ia" translatable="false">Interlingua</string>
     <string name="locale_language_in" translatable="false">Indonesia</string>
     <string name="locale_language_iw" translatable="false">עִבְרִית</string>

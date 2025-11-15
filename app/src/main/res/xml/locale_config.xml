@@ -4,6 +4,7 @@
     <locale android:name="bg"/>
     <locale android:name="bqi"/>
     <locale android:name="ca"/>
+    <locale android:name="cs"/>
     <locale android:name="de"/>
     <locale android:name="en"/>
     <locale android:name="el"/>
@@ -13,6 +14,7 @@
     <locale android:name="fr"/>
     <locale android:name="gl"/>
     <locale android:name="hr"/>
+    <locale android:name="hu"/>
     <locale android:name="ia"/>
     <locale android:name="in"/>
     <locale android:name="it"/>
