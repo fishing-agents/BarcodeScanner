@@ -1,0 +1,3 @@
+1.16.1
+
+Google Play'de uygulamanın güncellenmesinin reddedilmesinin ardından QUERY_ALL_PACKAGES izninin silinmesi.

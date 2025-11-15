@@ -1,0 +1,9 @@
+1.9.0
+
+- Nová ikona + animovaná ikona na úvodní obrazovce.
+- Přidány animace přechodů mezi zobrazeními při generování čárových kódů.
+- Přidána animace ikon v BottomNavigationView.
+- Vylepšen kód a styly. Komponenty Spinner byly nahrazeny komponentou MaterialAutoCompleteTextView.
+- Odstraněny fonty Roboto. Aplikace nyní používá systémové fonty.
+- Přidány systémové funkce.
+- Aktualizován ruský překlad (díky s s).

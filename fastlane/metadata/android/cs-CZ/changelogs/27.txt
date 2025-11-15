@@ -1,0 +1,10 @@
+1.13.0
+
+- Přidání textu do spodní části obrázku čárového kódu.
+- Přidáno nastavení pro zakázání historie.
+- Přidáno generování QR kódu z ID nainstalované aplikace.
+- Vylepšeno mazání položek z historie v akcích.
+- Přidáno tlačítko „přidat do historie“ v akcích, pokud položka v historii není.
+- Opravena detekce světlého čárového kódu na tmavém pozadí pomocí obrázku.
+- Přidáno generování QR kódu z umístění.
+- Přidáno dlouhé stisknutí na textu analýzy čárového kódu.

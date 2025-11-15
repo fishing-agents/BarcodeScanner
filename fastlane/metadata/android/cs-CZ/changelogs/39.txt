@@ -1,0 +1,9 @@
+1.21.0
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Přidán rumunský překlad (díky richard01000).
+- Přidán nizozemský překlad (díky Guillaume).
+- Aktualizované překlady (Weblate).
+- Opravena výjimka spouštěná při skenování pomocí fotoaparátu na některých zařízeních.
+- Verze Kotlin aktualizována.

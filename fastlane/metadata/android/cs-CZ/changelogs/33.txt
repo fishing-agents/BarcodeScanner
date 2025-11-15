@@ -1,0 +1,15 @@
+1.16.0
+
+Překlad (pomocí Weblate):
+- Přidán turecký překlad (díky abfreemanovi).
+- Přidána norština Bokmål (neúplná) (díky Allanu Nordhøyovi).
+- Aktualizován španělský překlad (díky J. Lavoieovi a gallegonovato).
+- Aktualizován překlad do tradiční čínštiny (díky plum7x).
+- Aktualizován německý překlad (díky J. Lavoieovi).
+- Aktualizován francouzský překlad (díky J. Lavoieovi).
+
+Nové funkce:
+- Přidán černý motiv.
+- Přidán export obrázku čárového kódu do JPG a SVG.
+- Některá vylepšení kódu.
+- Opraveny některé chyby.

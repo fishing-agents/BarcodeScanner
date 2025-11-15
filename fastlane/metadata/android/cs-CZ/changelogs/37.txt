@@ -1,0 +1,11 @@
+1.19.0
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Přidán kompletní arabský překlad (díky testing150) (pomocí Weblate).
+- Aktualizovány překlady (pomocí Weblate).
+- Aktualizováno na SDK 34 (Android 14) + závislosti.
+- Přidána možnost změnit barvu a velikost generovaných čárových kódů.
+- Vylepšen výkon při generování čárových kódů.
+- Vylepšena stabilita a opraveno několik pádů.
+- Několik vylepšení UX/UI.

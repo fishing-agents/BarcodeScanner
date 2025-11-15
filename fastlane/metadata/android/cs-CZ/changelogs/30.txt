@@ -1,0 +1,7 @@
+1.14.0
+
+- Přidán polský překlad (díky phyrz91).
+- Opraven pád aplikace v systému Android 7.
+- Přidán parametr pro nastavení výchozí hodnoty zoomu fotoaparátu.
+- Přidána analýza QR kódu UPI.
+- Přidána historie pro vytváření QR kódu EPC.

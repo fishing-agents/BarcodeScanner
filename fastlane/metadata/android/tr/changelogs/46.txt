@@ -1,0 +1,8 @@
+1.25.1
+
+Değişikliklerin tamamına buradan ulaşabilirsiniz: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Barkod görsellerinin etrafındaki kenar boşlukları için destek eklendi.
+- Çeviriler güncellendi (Weblate).
+- Kotlin sürümü ve bağımlılıkları güncellendi.
+- Kodda bazı uyarlamalar yapıldı.

@@ -1,0 +1,7 @@
+1.10.0
+
+- Vylepšení kódu.
+- Zjednodušený přístup k akcím po naskenování čárového kódu.
+- Vylepšená implementace CameraX.
+- Aktualizace závislostí.
+- Některá vylepšení a opravy chyb.

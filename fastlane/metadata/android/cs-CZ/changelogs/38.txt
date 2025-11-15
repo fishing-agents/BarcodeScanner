@@ -1,0 +1,11 @@
+1.20.0
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Přidán ukrajinský překlad (díky Сергію).
+- Aktualizovány překlady (pomocí Weblate).
+- Aktualizovány závislosti.
+- Opravena dlaždice, která nefungovala na některých zařízeních s Androidem 14.
+- Přidána možnost upravit naskenovaný čárový kód.
+- Některé grafické změny.
+- Několik vylepšení a optimalizací kódu.

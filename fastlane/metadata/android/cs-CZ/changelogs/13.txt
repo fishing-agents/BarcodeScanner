@@ -1,0 +1,7 @@
+- Aktualizace Kotlin verze (1.7.20).
+- Některá vylepšení řetězců (anglicky).
+- V nastavení přidán přepínač pro automatické kopírování obsahu naskenovaného čárového kódu do schránky.
+- Vylepšení kódu.
+- Přidána možnost ručního dotazování vzdálených API.
+- Přidána podpora pro generování EPC QR kódů.
+- V panelu nástrojů přidáno tlačítko pro vyhledávání QR kódů, které obsahují URL.

@@ -1,0 +1,11 @@
+1.26.0
+
+Kompletní seznam změn zde: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Aktualizované překlady (Weblate).
+- Přidána možnost vybrat typ čárového kódu ke skenování (díky purr purr).
+- Přidáno omezení, které zabraňuje opakovanému skenování stejného čárového kódu (lze povolit v nastavení) (díky purr purr).
+- Aktualizováno na Android 16 (API 36).
+- Minimální podporovaná verze je nyní Android 6 (API 23).
+- Úpravy kódu.
+- Aktualizované závislosti.

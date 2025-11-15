@@ -731,4 +731,12 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">Увеличить</string>
     <string name="decrease">Уменьшить</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Выберите типы штрих-кодов для сканирования</string>
+    <string name="non_whitelisted_barcode_title">%s не в белом списке</string>
+    <string name="non_whitelisted_barcode_message">Сканирование штрих-кодов этого типа не поддерживается. Вы можете включить его в настройках или разрешить только при текущем сканировании.</string>
+    <string name="allow_this_time">Разрешить в этот раз</string>
+    <string name="go_back">Назад</string>
+    <string name="preferences_switch_scan_rate_limit_label">Включить ограничение скорости сканирования</string>
+    <string name="preferences_scan_rate_limit_duration_label">Продолжительность ограничения скорости</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

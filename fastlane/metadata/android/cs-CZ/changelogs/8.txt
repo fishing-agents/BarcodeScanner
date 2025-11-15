@@ -1,0 +1,3 @@
+- Přidán „intent-filter“, který umožňuje skenovat čárový kód z externí aplikace.
+- Přidán přepínač pro vypnutí automatického otáčení obrazovky během skenování.
+- Aktualizovány závislosti.

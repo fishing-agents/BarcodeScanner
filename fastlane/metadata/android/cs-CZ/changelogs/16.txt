@@ -1,0 +1,13 @@
+1.6.0
+
+- Začátek ruského překladu (díky s s).
+- Nahrazení závislostí Glide a GlideToVectorYou pomocí Coil.
+- Oprava pádu v systému Android 5.
+- Vylepšení kódu.
+
+1.5.1
+
+- Oprava chyby „java.lang.NumberFormatException: empty String“ při vyhledávání na OpenFoodFacts.
+- Oprava nesprávných hodnot v nutriční tabulce pro „na porci“.
+- Některá vylepšení.
+- Aktualizace závislostí.

@@ -1,0 +1,4 @@
+- Opravena chyba „java.lang.NumberFormatException: empty String“ při vyhledávání na OpenFoodFacts.
+- Oprava nesprávných hodnot v nutriční tabulce pro „na porci“.
+- Některá vylepšení.
+- Aktualizace závislostí.

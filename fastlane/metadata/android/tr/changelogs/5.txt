@@ -1,0 +1,4 @@
+- Barkod taramaya olanak tanıyan bir kütüphanenin değiştirilmesi.
+- Kotlin sürümü (1.7.10), SDK (API 33) ve bağımlılıkların güncellenmesi.
+- Kod iyileştirmesi.
+- Android 13 için tek renkli simgenin eklenmesi.

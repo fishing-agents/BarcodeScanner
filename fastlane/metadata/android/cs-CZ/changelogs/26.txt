@@ -1,0 +1,9 @@
+1.12.0
+
+- Přidán překlad do tradiční čínštiny (od plum7x).
+- Aktualizace Kotlinu (1.8.0). Aktualizace závislostí.
+- Přidáno mazání obrázků generovaných ořezem při skenování z obrázku.
+- Přidán výběr a mazání několika položek z historie.
+- Přidáno mazání položky ze zobrazení výsledků.
+- Vylepšené barvy a styly.
+- Vylepšen kód.

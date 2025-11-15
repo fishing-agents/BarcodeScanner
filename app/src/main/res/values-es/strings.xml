@@ -4,7 +4,7 @@
     <string name="camera_permission_denied">Has denegado el acceso a la cámara.\nDebes autorizarlo para poder escanear códigos.</string>
     <!-- AlertDialog -->
     <string name="close_dialog_label">Cerrar</string>
-    <string name="yes_label">Si</string>
+    <string name="yes_label">Sí</string>
     <string name="no_label">No</string>
     <string name="go_to_dialog_label">Ir al sitio web</string>
     <!-- ImageView Description -->
@@ -137,7 +137,7 @@
     <string name="nova_group_description_3">Alimentos procesados</string>
     <string name="nova_group_description_4">Alimentos y bebidas ultraprocesados</string>
     <string name="nova_group_description_unknown">Sin NOVA Group</string>
-    <string name="eco_score_entitled_label">Eco-Score</string>
+    <string name="eco_score_entitled_label">Puntuación ecológica</string>
     <string name="eco_score_description">Eco-Score se basa en un modelo similar al de Nutri-Score: es una puntuación de A (impacto muy bajo) a E (impacto muy alto).</string>
     <string name="eco_score_description_a">Impacto ambiental muy bajo</string>
     <string name="eco_score_description_b">Impacto ambiental bajo</string>
@@ -733,4 +733,12 @@
     <string name="value_px">%1$s px</string>
     <string name="increase">Aumentar</string>
     <string name="decrease">Disminuir</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Seleccionar tipos de códigos de barras a escanear</string>
+    <string name="non_whitelisted_barcode_title">%s no está en la lista blanca</string>
+    <string name="non_whitelisted_barcode_message">Este tipo de código de barras no está habilitado para ser escaneado. Puedes habilitarlo en ajustes o permitirlo solo una vez.</string>
+    <string name="allow_this_time">Permitir esta vez</string>
+    <string name="go_back">Atrás</string>
+    <string name="preferences_switch_scan_rate_limit_label">Habilitar límite de tasa de escaneo</string>
+    <string name="preferences_scan_rate_limit_duration_label">Duración del límite de tasa</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
