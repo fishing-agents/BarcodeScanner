@@ -668,4 +668,12 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">Incrementa</string>
     <string name="decrease">Decrementa</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
+    <string name="go_back">Indietro</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Selezionare i tipi di codici a barre da scansionare</string>
+    <string name="non_whitelisted_barcode_title">%s non autorizzato</string>
+    <string name="non_whitelisted_barcode_message">Questo tipo di codice a barre non è abilitato per la scansione. È possibile abilitarlo nelle impostazioni od autorizzarlo una sola volta.</string>
+    <string name="allow_this_time">Consenti questa volta</string>
+    <string name="preferences_switch_scan_rate_limit_label">Attiva la limitazione della velocità di scansione</string>
+    <string name="preferences_scan_rate_limit_duration_label">Durata della limitazione</string>
 </resources>
