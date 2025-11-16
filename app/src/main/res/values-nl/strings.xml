@@ -677,4 +677,6 @@
     <string name="preferences_switch_scan_rate_limit_label">Beperking van scanfrequentie inschakelen</string>
     <string name="preferences_scan_rate_limit_duration_label">Duur van beperking</string>
     <string name="preferences_scan_rate_limit_duration_summary">%s</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Kies de barcodetypes die gescand mogen worden</string>
+    <string name="non_whitelisted_barcode_title">%s niet toegestaan</string>
 </resources>
