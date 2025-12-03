@@ -9,7 +9,7 @@
     <string name="image_view_description_product_front">Produkto nuotrauka</string>
     <string name="image_view_description_nova_group">NOVA GROUP</string>
     <string name="image_view_description_image">Nuotrauka</string>
-    <string name="slider_description_zoom">Padidinti</string>
+    <string name="slider_description_zoom">Mastelio keitimas</string>
     <string name="title_scan">Nuskaityti</string>
     <string name="title_history">Istorija</string>
     <string name="title_generate">Sukurti</string>
@@ -28,7 +28,7 @@
     <string name="barcode_upc_a_label">UPC A</string>
     <string name="barcode_upc_e_label">UPC E</string>
     <string name="barcode_code_39_label">Code 39</string>
-    <string name="barcode_codabar_label">Codabar</string>
+    <string name="barcode_codabar_label">Codabar\'as</string>
     <string name="barcode_itf_label">ITF</string>
     <string name="qr_code_type_name_text">Tekstas</string>
     <string name="qr_code_type_name_web_site">Svetainė</string>
@@ -83,13 +83,13 @@
     <string name="ingredients_label">Ingredientai</string>
     <string name="nutrition_facts_tab_label">Mityba</string>
     <string name="quality_label">Produkto kokybė</string>
-    <string name="nutriscore_entitled_label">Nutri-Score</string>
+    <string name="nutriscore_entitled_label">Maistinė vertė</string>
     <string name="nutriscore_description_a">Labai gera maistinė kokybė</string>
     <string name="nutriscore_description_b">Gera maistinė kokybė</string>
-    <string name="nova_group_entitled_label">NOVA Group</string>
+    <string name="nova_group_entitled_label">NOVA Grupė</string>
     <string name="nova_group_description_4">Itin perdirbtas maistas ir gėrimai</string>
     <string name="nova_group_description_unknown">Nėra NOVA Group</string>
-    <string name="eco_score_entitled_label">Eco-Score</string>
+    <string name="eco_score_entitled_label">Ekologinė kokybė</string>
     <string name="eco_score_description">Eco-Score sukurtas pagal panašų Nutri-Score modelį: tai įvertinimas nuo A (labai mažas poveikis) iki E (labai didelis poveikis).</string>
     <string name="eco_score_description_d">Didelis poveikis aplinkai</string>
     <string name="eco_score_description_e">Labai didelis poveikis aplinkai</string>
@@ -314,7 +314,7 @@
     <string name="action_open_link">Atidaryti nuorodą</string>
     <string name="action_modify_barcode">Keisti brūkšninį kodą</string>
     <string name="action_wifi_connection_title_label">Wi-Fi ryšys</string>
-    <string name="action_wifi_connection_from_app">Prisijunkite prie „Wi-Fi“.</string>
+    <string name="action_wifi_connection_from_app">Prisijunkite prie „Wi-Fi“</string>
     <string name="action_wifi_connection_from_wifi_settings">Nukopijuokite slaptažodį ir eikite į „Wi-Fi“ nustatymus</string>
     <string name="action_wifi_connection_error_wifi_not_activated">Turite suaktyvinti „Wi-Fi“ savo įrenginyje!</string>
     <string name="action_wifi_password_copy_label">Slaptažodis nukopijuotas!</string>
@@ -398,7 +398,7 @@
     <string name="spinner_wifi_encryption_wep">WEP</string>
     <string name="qr_code_text_input_edit_text_epc_iban_error">IBAN neteisingas</string>
     <string name="spinner_wifi_encryption_wpa">WPA/WPA2</string>
-    <string name="list_bank_empty_message">„Nėra prekės… Jūs dar nesukūrėte EPC QR kodo.</string>
+    <string name="list_bank_empty_message">Nėra prekės…\nJūs dar nesukūrėte EPC QR kodo.</string>
     <string name="qr_code_text_input_edit_text_hint_email">El. paštas</string>
     <string name="qr_code_text_input_edit_text_hint_email_subject">Tema</string>
     <string name="qr_code_text_input_edit_text_hint_localisation_latitude">Platuma</string>
@@ -422,7 +422,7 @@
     <string name="custom_search_urls_add_url">Pridėkite URL</string>
     <string name="custom_search_urls_modify_url">Pakeiskite URL</string>
     <string name="custom_search_urls_list">URL sąrašas</string>
-    <string name="custom_search_urls_list_is_empty_message">Nėra prekės… Dar nesukūrėte tinkinto URL.</string>
+    <string name="custom_search_urls_list_is_empty_message">Nėra prekės… \nDar nesukūrėte pasirinkto URL.</string>
     <string name="popup_message_confirmation_deleted_all_custom_urls">Ar norite ištrinti visus tinkintus URL?</string>
     <string name="custom_url_deleted">Priskirtas URL ištrintas!</string>
     <string name="custom_url_added">Pridėtas tinkintas URL!</string>
@@ -484,7 +484,7 @@
     <string name="preferences_information_about_remote_api_title">Informacija apie API</string>
     <string name="preferences_information_about_remote_api_foreword">Pratarmė</string>
     <string name="preferences_information_about_remote_api_what_is_an_api_title">Kas yra API?</string>
-    <string name="preferences_information_about_remote_api_what_is_an_api_description">„API yra programinės įrangos biblioteka, naudojama prieigai prie paslaugos. Šios programos atveju API naudojama žiniatinklio paslaugai pasiekti. Ši žiniatinklio paslauga nuskaito informaciją iš duomenų bazės. Pavyzdžiui, „Open Food Facts“ yra maisto produktų duomenų bazė ir suteikia API, kad būtų galima pasiekti jos duomenų bazę. Naudoju šią API, kad rodyčiau informaciją apie maisto produktus.</string>
+    <string name="preferences_information_about_remote_api_what_is_an_api_description">„API yra programinės įrangos biblioteka, naudojama prieigai prie paslaugos. Šios programos atveju API naudojama žiniatinklio paslaugai pasiekti. Ši žiniatinklio paslauga nuskaito informaciją iš duomenų bazės. \nPavyzdžiui, „Open Food Facts“ yra maisto produktų duomenų bazė ir suteikia API galimybę pasiekti jos duomenų bazę. Šią API naudoju informacijos apie maisto produktus rodymui.</string>
     <string name="preferences_information_about_remote_api_barcode_types_concerned_title">Susiję brūkšninių kodų tipai</string>
     <string name="preferences_information_about_remote_api_barcode_types_concerned_description">API paieškos funkcija aktyvuota tik EAN 13, EAN 8, UPC A ir UPC E brūkšniniams kodams.</string>
     <string name="preferences_information_about_remote_api_product_types_supported_title">Šiuo metu palaikomi produktų tipai</string>
@@ -656,4 +656,19 @@
     <string name="country_nz">Naujoji Zelandija</string>
     <string name="country_my">Malaizija</string>
     <string name="country_mo">Makao</string>
+    <string name="barcode_not_found">Nerastas brūkšninis kodas</string>
+    <string name="action_assign_a_name">Priskirkite vardą</string>
+    <string name="apply">Taikyti</string>
+    <string name="margins">Ribos</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">Padidinti</string>
+    <string name="decrease">Sumažinti</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Pasirinkite nuskaitomų brūkšninių kodų tipus</string>
+    <string name="non_whitelisted_barcode_title">%s neįtrauktas į leidžiamų sąrašą</string>
+    <string name="non_whitelisted_barcode_message">Šio tipo brūkšninis kodas neįgalintas nuskaitymui. Galite jį įjungti nustatymuose arba leisti nuskaityti tik šį kartą.</string>
+    <string name="allow_this_time">Leisti šį kartą</string>
+    <string name="go_back">Grįžti</string>
+    <string name="preferences_switch_scan_rate_limit_label">Įgalinti nuskaitymo dažnio ribojimą</string>
+    <string name="preferences_scan_rate_limit_duration_label">Dažnio ribojimo trukmė</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
