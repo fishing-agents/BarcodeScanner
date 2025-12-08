@@ -115,7 +115,7 @@
     <string name="country_bg">بلغاريا</string>
     <string name="no_vegetarian_label">لا نباتي</string>
     <string name="off_risk_low_label">آمن</string>
-    <string name="matrix_contact_mail_label">بريد إلكتروني:</string>
+    <string name="matrix_contact_mail_label">البريد الإلكتروني:</string>
     <string name="country_gb">المملكة المتحدة</string>
     <string name="matrix_email_bcc_label">نسخة مخفية الوجهة:</string>
     <string name="permission_location_label">موقع</string>
@@ -244,7 +244,7 @@
     <string name="error_barcode_encoding_us_ascii_error_message">الأحرف الخاصة غير مدعومة لهذا النوع من الرمز الشريطي.</string>
     <string name="country_cy">قبرص</string>
     <string name="qr_code_text_input_edit_text_hint_phone_1">رقم الهاتف 1</string>
-    <string name="matrix_contact_notes_label">ملحوظات:</string>
+    <string name="matrix_contact_notes_label">ملاحظات:</string>
     <string name="country_mn">منغوليا</string>
     <string name="preferences_color_green">أخضر</string>
     <string name="country_ec">الاكوادور</string>
@@ -336,7 +336,7 @@
     <string name="country_kg">قيرغيزستان</string>
     <string name="country_md">مولدوفا</string>
     <string name="open_beauty_facts_source_description_label">المعلومات المتعلقة بالمنتج مأخوذة من قاعدة بيانات Open Beauty Facts المجانية.</string>
-    <string name="matrix_uri_upi_description_label">وصف:</string>
+    <string name="matrix_uri_upi_description_label">الوصف:</string>
     <string name="preferences_information_about_remote_api_what_is_an_api_description">واجهة برمجة التطبيقات (API) هي مكتبة برامج تُستخدم للوصول إلى الخدمة. في حالة هذا التطبيق، يتم استخدام واجهة برمجة التطبيقات (API) للوصول إلى خدمة الويب. تقوم خدمة الويب هذه باسترداد المعلومات من قاعدة البيانات
 \nعلى سبيل المثال، Open Food Facts هي قاعدة بيانات للمنتجات الغذائية وتوفر واجهة برمجة التطبيقات (API) للوصول إلى قاعدة البيانات الخاصة بها. أستخدم واجهة برمجة التطبيقات هذه لعرض معلومات عن المنتجات الغذائية.</string>
     <string name="search_label">يبحث</string>
@@ -356,7 +356,7 @@
     <string name="action_wifi_failure_added_label">فشل أثناء إضافة اتصال Wi-Fi</string>
     <string name="off_quantity_moderate_label">كمية معتدلة</string>
     <string name="action_wifi_connection_from_wifi_settings">انسخ كلمة المرور وانتقل إلى إعدادات Wi-Fi</string>
-    <string name="matrix_contact_phone_label">هاتف:</string>
+    <string name="matrix_contact_phone_label">الهاتف:</string>
     <string name="permission_contact_label">اتصال</string>
     <string name="preferences_information_about_remote_api_some_additional_information_description_1">• قد لا يتم تضمين بعض المنتجات في قواعد بيانات معينة.</string>
     <string name="preferences_theme_label">سمة</string>
@@ -393,7 +393,7 @@
     <string name="qr_code_text_input_edit_text_hint_region">منطقة</string>
     <string name="error_barcode_qr_localisation_missing_message">يجب عليك إبلاغ خطوط الطول والعرض</string>
     <string name="matrix_localisation_altitude_label">ارتفاع:</string>
-    <string name="matrix_contact_address_label">عنوان:</string>
+    <string name="matrix_contact_address_label">العنوان:</string>
     <string name="preferences_languages_change">تغيير اللغة</string>
     <string name="snack_bar_message_share_bitmap_error">حدث خطأ أثناء تكوين المشاركة.</string>
     <string name="barcode_ean_13_description_label">"الرمز EAN-13 (رقم المادة الأوروبية 13) هو رمز شريطي يستخدم على نطاق واسع لتحديد المنتجات المباعة في المتاجر والمحلات التجارية في أوروبا وفي كل مكان تقريبًا في العالم.  مكون من 13 رقم ."</string>
@@ -445,18 +445,18 @@
     <string name="country_qa">قطر</string>
     <string name="country_kw">الكويت</string>
     <string name="country_sg">سنغافورة</string>
-    <string name="matrix_agenda_end_date_event_label">نهاية:</string>
+    <string name="matrix_agenda_end_date_event_label">النهاية:</string>
     <string name="error_barcode_qr_email_missing_message">يجب عليك إبلاغ واحد على الأقل من حقول الإدخال</string>
     <string name="country_me">الجبل الأسود</string>
     <string name="country_fr">فرنسا</string>
     <string name="action_wifi_connection_error_wifi_not_activated">يجب عليك تفعيل الواي فاي على جهازك!</string>
     <string name="packaging_label">التعبئة والتغليف</string>
     <string name="preferences_information_about_remote_api_some_additional_information_title">بعض المعلومات الإضافية</string>
-    <string name="matrix_agenda_place_event_label">مكان:</string>
+    <string name="matrix_agenda_place_event_label">المكان:</string>
     <string name="action_open_link">افتح الرابط</string>
     <string name="off_per_serving_no_quantity_label">لكل وجبة</string>
     <string name="preferences_color_orange">البرتقالي</string>
-    <string name="ingredient_veggie_entitled_label">المكونات من حيث الحالة النباتية والنباتية</string>
+    <string name="ingredient_veggie_entitled_label">المكونات حسب الحالة النباتية.</string>
     <string name="eco_score_description_e">تأثير بيئي عالي جدًا</string>
     <string name="off_sugars_label">السكريات</string>
     <string name="base_api_open_food_facts_url">https://world.openfoodfacts.org/api/v0/product/</string>
@@ -476,7 +476,7 @@
 \n لم تقم بعد بإنشاء رمز الاستجابة السريعة EPC.</string>
     <string name="off_quantity_high_label">كمية عالية</string>
     <string name="action_add_to_contacts">أضف إلى جهات الاتصال</string>
-    <string name="matrix_uri_upi_currency_label">عملة:</string>
+    <string name="matrix_uri_upi_currency_label">العملة:</string>
     <string name="preferences_information_about_remote_api_product_types_supported_pet_food">• منتجات أغذية الحيوانات الأليفة (مع Open Pet Food Facts API)</string>
     <string name="matrix_localisation_button_find_location">توليد من موقفك</string>
     <string name="vegetarian_status_unknown_label">الحالة النباتية غير معروفة</string>
@@ -485,7 +485,7 @@
     <string name="country_gr">اليونان</string>
     <string name="action_wifi_connection_title_label">اتصال واي فاي</string>
     <string name="matrix_wifi_ssid_label">معرف مجموعة الخدمات:</string>
-    <string name="matrix_contact_organisation_label">منظمة:</string>
+    <string name="matrix_contact_organisation_label">المنظمة:</string>
     <string name="quality_label">جودة المنتج</string>
     <string name="preferences_remote_api_food_label">حقائق غذائية مفتوحة (منتجات غذائية)</string>
     <string name="qr_code_text_input_edit_text_hint_epc_purpose">غاية</string>
@@ -549,14 +549,14 @@
     <string name="country_ru">روسيا</string>
     <string name="matrix_wifi_phase_2_method_label">طريقة المرحلة الثانية:</string>
     <string name="matrix_localisation_query_label">استفسار:</string>
-    <string name="matrix_contact_name_label">اسم:</string>
+    <string name="matrix_contact_name_label">الاسم:</string>
     <string name="qr_code_text_input_edit_text_hint_email_subject">موضوع</string>
     <string name="book_product_summary_label">ملخص</string>
     <string name="country_ge">جورجيا</string>
     <string name="qr_code_text_input_edit_text_hint_localisation_request">طلب</string>
     <string name="country_rs">صربيا</string>
     <string name="scan_error_information_label">"حدث خطأ أثناء البحث عن معلومات في واجهة برمجة التطبيقات البعيدة… يرجى التحقق من اتصالك بالإنترنت وأذونات التطبيق!  إذا استمرت المشكلة، فمن المفترض أن تكون مشكلة في الخادم."</string>
-    <string name="matrix_agenda_description_event_label">وصف:</string>
+    <string name="matrix_agenda_description_event_label">الوصف:</string>
     <string name="qr_code_text_radio_button_label_m">M</string>
     <string name="off_energy_kj_label">الطاقة (كيلو جول)</string>
     <string name="maybe_vegetarian_label">ربما نباتي</string>
@@ -577,7 +577,7 @@
     <string name="preferences_seek_bar_camera_default_zoom_value_label">القيمة الافتراضية لتكبير الكاميرا</string>
     <string name="error_barcode_wrong_length_message">يجب أن يحتوي الرمز الشريطي على %1$s أرقام.</string>
     <string name="barcode_industrial_description_label">غالبًا ما يستخدم هذا النوع من الباركود في الصناعة.</string>
-    <string name="matrix_subject_label">موضوع:</string>
+    <string name="matrix_subject_label">الموضوع:</string>
     <string name="nutrition_facts_tab_label">تَغذِيَة</string>
     <string name="off_quantity_low_label">كمية منخفضة</string>
     <string name="search_engine_open_library_product_url">https://openlibrary.org/search?q=%1$s</string>
@@ -607,7 +607,7 @@
     <string name="country_ni">نيكاراغوا</string>
     <string name="country_sk">سلوفاكيا</string>
     <string name="country_bn">بروناي</string>
-    <string name="matrix_phone_tel_number_label">هاتف:</string>
+    <string name="matrix_phone_tel_number_label">الهاتف:</string>
     <string name="country_vn">فيتنام</string>
     <string name="ingredients_no_information_found_label">لم يتم العثور على أي مكون لهذا المنتج…</string>
     <string name="qr_code_text_input_edit_text_hint_epc_iban">IBAN</string>
@@ -618,7 +618,7 @@
     <string name="country_usa">الولايات المتحدة</string>
     <string name="permission_contact_description_label">مطلوب لاستيراد جهة اتصال لإنشاء رمز الاستجابة السريعة من هذا.</string>
     <string name="about_barcode_content_label">الرمز الشريطي: %1$s</string>
-    <string name="matrix_body_label">رسالة:</string>
+    <string name="matrix_body_label">الرسالة:</string>
     <string name="nova_group_description_2">المكونات المعالجة</string>
     <string name="error_barcode_none_character_message">يجب عليك إدخال قيمة صحيحة في حقل الإدخال.</string>
     <string name="off_risk_moderate_label">مشكوك فيه</string>
@@ -644,4 +644,39 @@
     <string name="clipboard_empty">الحافظة فارغة.</string>
     <string name="custom_search_urls_list">قائمة عناوين URL</string>
     <string name="app_name">ماسح الباركود</string>
+    <string name="snack_bar_message_items_deleted">عناصر محذوفة من التاريخ.</string>
+    <string name="barcode_not_found">لم يتم العثور على الباركود .</string>
+    <string name="matrix_contact_job_title_label">المسمى الوظيفي</string>
+    <string name="action_assign_a_name">تعيين اسم</string>
+    <string name="apply">تطبيق</string>
+    <string name="margins">الهوامش</string>
+    <string name="increase">أكثر</string>
+    <string name="decrease">تقليل</string>
+    <string name="custom_search_urls">عناوين URL مخصصة للبحث</string>
+    <string name="custom_urls">عناوين URL مخصصة</string>
+    <string name="custom_search_urls_list_is_empty_message">لا شيء...\nلم تنشئ رابط مخصص بعد.</string>
+    <string name="popup_message_confirmation_deleted_all_custom_urls">هل تريد حذف جميع الروابط المخصصة؟</string>
+    <string name="custom_url_deleted">تم حذف الرابط المخصص!</string>
+    <string name="custom_url_added">تمت إضافة الرابط المخصص!</string>
+    <string name="custom_url_updated">تم تحديث الرابط المخصص!</string>
+    <string name="custom_search_urls_add_info">استخدم مصطلح \"%1$s\" في الرابط. سيتم استبدال هذا المصطلح بمحتوى الباركود أثناء البحث.</string>
+    <string name="examples">امثله:</string>
+    <string name="custom_search_urls_error_url">يجب أن يكون مصطلح *%1$s\" موجودا في الرابط.</string>
+    <string name="error_empty_fields">يجب ألا تكون حقول الإدخال فارغة.</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">اختر أنواع الباركود للمسح ضوئيا</string>
+    <string name="non_whitelisted_barcode_title">نسبة %s ليست في القائمة البيضاء</string>
+    <string name="non_whitelisted_barcode_message">هذا النوع من الباركود غير مفعل للمسح. يمكنك تفعيله في الإعدادات أو السماح به مرة واحدة فقط.</string>
+    <string name="allow_this_time">السماح هذه المرة</string>
+    <string name="go_back">الرجوع للخلف</string>
+    <string name="preferences_switch_scan_rate_limit_label">تفعيل تحديد معدل المسح</string>
+    <string name="preferences_scan_rate_limit_duration_label">معدل مدة الحد</string>
+    <string name="preferences_switch_history_save_duplicates_label">حفظ النسخ المكررة</string>
+    <string name="preferences_switch_history_save_duplicates_summary_on">سيتم إضافة نسخ مكررة إلى التاريخ</string>
+    <string name="preferences_switch_history_save_duplicates_summary_off">لن تضاف النسخ إلى التاريخ</string>
+    <string name="preferences_additional_options">خيارات إضافية</string>
+    <string name="preferences_display_barcode_image_results_view">عرض صورة الباركود في النتائج</string>
+    <string name="shortcuts">اختصارات</string>
+    <string name="shortcuts_info">رتب الاختصارات حسب تفضيلاتك.</string>
+    <string name="value_px">%1$sبيكسل</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
