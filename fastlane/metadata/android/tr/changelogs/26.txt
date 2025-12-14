@@ -1,0 +1,8 @@
+Sürüm 1.12.0
+- Geleneksel Çince çeviri eklendi (plum7x tarafından).
+- Kotlin (1.8.0) sürümüne ve bağımlılıklara güncelleme yapıldı.
+- Görselden tarama yapıldığında kırpma arayüzünün oluşturduğu görsellerin silinmesi özelliği eklendi.
+- Geçmişten birden fazla öğe seçip silme özelliği eklendi.
+- Sonuçlar ekranından tek bir öğeyi silme özelliği eklendi.
+- Renkler ve stiller iyileştirildi.
+- Kod yapısı geliştirildi.
