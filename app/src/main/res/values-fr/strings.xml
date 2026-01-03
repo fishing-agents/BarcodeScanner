@@ -737,4 +737,6 @@
     <string name="country_mo">Macao</string>
     <string name="spinner_wifi_encryption_sae">WPA3</string>
     <string name="text_colon" translatable="false">%1$s :</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Sélectionnez les types de code-barres à scanner</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

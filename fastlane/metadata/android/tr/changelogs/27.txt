@@ -1,0 +1,9 @@
+Sürüm 1.13.0
+- Barkod görselinin altına metin ekleme özelliği eklendi.
+- Geçmişi devre dışı bırakmak için bir ayar eklendi.
+- Yüklü bir uygulamanın kimliğinden (ID) QR Kod oluşturma özelliği eklendi.
+- İşlemler bölümünde geçmişten öğe silme işlemi iyileştirildi.
+- Öğe geçmişte yoksa, işlemler bölümüne “geçmişe ekle” butonu eklendi.
+- Görsel üzerinden, koyu arka plan üzerindeki açık renkli barkodların algılanması düzeltildi.
+- Konumdan QR Kod oluşturma özelliği eklendi.
+- Barkod analizindeki metinler için uzun basma özelliği eklendi.

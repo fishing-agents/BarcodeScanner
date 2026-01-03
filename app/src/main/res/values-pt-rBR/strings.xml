@@ -15,9 +15,9 @@
     <string name="permission_location_description_label">Necessário para gerar um código QR a partir da posição do dispositivo.</string>
     <string name="barcode_code_93_description_label">Código 93 é um código de barras usado nos setores do exército e automotivo, além de ser usado na Postes Canada para codificar informações de entregas especiais.</string>
     <string name="permission_vibrate_label">Vibração</string>
-    <string name="bdd_open_food_facts_description_label">Open Food Facts é um banco de dados gratuito que lista ingredientes, alergênicos, composição nutricional e todas as informações presentes nos rótulos dos produtos.</string>
+    <string name="bdd_open_food_facts_description_label">Open Food Facts é um banco de dados livre que lista ingredientes, alergênicos, composição nutricional e todas as informações presentes nos rótulos dos produtos.</string>
     <string name="country_de">Alemanha</string>
-    <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts é um banco de dados gratuito sobre alimentos de animais de estimação.</string>
+    <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts é um banco de dados livre sobre alimentos de animais de estimação.</string>
     <string name="barcode_code_128_description_label">Código 128 é um código de barras muito usado na indústria. É usado na indústria de transportes e para identificação de produtos em cadeias de abastecimento. Pode também ser usado no setor automotivo ou para marcação de produtos em farmácias. Código 128 é muito usado e pode ser usado para muitas outras finalidades.</string>
     <string name="barcode_upc_e_description_label">Código UPC-E (Universal Product Code) é um código de barras condensado do código UPC-A usado principalmente nos EUA e no Canadá para identificar produtos vendidos em lojas. É também usado em embalagens pequenas demais para receberem o código UPC-A.</string>
     <string name="error_barcode_encoding_us_ascii_error_message">Caracteres especiais não são suportados para este tipo de código de barras.</string>
@@ -367,9 +367,9 @@
     <string name="permission_vibrate_description_label">Usado para vibrar o telefone durante a digitalização do código de barras.</string>
     <string name="permission_query_all_packages_label">Consultar todos os pacotes</string>
     <string name="permission_query_all_packages_description_label">Útil para gerar um código QR de um aplicativo instalado.</string>
-    <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts é um banco de dados gratuito sobre produtos cosméticos.</string>
-    <string name="bdd_music_brainz_description_label">MusicBrainz é uma enciclopédia musical gratuita que coleta metadados sobre músicas e os torna disponíveis ao público.</string>
-    <string name="bdd_open_library_description_label">Open Library é um banco de dados gratuito focado em catalogar todos os livros publicados, seja qual for seu idioma.</string>
+    <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts é um banco de dados livre sobre produtos cosméticos.</string>
+    <string name="bdd_music_brainz_description_label">MusicBrainz é uma enciclopédia musical aberta que coleta metadados sobre músicas e os torna disponíveis ao público.</string>
+    <string name="bdd_open_library_description_label">Open Library é um banco de dados livre focado em catalogar todos os livros publicados, seja qual for seu idioma.</string>
     <string name="dependency_by">por %1$s</string>
     <string name="permission_internet_label">Internet</string>
     <string name="permission_wifi_label">Wi-Fi</string>

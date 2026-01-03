@@ -1,0 +1,7 @@
+1.25.3
+
+سجل التغييرات الكامل هنا: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- ترجمات محدثة (Weblate).
+- تم إصلاح تعطل قد يحدث عند إضافة شبكة واي فاي من رمز QR (بفضل Markus Fisch).
+- التبعيات المحدثة.

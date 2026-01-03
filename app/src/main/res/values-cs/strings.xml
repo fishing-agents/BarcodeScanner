@@ -6,7 +6,7 @@
     <string name="close_dialog_label">Zavřít</string>
     <string name="yes_label">Ano</string>
     <string name="no_label">Ne</string>
-    <string name="go_to_dialog_label">Zadejte webovou stránku</string>
+    <string name="go_to_dialog_label">Otevřít webovou stránku</string>
     <string name="error">Chyba</string>
     <string name="image_view_description_flag">Vlajka</string>
     <string name="image_view_description_logo">Logo</string>
@@ -15,7 +15,7 @@
     <string name="image_view_description_icon">Ikona</string>
     <string name="image_view_description_product_front">Obrázek produktu</string>
     <string name="image_view_description_nutriscore">NUTRI-SCORE</string>
-    <string name="image_view_description_nova_group">NOVA GROUP</string>
+    <string name="image_view_description_nova_group">Klasifikace NOVA</string>
     <string name="image_view_description_eco_score">ECO SCORE</string>
     <string name="image_view_description_image">Obrázek</string>
     <string name="slider_description_zoom">Zoom</string>
@@ -104,7 +104,7 @@
     <string name="scan_error_short_information_label">Při vyhledávání informací došlo k chybě!</string>
     <string name="barcode_scanned_label">Naskenováno %1$s!</string>
     <string name="barcode_found_on_label">Nalezeno na %1$s!</string>
-    <string name="barcode_not_found_on_api_label">Na %1$s nebyly nalezeny žádné informace.</string>
+    <string name="barcode_not_found_on_api_label">V databázi %1$s nebyly nalezeny žádné informace.</string>
     <string name="no_internet_permission">Nemáte oprávnění k přístupu na internet.</string>
     <string name="about_barcode_information_label">Informace o čárovém kódu</string>
     <string name="about_barcode_label">O čárovém kódu</string>
@@ -118,7 +118,7 @@
     <string name="scan_error_internet_information_label">Nebyly načteny žádné informace o produktu, protože pravděpodobně nemáte připojení k internetu!</string>
     <string name="scan_error_message_label">Chybová zpráva:</string>
     <string name="overview_tab_label">Přehled</string>
-    <string name="ingredients_label">Ingredience</string>
+    <string name="ingredients_label">Složení</string>
     <string name="nutrition_facts_tab_label">Výživa</string>
     <string name="quality_label">Kvalita produktu</string>
     <string name="nutriscore_entitled_label">Nutri-Score</string>
@@ -129,13 +129,13 @@
     <string name="nutriscore_description_d">Špatná nutriční kvalita</string>
     <string name="nutriscore_description_e">Velmi špatná nutriční kvalita</string>
     <string name="nutriscore_description_unknown">Žádné Nutri-Score</string>
-    <string name="nova_group_entitled_label">NOVA Group</string>
-    <string name="nova_group_description">NOVA Group je klasifikace do 4 skupin, která zdůrazňuje úroveň zpracovaných potravin:\n1 - Nezpracované potraviny nebo minimálně zpracované potraviny\n2 - Zpracované ingredience\n3 - Zpracované potraviny\n4 - Ultra-zpracované potraviny a nápoje</string>
+    <string name="nova_group_entitled_label">Klasifikace NOVA</string>
+    <string name="nova_group_description">NOVA je klasifikace potravin do 4 skupin, která zdůrazňuje úroveň jejich zpracování:\n1 - Nezpracované potraviny nebo minimálně zpracované potraviny\n2 - Zpracované ingredience\n3 - Zpracované potraviny\n4 - Ultrazpracované potraviny a nápoje</string>
     <string name="nova_group_description_1">Nezpracované potraviny nebo minimálně zpracované potraviny</string>
     <string name="nova_group_description_2">Zpracované ingredience</string>
     <string name="nova_group_description_3">Zpracované potraviny</string>
-    <string name="nova_group_description_4">Ultra-zpracované potraviny a nápoje</string>
-    <string name="nova_group_description_unknown">Žádná NOVA Group</string>
+    <string name="nova_group_description_4">Ultrazpracované potraviny a nápoje</string>
+    <string name="nova_group_description_unknown">Žádná klasifikace NOVA</string>
     <string name="eco_score_entitled_label">Eco-Score</string>
     <string name="eco_score_description">Eco-Score je postaveno na podobném modelu jako Nutri-Score: jedná se o hodnocení od A (velmi nízký dopad) do E (velmi vysoký dopad).</string>
     <string name="eco_score_description_a">Velmi nízký dopad na životní prostředí</string>
@@ -292,7 +292,7 @@
     <string name="action_show_location">Zobrazit polohu</string>
     <string name="action_open_link">Otevřít odkaz</string>
     <string name="action_modify_barcode">Upravit čárový kód</string>
-    <string name="action_assign_a_name">Přiřadit jméno</string>
+    <string name="action_assign_a_name">Přiřadit název</string>
     <string name="apply">Použít</string>
     <string name="action_wifi_connection_title_label">Wi-Fi připojení</string>
     <string name="action_wifi_connection_from_app">Připojit k Wi-Fi</string>
@@ -546,7 +546,7 @@
     <string name="permission_vibrate_description_label">Slouží k vibraci při skenování.</string>
     <string name="permission_query_all_packages_label">Dotázat všechny aplikace</string>
     <string name="permission_query_all_packages_description_label">Užitečné pro vygenerování QR kódu z nainstalované aplikace.</string>
-    <string name="bdd_open_food_facts_description_label">Open Food Facts je bezplatná databáze o potravinách, která uvádí složky, alergeny, nutriční složení a všechny informace uvedené na etiketách výrobků.</string>
+    <string name="bdd_open_food_facts_description_label">Open Food Facts je bezplatná databáze o potravinách, která uvádí ingredience, alergeny, nutriční složení a všechny informace uvedené na etiketách výrobků.</string>
     <string name="bdd_open_pet_food_facts_description_label">Open Pet Food Facts je bezplatná databáze o krmivech pro domácí mazlíčky.</string>
     <string name="bdd_open_beauty_facts_description_label">Open Beauty Facts je bezplatná databáze o kosmetických produktech.</string>
     <string name="bdd_music_brainz_description_label">MusicBrainz je otevřená hudební encyklopedie, která shromažďuje hudební metadata a zpřístupňuje je veřejnosti.</string>

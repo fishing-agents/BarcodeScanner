@@ -469,7 +469,7 @@
     <string name="preferences_switch_dark_theme_label">Dunkel</string>
     <string name="preferences_switch_black_theme_label">Schwarz</string>
     <string name="preferences_color">Hauptfarbe</string>
-    <string name="preferences_color_material_you">System („Material You“: Android-Designsprache)</string>
+    <string name="preferences_color_material_you">System (Material You)</string>
     <string name="preferences_color_blue">Blau</string>
     <string name="preferences_color_orange">Orange</string>
     <string name="preferences_color_green">Grün</string>
@@ -515,10 +515,10 @@
     <!-- Scan Settings -->
     <string name="preferences_scan_title">Scan</string>
     <string name="preferences_switch_scan_use_camera_x_api_label">CameraX-Schnittstelle (API) verwenden</string>
-    <string name="preferences_switch_scan_vibrate_label">Vibrieren bei erfolgreichem Scan</string>
-    <string name="preferences_switch_scan_bip_label">Ton ausgeben bei erfolgeichem Scan</string>
+    <string name="preferences_switch_scan_vibrate_label">Bei erfolgreichem Scan vibrieren</string>
+    <string name="preferences_switch_scan_bip_label">Bei erfolgeichem Scan Ton abspielen</string>
     <string name="preferences_switch_scan_screen_rotation_label">Automatische Drehung während des Scans deaktivieren</string>
-    <string name="preferences_switch_scan_barcode_copied_label">Kopieren des gescannten Barcodes in die Zwischenablage</string>
+    <string name="preferences_switch_scan_barcode_copied_label">Gescannte Barcodes in die Zwischenablage kopieren</string>
     <string name="preferences_switch_scan_add_barcode_to_the_history_label">Gescannte Barcodes zum Verlauf hinzufügen</string>
     <string name="preferences_seek_bar_camera_default_zoom_value_label">Standardwert des Kamerazooms</string>
     <!-- Barcode Generation Settings -->
@@ -721,7 +721,7 @@
     <string name="custom_url_deleted">Eigene URL gelöscht!</string>
     <string name="custom_search_urls_error_url">Der Begriff „%1$s“ muss in der URL enthalten sein.</string>
     <string name="action_share_vcf_file">Als VCF teilen</string>
-    <string name="preferences_display_barcode_image_results_view">Anzeigen des Barcode-Bildes in der Ergebnisansicht</string>
+    <string name="preferences_display_barcode_image_results_view">Barcode-Bild in der Ergebnisansicht anzeigen</string>
     <string name="app_name">Barcode-Scanner</string>
     <string name="matrix_contact_job_title_label">Beruf</string>
     <string name="snack_bar_message_items_deleted">Einträge aus dem Verlauf gelöscht.</string>
