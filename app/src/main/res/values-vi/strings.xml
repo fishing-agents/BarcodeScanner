@@ -511,4 +511,5 @@
     <string name="country_usa">Hoa Kỳ</string>
     <string name="country_ca">Canada</string>
     <string name="country_fr">Pháp</string>
+    <string name="dependency_by">bởi %1$s</string>
 </resources>
