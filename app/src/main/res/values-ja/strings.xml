@@ -325,4 +325,6 @@
     <string name="menu_item_history_removed_from_history">履歴から削除しました!</string>
     <string name="menu_item_history_add_in_history">履歴に追加</string>
     <string name="menu_item_history_added_in_history">履歴に追加しました!</string>
+    <string name="error">エラー</string>
+    <string name="image_view_description_type_icon">タイプ</string>
 </resources>
