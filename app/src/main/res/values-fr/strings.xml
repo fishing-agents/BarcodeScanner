@@ -739,4 +739,10 @@
     <string name="text_colon" translatable="false">%1$s :</string>
     <string name="preferences_switch_scan_barcode_type_filter_label">Sélectionnez les types de code-barres à scanner</string>
     <string name="preferences_scan_rate_limit_duration_summary">%s</string>
+    <string name="non_whitelisted_barcode_message">La lecture de ce type de code-barres est désactivée. Vous pouvez l\'activer dans les réglages ou l\'autoriser pour cette fois.</string>
+    <string name="allow_this_time">Autoriser une fois</string>
+    <string name="go_back">Retour</string>
+    <string name="preferences_switch_scan_rate_limit_label">Limiter la fréquence des scans</string>
+    <string name="preferences_scan_rate_limit_duration_label">Durée de la limitation</string>
+    <string name="non_whitelisted_barcode_title">%s non approuvés</string>
 </resources>
