@@ -235,7 +235,7 @@
     <string name="action_open_link">Abrir link</string>
     <string name="action_wifi_connection_title_label">Conexão Wi-Fi</string>
     <string name="action_wifi_connection_from_app">Conectar ao Wi-Fi</string>
-    <string name="action_wifi_connection_from_wifi_settings">Copiar senha e vá para as configurações do Wi-Fi</string>
+    <string name="action_wifi_connection_from_wifi_settings">Copiar senha e ir aos ajustes do Wi-Fi</string>
     <string name="action_wifi_connection_error_wifi_not_activated">Você deve ativar o Wi-Fi em seu dispositivo!</string>
     <string name="action_wifi_password_copy_label">Senha copiada!</string>
     <string name="action_wifi_success_added_label">Conexão Wi-Fi adicionada!</string>
@@ -248,7 +248,7 @@
     <string name="error_barcode_not_a_number_message">O código de barras deve ser composto apenas de dígitos.</string>
     <string name="error_barcode_wrong_length_message">O código de barras deve conter %1$s dígitos.</string>
     <string name="error_barcode_wrong_key_message">O %1$sº dígito (dígito de verificação) deve ser %2$s.</string>
-    <string name="error_barcode_encoding_iso_8859_1_error_message">Caracteres especiais não suportados para este tipo de código de barras.</string>
+    <string name="error_barcode_encoding_iso_8859_1_error_message">Caracteres especiais não são suportados para este tipo de código de barras.</string>
     <string name="error_barcode_39_regex_error_message">O tipo de código de barras Código 39 pode codificar as 26 letras maiúsculas, os 10 dígitos (0 a 9) assim como os 7 caracteres especiais « -, ., espaço, $, /, +, % ». Letras minúsculas e outros caracteres especiais não podem ser codificado por este tipo de código de barras.</string>
     <string name="error_barcode_itf_error_message">O tipo de código de barras ITF deve conter um número par de caracteres.</string>
     <string name="error_barcode_upc_e_not_start_with_0_error_message">O tipo de código de barras UPC-E deve começar com 0.</string>
@@ -273,7 +273,7 @@
     <string name="qr_code_text_input_edit_text_hint_phone_2">Telefone 2</string>
     <string name="qr_code_text_input_edit_text_hint_phone_3">Telefone 3</string>
     <string name="qr_code_text_input_edit_text_hint_street_address">Rua</string>
-    <string name="qr_code_text_radio_button_label_m">M</string>
+    <string name="qr_code_text_radio_button_label_m">Sr.</string>
     <string name="qr_code_text_input_edit_text_hint_postal_code">Código postal</string>
     <string name="qr_code_text_input_edit_text_hint_city">Cidade</string>
     <string name="qr_code_text_input_edit_text_hint_region">Região</string>
