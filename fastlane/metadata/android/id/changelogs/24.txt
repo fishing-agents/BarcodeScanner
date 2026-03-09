@@ -1,0 +1,6 @@
+1.10.1
+
+- Meningkatkan implementasi CameraX dan memperbaiki bug.
+- Memperbaiki bug pada tampilan tema bawaan di Android 6 hingga 11.
+- Memperbaiki Intent Filter yang memungkinkan untuk mendapatkan acara dalam format .ics.
+- Pembaruan dependensi.

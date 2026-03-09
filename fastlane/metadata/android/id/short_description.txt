@@ -1,0 +1,1 @@
+Aplikasi sumber terbuka yang memungkinkan Anda membaca dan membuat barcode.

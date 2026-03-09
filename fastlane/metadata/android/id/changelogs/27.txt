@@ -1,0 +1,10 @@
+1.13.0
+
+- Menambahkan teks di bagian bawah gambar barcode.
+- Menambahkan pengaturan untuk menonaktifkan riwayat.
+- Menambahkan pembuatan Kode QR dari ID aplikasi yang terpasang.
+- Meningkatkan penghapusan item dari riwayat dalam tindakan.
+- Menambahkan tombol "tambahkan ke riwayat" dalam tindakan, jika item belum ada di riwayat.
+- Memperbaiki deteksi barcode berwarna terang pada latar belakang gelap melalui gambar.
+- Menambahkan pembuatan Kode QR dari lokasi.
+- Menambahkan tekan lama pada teks analisis barcode.

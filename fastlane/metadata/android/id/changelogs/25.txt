@@ -1,0 +1,5 @@
+1.11.0
+
+- Menambahkan terjemahan bahasa Tionghoa (oleh Hu Shenghao).
+- Menambahkan zoom kamera dengan gestur (dengan 2 jari dan dengan ketukan ganda) (oleh Hu Shenghao).
+- Beberapa peningkatan kecil lainnya.

@@ -1,0 +1,8 @@
+1.15.0
+
+- Terjemahan bahasa Polandia diperbarui (terima kasih kepada phyrz91).
+- Terjemahan bahasa Tionghoa Tradisional diperbarui (terima kasih kepada plum7x).
+- Menambahkan tingkat koreksi kesalahan untuk Kode QR.
+- Menambahkan opsi untuk menambahkan barcode yang dibuat ke riwayat (harus diaktifkan di pengaturan).
+- Mengubah pengelolaan API jarak jauh.
+- Menambahkan API MusicBrainz.

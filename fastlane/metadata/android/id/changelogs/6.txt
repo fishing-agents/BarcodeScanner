@@ -1,0 +1,2 @@
+- Menambahkan kemampuan untuk mengubah bahasa di Android 13.
+- Menambahkan akses ke kode sumber di pengaturan.

@@ -1,0 +1,6 @@
+- Menambahkan terjemahan bahasa Spanyol (Terima kasih kepada zgll2022).
+- Menambahkan Brave Search sebagai mesin pencari.
+- Mengubah ikon Eco-Score.
+- Mengubah ikon untuk tindakan "buka dengan peramban".
+- Peningkatan tema terang.
+- Peningkatan kode.

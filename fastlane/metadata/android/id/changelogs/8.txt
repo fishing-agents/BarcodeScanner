@@ -1,0 +1,3 @@
+- Menambahkan "intent-filter" yang memungkinkan pemindaian barcode dari aplikasi eksternal.
+- Menambahkan tombol sakelar untuk menonaktifkan rotasi layar otomatis selama pemindaian.
+- Memperbarui dependensi.

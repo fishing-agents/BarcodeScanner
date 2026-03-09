@@ -1,0 +1,26 @@
+Pemindai Barcode adalah aplikasi bebas dan sumber terbuka yang memungkinkan Anda membaca dan membuat barcode. Aplikasi ini dapat mengumpulkan informasi tentang produk makanan, kosmetik, buku, dan musik (CD, Vinil…).
+
+Berbagai format barcode dikelola oleh aplikasi ini:
+-  Barcode 2 dimensi: Kode QR, Data Matrix, PDF 417, AZTEC
+-  Barcode 1 dimensi: EAN 13, EAN 8, UPC A, UPC E, Code 128, Code 93, Code 39, Codabar, ITF
+
+Kumpulkan informasi tentang produk saat pemindaian:
+-  Produk makanan dengan Open Food Facts
+-  Kosmetik dengan Open Beauty Facts
+-  Produk makanan untuk hewan peliharaan dengan Open Pet Food Facts
+-  Buku dengan Open Library
+-  CD musik, Vinil… dengan MusicBrainz
+
+Fitur aplikasi:
+-  Cukup arahkan kamera ponsel cerdas Anda ke barcode dan segera dapatkan informasinya. Anda juga dapat memindai barcode melalui gambar di ponsel cerdas Anda.
+-  Dengan pemindaian sederhana, baca kartu nama, tambahkan kontak baru, tambahkan acara baru ke agenda Anda, buka URL, atau bahkan sambungkan ke Wi-Fi.
+-  Pindai barcode produk makanan untuk mendapatkan informasi tentang komposisinya berkat basis data Open Food Facts dan Open Beauty Facts.
+-  Cari informasi tentang produk yang Anda pindai, dengan pencarian cepat di berbagai situs web seperti Amazon atau Fnac.
+-  Lacak semua barcode yang Anda pindai dengan alat riwayat.
+- Buat barcode Anda sendiri.
+-  Sesuaikan antarmuka dengan berbagai warna, dengan tema terang atau gelap. Antarmuka dibangun dengan Material 3 dan kompatibel dengan Material You, sehingga Anda dapat menyesuaikan warna berdasarkan wallpaper untuk perangkat yang menjalankan Android 12 atau yang lebih baru.
+-  Teks sepenuhnya diterjemahkan ke dalam bahasa Inggris, Arab, Spanyol, Prancis, Portugis, Rusia, Jerman, Turki, Italia, Ukraina, Polandia, Belanda, Rumania, dan Tionghoa (Sederhana dan Tradisional).
+
+Aplikasi ini menghormati privasi Anda. Aplikasi ini tidak mengandung pelacak apa pun dan tidak mengumpulkan data apa pun.
+
+Kode sumber tersedia di sini: https://gitlab.com/Atharok/BarcodeScanner

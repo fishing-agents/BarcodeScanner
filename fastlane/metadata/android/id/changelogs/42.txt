@@ -1,0 +1,9 @@
+1.24.0
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Memperbarui terjemahan (Weblate).
+- Koreksi beberapa kesalahan grafis.
+- Mengubah gaya teks untuk meningkatkan keterbacaan.
+- Mengubah tema hitam OLED.
+- Beberapa peningkatan kecil.

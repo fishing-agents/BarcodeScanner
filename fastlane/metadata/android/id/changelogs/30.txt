@@ -1,0 +1,7 @@
+1.14.0
+
+- Menambahkan terjemahan bahasa Polandia (terima kasih kepada phyrz91).
+- Memperbaiki crash pada Android 7.
+- Menambahkan parameter untuk menetapkan nilai zoom bawaan kamera.
+- Menambahkan analisis Kode QR UPI.
+- Menambahkan riwayat untuk pembuatan Kode QR EPC.

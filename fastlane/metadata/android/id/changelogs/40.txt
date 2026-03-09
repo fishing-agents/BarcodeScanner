@@ -1,0 +1,12 @@
+1.22.0
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Mengganti pintasan statis dengan pintasan dinamis (Anda dapat mengatur ini di pengaturan).
+- Menambahkan pintasan untuk membuat kode QR dari papan klip (terima kasih kepada Austen).
+- Menambahkan kemampuan untuk membuat dan menggunakan URL pencarian kustom.
+- Menambahkan opsi untuk menampilkan gambar barcode dalam tampilan hasil.
+- Perbaikan bug.
+- Meningkatkan tema, gaya, dan tampilan.
+- Memperbarui terjemahan (Weblate).
+- Dependensi diperbarui.
