@@ -668,4 +668,12 @@
     <string name="value_px">%1$spx</string>
     <string name="increase">증가</string>
     <string name="decrease">감소</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">스캔할 바코드 유형 선택</string>
+    <string name="non_whitelisted_barcode_title">%s 화이트리스트에 없음</string>
+    <string name="non_whitelisted_barcode_message">이 바코드 유형은 스캔이 허용되지 않았습니다. 설정에서 허용하거나 한 번만 허용할 수 있습니다.</string>
+    <string name="allow_this_time">이번만</string>
+    <string name="go_back">돌아가기</string>
+    <string name="preferences_switch_scan_rate_limit_label">스캔 속도 제한 활성화</string>
+    <string name="preferences_scan_rate_limit_duration_label">속도 제한 간격</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
