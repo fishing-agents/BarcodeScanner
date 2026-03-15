@@ -1,0 +1,2 @@
+- Kódbeli fejlesztések.
+- Probléma kijavítva: a kamera néha nem kapcsol ki, amikor egy képről scannel be.
