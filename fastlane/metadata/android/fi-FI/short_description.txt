@@ -1,0 +1,1 @@
+Avoimen lähdekoodin sovellus, jonka avulla voit lukea ja luoda viivakoodeja.
