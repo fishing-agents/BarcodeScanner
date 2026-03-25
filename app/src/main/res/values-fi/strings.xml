@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Viivakoodilukija</string>
+    <string name="camera_permission_denied">Pääsy estetty kameraan.\nSinulla täytyy olla käyttöoikeus kameraan lukeaksi viivakoodin.</string>
+    <string name="close_dialog_label">Sulje</string>
+    <string name="yes_label">Kyllä</string>
+    <string name="no_label">Ei</string>
+    <string name="go_to_dialog_label">Syötä verkkosivu</string>
 </resources>
