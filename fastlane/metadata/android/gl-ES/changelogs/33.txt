@@ -9,7 +9,7 @@ Tradución (mediante Weblate):
 - Tradución ao francés actualizada (grazas a J. Lavoie).
 
 Novas funcións:
-- Engadido tema oscuro.
-- Engadida exportación JPG e SVG para a imaxe do código de barras.
+- Tema oscuro.
+- Engadida exportación JPG e SVG.
 - Melloras no código.
 - Algúns erros corrixidos.
