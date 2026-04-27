@@ -8,4 +8,5 @@ Changelog completo aqui: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 - Adiciona opção de exibir a imagem do código de barras na tela de resultados.
 - Corrige bugs.
 - Melhora temas, estilos e visualizações.
-- Atualizadas traduções (Weblate) e dependências.
+- Atualizadas traduções (Weblate) 
+- Atualizadas dependências.

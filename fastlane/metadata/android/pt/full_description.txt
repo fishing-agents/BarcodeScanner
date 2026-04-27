@@ -22,3 +22,5 @@ Funções do app:
 • Os textos são totalmente traduzidos em português, inglês, espanhol, francês, alemão, polaco, turco, russo e chinês.
 
 Este app respeita a sua privacidade. Ele não contém rastreadores e não coleta os seus dados.
+
+The source code is available here: https://gitlab.com/Atharok/BarcodeScanner
