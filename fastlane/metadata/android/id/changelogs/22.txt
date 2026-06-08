@@ -1,0 +1,5 @@
+1.9.1
+
+- Mendesain ulang gaya untuk integrasi penuh Material3 dan implementasi Material You yang lebih baik.
+- Mengubah warna ikon pintasan. 
+- Menambahkan logo OpenFoodFacts yang baru.

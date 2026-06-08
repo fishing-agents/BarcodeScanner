@@ -1,0 +1,5 @@
+1.7.0
+
+- Menambahkan terjemahan bahasa Jerman (Terima kasih kepada konwin).
+- Perubahan kecil pada terjemahan bahasa Rusia (Terima kasih kepada s s).
+- Beberapa peningkatan grafis.

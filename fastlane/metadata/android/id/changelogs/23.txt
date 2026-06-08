@@ -1,0 +1,7 @@
+1.10.0
+
+- Peningkatan kode.
+- Menyederhanakan akses ke tindakan setelah memindai barcode.
+- Meningkatkan implementasi CameraX.
+- Pembaruan dependensi.
+- Beberapa peningkatan dan perbaikan bug.

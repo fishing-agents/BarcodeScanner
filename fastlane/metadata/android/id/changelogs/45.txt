@@ -1,0 +1,10 @@
+1.25.0
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Menambahkan terjemahan bahasa Tamil lengkap (terima kasih kepada தமிழ்நேரம்).
+- Menambahkan terjemahan bahasa Lituania lengkap (terima kasih kepada Rokas Bo).
+- Memperbarui terjemahan (Weblate).
+- Menambahkan dukungan untuk Intent "com.google.zxing.client.android.ENCODE" untuk mengodekan dan membuat barcode dari aplikasi pihak ketiga.
+- Menambahkan fitur yang memungkinkan pemberian nama pada barcode.
+- Dependensi diperbarui.

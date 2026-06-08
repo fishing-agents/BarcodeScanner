@@ -1,0 +1,3 @@
+- Memperbarui dependensi.
+- Memperbaiki pembukaan aplikasi dengan pintasan yang tidak berfungsi untuk "riwayat" dan "buat".
+- Memperbaiki pemindaian dari gambar saat memindai dari aplikasi eksternal (intent-filter).

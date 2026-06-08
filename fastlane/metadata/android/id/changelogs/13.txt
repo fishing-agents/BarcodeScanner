@@ -1,0 +1,7 @@
+- Memperbarui versi Kotlin (1.7.20).
+- Beberapa perbaikan pada string (bahasa Inggris).
+- Menambahkan tombol sakelar di pengaturan untuk menyalin isi barcode yang dipindai ke papan klip secara otomatis.
+- Peningkatan kode.
+- Menambahkan kemampuan untuk mengueri API jarak jauh secara manual.
+- Menambahkan dukungan untuk pembuatan Kode QR EPC.
+- Menambahkan tombol pencarian di bilah alat untuk Kode QR yang berisi URL.

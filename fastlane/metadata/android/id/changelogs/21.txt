@@ -1,0 +1,9 @@
+1.9.0
+
+- Ikon baru + ikon animasi pada Splash Screen.
+- Menambahkan animasi transisi antar tampilan dalam pembuatan barcode.
+- Menambahkan animasi ikon pada BottomNavigationView.
+- Meningkatkan kode dan gaya. Mengganti komponen Spinner dengan MaterialAutoCompleteTextView.
+- Menghapus font Roboto. Sekarang aplikasi menggunakan font sistem.
+- Menambahkan fitur sistem.
+- Terjemahan bahasa Rusia diperbarui (Terima kasih kepada s s).

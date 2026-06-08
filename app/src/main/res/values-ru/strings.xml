@@ -254,7 +254,7 @@
     <string name="matrix_wifi_is_hidden_label">Скрытая</string>
     <string name="matrix_wifi_anonymous_identity_label">Анонимная идентификация</string>
     <string name="matrix_wifi_identity_label">Идентификация</string>
-    <string name="matrix_wifi_eap_method_label">EAP</string>
+    <string name="matrix_wifi_eap_method_label">Метод EAP</string>
     <string name="matrix_wifi_phase_2_method_label">Phase 2</string>
     <!-- Matrix Barcode URL Analysis -->
     <string name="matrix_uri_url_label">URL</string>

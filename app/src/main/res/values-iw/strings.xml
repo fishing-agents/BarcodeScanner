@@ -663,4 +663,12 @@
     <string name="country_de">גרמניה</string>
     <string name="country_jp">יפן</string>
     <string name="country_ru">רוסיה</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">בחירת סוגי ברקוד לסריקה</string>
+    <string name="non_whitelisted_barcode_title">%s לא ברשימת ההיתרים</string>
+    <string name="non_whitelisted_barcode_message">אין אפשרות לסרוק את סוג הברקוד הזה. ניתן להפעיל סריקת סוג זה בהגדרות או לאפשר רק הפעם.</string>
+    <string name="allow_this_time">אפשר רק הפעם</string>
+    <string name="go_back">חזרה אחורה</string>
+    <string name="preferences_switch_scan_rate_limit_label">הפעלת הגבלת קצב סריקה</string>
+    <string name="preferences_scan_rate_limit_duration_label">משך הגבלת הקצב</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

@@ -1,0 +1,17 @@
+1.17.0
+
+Fitur baru:
+- Menambahkan mesin pencari bawaan peramban.
+- Menambahkan koneksi Wi-Fi dengan keamanan WPA3 (terima kasih kepada Mateus J.).
+Terjemahan (menggunakan Weblate):
+- Menambahkan terjemahan bahasa Portugis (Brasil) (terima kasih kepada joaooliva).
+- Menambahkan terjemahan bahasa Jepang (belum lengkap) (terima kasih kepada しいたけ).
+- Menambahkan terjemahan bahasa Ukraina (belum lengkap) (terima kasih kepada MaSHiNiK).
+- Menambahkan terjemahan bahasa Italia (belum lengkap) (terima kasih kepada Tua madre).
+- Menambahkan terjemahan bahasa Indonesia (belum lengkap) (terima kasih kepada Reza).
+- Memperbarui terjemahan bahasa Jerman (terima kasih kepada Fabian Rennebeck).
+- Memperbarui terjemahan Bokmål Norwegia (terima kasih kepada Allan Nordhøy).
+- Memperbarui terjemahan bahasa Tionghoa (Sederhana) (terima kasih kepada 御坂13766号 dan Red Star Over Earth).
+- Memperbarui terjemahan bahasa Polandia (terima kasih kepada Eryk Michalak).
+- Memperbarui terjemahan bahasa Turki (terima kasih kepada abfreeman).
+- Memperbarui terjemahan bahasa Spanyol (terima kasih kepada gallegonovato).

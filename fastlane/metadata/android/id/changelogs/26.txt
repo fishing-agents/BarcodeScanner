@@ -1,0 +1,9 @@
+1.12.0
+
+- Menambahkan terjemahan bahasa Tionghoa Tradisional (oleh plum7x).
+- Pembaruan Kotlin (1.8.0). Pembaruan dependensi.
+- Menambahkan penghapusan gambar yang dihasilkan oleh tampilan crop saat memindai dari gambar.
+- Menambahkan pemilihan dan penghapusan beberapa item dari riwayat.
+- Menambahkan penghapusan item dari tampilan hasil.
+- Meningkatkan warna dan gaya.
+- Meningkatkan kode.

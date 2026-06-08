@@ -1,0 +1,10 @@
+1.18.0
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Memperbarui terjemahan (menggunakan Weblate).
+- Menambahkan terjemahan bahasa Italia (terima kasih kepada Kevin Concilio).
+- Menambahkan pengalihan bahasa untuk perangkat yang menjalankan Android 7 atau lebih tinggi (terima kasih kepada Hu Shenghao).
+- Menambahkan ekspor basis data dalam CSV dan JSON.
+- Menambahkan impor berkas JSON ke basis data.
+- Pembaruan dependensi.

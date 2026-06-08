@@ -1,0 +1,3 @@
+1.16.1
+
+Penghapusan izin QUERY_ALL_PACKAGES setelah penolakan pembaruan aplikasi di Google Play.

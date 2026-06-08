@@ -742,4 +742,5 @@
     <string name="preferences_switch_scan_rate_limit_label">啟用掃描速率限制</string>
     <string name="preferences_scan_rate_limit_duration_label">速率限制時間長度</string>
     <string name="non_whitelisted_barcode_message">此條碼類型未啟用掃描。您可以在設定中啟用，或者僅此次允許。</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>

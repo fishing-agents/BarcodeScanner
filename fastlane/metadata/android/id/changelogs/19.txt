@@ -1,0 +1,5 @@
+1.8.0
+
+- Implementasi API CameraX.
+- Peningkatan tampilan dalam mode lanskap.
+- Beberapa peningkatan pada terjemahan bahasa Rusia (Terima kasih kepada s s).

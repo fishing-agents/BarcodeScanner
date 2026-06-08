@@ -128,7 +128,7 @@
     <string name="matrix_agenda_description_event_label">Aprašymas</string>
     <string name="matrix_email_cc_label">CC</string>
     <string name="matrix_wifi_encryption_label">Šifravimas</string>
-    <string name="matrix_wifi_eap_method_label">EAP</string>
+    <string name="matrix_wifi_eap_method_label">Eap metodas</string>
     <string name="matrix_wifi_phase_2_method_label">Phase 2</string>
     <string name="matrix_uri_url_label">URL</string>
     <string name="matrix_uri_malicious_label">URL gali būti kenkėjiškas…</string>
@@ -191,7 +191,7 @@
     <string name="nutriscore_description_e">Labai bloga maistinė kokybė</string>
     <string name="nutriscore_description_d">Bloga maistinė kokybė</string>
     <string name="nova_group_description">NOVA Group - tai keturių grupių klasifikacija, skirta perdirbtų maisto produktų lygiui pabrėžti:\n1 - Neperdirbtas arba minimaliai perdirbtas maistas\n2 - Perdirbti ingredientai\n3 - Perdirbtas maistas\n4 - Itin perdirbtas maistas ir gėrimai</string>
-    <string name="nutriscore_description">Nutri-Score yra logotipas, informuojantis apie maisto maistinę kokybę su įvertinimais nuo A iki E. Įvertinant balus atsižvelgiama į maistines medžiagas, maistą, kurį <b>reikia skatinti </b>(ląstelieną, baltymus, vaisius, daržoves, ankštinius augalus, aliejinių augalų sėklas) ir <b>riboti</b> (didelę energinę vertę, sočiąsias riebalų rūgštis, cukrų, druską).</string>
+    <string name="nutriscore_description">Nutri-Score yra logotipas, informuojantis apie maisto maistinę kokybę su įvertinimais nuo A iki E. Įvertinant balus atsižvelgiama į maistines medžiagas, maistą, kurį <b>reikia skatinti</b> (ląstelieną, baltymus, vaisius, daržoves, ankštinius augalus, aliejinių augalų sėklas) ir <b>riboti</b> (didelę energinę vertę, sočiąsias riebalų rūgštis, cukrų, druską).</string>
     <string name="nutriscore_description_unknown">Nėra „Nutri-Score“</string>
     <string name="nova_group_description_1">Neperdirbtas arba minimaliai perdirbtas maistas</string>
     <string name="nova_group_description_2">Perdirbti ingredientai</string>
@@ -274,7 +274,7 @@
     <string name="snack_bar_message_permission_refused">Norėdami naudotis šia funkcija, turite sutikti su leidimu.</string>
     <string name="actions_label">Veiksmai</string>
     <string name="barcode_ean_8_description_label">Kodas EAN-8 (European Article Numbering 8) - tai sutrumpintas EAN-13 kodo brūkšninis kodas, naudojamas parduotuvėse parduodamiems produktams Europoje ir beveik visame pasaulyje identifikuoti. Jis naudojamas ant pakuočių, kurios yra per mažos būti pažymėtos EAN-13 kodu.</string>
-    <string name="barcode_search_error_label">URL nepalaikomas</string>
+    <string name="barcode_search_error_label">Url nepalaikomas</string>
     <string name="action_add_to_calendar">Pridėti į kalendorių</string>
     <string name="action_add_to_contacts">Pridėti prie kontaktų</string>
     <string name="background_color">Fono spalva</string>

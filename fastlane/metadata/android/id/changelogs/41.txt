@@ -1,0 +1,12 @@
+1.23.0
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Menambahkan terjemahan bahasa Katalan (terima kasih kepada Paco Rivière).
+- Nama aplikasi diterjemahkan ke beberapa bahasa.
+- Menambahkan tombol sakelar untuk mengabaikan entri duplikat di riwayat.
+- Menambahkan tombol urung pada snackbar saat menghapus item.
+- Menghapus dependensi yang mengimplementasikan API Kamera lama, dan hanya mempertahankan implementasi CameraX.
+- Memperbaiki crash yang dapat terjadi selama impor VCard.
+- Memperbarui dependensi.
+- Beberapa peningkatan kecil.

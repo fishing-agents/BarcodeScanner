@@ -1,0 +1,4 @@
+- Mengubah pustaka yang memungkinkan pemindaian barcode.
+- Memperbarui: versi Kotlin (1.7.10), SDK (API 33), dan dependensi.
+- Peningkatan kode.
+- Menambahkan ikon monokrom untuk Android 13.

@@ -1,0 +1,15 @@
+1.16.0
+
+Terjemahan (menggunakan Weblate):
+- Menambahkan terjemahan bahasa Turki (terima kasih kepada abfreeman).
+- Menambahkan Bokmål Norwegia (belum lengkap) (terima kasih kepada Allan Nordhøy).
+- Memperbarui terjemahan bahasa Spanyol (terima kasih kepada J. Lavoie dan gallegonovato).
+- Memperbarui terjemahan bahasa Tionghoa Tradisional (terima kasih kepada plum7x).
+- Memperbarui terjemahan bahasa Jerman (terima kasih kepada J. Lavoie).
+- Memperbarui terjemahan bahasa Prancis (terima kasih kepada J. Lavoie).
+
+Fitur baru:
+- Menambahkan tema hitam.
+- Menambahkan ekspor JPG dan SVG untuk gambar barcode.
+- Beberapa peningkatan kode.
+- Beberapa bug diperbaiki.

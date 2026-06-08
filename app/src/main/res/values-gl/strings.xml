@@ -150,7 +150,7 @@
     <string name="countries_label">País de venta</string>
     <string name="ingredients_no_information_found_label">Non se atoparon ingredientes para este produto…</string>
     <string name="additives_label">Aditivos</string>
-    <string name="veggie_label">Veggie</string>
+    <string name="veggie_label">Vegano</string>
     <string name="off_additive_info_label">Información</string>
     <string name="off_risk_low_label">Seguro</string>
     <string name="off_risk_moderate_label">Dubidoso</string>

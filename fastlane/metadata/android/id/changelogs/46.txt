@@ -1,0 +1,8 @@
+1.25.1
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Menambahkan dukungan untuk margin di sekitar gambar barcode.
+- Memperbarui terjemahan (Weblate).
+- Memperbarui versi Kotlin dan dependensi.
+- Beberapa penyesuaian dalam kode.

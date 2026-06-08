@@ -1,0 +1,7 @@
+1.25.2
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Memperbarui terjemahan (Weblate).
+- Mengubah satuan margin gambar barcode: sekarang dinyatakan dalam piksel, bukan persentase.
+- Menambahkan tombol untuk menetapkan nilai margin dengan lebih presisi.

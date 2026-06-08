@@ -1,0 +1,7 @@
+1.25.3
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Memperbarui terjemahan (Weblate).
+- Memperbaiki crash yang dapat terjadi saat menambahkan jaringan Wi-Fi dari kode QR (terima kasih kepada Markus Fisch).
+- Dependensi diperbarui.

@@ -1,0 +1,11 @@
+1.26.0
+
+Log perubahan lengkap di sini: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Memperbarui terjemahan (Weblate).
+- Menambahkan kemampuan untuk memilih jenis barcode yang akan dipindai (terima kasih kepada purr purr).
+- Menambahkan pembatasan untuk mencegah pemindaian barcode yang sama beberapa kali (dapat diaktifkan di pengaturan) (terima kasih kepada purr purr).
+- Memperbarui ke Android 16 (API 36).
+- Versi minimum yang didukung sekarang adalah Android 6 (API 23).
+- Penyesuaian kode.
+- Dependensi diperbarui.

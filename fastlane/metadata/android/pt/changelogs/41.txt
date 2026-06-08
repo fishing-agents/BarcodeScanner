@@ -9,4 +9,4 @@ Changelog inteiro aqui: https://gitlab.com/Atharok/BarcodeScanner/-/releases
 - Removida dependência implementando API antiga da câmara, mantendo apenas implementação CameraX
 - Corrigidos crashes que poderiam ocorrer durante importação do VCard
 - Dependências atualizadas
-- Várias melhorias menores
+- Várias melhorias menores.

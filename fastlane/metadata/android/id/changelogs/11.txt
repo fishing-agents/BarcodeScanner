@@ -1,0 +1,2 @@
+- Peningkatan kode.
+- Memperbaiki masalah pada kamera yang terkadang tidak mati saat memindai dari gambar.

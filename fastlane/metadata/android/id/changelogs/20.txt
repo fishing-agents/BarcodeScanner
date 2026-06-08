@@ -1,0 +1,4 @@
+1.8.1
+
+- Perbaikan: Menambahkan implementasi API CameraX saat memindai melalui Intent.
+- Dependensi diperbarui.

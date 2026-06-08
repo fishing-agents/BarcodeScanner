@@ -671,4 +671,12 @@
     <string name="error">Erro</string>
     <string name="snack_bar_message_items_deleted">Elementos removidos do histórico.</string>
     <string name="barcode_search_error_no_compatible_application_found">Nenhuma aplicação compatível encontrada</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">Selecione tipos de código de barras para escanear</string>
+    <string name="non_whitelisted_barcode_title">%s Não Permitido</string>
+    <string name="non_whitelisted_barcode_message">Este tipo de código de barras não está ativado para escaneamento. Pode ativá-lo nas configurações ou permiti-lo somente desta vez.</string>
+    <string name="allow_this_time">Permitir Desta Vez</string>
+    <string name="go_back">Voltar</string>
+    <string name="preferences_switch_scan_rate_limit_label">Ativar limitação da taxa de escaneamento</string>
+    <string name="preferences_scan_rate_limit_duration_label">Duração do limite de taxa</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
