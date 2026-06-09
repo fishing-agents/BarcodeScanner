@@ -1,0 +1,7 @@
+1.26.1
+
+Full changelog here: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Updated translations (Weblate).
+- Minor adjustments to the shortcut icons.
+- Updated dependencies.
