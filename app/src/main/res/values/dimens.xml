@@ -22,6 +22,7 @@
     <dimen name="medium_margin">12dp</dimen>
     <dimen name="large_margin">16dp</dimen>
     <dimen name="history_item_margin">32dp</dimen>
+    <dimen name="shortcut_padding">24dp</dimen>
 
     <!-- Text -->
     <dimen name="large_text_size">20sp</dimen>
