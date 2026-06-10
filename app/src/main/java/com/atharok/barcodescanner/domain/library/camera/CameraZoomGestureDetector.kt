@@ -94,7 +94,7 @@ class CameraZoomGestureDetector(@FloatRange(from = 0.0, to = 1.0) defaultZoom: F
     }
 
     private fun getNextLevelZoom(currentZoom: Float): Float {
-        if (currentZoom >= MAX_ZOOM || currentZoom < MIN_ZOOM) {
+        if (currentZoom !in MIN_ZOOM..<MAX_ZOOM) {
             return MIN_ZOOM
         }
         var zoom = ((currentZoom / ZOOM_LEVEL_STEP).toInt() + 1) * ZOOM_LEVEL_STEP

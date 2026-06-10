@@ -34,7 +34,7 @@ import com.google.zxing.Result
 import com.google.zxing.common.HybridBinarizer
 import kotlin.math.roundToInt
 
-class CameraXBarcodeAnalyzer(
+class CameraBarcodeAnalyzer(
     private val barcodeDetector: BarcodeDetector
 ) : ImageAnalysis.Analyzer {
 

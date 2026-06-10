@@ -21,6 +21,7 @@
 package com.atharok.barcodescanner.common.extensions
 
 import android.content.Context
+import android.content.pm.PackageManager
 import android.content.res.ColorStateList
 import android.util.TypedValue
 import androidx.annotation.AttrRes
@@ -53,3 +54,5 @@ fun Context.getColorStateListFromAttrRes(@AttrRes attrRes: Int): ColorStateList 
     @ColorRes val colorRes = getColorRes(attrRes)
     return AppCompatResources.getColorStateList(this, colorRes)
 }
+
+fun Context.hasFlash(): Boolean = applicationContext.packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)
