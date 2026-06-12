@@ -10,12 +10,11 @@
     <string name="barcode_code_39_label">Code 39</string>
     <string name="barcode_codabar_label">Codabar</string>
     <string name="barcode_itf_label">ITF</string>
-    <string name="camera_permission_denied">لقد رفضت الوصول إلى الكاميرا.
-\nيجب السماح بذلك لمسح الشفرات.</string>
+    <string name="camera_permission_denied">لقد رفضت الوصول إلى الكاميرا.\nيجب عليك السماح لها بمسح الباركود.</string>
     <string name="close_dialog_label">إغلاق</string>
     <string name="yes_label">نعم</string>
     <string name="no_label">لا</string>
-    <string name="go_to_dialog_label">اذهب إلى الموقع</string>
+    <string name="go_to_dialog_label">الدخول إلى الموقع الإلكتروني</string>
     <string name="image_view_description_flag">علم</string>
     <string name="image_view_description_logo">شعار</string>
     <string name="image_view_description_type_icon">نوع</string>
