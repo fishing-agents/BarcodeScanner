@@ -6,7 +6,7 @@
     <string name="close_dialog_label">关闭</string>
     <string name="yes_label">是</string>
     <string name="no_label">否</string>
-    <string name="go_to_dialog_label">打开网址</string>
+    <string name="go_to_dialog_label">进入网站</string>
     <!-- ImageView Description -->
     <string name="image_view_description_flag">标志</string>
     <string name="image_view_description_logo">标识</string>
@@ -28,7 +28,7 @@
     <string name="title_bar_code_creator">生成条码</string>
     <string name="information_label">信息</string>
     <string name="barcode_label">条码</string>
-    <string name="download_from_api_label">下载</string>
+    <string name="download_from_api_label">从 API 下载</string>
     <string name="menu_more">更多</string>
     <!-- Barcode Type -->
     <string name="barcode_qr_code_label">QR 码</string>
@@ -45,24 +45,24 @@
     <string name="barcode_codabar_label">Codabar</string>
     <string name="barcode_itf_label">ITF</string>
     <!-- QR Type -->
-    <string name="qr_code_type_name_text">文字</string>
-    <string name="qr_code_type_name_web_site">网址</string>
+    <string name="qr_code_type_name_text">文本</string>
+    <string name="qr_code_type_name_web_site">网站</string>
     <string name="qr_code_type_name_contact">联系人</string>
     <string name="qr_code_type_name_epc">EPC QR 码</string>
     <string name="qr_code_type_name_mail">邮件</string>
     <string name="qr_code_type_name_sms">短信</string>
-    <string name="qr_code_type_name_phone">电话</string>
+    <string name="qr_code_type_name_phone">电话号码</string>
     <string name="qr_code_type_name_geographic_coordinates">地理坐标</string>
     <string name="qr_code_type_name_agenda">日程</string>
     <string name="qr_code_type_name_wifi">Wi-Fi</string>
-    <string name="qr_code_type_name_apps">应用</string>
+    <string name="qr_code_type_name_apps">应用程序</string>
     <!-- Product Type -->
     <string name="bar_code_type_unknown_product">产品</string>
     <string name="bar_code_type_food">食品</string>
     <string name="bar_code_type_pet_food">宠物食品</string>
     <string name="bar_code_type_beauty">美容产品</string>
     <string name="bar_code_type_music">音乐</string>
-    <string name="bar_code_type_unknown_music_album_title">未知专辑</string>
+    <string name="bar_code_type_unknown_music_album_title">专辑标题未知</string>
     <string name="bar_code_type_book">书籍</string>
     <string name="bar_code_type_unknown_book_title">未知书名</string>
     <string name="bar_code_type_industrial">工业</string>
@@ -76,20 +76,20 @@
     <string name="qr_code_error_correction_level_name_quartile">四分之一 (~25%)</string>
     <string name="qr_code_error_correction_level_name_high">高 (~30%)</string>
     <!-- History -->
-    <string name="label_history_empty">没有扫描记录…</string>
-    <string name="snack_bar_message_item_deleted">记录 “%1$s” 已经从扫描记录中删除。</string>
+    <string name="label_history_empty">未扫描元素…</string>
+    <string name="snack_bar_message_item_deleted">产品“%1$s”已从历史记录中删除。</string>
     <string name="popup_message_confirmation_delete_history">删除所有历史记录？</string>
-    <string name="popup_message_confirmation_delete_selected_items_history">删除选中的项目？</string>
+    <string name="popup_message_confirmation_delete_selected_items_history">删除所选项目？</string>
     <string name="menu_item_history_delete">删除历史记录</string>
     <string name="menu_item_history_delete_from_history">从历史记录中删除</string>
-    <string name="menu_item_history_removed_from_history">已从历史记录中删除！</string>
-    <string name="menu_item_history_add_in_history">添加历史记录</string>
-    <string name="menu_item_history_added_in_history">已添加到历史记录中！</string>
+    <string name="menu_item_history_removed_from_history">已从历史记录中移除！</string>
+    <string name="menu_item_history_add_in_history">添加到历史记录</string>
+    <string name="menu_item_history_added_in_history">已添加到历史记录！</string>
     <string name="delete_label">删除</string>
     <string name="cancel_label">取消</string>
     <string name="record_label">保存</string>
     <!-- CaptureActivity -->
-    <string name="scan_cancel_label">扫描取消！</string>
+    <string name="scan_cancel_label">扫描已取消！</string>
     <string name="scan_error_exception_label">发生错误：%1$s</string>
     <string name="flash_label">闪光灯</string>
     <string name="scan_from_image_label">图片</string>
@@ -97,7 +97,7 @@
     <string name="scan_information_label">对准条码进行扫描</string>
     <!-- BarcodeAnalysisActivity -->
     <string name="barcode_information_search_label">搜索中…</string>
-    <string name="scan_error_label">扫描出错!</string>
+    <string name="scan_error_label">扫描时出错！</string>
     <string name="scan_error_short_information_label">搜索信息时发生错误！</string>
     <string name="barcode_scanned_label">%1$s 已扫描！</string>
     <string name="barcode_found_on_label">发现 %1$s！</string>
@@ -234,7 +234,7 @@
     <string name="matrix_contact_address_label">地址</string>
     <string name="matrix_contact_notes_label">备注</string>
     <!-- Matrix Barcode Agenda Analysis -->
-    <string name="matrix_agenda_name_event_label">事件名</string>
+    <string name="matrix_agenda_name_event_label">活动名称</string>
     <string name="matrix_agenda_start_date_event_label">开始</string>
     <string name="matrix_agenda_end_date_event_label">结束</string>
     <string name="matrix_agenda_place_event_label">地点</string>
@@ -286,21 +286,21 @@
     <string name="barcode_ean_13_description_label">EAN-13（欧洲商品编码13）广泛用于识别在欧洲和世界各地的商店和商店销售的产品的一种条形码。由13位数字组成。</string>
     <string name="barcode_ean_8_description_label">EAN-8（欧洲商品编码8）是 EAN-13 的压缩条形码，用于识别在欧洲和世界各地的商店和商店销售的产品。用于太小而不能使用 EAN-13 的包装。</string>
     <!-- Snackbar Feddbacks -->
-    <string name="snack_bar_message_permission_refused">您必须接受使用此功能的许可。</string>
+    <string name="snack_bar_message_permission_refused">您必须接受使用此功能的权限。</string>
     <string name="snack_bar_message_save_bitmap_ok">图片已保存</string>
     <string name="snack_bar_message_save_bitmap_error">图片保存失败…
 \n可能是存储空间不足？</string>
     <string name="snack_bar_message_share_bitmap_error">配置共享时出错。</string>
     <!-- Actions -->
     <string name="actions_label">操作</string>
-    <string name="intent_chooser_share_title">分享…</string>
+    <string name="intent_chooser_share_title">分享方式…</string>
     <string name="intent_chooser_mail_title">发送邮件…</string>
     <string name="copy_barcode_label">复制内容</string>
     <string name="barcode_copied_label">条码已复制</string>
     <string name="barcode_search_error_label">不支持的 URL</string>
     <string name="search_label">搜索</string>
     <string name="action_title_dialog_label">您想做什么？</string>
-    <string name="action_go_to_url_label">打开 URL</string>
+    <string name="action_go_to_url_label">前往 URL</string>
     <string name="action_web_search_label">在网络上搜索</string>
     <string name="action_product_search_label">搜索 %1$s</string>
     <string name="action_send_mail_label">发送邮件</string>
@@ -312,17 +312,17 @@
     <string name="action_open_link">打开链接</string>
     <!-- Wi-Fi Connection -->
     <string name="action_wifi_connection_title_label">Wi-Fi 连接</string>
-    <string name="action_wifi_connection_from_app">连接 Wi-Fi</string>
-    <string name="action_wifi_connection_from_wifi_settings">复制密码并打开 Wi-Fi 设置</string>
-    <string name="action_wifi_connection_error_wifi_not_activated">您必须开启 Wi-Fi!</string>
+    <string name="action_wifi_connection_from_app">连接到 Wi-Fi</string>
+    <string name="action_wifi_connection_from_wifi_settings">复制密码并转到 Wi-Fi 设置</string>
+    <string name="action_wifi_connection_error_wifi_not_activated">您必须在设备上启用 Wi-Fi！</string>
     <string name="action_wifi_password_copy_label">密码已复制！</string>
     <string name="action_wifi_success_added_label">Wi-Fi 连接已添加！</string>
     <string name="action_wifi_failure_added_label">添加 Wi-Fi 连接失败</string>
-    <string name="action_wifi_already_added_label">Wi-Fi 连接已经添加了</string>
-    <string name="action_wifi_add_network_refused">取消添加 Wi-Fi 网络。</string>
-    <string name="action_wifi_add_network_successful">添加 Wi-Fi 网络成功。</string>
+    <string name="action_wifi_already_added_label">Wi-Fi 连接已经添加</string>
+    <string name="action_wifi_add_network_refused">添加 Wi-Fi 连接被拒绝。</string>
+    <string name="action_wifi_add_network_successful">Wi-Fi 网络已添加。</string>
     <string name="action_wifi_add_network_failed">添加 Wi-Fi 网络失败。</string>
-    <string name="action_wifi_add_network_already_exists">您已添加此 Wi-Fi 网络。</string>
+    <string name="action_wifi_add_network_already_exists">您已经添加此 Wi-Fi 网络。</string>
     <string name="action_wifi_add_network_unknown_error">添加 Wi-Fi 网络时发生未知错误。</string>
     <!-- QR Code Generator -->
     <!-- Barcode Generator Errors -->
@@ -338,7 +338,7 @@
     <string name="error_barcode_itf_error_message">ITF 条形码类型必须包含偶数个字符。</string>
     <string name="error_barcode_upc_e_not_start_with_0_error_message">UPC-E 条形码类型必须以 0 开头。</string>
     <string name="error_barcode_qr_url_format_message">网址必须以 http:// 或 https:// 开头</string>
-    <string name="error_barcode_qr_phone_number_missing_message">您必须输入一个电话号码</string>
+    <string name="error_barcode_qr_phone_number_missing_message">您必须输入电话号码</string>
     <string name="error_barcode_qr_email_missing_message">您必须输入至少一个字段</string>
     <string name="error_barcode_qr_localisation_missing_message">你必须告知经纬度</string>
     <!-- Action Barcode Generated -->
@@ -346,35 +346,35 @@
     <string name="save_label">保存</string>
     <string name="share_label">分享</string>
     <string name="share_image_label">分享图片</string>
-    <string name="share_text_label">分享内容</string>
+    <string name="share_text_label">分享文本</string>
     <string name="popup_message_confirmation_save_image">保存图片吗？</string>
     <!-- Form -->
-    <string name="qr_code_text_generator_hint_text_input_edit_text">输入内容…</string>
+    <string name="qr_code_text_generator_hint_text_input_edit_text">输入文本…</string>
     <string name="qr_code_text_generator_hint_phone_input_edit_text">输入电话号码…</string>
-    <string name="qr_code_text_generator_hint_url_input_edit_text">输入网站地址…</string>
+    <string name="qr_code_text_generator_hint_url_input_edit_text">输入网址…</string>
     <string name="qr_code_text_input_edit_text_hint_message">消息</string>
     <!-- Contact Creator -->
-    <string name="qr_code_type_name_generate_from_contact">从通讯录导入</string>
+    <string name="qr_code_type_name_generate_from_contact">从通讯录生成</string>
     <string name="qr_code_text_radio_button_label_m">先生</string>
     <string name="qr_code_text_radio_button_label_mrs">女士</string>
     <string name="qr_code_text_radio_button_label_miss">小姐</string>
     <string name="qr_code_text_radio_button_label_none">无</string>
     <string name="qr_code_text_input_edit_text_hint_name">姓名</string>
     <string name="qr_code_text_input_edit_text_hint_first_name">名称</string>
-    <string name="qr_code_text_input_edit_text_hint_web_site">网址</string>
-    <string name="qr_code_text_input_edit_text_hint_mail_1">电子邮件 1</string>
-    <string name="qr_code_text_input_edit_text_hint_mail_2">电子邮件 2</string>
-    <string name="qr_code_text_input_edit_text_hint_mail_3">电子邮件 3</string>
-    <string name="qr_code_text_input_edit_text_hint_phone_1">电话 1</string>
-    <string name="qr_code_text_input_edit_text_hint_phone_2">电话 2</string>
-    <string name="qr_code_text_input_edit_text_hint_phone_3">电话 3</string>
+    <string name="qr_code_text_input_edit_text_hint_web_site">网站</string>
+    <string name="qr_code_text_input_edit_text_hint_mail_1">邮件地址 1</string>
+    <string name="qr_code_text_input_edit_text_hint_mail_2">邮件地址 2</string>
+    <string name="qr_code_text_input_edit_text_hint_mail_3">邮件地址 3</string>
+    <string name="qr_code_text_input_edit_text_hint_phone_1">电话号码 1</string>
+    <string name="qr_code_text_input_edit_text_hint_phone_2">电话号码 2</string>
+    <string name="qr_code_text_input_edit_text_hint_phone_3">电话号码 3</string>
     <string name="qr_code_text_input_edit_text_hint_street_address">街道</string>
     <string name="qr_code_text_input_edit_text_hint_postal_code">邮政编码</string>
     <string name="qr_code_text_input_edit_text_hint_city">城市</string>
     <string name="qr_code_text_input_edit_text_hint_country">国家</string>
     <string name="qr_code_text_input_edit_text_hint_region">地区</string>
     <string name="qr_code_text_input_edit_text_hint_notes">备注</string>
-    <string name="qr_code_spinner_prompt_none">无标签</string>
+    <string name="qr_code_spinner_prompt_none">无</string>
     <string name="spinner_type_mobile">手机</string>
     <string name="spinner_type_fax">传真</string>
     <string name="spinner_type_home">家庭</string>
@@ -402,7 +402,7 @@
     <!-- Geo Localisation Creator -->
     <string name="qr_code_text_input_edit_text_hint_localisation_latitude">纬度</string>
     <string name="qr_code_text_input_edit_text_hint_localisation_longitude">经度</string>
-    <string name="qr_code_text_input_edit_text_hint_localisation_request">查找</string>
+    <string name="qr_code_text_input_edit_text_hint_localisation_request">请求</string>
     <!-- Wifi Creator -->
     <string name="qr_code_text_input_edit_text_hint_wifi_ssid">SSID / 网络名称</string>
     <string name="qr_code_text_input_edit_text_hint_wifi_password">密码</string>
@@ -411,7 +411,7 @@
     <string name="spinner_wifi_encryption_wpa">WPA/WPA2</string>
     <string name="spinner_wifi_encryption_none">无密码</string>
     <!-- Event Creator -->
-    <string name="qr_code_text_input_edit_text_hint_agenda_event_name">事件名</string>
+    <string name="qr_code_text_input_edit_text_hint_agenda_event_name">活动名称</string>
     <string name="qr_code_text_input_edit_text_hint_agenda_place">地点</string>
     <string name="qr_code_text_input_edit_text_hint_agenda_description">描述</string>
     <string name="check_box_event_all_of_day">全天</string>
@@ -479,7 +479,7 @@
     <string name="preferences_remote_api_title">产品与 API</string>
     <string name="preferences_switch_scan_search_on_api_label">自动查询远程 API</string>
     <string name="preferences_remote_api_to_use_label">默认 API</string>
-    <string name="preferences_remote_api_choose_label">选择一个 API</string>
+    <string name="preferences_remote_api_choose_label">选择 API</string>
     <string name="preferences_remote_api_food_label">Open Food Facts（食品）</string>
     <string name="preferences_remote_api_cosmetic_label">Open Beauty Facts（化妆品）</string>
     <string name="preferences_remote_api_pet_food_label">Open Pet Food Facts（宠物食品）</string>
@@ -515,7 +515,7 @@
     <string name="preferences_switch_scan_vibrate_label">扫描成功后振动</string>
     <string name="preferences_switch_scan_bip_label">扫描成功后播放声音</string>
     <string name="preferences_switch_scan_screen_rotation_label">扫描时禁止旋转屏幕</string>
-    <string name="preferences_switch_scan_barcode_copied_label">复制扫描结果到剪切板</string>
+    <string name="preferences_switch_scan_barcode_copied_label">将扫描的条码复制到剪贴板</string>
     <string name="preferences_switch_scan_add_barcode_to_the_history_label">将已扫描的条码添加到历史记录中</string>
     <string name="preferences_seek_bar_camera_default_zoom_value_label">相机的缩放默认值</string>
     <!-- Barcode Generation Settings -->
@@ -678,7 +678,7 @@
     <string name="bing_label">必应</string>
     <string name="preferences_default">默认</string>
     <string name="spinner_wifi_encryption_sae">WPA3</string>
-    <string name="corners_radius">拐角半径</string>
+    <string name="corners_radius">圆角半径</string>
     <string name="snack_bar_message_file_export_success">文件已保存！</string>
     <string name="barcode_color">条码颜色</string>
     <string name="color_shades_issue">某些色调可能无法被检测到。</string>
@@ -687,18 +687,18 @@
     <string name="keep_proportions">保持比例</string>
     <string name="dimensions_label">尺寸规格</string>
     <string name="background_color">背景颜色</string>
-    <string name="snack_bar_message_file_export_error">发生了错误！ 文件未保存。</string>
+    <string name="snack_bar_message_file_export_error">发生错误！文件未保存。</string>
     <string name="copy_label">复制</string>
     <string name="export_csv_label">导出为 CSV</string>
     <string name="image_properties">图像属性</string>
-    <string name="snack_bar_message_file_import_error">发生了错误！ 文件未导入。</string>
+    <string name="snack_bar_message_file_import_error">发生错误！文件未导入。</string>
     <string name="export_label">导出</string>
     <string name="snack_bar_message_file_import_success">文件已导入！</string>
     <string name="width_label">宽度</string>
     <string name="export_json_label">导出为 JSON</string>
     <string name="colors_label">颜色</string>
     <string name="height_label">高度</string>
-    <string name="action_modify_barcode">修改条形码</string>
+    <string name="action_modify_barcode">修改条码</string>
     <string name="custom_search_urls_list_is_empty_message">无项目…\n您尚未生成自定义 URL。</string>
     <string name="preferences_display_barcode_image_results_view">在结果视图中显示条形码图像</string>
     <string name="error">错误</string>
@@ -727,11 +727,11 @@
     <string name="preferences_switch_history_save_duplicates_label">保存重复项</string>
     <string name="preferences_switch_history_save_duplicates_summary_on">重复项将添加到历史记录中</string>
     <string name="preferences_switch_history_save_duplicates_summary_off">重复项不会添加到历史记录中</string>
-    <string name="snack_bar_message_items_deleted">从历史记录中删除的项目。</string>
+    <string name="snack_bar_message_items_deleted">项目已从历史记录中删除。</string>
     <string name="margins">边距</string>
     <string name="apply">应用</string>
-    <string name="action_assign_a_name">分配一个名称</string>
-    <string name="barcode_not_found">未发现条形码</string>
+    <string name="action_assign_a_name">分配名称</string>
+    <string name="barcode_not_found">未找到条码</string>
     <string name="value_px">%1$spx</string>
     <string name="increase">增加</string>
     <string name="decrease">减少</string>
