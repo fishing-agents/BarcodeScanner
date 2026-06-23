@@ -656,4 +656,19 @@
     <string name="country_nz">நியூசிலாந்து</string>
     <string name="country_my">மலேசியா</string>
     <string name="country_mo">மகாவோ</string>
+    <string name="barcode_not_found">பார்கோடு கிடைக்கவில்லை</string>
+    <string name="action_assign_a_name">ஒரு பெயரை ஒதுக்கவும்</string>
+    <string name="apply">இடு</string>
+    <string name="margins">விளிம்புகள்</string>
+    <string name="value_px">%1$spx</string>
+    <string name="increase">அதிகரிக்கவும்</string>
+    <string name="decrease">குறைக்கவும்</string>
+    <string name="preferences_switch_scan_barcode_type_filter_label">வருடு செய்ய பார்கோடு வகைகளைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="non_whitelisted_barcode_title">%s அனுமதிப்பட்டியலில் இல்லை</string>
+    <string name="non_whitelisted_barcode_message">இந்த பார்கோடு வகை வருடு செய்ய இயக்கப்படவில்லை. நீங்கள் அதை அமைப்புகளில் இயக்கலாம் அல்லது இதை ஒருமுறை அனுமதிக்கலாம்.</string>
+    <string name="allow_this_time">இந்த நேரத்தை அனுமதிக்கவும்</string>
+    <string name="go_back">திரும்பி செல்</string>
+    <string name="preferences_switch_scan_rate_limit_label">வருடு விகித வரம்பை இயக்கவும்</string>
+    <string name="preferences_scan_rate_limit_duration_label">விகித வரம்பு காலம்</string>
+    <string name="preferences_scan_rate_limit_duration_summary">%s</string>
 </resources>
