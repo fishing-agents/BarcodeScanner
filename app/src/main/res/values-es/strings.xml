@@ -28,11 +28,11 @@
     <string name="title_bar_code_creator">Generar un código de barras</string>
     <string name="information_label">Información</string>
     <string name="barcode_label">Código de barras</string>
-    <string name="download_from_api_label">Descargar de las APIs</string>
+    <string name="download_from_api_label">Descargar desde las APIs</string>
     <string name="menu_more">Más</string>
     <!-- Barcode Type -->
-    <string name="barcode_qr_code_label">QR Code</string>
-    <string name="barcode_data_matrix_label">Data Matrix</string>
+    <string name="barcode_qr_code_label">Código QR</string>
+    <string name="barcode_data_matrix_label">Matriz de datos</string>
     <string name="barcode_pdf_417_label">PDF 417</string>
     <string name="barcode_aztec_label">AZTEC</string>
     <string name="barcode_ean_13_label">EAN 13</string>
@@ -48,7 +48,7 @@
     <string name="qr_code_type_name_text">Texto</string>
     <string name="qr_code_type_name_web_site">Página web</string>
     <string name="qr_code_type_name_contact">Contacto</string>
-    <string name="qr_code_type_name_epc">Código EPC QR</string>
+    <string name="qr_code_type_name_epc">Código QR EPC</string>
     <string name="qr_code_type_name_mail">Correo</string>
     <string name="qr_code_type_name_sms">SMS</string>
     <string name="qr_code_type_name_phone">Número de teléfono</string>
@@ -64,27 +64,27 @@
     <string name="bar_code_type_music">Música</string>
     <string name="bar_code_type_unknown_music_album_title">Título del álbum desconocido</string>
     <string name="bar_code_type_book">Libro</string>
-    <string name="bar_code_type_unknown_book_title">Título desconocido</string>
+    <string name="bar_code_type_unknown_book_title">Título del libro desconocido</string>
     <string name="bar_code_type_industrial">Código industrial</string>
     <string name="bar_code_type_unknown_matrix">Código  matricial</string>
     <string name="bar_code_type_name_unknown">Desconocido</string>
     <!-- Error Correction Level -->
     <string name="qr_code_error_correction_level_label">Nivel de corrección de errores</string>
     <string name="qr_code_error_correction_level_settings_label">Nivel de corrección de errores (código QR)</string>
-    <string name="qr_code_error_correction_level_name_low">Low (~7%)</string>
-    <string name="qr_code_error_correction_level_name_medium">Medium (~15%)</string>
+    <string name="qr_code_error_correction_level_name_low">Bajo (~7%)</string>
+    <string name="qr_code_error_correction_level_name_medium">Medio (~15%)</string>
     <string name="qr_code_error_correction_level_name_quartile">Cuartil (~25%)</string>
-    <string name="qr_code_error_correction_level_name_high">High (~30%)</string>
+    <string name="qr_code_error_correction_level_name_high">Alto (~30%)</string>
     <!-- History -->
     <string name="label_history_empty">No se ha escaneado ningún código…</string>
     <string name="snack_bar_message_item_deleted">El producto \"%1$s\" ha sido eliminado del historial.</string>
     <string name="popup_message_confirmation_delete_history">¿Eliminar todo el historial?</string>
-    <string name="popup_message_confirmation_delete_selected_items_history">¿Borrar los elementos seleccionados?</string>
+    <string name="popup_message_confirmation_delete_selected_items_history">¿Eliminar los elementos seleccionados?</string>
     <string name="menu_item_history_delete">Eliminar historial</string>
     <string name="menu_item_history_delete_from_history">Borrar del historial</string>
     <string name="menu_item_history_removed_from_history">¡Eliminado del historial!</string>
-    <string name="menu_item_history_add_in_history">Añadir a la historia</string>
-    <string name="menu_item_history_added_in_history">¡Añadido en la historia!</string>
+    <string name="menu_item_history_add_in_history">Añadir al historial</string>
+    <string name="menu_item_history_added_in_history">¡Añadido al historia!</string>
     <string name="delete_label">Eliminar</string>
     <string name="cancel_label">Cancelar</string>
     <string name="record_label">Guardar</string>
@@ -101,8 +101,8 @@
     <string name="scan_error_short_information_label">¡Sucedió un error al buscar información!</string>
     <string name="barcode_scanned_label">¡%1$s escaneado!</string>
     <string name="barcode_found_on_label">¡Encontrado en %1$s!</string>
-    <string name="barcode_not_found_on_api_label">¡No se ha encontrado información en %1$s.</string>
-    <string name="no_internet_permission">¡No tienes permiso para acceder a Internet.</string>
+    <string name="barcode_not_found_on_api_label">No se ha encontrado información en %1$s.</string>
+    <string name="no_internet_permission">No tienes permiso para acceder a Internet.</string>
     <string name="about_barcode_information_label">Información sobre el código</string>
     <string name="about_barcode_label">Acerca del código</string>
     <string name="about_barcode_format_label">Formato: %1$s</string>
@@ -304,9 +304,9 @@
     <string name="action_product_search_label">Buscar en %1$s</string>
     <string name="action_send_mail_label">Enviar correo electrónico</string>
     <string name="action_send_sms_label">Enviar SMS</string>
-    <string name="action_call_phone_label">Llamar a un número de teléfono</string>
+    <string name="action_call_phone_label">Llamar al número de teléfono</string>
     <string name="action_add_to_calendar">Añadir al calendario</string>
-    <string name="action_add_to_contacts">Add to contacts</string>
+    <string name="action_add_to_contacts">Añadir a contactos</string>
     <string name="action_show_location">Mostrar ubicación</string>
     <string name="action_open_link">Abrir enlace</string>
     <!-- Wi-Fi Connection -->
@@ -464,7 +464,7 @@
     <string name="preferences_switch_system_theme_label">Sistema</string>
     <string name="preferences_switch_light_theme_label">Claro</string>
     <string name="preferences_switch_dark_theme_label">Oscuro</string>
-    <string name="preferences_switch_black_theme_label">Black</string>
+    <string name="preferences_switch_black_theme_label">Negro</string>
     <string name="preferences_color">Color principal</string>
     <string name="preferences_color_material_you">Sistema (Material You)</string>
     <string name="preferences_color_blue">Azul</string>
@@ -478,10 +478,10 @@
     <!-- Remote API -->
     <string name="preferences_remote_api_title">Productos y API</string>
     <string name="preferences_switch_scan_search_on_api_label">Consultar automáticamente la API remota</string>
-    <string name="preferences_remote_api_to_use_label">Default API</string>
-    <string name="preferences_remote_api_choose_label">Seleccione una API</string>
-    <string name="preferences_remote_api_food_label">Abrir información nutricional (productos alimenticios)</string>
-    <string name="preferences_remote_api_cosmetic_label">Abrir Datos de Belleza (Productos cosméticos)</string>
+    <string name="preferences_remote_api_to_use_label">API predeterminada</string>
+    <string name="preferences_remote_api_choose_label">Selecciona una API</string>
+    <string name="preferences_remote_api_food_label">Open Food Facts (productos alimenticios)</string>
+    <string name="preferences_remote_api_cosmetic_label">Open Beauty Facts (Productos cosméticos)</string>
     <string name="preferences_remote_api_pet_food_label">Abrir datos sobre alimentos para mascotas (productos alimenticios para mascotas)</string>
     <string name="preferences_remote_api_musicbrainz_label">MusicBrainz (CDs, Vinilos, …)</string>
     <string name="preferences_remote_api_book_label">Biblioteca abierta (Libros)</string>
@@ -511,7 +511,7 @@
     <string name="preferences_information_about_remote_api_about_books_description">Si el producto que está escaneando es un libro, no necesita especificar la API en la que buscar la información. El código de barras de un libro es identificable porque siempre empieza por los dígitos \"978\". La búsqueda se realizará automáticamente en Open Library.</string>
     <!-- Scan Settings -->
     <string name="preferences_scan_title">Escanear</string>
-    <string name="preferences_switch_scan_use_camera_x_api_label">Utilizar CameraX API</string>
+    <string name="preferences_switch_scan_use_camera_x_api_label">Utilizar API CameraX</string>
     <string name="preferences_switch_scan_vibrate_label">Vibrar al escanear correctamente</string>
     <string name="preferences_switch_scan_bip_label">Reproducir un sonido al escanear correctamente</string>
     <string name="preferences_switch_scan_screen_rotation_label">Desactivar la rotación automática durante el escaneo</string>
@@ -678,11 +678,11 @@
     <string name="snack_bar_message_file_export_success">¡Archivo guardado!</string>
     <string name="import_json_label">Importar (JSON)</string>
     <string name="snack_bar_message_file_export_error">¡Se ha producido un error! Archivo no guardado.</string>
-    <string name="export_csv_label">Exportar como un CSV</string>
+    <string name="export_csv_label">Exportar como CSV</string>
     <string name="snack_bar_message_file_import_error">¡Se ha producido un error! Archivo no importado.</string>
     <string name="export_label">Exportar</string>
     <string name="snack_bar_message_file_import_success">¡Archivo importado!</string>
-    <string name="export_json_label">Exportar como un JSON</string>
+    <string name="export_json_label">Exportar como JSON</string>
     <string name="corners_radius">Radio de las esquinas</string>
     <string name="barcode_color">Color del código de barras</string>
     <string name="color_shades_issue">Es posible que no se detecten algunos matices de color.</string>
