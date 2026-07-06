@@ -390,6 +390,7 @@
     <string name="qr_code_text_generator_hint_phone_input_edit_text">Saisie un numéro de téléphone…</string>
     <string name="qr_code_text_generator_hint_url_input_edit_text">Saisie une adresse web…</string>
     <string name="qr_code_text_input_edit_text_hint_message">Message</string>
+    <string name="uppercase">Majuscules</string>
     <!-- Contact Creator -->
     <string name="qr_code_type_name_generate_from_contact">Générer à partir d\'un contact</string>
     <string name="qr_code_text_radio_button_label_m">Mr</string>

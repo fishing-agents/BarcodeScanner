@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,4 +26,12 @@
 
     </com.atharok.barcodescanner.presentation.customView.CustomTextInputLayout>
 
-</FrameLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/fragment_barcode_form_creator_qr_phone_uppercase_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_barcode_form_creator_qr_phone_input_layout"
+        android:layout_alignParentEnd="true"
+        android:text="@string/uppercase"/>
+
+</RelativeLayout>

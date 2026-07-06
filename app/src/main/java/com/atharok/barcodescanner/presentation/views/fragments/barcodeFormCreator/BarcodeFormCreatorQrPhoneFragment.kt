@@ -47,8 +47,10 @@ class BarcodeFormCreatorQrPhoneFragment : AbstractBarcodeFormCreatorQrFragment()
     }
 
     override fun getBarcodeTextFromForm(): String {
+        val useUppercase = viewBinding.fragmentBarcodeFormCreatorQrPhoneUppercaseSwitch.isChecked
+        val prefix = if(useUppercase) "TEL:" else "tel:"
         val number = viewBinding.fragmentBarcodeFormCreatorQrPhoneInputEditText.text.toString()
-        return if(number.isNotBlank()) "tel:$number" else ""
+        return if(number.isNotBlank()) "$prefix$number" else ""
     }
 
     override val checkError: (contents: String) -> String? by lazy {
