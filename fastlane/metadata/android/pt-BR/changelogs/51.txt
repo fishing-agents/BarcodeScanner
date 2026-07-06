@@ -1,0 +1,11 @@
+Changelog completo aqui: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+1.26.2
+
+- Corrigida falha que poderia acontecer ao retornar à tela de escaneamento.
+
+1.26.1
+
+- Traduções atualizadas (Weblate).
+- Pequenos ajustes aos ícones de atalho.
+- Dependências atualizadas.
