@@ -1,0 +1,7 @@
+1.26.3
+
+Full changelog here: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Fixed an issue where 1D barcodes were no longer detected horizontally.
+- Updated translations (Weblate).
+- Updated dependencies.

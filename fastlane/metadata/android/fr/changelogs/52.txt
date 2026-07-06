@@ -1,0 +1,7 @@
+1.26.3
+
+Liste complète des modifications ici: https://gitlab.com/Atharok/BarcodeScanner/-/releases
+
+- Correction de la détection des codes-barres 1D, qui n'étaient plus détectés horizontalement.
+- Mise à jour des traductions (Weblate).
+- Mise à jour des dépendances.
