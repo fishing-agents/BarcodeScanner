@@ -103,6 +103,7 @@ class MainCameraXScannerFragment : BaseFragment(), CameraBarcodeAnalyzer.Barcode
     private val imageAnalyzer by lazy {
         ImageAnalysis.Builder()
             //.setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+            .setOutputImageRotationEnabled(true)
             .build()
     }
     private val barcodeAnalyzer by lazy { CameraBarcodeAnalyzer(this) }
