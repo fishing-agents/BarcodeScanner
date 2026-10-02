@@ -26,6 +26,8 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.graphics.Matrix
+import android.graphics.PointF
 import android.util.Log
 import android.view.HapticFeedbackConstants
 import android.view.LayoutInflater
@@ -37,6 +39,7 @@ import android.view.ViewGroup
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.Camera
+import androidx.camera.core.FocusMeteringAction
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
@@ -66,6 +69,12 @@ import com.atharok.barcodescanner.domain.library.BeepManager
 import com.atharok.barcodescanner.domain.library.VibratorAppCompat
 import com.atharok.barcodescanner.domain.library.camera.CameraBarcodeAnalyzer
 import com.atharok.barcodescanner.domain.library.camera.CameraZoomGestureDetector
+import com.atharok.barcodescanner.domain.library.camera.AutoTorchController
+import com.atharok.barcodescanner.domain.library.camera.AutoZoomController
+import com.atharok.barcodescanner.domain.library.camera.ScanController
+import com.atharok.barcodescanner.domain.library.camera.ScanUiState
+import com.atharok.barcodescanner.domain.library.camera.centroid
+import com.atharok.barcodescanner.domain.library.scan.ScanEngine
 import com.atharok.barcodescanner.presentation.intent.createStartActivityIntent
 import com.atharok.barcodescanner.presentation.viewmodel.DatabaseBarcodeViewModel
 import com.atharok.barcodescanner.presentation.views.activities.BarcodeAnalysisActivity
@@ -76,6 +85,7 @@ import com.atharok.barcodescanner.presentation.views.fragments.BaseFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
+import com.google.zxing.ResultPoint
 import org.koin.android.ext.android.get
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.parameter.parametersOf
@@ -102,11 +112,21 @@ class MainCameraXScannerFragment : BaseFragment(), CameraBarcodeAnalyzer.Barcode
     private lateinit var cameraExecutor: ExecutorService
     private val imageAnalyzer by lazy {
         ImageAnalysis.Builder()
-            //.setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+            // The WeChatQRCode fallback can block the analyzer for a frame or two; drop stale frames.
+            .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
             .setOutputImageRotationEnabled(true)
             .build()
     }
-    private val barcodeAnalyzer by lazy { CameraBarcodeAnalyzer(this) }
+    // Lazy engine: resolved (native load, model copy) on the analyzer thread at the first frame.
+    private val barcodeAnalyzer by lazy { CameraBarcodeAnalyzer(lazy { get<ScanEngine>() }, this) }
+    private val scanController = ScanController()
+    private val autoTorchController by lazy { AutoTorchController(hasFlash = requireContext().hasFlash()) }
+    private val autoZoomController by lazy {
+        val zoom = camera?.cameraInfo?.zoomState?.value
+        AutoZoomController(minZoomRatio = zoom?.minZoomRatio ?: 1f, maxZoomRatio = zoom?.maxZoomRatio ?: 1f)
+    }
+    /** Codes shown in the multi-code picker; non-null while it is open. */
+    private var pickerResults: List<Result>? = null
     private var isBarcodeAnalyzerRunning = false
     private var camera: Camera? = null
     private var flashEnabled = false
@@ -170,6 +190,7 @@ class MainCameraXScannerFragment : BaseFragment(), CameraBarcodeAnalyzer.Barcode
         super.onPause()
         switchOffFlash()
         stopBarcodeAnalyzer()
+        if (pickerResults != null) closePicker()
     }
 
     override fun onAttach(context: Context) {
@@ -193,6 +214,7 @@ class MainCameraXScannerFragment : BaseFragment(), CameraBarcodeAnalyzer.Barcode
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean = when(menuItem.itemId) {
                 R.id.menu_scanner_flash -> {
+                    autoTorchController.onManualTorchToggle()
                     switchFlash()
                     requireActivity().invalidateOptionsMenu()
                     true
@@ -319,65 +341,131 @@ class MainCameraXScannerFragment : BaseFragment(), CameraBarcodeAnalyzer.Barcode
         isBarcodeAnalyzerRunning = true
     }
 
-    override fun onBarcodeFound(result: Result) {
+    override fun onFrame(
+        codes: List<Result>,
+        candidates: List<Array<ResultPoint>>,
+        meanLuma: Int,
+        frameWidth: Int,
+        frameHeight: Int,
+        sensorToBuffer: Matrix
+    ) {
+        // All controller state lives on the main thread, alongside the user's manual zoom/torch input.
         viewBinding.fragmentMainCameraXScannerPreviewView.post {
-            try {
-                // Check if processing is stuck (more than 5 seconds)
-                val currentTime = System.currentTimeMillis()
-                if (isProcessingBarcode && currentTime - lastProcessingTime > 5000) {
-                    // Reset the flag if it's been stuck for more than 5 seconds
-                    isProcessingBarcode = false
-                }
-
-                // Prevent processing multiple barcodes at once
-                if(isBarcodeAnalyzerRunning && !isProcessingBarcode) {
-                    // Check rate limiting first
-                    if (settingsManager.isRateLimitEnabled) {
-                        try {
-                            if (isWithinRateLimit(result.text)) {
-                                // Barcode was recently scanned, ignore it and continue scanning
-                                // Don't set isProcessingBarcode = true so scanner keeps running
-                                return@post
-                            }
-                        } catch (e: Exception) {
-                            // If rate limiting check fails, continue scanning
-                            e.printStackTrace()
-                        }
-                    }
-
-                    isProcessingBarcode = true
-                    lastProcessingTime = currentTime
-
-                    // Check if this barcode type is allowed
-                    val allowedFormats = settingsManager.allowedBarcodeFormats
-                    val barcodeFormat = result.barcodeFormat?.name
-
-                    // If no formats are specified (empty set), all formats are allowed
-                    if (allowedFormats.isEmpty() || (barcodeFormat != null && allowedFormats.contains(barcodeFormat))) {
-                        // Record scan time for rate limiting BEFORE stopping camera
-                        if (settingsManager.isRateLimitEnabled) {
-                            recordScanTime(result.text)
-                        }
-
-                        onSuccessfulScanFromCamera(result)
-                    } else {
-                        // Barcode type is not whitelisted - show popup but don't save to history
-                        showNonWhitelistedBarcodePopup(result)
-                    }
-                }
-            } catch (e: Exception) {
-                // Reset flag on any error to prevent scanner from getting stuck
-                isProcessingBarcode = false
-                e.printStackTrace()
+            if (_binding == null || pickerResults != null) return@post
+            camera?.let { applyAutoTorch(it, meanLuma) }
+            val zoomStep = camera?.let { applyAutoZoom(it, candidates, frameWidth, frameHeight) }
+            // Exactly one ScanController call per frame keeps its stability counter meaningful.
+            when (val state = scanController.onFrame(codes, zoomStep)) {
+                is ScanUiState.Found -> processFoundResult(state.result)
+                is ScanUiState.Picking -> showMultiCodePicker(state.results, sensorToBuffer)
+                is ScanUiState.Approaching, ScanUiState.Searching -> Unit
             }
         }
     }
 
-    override fun onError(msg: String) {
-        viewBinding.fragmentMainCameraXScannerPreviewView.post {
-            viewBinding.fragmentMainCameraXScannerCameraPermissionTextView.text = getString(R.string.scan_error_exception_label, msg)
-            doPermissionRefused()
+    private fun applyAutoTorch(camera: Camera, meanLuma: Int) {
+        val wanted = autoTorchController.onLuma(meanLuma) ?: return
+        if (wanted == flashEnabled) return
+        flashEnabled = wanted
+        camera.cameraControl.enableTorch(wanted)
+        requireActivity().invalidateOptionsMenu()
+    }
+
+    private fun applyAutoZoom(camera: Camera, candidates: List<Array<ResultPoint>>, frameWidth: Int, frameHeight: Int): Float? {
+        val current = camera.cameraInfo.zoomState.value?.zoomRatio ?: return null
+        return autoZoomController.onCandidates(candidates, current, frameWidth, frameHeight)
+            ?.also { camera.cameraControl.setZoomRatio(it) }
+    }
+
+    private fun processFoundResult(result: Result) {
+        try {
+            // Check if processing is stuck (more than 5 seconds)
+            val currentTime = System.currentTimeMillis()
+            if (isProcessingBarcode && currentTime - lastProcessingTime > 5000) {
+                // Reset the flag if it's been stuck for more than 5 seconds
+                isProcessingBarcode = false
+            }
+
+            // Prevent processing multiple barcodes at once
+            if(isBarcodeAnalyzerRunning && !isProcessingBarcode) {
+                // Check rate limiting first
+                if (settingsManager.isRateLimitEnabled) {
+                    try {
+                        if (isWithinRateLimit(result.text)) {
+                            // Barcode was recently scanned, ignore it and continue scanning
+                            // Don't set isProcessingBarcode = true so scanner keeps running
+                            return
+                        }
+                    } catch (e: Exception) {
+                        // If rate limiting check fails, continue scanning
+                        e.printStackTrace()
+                    }
+                }
+
+                isProcessingBarcode = true
+                lastProcessingTime = currentTime
+
+                // Check if this barcode type is allowed
+                val allowedFormats = settingsManager.allowedBarcodeFormats
+                val barcodeFormat = result.barcodeFormat?.name
+
+                // If no formats are specified (empty set), all formats are allowed
+                if (allowedFormats.isEmpty() || (barcodeFormat != null && allowedFormats.contains(barcodeFormat))) {
+                    // Record scan time for rate limiting BEFORE stopping camera
+                    if (settingsManager.isRateLimitEnabled) {
+                        recordScanTime(result.text)
+                    }
+
+                    onSuccessfulScanFromCamera(result)
+                } else {
+                    // Barcode type is not whitelisted - show popup but don't save to history
+                    showNonWhitelistedBarcodePopup(result)
+                }
+            }
+        } catch (e: Exception) {
+            // Reset flag on any error to prevent scanner from getting stuck
+            isProcessingBarcode = false
+            e.printStackTrace()
         }
+    }
+
+    // ---- Multi-code picker ----
+
+    /**
+     * Freezes the preview and marks each code; the user taps one (see [onScanOverlaySingleTap]).
+     * The analyzer keeps running (frames are ignored while [pickerResults] is set) because
+     * [processFoundResult] only accepts a result while the analyzer is running.
+     */
+    private fun showMultiCodePicker(results: List<Result>, sensorToBuffer: Matrix) {
+        val previewView = viewBinding.fragmentMainCameraXScannerPreviewView
+        val sensorToView = previewView.sensorToViewTransform ?: return processFoundResult(results.first())
+        // buffer -> sensor -> view
+        val bufferToView = Matrix().apply { sensorToBuffer.invert(this); postConcat(sensorToView) }
+        val markers = results.map { result ->
+            val center = result.resultPoints.centroid()
+            val point = floatArrayOf(center.x, center.y).also(bufferToView::mapPoints)
+            PointF(point[0], point[1])
+        }
+        pickerResults = results
+        viewBinding.fragmentMainCameraXScannerScanOverlay.showPicker(previewView.bitmap, markers)
+    }
+
+    private fun closePicker() {
+        pickerResults = null
+        viewBinding.fragmentMainCameraXScannerScanOverlay.clearPicker()
+    }
+
+    /** A tap picks a marker while the picker is open (empty space cancels); otherwise it focuses there. */
+    private fun onScanOverlaySingleTap(x: Float, y: Float) {
+        val results = pickerResults
+        if (results != null) {
+            val index = viewBinding.fragmentMainCameraXScannerScanOverlay.hitTestMarker(x, y)
+            closePicker()
+            if (index >= 0) processFoundResult(results[index])
+            return
+        }
+        val point = viewBinding.fragmentMainCameraXScannerPreviewView.meteringPointFactory.createPoint(x, y)
+        camera?.cameraControl?.startFocusAndMetering(FocusMeteringAction.Builder(point).build())
     }
 
     private fun showNonWhitelistedBarcodePopup(result: Result) {
@@ -435,15 +523,19 @@ class MainCameraXScannerFragment : BaseFragment(), CameraBarcodeAnalyzer.Barcode
         val slider = viewBinding.fragmentMainCameraXScannerSlider
         slider.value = settingsManager.getDefaultZoomValue() / 100f
         setLinearZoom(slider.value)
-        slider.addOnChangeListener { v, value, _ ->
+        slider.addOnChangeListener { v, value, fromUser ->
             setLinearZoom(value)
+            if (fromUser) autoZoomController.onManualZoom()
             // BZZZTT!!1!
             v.performHapticFeedback(HapticFeedbackConstants.CLOCK_TICK)
         }
-        CameraZoomGestureDetector(slider.value)
-            .attach(viewBinding.fragmentMainCameraXScannerScanOverlay) { value ->
+        CameraZoomGestureDetector(slider.value).apply {
+            attach(viewBinding.fragmentMainCameraXScannerScanOverlay) { value ->
+                autoZoomController.onManualZoom()
                 slider.value = value
             }
+            setOnSingleTapListener(::onScanOverlaySingleTap)
+        }
     }
 
     private fun setLinearZoom(value: Float) {

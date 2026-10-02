@@ -20,108 +20,70 @@
 
 package com.atharok.barcodescanner.domain.library.camera
 
+import android.graphics.Matrix
+import android.util.Log
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageProxy
-import com.atharok.barcodescanner.common.extensions.toByteArray
-import com.atharok.barcodescanner.presentation.customView.ScanOverlay
-import com.google.zxing.BarcodeFormat
-import com.google.zxing.BinaryBitmap
-import com.google.zxing.DecodeHintType
-import com.google.zxing.MultiFormatReader
-import com.google.zxing.PlanarYUVLuminanceSource
-import com.google.zxing.ReaderException
+import com.atharok.barcodescanner.domain.library.scan.ScanEngine
 import com.google.zxing.Result
-import com.google.zxing.common.HybridBinarizer
-import kotlin.math.roundToInt
+import com.google.zxing.ResultPoint
 
+/**
+ * Full-frame analyzer: decodes every frame with [engine] and reports it through exactly one
+ * [BarcodeDetector.onFrame] call. The engine is [Lazy] so its expensive construction (native
+ * libraries, model copy) happens on the analyzer thread on the first frame, not on the UI thread.
+ */
 class CameraBarcodeAnalyzer(
+    private val engine: Lazy<ScanEngine>,
     private val barcodeDetector: BarcodeDetector
 ) : ImageAnalysis.Analyzer {
 
-    interface BarcodeDetector {
-        fun onBarcodeFound(result: Result)
-        fun onError(msg: String)
-    }
-
-    private val reader = MultiFormatReader().apply {
-        val map = mapOf(
-            DecodeHintType.POSSIBLE_FORMATS to BarcodeFormat.entries
+    fun interface BarcodeDetector {
+        /**
+         * Called once per analyzed frame, whether or not anything decoded. [sensorToBuffer] maps
+         * camera-sensor coordinates to this frame's buffer (rotation included), for mapping code
+         * positions onto the preview.
+         */
+        fun onFrame(
+            codes: List<Result>,
+            candidates: List<Array<ResultPoint>>,
+            meanLuma: Int,
+            frameWidth: Int,
+            frameHeight: Int,
+            sensorToBuffer: Matrix
         )
-        setHints(map)
     }
 
     override fun analyze(image: ImageProxy) {
         try {
-            val plane = image.planes[0]
-            val imageData = plane.buffer.toByteArray()
-
-            val size = image.width.coerceAtMost(image.height) * ScanOverlay.RATIO
-
-            val left = (image.width - size) / 2f
-            val top = (image.height - size) / 2f
-
-            decodeBarcode(
-                yuvData = imageData,
-                dataWidth = plane.rowStride,
-                dataHeight = image.height,
-                left = left.roundToInt(),
-                top = top.roundToInt(),
-                width = size.roundToInt(),
-                height = size.roundToInt()
+            val outcome = engine.value.scan(image)
+            barcodeDetector.onFrame(
+                outcome.codes, outcome.candidates, meanLuma(image),
+                image.width, image.height, Matrix(image.imageInfo.sensorToBufferTransformMatrix)
             )
         } catch (e: IllegalStateException) {
-            // Surface abandoned errors are expected when camera is stopping
-            // Just ignore them
+            // Surface abandoned while the camera stops: expected, ignore.
         } catch (e: Exception) {
-            // Log other unexpected errors but don't crash
-            e.printStackTrace()
+            // A bad frame is dropped; it must not stop scanning.
+            Log.w("CameraBarcodeAnalyzer", "Frame analysis failed", e)
         } finally {
             image.close()
         }
     }
 
-    private fun decodeBarcode(
-        yuvData: ByteArray,
-        dataWidth: Int,
-        dataHeight: Int,
-        left: Int,
-        top: Int,
-        width: Int,
-        height: Int
-    ) {
-        try {
-            val source = PlanarYUVLuminanceSource(
-                yuvData,
-                dataWidth, dataHeight,
-                left, top,
-                width, height,
-                false
-            )
-
-            val binaryBitmap = BinaryBitmap(HybridBinarizer(source))
-            reader.reset()
-            try {
-                val result = reader.decode(binaryBitmap)
-                barcodeDetector.onBarcodeFound(result)
-            } catch (e: ReaderException) {
-                val invertedSource = source.invert()
-                val invertedBinaryBitmap = BinaryBitmap(HybridBinarizer(invertedSource))
-                reader.reset()
-                try {
-                    val result = reader.decode(invertedBinaryBitmap)
-                    barcodeDetector.onBarcodeFound(result)
-                } catch (e: ReaderException) {
-                    //e.printStackTrace() // Not Found
-                }
+    /** Mean brightness of the Y plane, sampled every 8th pixel on each axis. */
+    private fun meanLuma(image: ImageProxy): Int {
+        val plane = image.planes[0]
+        val buffer = plane.buffer
+        var sum = 0L
+        var count = 0
+        for (y in 0 until image.height step 8) {
+            val row = y * plane.rowStride
+            for (x in 0 until image.width step 8) {
+                sum += buffer.get(row + x).toInt() and 0xFF
+                count++
             }
-        } catch (e: IllegalStateException) {
-            // Surface has been abandoned - this can happen when camera is stopped while analyzing
-            // This is expected behavior, so we just ignore it
-            if (!e.message.orEmpty().contains("Surface has been abandoned")) {
-                barcodeDetector.onError(e.toString())
-            }
-        } catch (e: Exception) {
-            barcodeDetector.onError(e.toString())
         }
+        return if (count == 0) 0 else (sum / count).toInt()
     }
 }

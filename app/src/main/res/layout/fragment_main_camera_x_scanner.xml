@@ -28,10 +28,6 @@
         android:id="@+id/fragment_main_camera_x_scanner_scan_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:viewfinder_radius="50dp"
-        app:viewfinder_corner_thickness="4dp"
-        app:viewfinder_corner_color="@android:color/white"
-        app:overlay_mask_color="@color/overlay_mask"
         android:visibility="gone" />
 
     <com.google.android.material.slider.Slider

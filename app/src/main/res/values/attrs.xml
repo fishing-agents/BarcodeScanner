@@ -6,13 +6,6 @@
     <attr name="colorNegative" format="color"/>
     <attr name="colorUnknown" format="color"/>
 
-    <declare-styleable name="ScanOverlay">
-        <attr name="viewfinder_radius" format="dimension" />
-        <attr name="viewfinder_corner_thickness" format="dimension" />
-        <attr name="viewfinder_corner_color" format="color" />
-        <attr name="overlay_mask_color" format="color" />
-    </declare-styleable>
-
     <declare-styleable name="BarcodeParsedView">
         <attr name="title_text" format="string" />
         <attr name="contents_text" format="string" />

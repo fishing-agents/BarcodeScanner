@@ -78,6 +78,12 @@ import com.atharok.barcodescanner.domain.entity.barcode.BarcodeType
 import com.atharok.barcodescanner.domain.entity.barcode.QrCodeErrorCorrectionLevel
 import com.atharok.barcodescanner.domain.library.BarcodeBitmapAnalyser
 import com.atharok.barcodescanner.domain.library.BarcodeFormatChecker
+import com.atharok.barcodescanner.domain.library.scan.ScanEngine
+import com.atharok.barcodescanner.domain.library.scan.TieredScanEngine
+import com.atharok.barcodescanner.domain.library.scan.WeChatQrEngine
+import com.atharok.barcodescanner.domain.library.scan.ZxingCppEngine
+import com.atharok.barcodescanner.wechatqr.WeChatQrModelInstaller
+import com.atharok.barcodescanner.wechatqr.WeChatQrNativeJni
 import com.atharok.barcodescanner.domain.library.BeepManager
 import com.atharok.barcodescanner.domain.library.DateConverter
 import com.atharok.barcodescanner.domain.library.Iban
@@ -292,6 +298,14 @@ val androidModule: Module = module {
 
 val libraryModule: Module = module {
     single<SettingsManager> { SettingsManager(androidContext()) }
+    // The one ScanEngine (camera and gallery). Built on first resolution, which does native
+    // library loading and model file I/O — resolve it off the UI thread.
+    single<ScanEngine> {
+        val modelDir = WeChatQrModelInstaller.ensureInstalled(androidContext())
+        // Throwable: a missing native library surfaces as UnsatisfiedLinkError, not Exception.
+        val fallback = runCatching { WeChatQrEngine(WeChatQrNativeJni(), modelDir) }.getOrNull()
+        TieredScanEngine(primary = ZxingCppEngine(), fallback = fallback)
+    }
     single<BarcodeBitmapAnalyser>{ BarcodeBitmapAnalyser() }
     single<BarcodeFormatChecker> { BarcodeFormatChecker(androidContext()) }
     single<VCardReader> { VCardReader(androidContext()) }

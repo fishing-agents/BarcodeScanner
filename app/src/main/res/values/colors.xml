@@ -3,7 +3,6 @@
 
     <!-- Commons -->
 
-    <color name="overlay_mask">#bf000000</color>
     <color name="icon_background">#ff22272f</color>
     <color name="black_surface">#ff0f0f0f</color>
 

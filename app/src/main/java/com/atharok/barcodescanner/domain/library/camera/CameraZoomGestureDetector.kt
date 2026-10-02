@@ -41,6 +41,7 @@ class CameraZoomGestureDetector(@FloatRange(from = 0.0, to = 1.0) defaultZoom: F
     private lateinit var scaleGestureDetector: ScaleGestureDetector
     private lateinit var gestureDetector: GestureDetector
     private lateinit var listener: OnZoomChangeListener
+    private var onSingleTap: ((x: Float, y: Float) -> Unit)? = null
 
     private val Animator.valueFloat: Float get() = (this as ValueAnimator).animatedValue as Float
 
@@ -51,6 +52,11 @@ class CameraZoomGestureDetector(@FloatRange(from = 0.0, to = 1.0) defaultZoom: F
         }
         this.listener = ZoomChangeListener(listener)
         view.setOnTouchListener(this)
+    }
+
+    /** Single taps on the attached view (tap-to-focus / marker picking); this detector owns the view's touch listener. */
+    fun setOnSingleTapListener(listener: (x: Float, y: Float) -> Unit) {
+        onSingleTap = listener
     }
 
     private class ZoomChangeListener(val delegate: OnZoomChangeListener) : OnZoomChangeListener {
@@ -115,6 +121,12 @@ class CameraZoomGestureDetector(@FloatRange(from = 0.0, to = 1.0) defaultZoom: F
     override fun onDoubleTap(e: MotionEvent): Boolean {
         val from = this.currentZoom
         setZoomWithAnimator(from, getNextLevelZoom(from))
+        return true
+    }
+
+    // Fires only once a double-tap is ruled out, so a double-tap never also counts as taps.
+    override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
+        onSingleTap?.invoke(e.x, e.y)
         return true
     }
 
