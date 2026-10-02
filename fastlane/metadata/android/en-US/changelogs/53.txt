@@ -1,0 +1,6 @@
+1.27.0
+
+- Full-frame scanning: codes are found anywhere in view; with several codes in view, tap the one you want.
+- Auto-torch in low light and auto-zoom on small or distant codes.
+- AI-assisted recovery (WeChatQRCode) for hard-to-read QR codes.
+- WeChat and Alipay codes show which app they open in, with a direct "Open in WeChat/Alipay" action.

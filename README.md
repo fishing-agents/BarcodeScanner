@@ -104,6 +104,9 @@ Dependencies:
 - [Coil](https://github.com/coil-kt/coil) is licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by coil-kt
 - [Koin](https://github.com/InsertKoinIO/koin) is licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by insert-koin.io
 - [ZXing](https://github.com/zxing/zxing) is licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Zxing
+- [zxing-cpp](https://github.com/zxing-cpp/zxing-cpp) is licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Axel Waggershauser
+- [OpenCV](https://github.com/opencv/opencv) and [opencv_contrib](https://github.com/opencv/opencv_contrib) are licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by OpenCV
+- [WeChat QRCode models](https://github.com/WeChatCV/opencv_3rdparty/tree/wechat_qrcode) are licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Tencent
 - [Android Image Cropper](https://github.com/CanHub/Android-Image-Cropper) is licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by CanHub
 - [ez-vcard](https://github.com/mangstadt/ez-vcard) is licensed under [FreeBSD](https://www.freebsd.org/copyright/freebsd-license/) by Michael Angstadt
 - [Color Picker](https://github.com/Atharok/ColorPicker) is licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Atharok
