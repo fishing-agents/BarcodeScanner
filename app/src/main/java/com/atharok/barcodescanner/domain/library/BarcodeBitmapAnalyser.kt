@@ -21,73 +21,11 @@
 package com.atharok.barcodescanner.domain.library
 
 import android.graphics.Bitmap
-import com.google.zxing.BinaryBitmap
-import com.google.zxing.DecodeHintType
-import com.google.zxing.MultiFormatReader
-import com.google.zxing.NotFoundException
-import com.google.zxing.RGBLuminanceSource
-import com.google.zxing.ReaderException
+import com.atharok.barcodescanner.domain.library.scan.ScanEngine
 import com.google.zxing.Result
-import com.google.zxing.common.HybridBinarizer
 
+/** Finds a barcode in a static image (gallery, share, shortcut) with the same engine the camera uses. */
+class BarcodeBitmapAnalyser(private val engine: ScanEngine) {
 
-/**
- * Search for a barcode in an image (Bitmap).
- */
-class BarcodeBitmapAnalyser {
-
-    private val reader = MultiFormatReader().apply {
-        setHints(mapOf(DecodeHintType.TRY_HARDER to true))
-    }
-
-    fun detectBarcodeFromBitmap(bitmap: Bitmap): Result? {
-
-        var result: Result? = detect(bitmap)
-
-        // If the barcode is not detected, the image is reanalyzed with different scales.
-        // Adjusting the image scale can improve detection in some cases.
-        for(i in 1..3) {
-            if(result != null) {
-                break
-            }
-            val bitmapRescaled = rescaleBitmap(bitmap, i / 4f)
-            result = detect(bitmapRescaled)
-        }
-
-        return result
-    }
-
-    private fun detect(bitmap: Bitmap): Result? {
-        val width = bitmap.width
-        val height = bitmap.height
-        val size = width * height
-        val bitmapBuffer = IntArray(size)
-
-        bitmap.getPixels(bitmapBuffer, 0, width, 0, 0, width, height)
-
-        val source = RGBLuminanceSource(width, height, bitmapBuffer)
-        val binaryBitmap = BinaryBitmap(HybridBinarizer(source))
-
-        reader.reset()
-
-        return try {
-            reader.decode(binaryBitmap)
-        } catch (e: NotFoundException) {
-            val invertedSource = source.invert()
-            val invertedBinaryBitmap = BinaryBitmap(HybridBinarizer(invertedSource))
-            reader.reset()
-            try {
-                reader.decode(invertedBinaryBitmap)
-            } catch (e: ReaderException) {
-                null
-            }
-        }
-    }
-
-    private fun rescaleBitmap(bitmap: Bitmap, scale: Float): Bitmap {
-        val width = bitmap.width
-        val height = bitmap.height
-
-        return Bitmap.createScaledBitmap(bitmap, (width * scale).toInt(), (height * scale).toInt(), true)
-    }
+    fun detectBarcodeFromBitmap(bitmap: Bitmap): Result? = engine.scan(bitmap).codes.firstOrNull()
 }

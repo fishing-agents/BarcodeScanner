@@ -13,6 +13,8 @@ class ZxingCppEngine : ScanEngine {
             tryHarder = true,
             tryRotate = true,
             tryInvert = true,
+            // Large gallery photos: replaces the legacy analyser's 1/4..3/4 rescale retries.
+            tryDownscale = true,
             maxNumberOfSymbols = 8,
             returnErrors = true,
             // HRI (the default) inserts GS1 "(01)" parentheses; PLAIN matches ZXing core's raw

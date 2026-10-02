@@ -306,7 +306,7 @@ val libraryModule: Module = module {
         val fallback = runCatching { WeChatQrEngine(WeChatQrNativeJni(), modelDir) }.getOrNull()
         TieredScanEngine(primary = ZxingCppEngine(), fallback = fallback)
     }
-    single<BarcodeBitmapAnalyser>{ BarcodeBitmapAnalyser() }
+    single<BarcodeBitmapAnalyser> { BarcodeBitmapAnalyser(get<ScanEngine>()) }
     single<BarcodeFormatChecker> { BarcodeFormatChecker(androidContext()) }
     single<VCardReader> { VCardReader(androidContext()) }
     single<WifiSetupWithOldLibrary> { WifiSetupWithOldLibrary() }
