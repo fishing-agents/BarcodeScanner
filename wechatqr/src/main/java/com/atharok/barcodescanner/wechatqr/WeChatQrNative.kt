@@ -26,6 +26,9 @@ class WeChatQrNativeJni : WeChatQrNative {
 
     override fun nativeInit(modelDir: String?): Boolean = jniInit(modelDir)
 
+    // The native side holds one global WeChatQRCode / dnn::Net, which is not safe to run
+    // concurrently; camera and gallery scans share this instance through the ScanEngine single.
+    @Synchronized
     override fun nativeDetectAndDecode(yBuffer: ByteBuffer, width: Int, height: Int, rowStride: Int): WeChatQrNativeResult =
         jniDetectAndDecode(yBuffer, width, height, rowStride)
 
