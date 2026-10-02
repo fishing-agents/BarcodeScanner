@@ -8,6 +8,9 @@ android {
     compileSdk {
         version = release(36)
     }
+    // Needed even though app has no native code of its own: without it AGP can't strip the
+    // bundled .so files and ships them with full debug info.
+    ndkVersion = libs.versions.ndk.get()
 
     defaultConfig {
         applicationId = "com.atharok.barcodescanner"
@@ -83,6 +86,7 @@ dependencies {
     implementation(libs.insert.koin.android)
     implementation(libs.zxing.core)
     implementation(libs.zxing.cpp.android)
+    implementation(project(":wechatqr"))
     testImplementation(libs.mockito.core)
     implementation(libs.vanniktech.android.image.cropper)
     implementation(libs.ez.vcard)

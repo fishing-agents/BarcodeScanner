@@ -5,3 +5,4 @@
 [submodule "wechatqr/third_party/opencv_contrib"]
 	path = wechatqr/third_party/opencv_contrib
 	url = https://github.com/opencv/opencv_contrib.git
+	shallow = true

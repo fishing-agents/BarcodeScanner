@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Barcode Scanner"
 include(":app")
+include(":wechatqr")
