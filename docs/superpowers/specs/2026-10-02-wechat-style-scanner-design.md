@@ -138,9 +138,22 @@ Manual device checklist: auto-torch in a dark room, auto-zoom from ~1.5 m, multi
 | Risk | Mitigation |
 |---|---|
 | OpenCV contrib NDK build is fragile/slow on F-Droid | Minimal `BUILD_LIST`; pinned tags; CI job that builds `:wechatqr` from clean |
-| WeChatQRCode model license unclear | Verify before release; distribution channel (§1/§5) doesn't force a fallback, but the engine stays optional at runtime so it can ship without models if needed |
+| WeChatQRCode model license | Resolved: Apache-2.0 (only third-party part is ZXing, also Apache-2.0); models bundled MD5-verified with their LICENSE |
 | WeChat refuses external hand-off | Design already shows a "scan inside WeChat" hint; verify on device |
 | Auto-zoom oscillation | Step spacing, cap, pause on user gesture, unit-tested math |
 | GPLv3 copyleft | Accepted: the fork stays GPLv3 |
 | `SSDDetector::forward` is a module-internal, unstable API (§2) | Pin exact opencv_contrib commit in the submodule; instrumented tests (§6) catch a signature/behavior break on contrib bump |
 | ZXing core bump would raise the effective Android floor to API 24 (§2, confirmed via 3.4.0 release notes) | Resolved: stay on 3.3.3; revisit only alongside a `minSdk` bump, out of scope here |
+| `SSDDetector` accepts any box with score > 1e-5 and doesn't expose the score | Low-confidence boxes can reach auto-zoom; contained because WeChat candidates only come from the rate-limited fallback. Revisit if spurious zooming shows up on device |
+
+## 9. Implementation notes (deviations from §3–§6, as built)
+
+- **zxing-cpp variants.** zxing-cpp 3.x returns only leaf variants (`QR_CODE_MODEL_2`, `ISBN`, `ITF_14`, DataBar leaves…), so `ZxingCppFormatMapper` lists every variant. DataBar maps to ZXing's `RSS_14`/`RSS_EXPANDED`. `textMode = PLAIN` keeps decoded text identical to ZXing core's; `tryDownscale = true` replaces the legacy gallery rescale retries.
+- **Native boundary.** `WeChatQrNative` is an interface with a `WeChatQrNativeJni` implementation (Mockito can't stub `external`). The JNI runs `SSDDetector::forward` only when nothing decoded, with upstream's aspect-preserving input size. Calls are `@Synchronized` (one global `dnn::Net`, shared by camera and gallery). `WeChatQrModelInstaller` lives in `:wechatqr` and copies via `.part` + rename. Linking with `--exclude-libs,ALL --gc-sections` keeps the stripped `.so` at 7.6–8.0 MB per ABI, 16 KB-aligned.
+- **One analyzer callback.** `CameraBarcodeAnalyzer.BarcodeDetector.onFrame(codes, candidates, meanLuma, w, h, sensorToBuffer)` is called once per frame; all controller logic runs on the main thread. `ScanController` tolerates up to 2 empty frames between sightings so codes read only by the rate-limited CNN fallback still stabilize.
+- **Marker mapping without experimental API.** `androidx.camera.view.transform` is `@TransformExperimental` (lint-enforced and `@RestrictTo`). Markers use the stable `ImageInfo.getSensorToBufferTransformMatrix()` and `PreviewView.getSensorToViewTransform()` instead.
+- **Picker.** The analyzer keeps running while the picker is open (its frames are ignored); stopping it made `processFoundResult` reject the tapped code. The picker closes on `onPause`.
+- **Auto-zoom ownership.** Any manual zoom (pinch, double-tap, slider) suppresses auto-zoom for 3 s, instead of a pause/resume pair. The timeout reset restores the ratio from before auto-zoom started, and never undoes a zoom the user chose.
+- **Payment UI.** Instead of a new fragment, one extra `BarcodeParsedView` row ("Opens in WeChat/Alipay") in `fragment_barcode_matrix_uri.xml`. The open-link action is relabeled "Open in WeChat/Alipay". `PaymentCode` carries both string resources. A unit test pins that ZXing's `ResultParser` yields `URI` for these codes.
+- **Gallery multi-code.** Not done: gallery/share still take the first decoded code. The picker is camera-only.
+- **No Java decode fallback.** zxing-cpp ships all four ABIs, so the planned ZXing-Java fallback for a missing native library was not built.
