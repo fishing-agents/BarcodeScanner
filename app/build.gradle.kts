@@ -82,6 +82,8 @@ dependencies {
     implementation(libs.coil.svg)
     implementation(libs.insert.koin.android)
     implementation(libs.zxing.core)
+    implementation(libs.zxing.cpp.android)
+    testImplementation(libs.mockito.core)
     implementation(libs.vanniktech.android.image.cropper)
     implementation(libs.ez.vcard)
     implementation(libs.atharok.color.picker)

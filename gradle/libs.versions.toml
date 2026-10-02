@@ -22,6 +22,8 @@ zxing = "3.3.3"
 androidImageCropper = "4.7.0"
 ezVcard = "0.11.3"
 colorPicker = "1.0.1"
+zxingCpp = "3.1.1"
+mockitoCore = "5.24.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -52,6 +54,8 @@ zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxing" 
 vanniktech-android-image-cropper = { group = "com.vanniktech", name = "android-image-cropper", version.ref = "androidImageCropper" }
 ez-vcard = { group = "com.googlecode.ez-vcard", name = "ez-vcard", version.ref = "ezVcard" }
 atharok-color-picker = { group = "com.github.Atharok", name = "ColorPicker", version.ref = "colorPicker" }
+zxing-cpp-android = { group = "io.github.zxing-cpp", name = "android", version.ref = "zxingCpp" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
