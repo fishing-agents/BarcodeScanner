@@ -23,12 +23,24 @@ class ScanControllerTest {
         assertTrue(second is ScanUiState.Found && second.result.text == "a")
     }
 
-    @Test fun `a different code or a gap restarts stability`() {
+    @Test fun `a different code restarts stability`() {
         val c = ScanController()
         c.onFrame(listOf(code("a")), null)
         assertEquals(ScanUiState.Searching, c.onFrame(listOf(code("b")), null))
-        c.onFrame(emptyList(), null)
-        assertEquals(ScanUiState.Searching, c.onFrame(listOf(code("b")), null))
+    }
+
+    @Test fun `a code read only every other frame (rate-limited CNN fallback) is still found`() {
+        val c = ScanController()
+        c.onFrame(listOf(code("a")), null)
+        assertEquals(ScanUiState.Searching, c.onFrame(emptyList(), null))
+        assertTrue(c.onFrame(listOf(code("a")), null) is ScanUiState.Found)
+    }
+
+    @Test fun `a gap longer than the tolerance restarts stability`() {
+        val c = ScanController(maxGapFrames = 2)
+        c.onFrame(listOf(code("a")), null)
+        repeat(3) { c.onFrame(emptyList(), null) }
+        assertEquals(ScanUiState.Searching, c.onFrame(listOf(code("a")), null))
     }
 
     @Test fun `two codes in one frame open the picker immediately`() {
