@@ -33,20 +33,35 @@ class AutoZoomControllerTest {
         assertEquals(2f, controller(max = 2f).onCandidates(listOf(square(1f)), 1f, 100, 100))
     }
 
-    @Test fun `no zoom while the user is zooming manually, resumes on release`() {
+    @Test fun `manual zoom suppresses auto-zoom for the hold window`() {
         val c = controller()
-        c.onManualZoomActive()
+        c.onManualZoom()
+        clock += 2999
         assertNull(c.onCandidates(listOf(square(10f)), 1f, 100, 100))
-        c.onManualZoomReleased()
+        clock += 1
         assertTrue(c.onCandidates(listOf(square(10f)), 1f, 100, 100) != null)
     }
 
-    @Test fun `resets to minimum zoom once no candidate is seen for the timeout`() {
+    @Test fun `after the timeout without a candidate it restores the pre-auto-zoom ratio`() {
+        val c = controller()
+        c.onCandidates(listOf(square(10f)), 1.5f, 100, 100)
+        clock += 4999
+        assertNull(c.onCandidates(emptyList(), 6f, 100, 100))
+        clock += 1
+        assertEquals(1.5f, c.onCandidates(emptyList(), 6f, 100, 100))
+        assertNull(c.onCandidates(emptyList(), 1.5f, 100, 100))
+    }
+
+    @Test fun `never resets a zoom the user chose`() {
         val c = controller()
         c.onCandidates(listOf(square(10f)), 1f, 100, 100)
-        clock += 4999
+        c.onManualZoom()
+        clock += 10_000
         assertNull(c.onCandidates(emptyList(), 3f, 100, 100))
-        clock += 1
-        assertEquals(1f, c.onCandidates(emptyList(), 3f, 100, 100))
+    }
+
+    @Test fun `no candidate and no prior auto-zoom leaves the zoom alone`() {
+        clock += 10_000
+        assertNull(controller().onCandidates(emptyList(), 2f, 100, 100))
     }
 }
