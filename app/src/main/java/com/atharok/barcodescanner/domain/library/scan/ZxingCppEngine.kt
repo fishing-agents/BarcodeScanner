@@ -14,7 +14,10 @@ class ZxingCppEngine : ScanEngine {
             tryRotate = true,
             tryInvert = true,
             maxNumberOfSymbols = 8,
-            returnErrors = true
+            returnErrors = true,
+            // HRI (the default) inserts GS1 "(01)" parentheses; PLAIN matches ZXing core's raw
+            // text, which ResultParser, history and PaymentCodeClassifier were written against.
+            textMode = BarcodeReader.TextMode.PLAIN
         )
     )
 
