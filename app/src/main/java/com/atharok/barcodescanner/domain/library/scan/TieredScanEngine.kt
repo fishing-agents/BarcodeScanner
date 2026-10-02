@@ -8,7 +8,9 @@ import androidx.camera.core.ImageProxy
  * caller's thread. Synchronous because a camera [ImageProxy] is closed as soon as the
  * analyzer returns, and a gallery bitmap gets exactly one scan. Camera frames are
  * rate-limited: one fallback per [candidateRetryFrames] misses while a candidate is visible,
- * per [emptyFrameThreshold] otherwise. Bitmaps always fall back. Camera path is single-threaded.
+ * per [emptyFrameThreshold] otherwise — except right after the fallback decoded something, when
+ * it runs on every miss so a code only it can read keeps being reported frame after frame.
+ * Bitmaps always fall back. Camera path is single-threaded.
  */
 class TieredScanEngine(
     private val primary: ScanEngine,
@@ -18,17 +20,25 @@ class TieredScanEngine(
 ) : ScanEngine {
 
     private var missesSinceFallback = 0
+    private var fallbackHot = false
 
     override fun scan(image: ImageProxy): ScanOutcome {
         val outcome = primary.scan(image)
         if (outcome.codes.isNotEmpty() || fallback == null) {
             missesSinceFallback = 0
+            fallbackHot = false
             return outcome
         }
-        val due = if (outcome.candidates.isNotEmpty()) candidateRetryFrames else emptyFrameThreshold
+        val due = when {
+            fallbackHot -> 1
+            outcome.candidates.isNotEmpty() -> candidateRetryFrames
+            else -> emptyFrameThreshold
+        }
         if (++missesSinceFallback < due) return outcome
         missesSinceFallback = 0
-        return outcome + fallback.scan(image)
+        val fallbackOutcome = fallback.scan(image)
+        fallbackHot = fallbackOutcome.codes.isNotEmpty()
+        return outcome + fallbackOutcome
     }
 
     override fun scan(bitmap: Bitmap): ScanOutcome {

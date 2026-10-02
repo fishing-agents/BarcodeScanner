@@ -64,6 +64,28 @@ class TieredScanEngineTest {
         assertEquals(1, fallback.calls)
     }
 
+    @Test fun `after the fallback decodes, it runs again on the very next miss`() {
+        // A code only the CNN can read (zxing-cpp finds no candidate) must be re-read every
+        // frame, or ScanController never sees it twice in a row.
+        val fallback = FakeEngine(MutableList(3) { decoded() })
+        val tiered = TieredScanEngine(FakeEngine(), fallback, emptyFrameThreshold = 3)
+
+        repeat(3) { tiered.scan(FAKE_IMAGE) }
+        assertEquals(1, fallback.calls)
+        assertEquals(1, tiered.scan(FAKE_IMAGE).codes.size)
+        assertEquals(2, fallback.calls)
+    }
+
+    @Test fun `once the fallback stops decoding it falls back to the normal rate`() {
+        val fallback = FakeEngine(mutableListOf(decoded()))
+        val tiered = TieredScanEngine(FakeEngine(), fallback, emptyFrameThreshold = 3)
+
+        repeat(4) { tiered.scan(FAKE_IMAGE) } // hit on 3rd, retried on 4th (miss)
+        assertEquals(2, fallback.calls)
+        repeat(2) { tiered.scan(FAKE_IMAGE) }
+        assertEquals(2, fallback.calls)
+    }
+
     @Test fun `missing fallback degrades to primary-only`() {
         val outcome = TieredScanEngine(FakeEngine(mutableListOf(withCandidate())), fallback = null).scan(FAKE_IMAGE)
 
