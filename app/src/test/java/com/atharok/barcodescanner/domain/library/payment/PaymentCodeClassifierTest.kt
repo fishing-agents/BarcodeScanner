@@ -1,5 +1,10 @@
 package com.atharok.barcodescanner.domain.library.payment
 
+import com.google.zxing.BarcodeFormat
+import com.google.zxing.Result
+import com.google.zxing.client.result.ParsedResultType
+import com.google.zxing.client.result.ResultParser
+import com.google.zxing.client.result.URIParsedResult
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Test
@@ -51,5 +56,18 @@ class PaymentCodeClassifierTest {
     @Test fun `wechat codes pass through unchanged, they already deep-link directly`() {
         assertEquals("wxp://abc", PaymentCodeClassifier.handoffUri("wxp://abc", PaymentCode.WECHAT_PAY))
         assertEquals("weixin://abc", PaymentCodeClassifier.handoffUri("weixin://abc", PaymentCode.WECHAT_LINK))
+    }
+
+    @Test fun `ZXing parses payment-app codes as URIs, so they reach the URI content and action screens`() {
+        for (raw in listOf(
+            "wxp://f2f0eGmDYTyUj2nyz6vJMZeUOTW08oe39TEF",
+            "weixin://dl/business/?t=abc",
+            "https://qr.alipay.com/fkx12345abcde",
+            "alipays://platformapi/startapp?saId=10000007"
+        )) {
+            val parsed = ResultParser.parseResult(Result(raw, null, null, BarcodeFormat.QR_CODE))
+            assertEquals(raw, ParsedResultType.URI, parsed.type)
+            assertEquals(raw, PaymentCodeClassifier.classify((parsed as URIParsedResult).uri), PaymentCodeClassifier.classify(raw))
+        }
     }
 }

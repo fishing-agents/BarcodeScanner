@@ -27,6 +27,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.atharok.barcodescanner.databinding.FragmentBarcodeMatrixUriBinding
 import com.atharok.barcodescanner.domain.entity.analysis.BarcodeAnalysis
+import com.atharok.barcodescanner.domain.library.payment.PaymentCodeClassifier
 import com.google.zxing.client.result.ParsedResult
 import com.google.zxing.client.result.ParsedResultType
 import com.google.zxing.client.result.URIParsedResult
@@ -54,6 +55,8 @@ class BarcodeMatrixUriFragment: AbstractBarcodeMatrixFragment() {
             val uri = parsedResult.uri
             viewBinding.fragmentBarcodeMatrixUriUrlLayout.setContentsText(uri)
             configureIsPossiblyMaliciousURI(parsedResult.isPossiblyMaliciousURI)
+            val paymentCode = PaymentCodeClassifier.classify(uri)
+            viewBinding.fragmentBarcodeMatrixUriPaymentAppLayout.setContentsText(paymentCode?.let { getString(it.appNameRes) })
             if(uri.startsWith("upi")) {
                 applyFragment(
                     containerViewId = viewBinding.fragmentBarcodeMatrixUriParsedLayout.id,

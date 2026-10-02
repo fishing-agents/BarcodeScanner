@@ -22,6 +22,7 @@ package com.atharok.barcodescanner.presentation.views.fragments.barcodeAnalysis.
 
 import com.atharok.barcodescanner.R
 import com.atharok.barcodescanner.domain.entity.barcode.Barcode
+import com.atharok.barcodescanner.domain.library.payment.PaymentCodeClassifier
 import com.atharok.barcodescanner.presentation.views.recyclerView.actionButton.ActionItem
 import com.google.zxing.client.result.ParsedResult
 import com.google.zxing.client.result.URIParsedResult
@@ -39,11 +40,13 @@ class UrlActionsFragment: AbstractParsedResultActionsFragment() {
         addActionItem(configureAssignANameToBarcodeActionItem(barcode))
     }
 
+    /** WeChat/Alipay codes get an "Open in <app>" label and Alipay's in-app hand-off URI; other URIs open as links. */
     private fun configureUrlActionItem(uri: String): ActionItem {
+        val paymentCode = PaymentCodeClassifier.classify(uri)
         return ActionItem(
-            textRes = R.string.action_open_link,
+            textRes = paymentCode?.openActionRes ?: R.string.action_open_link,
             imageRes = R.drawable.baseline_open_in_browser_24,
-            listener = openUrl(uri)
+            listener = openUrl(paymentCode?.let { PaymentCodeClassifier.handoffUri(uri, it) } ?: uri)
         )
     }
 }

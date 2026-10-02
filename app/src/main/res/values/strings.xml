@@ -281,6 +281,10 @@
     <string name="matrix_uri_upi_amount_label">Amount</string>
     <string name="matrix_uri_upi_currency_label">Currency</string>
     <string name="matrix_uri_upi_description_label">Description</string>
+    <!-- Matrix Barcode URI WeChat / Alipay -->
+    <string name="matrix_uri_payment_app_label">Opens in</string>
+    <string name="payment_app_wechat" translatable="false">WeChat</string>
+    <string name="payment_app_alipay" translatable="false">Alipay</string>
     <!-- Matrix Barcode URL Localisation Analysis -->
     <string name="matrix_localisation_latitude_label">Latitude</string>
     <string name="matrix_localisation_longitude_label">Longitude</string>
@@ -327,6 +331,8 @@
     <string name="action_share_vcf_file">Share as VCF</string>
     <string name="action_show_location">Show location</string>
     <string name="action_open_link">Open link</string>
+    <string name="action_open_in_wechat">Open in WeChat</string>
+    <string name="action_open_in_alipay">Open in Alipay</string>
     <string name="action_modify_barcode">Modify barcode</string>
     <string name="action_assign_a_name">Assign a name</string>
     <string name="apply">Apply</string>

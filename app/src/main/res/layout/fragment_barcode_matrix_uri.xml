@@ -51,4 +51,13 @@
         android:paddingTop="@dimen/large_margin"
         android:layout_below="@id/fragment_barcode_matrix_uri_malicious_layout"/>
 
+    <!-- WeChat / Alipay: hidden unless the URI is a payment-app code (empty contents = GONE) -->
+    <com.atharok.barcodescanner.presentation.customView.BarcodeParsedView
+        android:id="@+id/fragment_barcode_matrix_uri_payment_app_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/large_margin"
+        android:layout_below="@id/fragment_barcode_matrix_uri_parsed_layout"
+        app:title_text="@string/matrix_uri_payment_app_label" />
+
 </RelativeLayout>
